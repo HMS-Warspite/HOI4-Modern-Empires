@@ -1,0 +1,137 @@
+﻿##### GREECE NAME LISTS #####
+### REGULAR DESTROYER NAMES###
+GRE_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+	for_countries = { GRE }
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }			
+
+	prefix = "RHS "
+	fallback_name = "Metafero %s"					
+
+	unique = {											
+		"Achlys" "Adephagia" "Aquilo" "Adikia" "Aergia" "Arethusa" "Alecto" "Agathodaemon" "Agon" "Aidos" "Aisa" "Alala" "Alastor" "Aletheia" "Achos" "Ania" "Alke" "Amechania" "Anaideia" "Angelia" "Apate" "Apheleia" 
+		"Aporia" "Arete" "Aglaea" "Argus" "Andromeda" "Antigone" "Arachne" "Ariadne" "Amphitrite" "Aeyptus" "Atropos" "Aerope" "Anteros" "Briseis" "Boreas" "Caerus" "Cassandra" "Charon" "Ceto" "Charybdis" "Cerberus" 
+		"Corus" "Chalciope" "Clotho" "Chrysaor" "Calypso" "Circe" "Clio" "Calliope" "Chloris" "Deimos" "Dike" "Dolos" "Dynamene" "Dysnomia" "Dyssebeia" "Deino" "Deianira" "Danae" "Daphne" "Eirene" "Ekecheiria" "Empusa" 
+		"Erebos" "Eleos" "Eris" "Elpis" "Epiphron" "Eros" "Eucleia" "Eulabeia" "Eunomia" "Eupheme" "Enyo" "Euryale" "Europa" "Euphrosyne" "Eurynome" "Euterpe" "Erato" "Eurus" "Eupraxia" "Eusebeia" "Echo" "Euthenia" 
+		"Eurydice" "Glaucus" "Galene" "Gelos" "Geras" "Harmonia" "Hebe" "Helle" "Helen" "Hedone" "Homados" "Homonoia" "Horkos" "Horme" "Hybris" "Himerope" "Hypnos" "Hedylogos" "Himeros" "Hymen" "Hippodamia" "Ioke" 
+		"Ion" "Iphigenia" "Ismene" "Icarus" "Ino" "Io" "Janus" "Jocasta" "Kakia" "Kalokagathia" "Koalemos" "Kratos" "Karkinos" "Limos" "Lupe" "Laius" "Leto" "Leda" "Ladon" "Laomedon" "Lyssa" "Lydia" "Labyrinth" "Legeia" 
+		"Leucosia" "Lachesis" "Mania" "Megara" "Momus" "Moros" "Melpomene" "Medusa" "Nemesis" "Nike" "Nile" "Notus" "Nomos" "Nephele" "Nereus" "Narcissus" "Palioxis" "Pothos" "Pegasus" "Pemphredo" "Pelopia" "Perigune" 
+		"Pasiphae" "Phaedra" "Psyche" "Polyhymnia" "Pandora" "Peitho" "Penia" "Priapus" "Penthus" "Pepromene" "Pheme" "Philotes" "Phobos" "Phrike" "Phthonus" "Pistis" "Pietus" "Poine" "Polemos" "Ponos" "Parthenope" "Poros" "Proioxis" 
+		"Prophasis" "Persephone" "Pyrrha" "Raidne" "Scylla" "Stheno" "Tisiphone" "Techne" "Thetis" "Thanatos" "Thrasos" "Tyche" "Triton" "Tantalus" "Thalia" "Terpsichore" "Urania" "Zelos" "Zagreus" "Zephyros" 
+	}
+}
+
+### LIGHT CRUISER NAMES###
+GRE_CL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CL
+
+	for_countries = { GRE }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+	
+	prefix = "RHS "
+	fallback_name = "Elafri Katadromiko %s"
+
+	unique = {
+		"Patras" "Larissa" "Lamia" "Delphi" "Delos" "Naxos" "Lemnos" "Alexandroupoli" "Kavala" "Dodona" "Bizerte" "Sfax" "Boetia" "Tobruk" "Benghazi" "Tirana" "Zagreb" "Aswan" "Suez" "Tel Aviv" "Amman" "Aleppo" "Riyadh" "Dammam" 
+		"Doha" "Kuwait" "Tabriz" "Gwadar" "Baku" "Tbilisi" "Yerevan" "Mosul" "Aden" "Muscat" "Juba" "Nairobi" "Mombasa" "Rabat" "Oran" "Constantine" "Chania" "Kalamata" "Chalcis" "Argo" "Agrinio" 
+		"Ithaca" "Corfu" "Skopje" "Plovdiv" "Burgas" "Odesa" "Bratislava" "Graz" "Salzburg" "Linz" "Innsbruck" "Zurich" "Geneva" "Berne" "Toulon" "Montpellier" "Nice" "Toulouse" "La Rochelle" "Turin" "Bologna" 
+		"Trieste" "Bari" "Messina" "Cagliari" "Ajaccio" "Palma" "Zaragoza" "Bilbao" "Valencia" "Valladolid" "Coruna" "Porto" "Braga" "Sevilla" "Malaga" "Murcia" "Ceuta" "Marrakesh" "Laayoune" "Nouakchott" "Adana" "Antalya" 
+		"Batumi" "Trabzon" "Sinop" "Bursa" "Mersin" "Kayseri" "Edirne" "Ljubljana" "Kosice" "La Spezia" "Florence" "Anzio" "Ancona" "Split" "Rhodes"  
+	}
+}
+
+### HEAVY CRUISER NAMES###
+GRE_CA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CA
+
+	for_countries = { GRE }
+
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+	
+	prefix = "RHS "
+	fallback_name = "Vari Katadromiko %s"
+
+	unique = {
+		"Corinth" "Knossos" "Mycenae" "Athens" "Thebes" "Sparta" "Troy" "Constantinople" "Thrace" "Rome" "Carthage" "Memphis" "Cairo" "Alexandria" "Tripoli" "Cyprus" "Phoenicia" "Colchis" "Tauris" "Babylon" "Aethiopia" 
+		"Algiers" "Ankara" "Catania" "Milan" "Barcelona" "Lyon" "Bordeaux" "Casablanca" "Belgrade" "Vienna" "Sofia" "Bucharest" "Budapest" "Tanais" "Kyiv" "Khartoum" "Kitara" "Mecca" "Abu Dhabi" "Tehran" "Hormirzad" "Karachi" 
+		"Jerusalem" "Damascus" "Madrid" "Lisbon" "Erythia" "Taranto" "Naples" "Palermo" "Odessos" "Venice" "Genoa" "Marseille" "Sarajevo" "Izmir" "Thessaloniki" "Monaco" "Malta" "Gibraltar" "Alba Longa" 
+	}
+}
+
+
+### BATTLESHIP NAMES ###
+GRE_BB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BB
+
+	for_countries = { GRE }
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship }
+	
+	prefix = "RHS "
+	fallback_name = "Thorikto %s"		
+
+	unique = {
+		"Cadmus" "Oedipus" "Heracles" "Theseus" "Perseus" "Odysseus" "Agamemnon" "Achilles" "Orpheus" "Jason" "Paris" "Atalanta" "Hector" "Ajax" "Minos" "Telamon" "Meleager" "Diomedes" "Philoctetes" "Pelops" "Peleus" "Aeneas" 
+		"Bellerophon" "Deucalion" "Daedalus" "Amphitryon" "Menelaus" "Castor" "Pollux" "Aeetes" "Phrixus" "Orestes" "Argus" "Anchises" "Tiresias" "Sarpedon" "Aegeus" "Phaethon" "Atreus" "Aegisthus" "Agenor" "Inachus" "Acrisius" 
+		"Medea" "Alexander" "Augustus" "Caesar" "Orion" 
+	}
+}
+
+### BATTLECRUISER NAMES ###
+GRE_BC_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BC
+
+	for_countries = { GRE }
+
+	type = ship
+	ship_types = { ship_hull_heavy battle_cruiser }
+	
+	prefix = "RHS "
+	fallback_name = "Thoriktou %s"		
+
+	unique = {
+		"Oceanus" "Hyperion" "Coeus" "Kronos" "Crius" "Iapetus" "Mnemosyne" "Tethys" "Theia" "Phoebe" "Rhea" "Themis" "Atlas" "Prometheus" "Epimetheus" "Astraeus" "Metis" "Ophion" "Pallas" "Perses" "Styx" "Lethe" "Acheron" 
+		"Erebus" "Tartarus" "Cocytus" "Cyclops" "Giant" "Hecatonchirus" "Typhon" "Echidna" "Nyx" "Hemera" "Pontus" "Ourea" "Aether" 
+	}
+}
+
+### AIRCRAFT CARRIER NAMES ###
+GRE_CV_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CARRIERS
+
+	for_countries = { GRE }
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	prefix = "RHS "
+	fallback_name = "Aeroplanoforo %s"	
+
+	unique = {
+		"Athena" "Zeus" "Poseidon" "Hades" "Demeter" "Hera" "Hestia" "Ares" "Apollo" "Artemis" "Dionysus" "Hephaestus" "Hermes" "Aphrodite" "Hecate" "Helios" "Selene" "Eos" "Iris" "Gaia" "Uranos" "Chiron" "Asclepius" 
+	}
+}
+
+### SUBMARINES ###
+GRE_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	for_countries = { GRE }
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	
+	prefix = "RHS "
+	fallback_name = "Y-%s"
+	
+	unique = {
+		"Katsonis" "Papanikolis" "Protefs" "Nirefs" "Glafkos" "Mastrozos" "Pipinos" "Delfin" "Argonautis" "Triaina" "Xifias" "Okeanos" 
+	}
+}

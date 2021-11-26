@@ -1,0 +1,328 @@
+leader_traits = {
+
+# # # # # # # # # # # # # # CHINESE # # # # # # # # # # # # # # # # # #
+	
+	glory_of_the_emperor = {
+		random = no
+		drift_defence_factor = 0.20
+		non_core_manpower = 0.10
+		opinion_gain_monthly_factor = 0.40
+		trade_opinion_factor = 0.40
+		justify_war_goal_time = -0.40
+		consumer_goods_factor = -0.10
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	son_of_heaven = {
+		random = no
+		political_power_factor = 0.30
+		stability_factor = 0.30
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	master_of_war = {
+		random = no
+		
+		army_attack_factor = 0.20
+		army_defence_factor = 0.20
+		army_morale_factor = 0.20
+		army_org_factor = 0.20
+		army_speed_factor = 0.20
+		attrition = -0.10
+		experience_gain_army_factor = 0.20
+		experience_gain_air_factor = 0.20
+		experience_gain_navy_factor = 0.20
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	true_dragon = {
+		random = no
+		air_accidents_factor = -0.50
+		air_night_penalty = -0.50
+		air_weather_penalty = -0.50
+		air_ace_generation_chance_factor = 0.30
+		army_bonus_air_superiority_factor = 0.50
+		enemy_army_bonus_air_superiority_factor = -0.50
+		convoy_raiding_efficiency_factor = 0.50
+		naval_speed_factor = 0.20
+		navy_max_range_factor = 0.30
+		amphibious_invasion = 0.50
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	
+# # # # # # # # # # # # # # HELLENIC # # # # # # # # # # # # # # # # # #
+
+	divine_creator = {
+		random = no
+		#pp, laws, population
+		political_power_factor = 0.5
+		research_speed_factor = 0.5
+		encryption_factor = 0.25
+		decryption_factor = 0.25
+		intel_network_gain_factor = 1.0
+		intel_from_operatives_factor = 0.5
+		operative_slot = 6
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	blessing_of_the_gods = {
+		random = no
+		#stability, war support
+		stability_factor = 0.30
+		war_support_factor = 0.30
+		drift_defence_factor = 0.20
+		opinion_gain_monthly_factor = 0.50
+		trade_opinion_factor = 0.50
+		terrain_penalty_reduction = 0.25
+		naval_speed_factor = 0.40
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	the_first_emperor = {
+		random = no
+		#politics, trade, xp
+		conscription = 0.02
+		experience_gain_army_factor = 0.5
+		experience_gain_air_factor = 0.5
+		experience_gain_navy_factor = 0.5
+		trade_laws_cost_factor = -0.2
+		mobilization_laws_cost_factor = -0.2
+		economy_cost_factor = -0.2
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	founder_of_civilizations = {
+		random = no
+		#construction production resources
+		consumer_goods_factor = -0.15
+		production_speed_buildings_factor = 0.20
+		industry_repair_factor = 0.5
+		local_resources_factor = 0.25
+		max_fuel_factor = 0.20
+		industrial_capacity_factory = 0.20
+		industrial_capacity_dockyard = 0.20
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	greatest_war_hero = {
+		random = no
+		#war
+		army_attack_factor = 0.20
+		army_defence_factor = 0.20
+		army_org_factor = 0.20
+		army_speed_factor = 0.20
+		attrition = -0.20
+		supply_consumption_factor = -0.20
+		land_reinforce_rate = 0.20
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	heavenly_judgment = {
+		random = no
+		justify_war_goal_time = -0.50
+		generate_wargoal_tension = -0.40
+		lend_lease_tension = -0.40
+		send_volunteers_tension = -0.40
+		send_volunteer_divisions_required = -0.33
+		send_volunteer_size = 10
+		invasion_preparation = -0.5
+		army_morale_factor = 0.4
+		training_time_army_factor = -0.10
+		special_forces_cap = 0.18
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+
+
+# # # # # # # # # # # # # # French # # # # # # # # # # # # # # # # # #
+
+	legendary_war_hero = {
+		random = no
+		army_morale_factor = 0.20
+		war_support_factor = 0.20
+		command_power_gain_mult = 0.20
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	napoleonic_code = {
+		random = no
+		stability_factor = 0.20
+		consumer_goods_factor = -0.10
+		research_speed_factor = 0.10 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	first_consul_of_france = {
+		random = no
+		political_power_factor = 0.20
+		political_advisor_cost_factor = -0.10
+		high_command_cost_factor = -0.10
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	emperor_of_the_french = {
+		random = no
+		political_power_factor = 0.50
+		political_advisor_cost_factor = -0.25
+		high_command_cost_factor = -0.25
+		conscription = 0.05
+		compliance_gain = 0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+
+# # # # # # # # # # # # # # OTHERS # # # # # # # # # # # # # # # # # #
+
+	protector_of_the_military = {
+		random = no
+		high_command_cost_factor = -0.25
+		air_chief_cost_factor = -0.25
+		army_chief_cost_factor = -0.25
+		navy_chief_cost_factor = -0.25
+		army_morale_factor = 0.10
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	america_first_industrialist = {
+		random = no
+		production_speed_buildings_factor = 0.10
+		consumer_goods_factor = -0.10
+		trade_opinion_factor = -0.10
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	enemy_of_fake_news = {
+		random = no
+		political_power_gain = -0.10
+		opinion_gain_monthly_factor = -0.10
+		compliance_gain = -0.05
+		surrender_limit = 0.10
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	dislikes_america = {
+		random = no
+		ai_strategy = {
+			type = antagonize
+			id = "USA"			
+			value = 250
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	former_kgb = {
+		random = no
+		intel_from_operatives_factor = 0.20
+		operative_slot = 1
+		agency_upgrade_time = -0.10
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	great_helmsman = {
+		random = no
+		political_advisor_cost_factor = -0.10
+		trade_laws_cost_factor = -0.10
+		mobilization_laws_cost_factor = -0.10
+		economy_cost_factor = -0.10
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	restorer_of_qing_dynasty = {
+		random = no
+		army_core_attack_factor = 0.10
+		army_core_defence_factor = 0.10
+		industry_repair_factor = 0.25
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	enlightened_monarch = {
+		random = no
+		political_advisor_cost_factor = -0.25
+		democratic_acceptance = 25
+		fascism_acceptance = 25
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bastion_of_truths_and_facts = {
+		random = no
+		drift_defence_factor = 0.20
+		foreign_subversive_activites = -0.20
+		research_speed_factor = 0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	libertarian_moralist = {
+		random = no
+		political_power_factor = -0.10
+		consumer_goods_factor = -0.10
+		stability_factor = 0.10
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	military_imperialist = {
+		random = no
+		high_command_cost_factor = -0.25
+		war_support_factor = 0.20
+		justify_war_goal_time = -0.25
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

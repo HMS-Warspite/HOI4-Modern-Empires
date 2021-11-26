@@ -1,0 +1,24 @@
+
+state={
+	id=461 #Fes
+	name="STATE_461"
+	manpower = 4638708
+	
+	state_category = city
+	
+	history={
+		owner = FRA
+		add_core_of = MOR
+		victory_points = {
+			7100 10 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+	}
+
+	provinces={
+		989 1111 1194 4084 4097 7100 7116 7173 10013 11987 12042 
+	}
+}

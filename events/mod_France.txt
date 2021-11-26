@@ -1,0 +1,38 @@
+﻿add_namespace = mod_france
+
+#Test: Test Event Index
+country_event = {
+	id = mod_france.000
+	title = mod_france.000.t
+	desc = mod_france.000.desc
+	picture = GFX_report_event_chinese_soldiers
+
+	is_triggered_only = yes
+	
+	#Okay
+	option = {
+		name = mod_france.000.a
+	}
+}
+
+#Test: Create the Continental System
+country_event = {
+	id = mod_france.999
+	title = mod_france.999.t
+	desc = mod_france.999.desc
+	picture = GFX_report_event_chinese_soldiers
+
+	is_triggered_only = yes
+	
+	#Create faction
+	option = {
+		name = mod_france.999.a
+		set_rule = { can_create_factions = yes }
+		create_faction = FRA_continental_system
+	}
+	
+	#Do Nothing
+	option = {
+		name = mod_france.999.b
+	}
+}

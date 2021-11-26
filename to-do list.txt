@@ -1,0 +1,46 @@
+
+Re-define State:
+-Carthage-Algeria Borders
+-Georgian Colchis
+
+
+Add/Change Naval Base
+- One of Moroccan cities
+- One of Libyan cities
+
+Localization:
+- Chinese country leader traits
+
+
+
+
+
+### 1.10 Collie Update ###
+
+Common:
+- refactor characters
+
+
+History:
+- check updated country files
+- refactor characters
+- redefine new states
+- railroad/infrastructure changes in all states
+
+
+Decisions:
+- update state id and victory points
+
+
+Technologies:
+- Greek tech icons/names
+
+
+Localization:
+- state names
+- victory points
+- country names
+- character names
+
+Map:
+- more states, units in states, supply regions, and strategic areas

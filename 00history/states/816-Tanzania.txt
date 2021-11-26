@@ -1,0 +1,30 @@
+state={
+	id=816
+	name="STATE_816"
+	
+	state_category = town
+	resources={
+		rubber=2 # was: 2
+	}
+	history={
+		owner = ENG
+		victory_points = {
+			2196 3
+		}
+		buildings = {
+			infrastructure = 3
+			2196 = {
+				naval_base = 2
+
+			}
+
+		}
+			add_core_of = TZN
+	}
+
+	provinces={
+		2196 8182 8201 8205 10845 12944 12967 
+	}
+	manpower=2299000
+	buildings_max_level_factor=1.000
+}

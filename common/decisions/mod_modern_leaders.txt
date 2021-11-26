@@ -1,0 +1,508 @@
+modern_national_leaders = {
+
+
+	USA_elect_trump = {
+		visible = {
+			OR = {
+				original_tag = USA
+				original_tag = CSA
+			}
+			has_government = democratic 
+		}
+		available = {
+			NOT = { 
+				has_country_leader = { name = "Donald J. Trump" ruling_only = yes }
+			}
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			if = {
+				limit = { has_country_flag = new_leader_elected }
+				retire_country_leader = yes
+			}
+			else = {
+				set_country_flag = new_leader_elected
+			}
+			create_country_leader = {
+				name = "Donald J. Trump"
+				desc = ""
+				picture = "gfx/leaders/USA/Portrait_USA_Donald_Trump_democratic.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					nationalist_symbol
+					enemy_of_fake_news 
+					dealbroker 
+					america_first_industrialist
+					protector_of_the_military 
+					freedom_fighter 
+				}
+			}
+			set_party_name = {
+				ideology = democratic
+				name = USA_democratic_party_republican
+				long_name = USA_democratic_party_republican_long
+			}
+		}
+	}
+
+	USA_elect_biden = {
+		visible = {
+			original_tag = USA
+			has_government = democratic 
+		}
+		available = {
+			NOT = { 
+				has_country_leader = { name = "Joe Biden" ruling_only = yes }
+			}
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			if = {
+				limit = { has_country_flag = new_leader_elected }
+				retire_country_leader = yes
+			}
+			else = {
+				set_country_flag = new_leader_elected
+			}
+			create_country_leader = {
+				name = "Joe Biden"
+				desc = ""
+				picture = "gfx/leaders/USA/Portrait_USA_Joe_Biden.dds"
+				expire = "1965.1.1"
+				ideology = liberalism
+				traits = {
+					infirm 
+					the_absentee_president 
+					figurehead_president 
+					divided_interests 
+				}
+			}
+			set_party_name = {
+				ideology = democratic
+				name = USA_democratic_party_democrat
+				long_name = USA_democratic_party_democrat_long
+			}
+		}
+	}
+
+	USA_elect_sanders = {
+		visible = {
+			original_tag = USA
+			has_government = democratic 
+		}
+		available = {
+			NOT = { 
+				has_country_leader = { name = "Bernie Sanders" ruling_only = yes }
+			}
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			if = {
+				limit = { has_country_flag = new_leader_elected }
+				retire_country_leader = yes
+			}
+			else = {
+				set_country_flag = new_leader_elected
+			}
+			create_country_leader = {
+				name = "Bernie Sanders"
+				desc = ""
+				picture = "gfx/leaders/USA/Portrait_USA_Bernie_Sanders.dds"
+				expire = "1965.1.1"
+				ideology = socialism
+				traits = {
+					the_statist
+					marxist_philosopher 
+					permanent_revolutionary 
+				}
+			}
+			set_party_name = {
+				ideology = democratic
+				name = USA_democratic_party_progressive
+				long_name = USA_democratic_party_progressive_long
+			}
+		}
+	}
+
+	USA_elect_obama = {
+		visible = {
+			original_tag = USA
+			has_government = democratic 
+		}
+		available = {
+			NOT = { 
+				has_country_leader = { name = "Barack Obama" ruling_only = yes }
+			}
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			if = {
+				limit = { has_country_flag = new_leader_elected }
+				retire_country_leader = yes
+			}
+			else = {
+				set_country_flag = new_leader_elected
+			}
+			create_country_leader = {
+				name = "Barack Obama"
+				desc = ""
+				picture = "gfx/leaders/USA/Portrait_USA_Barack_Obama.dds"
+				expire = "1965.1.1"
+				ideology = liberalism
+				traits = {
+					political_dancer
+					socialite_connections 
+					appeaser 
+				}
+			}
+			set_party_name = {
+				ideology = democratic
+				name = USA_democratic_party_democrat
+				long_name = USA_democratic_party_democrat_long
+			}
+		}
+	}
+
+	USA_elect_gw_bush = {
+		visible = {
+			original_tag = USA
+			has_government = democratic 
+		}
+		available = {
+			NOT = { 
+				has_country_leader = { name = "George W. Bush" ruling_only = yes }
+			}
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			if = {
+				limit = { has_country_flag = new_leader_elected }
+				retire_country_leader = yes
+			}
+			else = {
+				set_country_flag = new_leader_elected
+			}
+			create_country_leader = {
+				name = "George W. Bush"
+				desc = ""
+				picture = "gfx/leaders/USA/Portrait_USA_George_Bush.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					devoted_corporatist 
+					war_profiteer 
+				}
+			}
+			set_party_name = {
+				ideology = democratic
+				name = USA_democratic_party_republican
+				long_name = USA_democratic_party_republican_long
+			}
+		}
+	}
+	
+	USA_elect_jeb_bush = {
+		visible = {
+			original_tag = USA
+			has_government = democratic 
+		}
+		available = {
+			NOT = { 
+				has_country_leader = { name = "Jeb Bush" ruling_only = yes }
+			}
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			if = {
+				limit = { has_country_flag = new_leader_elected }
+				retire_country_leader = yes
+			}
+			else = {
+				set_country_flag = new_leader_elected
+			}
+			create_country_leader = {
+				name = "Jeb Bush"
+				desc = ""
+				picture = "gfx/leaders/USA/Portrait_USA_Jeb_Bush.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					devoted_corporatist 
+					indecisive 
+				}
+			}
+			set_party_name = {
+				ideology = democratic
+				name = USA_democratic_party_republican
+				long_name = USA_democratic_party_republican_long
+			}
+		}
+	}
+
+	USA_elect_clinton = {
+		visible = {
+			original_tag = USA
+			has_government = democratic 
+		}
+		available = {
+			NOT = { 
+				has_country_leader = { name = "Bill Clinton" ruling_only = yes }
+			}
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			if = {
+				limit = { has_country_flag = new_leader_elected }
+				retire_country_leader = yes
+			}
+			else = {
+				set_country_flag = new_leader_elected
+			}
+			create_country_leader = {
+				name = "Bill Clinton"
+				desc = ""
+				picture = "gfx/leaders/USA/Portrait_USA_Bill_Clinton.dds"
+				expire = "1965.1.1"
+				ideology = liberalism
+				traits = {
+					political_dancer
+					sharp_tongued_lawyer 
+				}
+			}
+			set_party_name = {
+				ideology = democratic
+				name = USA_democratic_party_democrat
+				long_name = USA_democratic_party_democrat_long
+			}
+		}
+	}
+
+	USA_elect_shapiro = {
+		visible = {
+			original_tag = USA
+			has_government = democratic 
+		}
+		available = {
+			NOT = { 
+				has_country_leader = { name = "Ben Shapiro" ruling_only = yes }
+			}
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			if = {
+				limit = { has_country_flag = new_leader_elected }
+				retire_country_leader = yes
+			}
+			else = {
+				set_country_flag = new_leader_elected
+			}
+			create_country_leader = {
+				name = "Ben Shapiro"
+				desc = ""
+				picture = "gfx/leaders/USA/Portrait_USA_Ben_Shapiro.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					bastion_of_truths_and_facts
+					libertarian_moralist 
+				}
+			}
+			set_party_name = {
+				ideology = democratic
+				name = USA_democratic_party_republican
+				long_name = USA_democratic_party_republican_long
+			}
+		}
+	}
+
+	USA_undo_election = {
+		visible = {
+			has_country_flag = new_leader_elected
+		}
+		available = {
+			has_country_flag = new_leader_elected
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			retire_country_leader = yes
+			#set_party_name = {
+			#	ideology = democratic
+			#	name = USA_democratic_party_democrat
+			#	long_name = USA_democratic_party_democrat_long
+			#}
+		}
+	}
+	
+	PRC_appoint_xi = {
+		visible = {
+			original_tag = PRC
+			has_government = communism 
+		}
+		available = {
+			NOT = { 
+				has_country_leader = { name = "Xi Jinping" ruling_only = yes }
+			}
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			if = {
+				limit = { has_country_flag = new_leader_elected }
+				retire_country_leader = yes
+			}
+			else = {
+				set_country_flag = new_leader_elected
+			}
+			create_country_leader = {
+				name = "Xi Jinping"
+				desc = ""
+				picture = "gfx/leaders/PRC/Portrait_PRC_Xi_Jinping.dds"
+				expire = "1965.1.1"
+				ideology = leninism
+				traits = {
+					veteran_communist
+					great_architect
+					dislikes_america
+				}
+			}
+		}
+	}
+	
+	KOR_appoint_kim3 = {
+		visible = {
+			original_tag = KOR
+			has_government = communism 
+		}
+		available = {
+			NOT = { 
+				has_country_leader = { name = "Kim Jong Un" ruling_only = yes }
+			}
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			if = {
+				limit = { has_country_flag = new_leader_elected }
+				retire_country_leader = yes
+			}
+			else = {
+				set_country_flag = new_leader_elected
+			}
+			create_country_leader = {
+				name = "Kim Jong Un"
+				desc = ""
+				picture = "gfx/leaders/KOR/Portrait_KOR_Kim_Jong_Un.dds"
+				expire = "1965.1.1"
+				ideology = leninism
+				traits = {
+					anti_democrat 
+				}
+			}
+		}
+	}
+	
+	JAP_appoint_abe = {
+		visible = {
+			original_tag = JAP
+			has_government = democratic 
+		}
+		available = {
+			NOT = { 
+				has_country_leader = { name = "Shinzo Abe" ruling_only = yes }
+			}
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			if = {
+				limit = { has_country_flag = new_leader_elected }
+				retire_country_leader = yes
+			}
+			else = {
+				set_country_flag = new_leader_elected
+			}
+			create_country_leader = {
+				name = "Shinzo Abe"
+				desc = ""
+				picture = "gfx/leaders/JAP/Portrait_JAP_Abe_Shinzo.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					rearmer
+					conservative_nationalist
+				}
+			}
+		}
+	}
+	
+	SOV_appoint_putin = {
+		visible = {
+			original_tag = SOV
+			has_government = neutrality 
+		}
+		available = {
+			NOT = { 
+				has_country_leader = { name = "Vladimir Putin" ruling_only = yes }
+			}
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			if = {
+				limit = { has_country_flag = new_leader_elected }
+				retire_country_leader = yes
+			}
+			else = {
+				set_country_flag = new_leader_elected
+			}
+			create_country_leader = {
+				name = "Vladimir Putin"
+				desc = ""
+				picture = "gfx/leaders/SOV/Portrait_SOV_Vladimir_Putin.dds"
+				expire = "1965.1.1"
+				ideology = oligarchism
+				traits = {
+					popular_figurehead
+					former_kgb 
+					man_of_the_nation 
+				}
+			}
+		}
+	}
+}

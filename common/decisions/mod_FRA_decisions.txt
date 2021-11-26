@@ -1,0 +1,281 @@
+
+
+
+legacy_of_napoleon = {
+	
+	FRA_napoleon_leads_the_army = {
+		visible = {
+			NOT = { has_country_flag = napoleon_in_army }
+		}
+		available = {
+			NOT = { has_country_flag = napoleon_in_army }
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			create_corps_commander = {
+				name = "Napoléon VI"
+				portrait_path = "gfx/leaders/GAL/Portrait_FRA_Napoleon_VI_Army.dds"
+				traits = { military_genius brilliant_strategist inspirational_leader skilled_staffer expert_delegator }
+				skill = 7
+				attack_skill = 7
+				defense_skill = 7
+				planning_skill = 7
+				logistics_skill = 7
+			}
+			set_country_flag = napoleon_in_army
+		}
+	}
+	
+	FRA_appoint_napoleon_as_first_consul = {
+		visible = {
+			NOT = { has_country_flag = first_consul_napoleon }
+		}
+		available = {
+			is_subject = no
+			OR = { 
+				has_government = neutrality 
+				has_government = democratic
+			}
+			NOT = { 
+				has_country_leader = { name = "Napoléon VI" ruling_only = yes }
+				has_country_flag = first_consul_napoleon
+			}
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_country_flag = first_consul_napoleon
+			if = {
+				limit = { has_government = democratic }
+				create_country_leader = {
+					name = "Napoléon Bonaparte"
+					desc = ""
+					picture = GFX_portraits_fra_napoleon_vi
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+						legendary_war_hero 
+						first_consul_of_france
+					}
+				}
+			}
+			if = {
+				limit = { has_government = neutrality }
+				create_country_leader = {
+					name = "Napoléon Bonaparte"
+					desc = ""
+					picture = GFX_portraits_fra_napoleon_vi
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						legendary_war_hero 
+						first_consul_of_france
+					}
+				}
+				set_party_name = {
+					ideology = neutrality
+					long_name = FRA_bonepartist_party_long
+					name = FRA_bonepartist_party
+				}
+			}
+		}
+	}
+	
+	FRA_proclaim_third_french_empire = {
+		visible = {
+			NOT = { has_country_flag = french_empire_restored }
+			has_country_flag = first_consul_napoleon
+		}
+		available = {
+			is_subject = no
+			OR = { 
+				has_government = neutrality 
+				has_government = democratic
+			}
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_cosmetic_tag = FRA_THIRD_EMPIRE
+			set_country_flag = french_empire_restored
+			hidden_effect = {
+				if = {
+					limit = { 
+						has_country_leader = {
+							name = "Napoléon Bonaparte"
+							ruling_only = yes
+						}
+					}
+					kill_country_leader = yes 
+				}
+				if = {
+					limit = { has_government = democratic }
+					set_politics = { ruling_party = neutrality }
+				}
+				create_country_leader = {
+					name = "Napoléon VI"
+					desc = ""
+					picture = GFX_portraits_fra_napoleon_vi
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						legendary_war_hero 
+						napoleonic_code
+						emperor_of_the_french 
+					}
+				}
+			}
+		}
+	}
+	
+	FRA_incorporate_nationalist_commanders = {
+		visible = {
+			NOT = { has_country_flag = appoint_nationalist_french_commanders }
+		}
+		available = {
+			is_subject = no
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_country_flag = appoint_nationalist_french_commanders
+			create_field_marshal = {
+				name = "Philippe Pétain"
+				portrait_path = "gfx/leaders/FRA/Portrait_France_Philippe_Petain.dds"
+				traits = { trait_cautious war_hero }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 4
+				planning_skill = 2
+				logistics_skill = 4
+			}
+			create_corps_commander = {
+				name = "Marie-Pierre Koenig"
+				GFX = GFX_portrait_fra_marie_pierre_koenig
+				skill = 3
+				traits = {  }
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "Georges Catroux"
+				GFX = GFX_portrait_fra_georges_catroux
+				skill = 3
+				traits = {  }
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_navy_leader = {
+				name = "Emile Muselier"
+				portrait_path = "gfx/leaders/GAL/Portrait_FRA_Emile_Muselier.dds"
+				traits = { naval_lineage superior_tactician }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 2
+				maneuvering_skill = 3
+				coordination_skill = 3
+			}
+		}
+	}
+	
+	FRA_incorporate_revolutionary_commanders = {
+		visible = {
+			NOT = { has_country_flag = appoint_revolutionary_french_commanders }
+		}
+		available = {
+			is_subject = no
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_country_flag = appoint_revolutionary_french_commanders
+			create_field_marshal = {
+				name = "Aime Doumenc"
+				portrait_path = "gfx/leaders/GAL/Portrait_FRA_Aime_Doumenc.dds"
+				traits = { defensive_doctrine trickster urban_assault_specialist }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "Georges Blanchard"
+				portrait_path = "gfx/leaders/GAL/Portrait_FRA_Georges_Blanchard.dds"
+				traits = { brilliant_strategist career_officer infantry_officer }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 3
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Louis Franchet d'Esperey"
+				portrait_path = "gfx/leaders/GAL/Portrait_FRA_Louis_Franchet_d_Esperey.dds"
+				traits = { naval_invader trait_engineer winter_specialist }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "Adolphe Guillaumat"
+				portrait_path = "gfx/leaders/GAL/Portrait_FRA_Adolphe_Guillaumat.dds"
+				traits = { organizer trait_cautious }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Paul Legentilhomme"
+				portrait_path = "gfx/leaders/GAL/Portrait_FRA_Paul_Legentilhomme.dds"
+				traits = { ranger cavalry_officer hill_fighter }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+		}
+	}
+	
+	FRA_form_the_continental_system = {
+		visible = {
+			is_in_faction = no
+			is_subject = no
+			has_country_flag = french_empire_restored
+		}
+		available = {
+			is_major = yes
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_rule = { can_create_factions = yes }
+			create_faction = FRA_continental_system
+		}
+	}
+	
+}
+
+

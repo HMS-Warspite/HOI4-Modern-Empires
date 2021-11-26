@@ -1,0 +1,75 @@
+﻿CHI = {
+	submarine = {
+		prefix = "CNN"
+		generic = { "SS -" }
+		unique = {
+			
+		}
+	}
+	destroyer = {
+		prefix = "CNN"
+		generic = { "DD -" }
+		unique = {
+			"Dadong" "Zejiang" "Chingpo" "Longtuan" "Jiangang" "Dongan" "Yuzhang" "Zhangfeng" "Fubo" "Nanchang" "Dalian" "Yangzhou" "Dongying" "Changde" "Jingzhou" "Jiaozhou" "Qingdao" "Zhanjiang" "Shanwei" "Shantou"
+			"Suzhou" "Ningbo" "Changchun" "Taiyuan" "Anshan" "Fushun" "Lanzhou" "Poyang" "Jiujiang" "Chengde" "Dandong" "Lüshun" "Tianjin" "Yan'an" "Chengdu" "Hangzhou" "Shenyang" "Harbin" "Handan" "Ganzhou" "Anyi" "Jinan" 
+			"Zhengzhou" "Luoyang" "Kaifeng" "Beijing" "Nanjing" "Xi'an" "Chongqing" "Guiyang" "Guilin" "Shaoguan" "Zhangzhou" "Putian" "Fuzhou" "Xiamen" "Taipei" "Gaoxiong" "Xinzhu" "Xuancheng" "Cangzhou" "Wuhu" "Nanning" 
+			"Quanzhou" "Zhongshan" "Jiangmen" "Zhuhai" "Shenzhen" "Hong Kong" "Macau" "Tainan" "Haikou" "Sanya" "Hengyang" "Kunming" "Dali" "Zunyi" "Xiangyang" "Huanggang" "Huangshan" "Huai'an" "Xuzhou" "Jining" "Xuchang" 
+			"Xianyang" "Jiaozuo" "Zibo" "Weifang" "Yantai" "Weihai" "Baoding" "Shijiazhuang" "Langfang" "Tangshan" "Qinhuangdao" "Hefei" "Yuncheng" "Changzhou" "Wuxi" "Nantong" "Lianyungang" "Zhoushan" "Jinhua" "Yiwu" "Tai'an" 
+			"Wuhan" "Fuzhou" "Shangrao" "Changsha" "Zhangbei" "Qinzhou" "Urumqi" "Lhasa" "Tianshui" "Baoji" "Hanzhong" "Guangyuan" "Hohhot" "Baotou" "Ordos" "Yinchuan" "Jilin" "Qiqihar" "Jiaxing" "Shanghai" "Shaoxin" "Wenzhou" 
+			"Sansha" "Hanoi" "Haiphong" "Saigon" "Vientiane" "Haishenwai" "Pyongyang" "Seoul" "Busan" "Jeju" "Shuri" "Karafuto" "Ulaanbaatar" "Kyzyl" "Chita" "Xining" "Gangtok" "Jiuquan" "Aksai Chin" "Wuchang" "Hanyang" 
+		}
+	}
+	light_cruiser = {
+		prefix = "CNN"
+		generic = { "CL -" }
+		unique = {
+			"Zhaohe" "Yingrui" "Ninghai" "Pinghai" "Zhongeng" "Yixian" "Feihong" "Nanshen" "Paonin" "Yingjing" "Tuanji" "Hairong" "Haiqi" "Haitian" "Haizhao" "Haichou" "Haishen" "Haizhen" "Hailong" "Haihua" "Haixi" "Haiqing" 
+			"Fujing" "Jiankang" "Jingyuan" "Laiyuan" "Zhiyuan" "Jiyuan" "Pingyuan" "Yiyuan" "Yuyuan" "Xingyuan" "Weiyuan" "Liyuan" "Renyuan" "Chaoyong" "Yangwei" "Zhendong" "Zhennan" "Zhenxi" "Zhenbei" "Zhenzhong" "Zhenbian" 
+			"Kangji" "Mingjie" "Zhenhai" "Jingyuan" "Laiyuan" "Zhiyuan" "Jiyuan" "Pingyuan" "Yiyuan" "Yuyuan" "Xingyuan" "Weiyuan" "Liyuan" "Renyuan" "Chaoyong" "Yangwei" "Zhendong" "Zhennan" "Zhenxi" "Zhenbei" "Zhenzhong" 
+			"Zhenbian" "Kangji" "Mingjie" "Zhenhai" "Caojiang" "Meiyun" "Fulong" "Jieshun" "Guangjia" "Guangyi" "Guangbin" "Anlan" "Feiyun" "Ji'an" "Yuankai" "Dengying" "Yangwu" "Chaowu" "Kangji" "Chengqing" "Suiqing" "Jiansheng" 
+			"Fusheng" "Longxiang" "Huwei" "Cedian" 
+		}
+	}
+	heavy_cruiser = {
+		prefix = "CNN"
+		generic = { "CA -" }
+		unique = {
+			"Jingyuan" "Laiyuan" "Zhiyuan" "Jiyuan" "Pingyuan" "Yiyuan" "Yuyuan" "Xingyuan" "Weiyuan" "Liyuan" "Renyuan" "Chaoyong" "Yangwei" "Zhendong" "Zhennan" "Zhenxi" "Zhenbei" "Zhenzhong" "Zhenbian" "Kangji" "Mingjie" "Zhenhai" 
+			"Caojiang" "Meiyun" "Fulong" "Jieshun" "Guangjia" "Guangyi" "Guangbin" "Anlan" "Feiyun" "Ji'an" "Yuankai" "Dengying" "Yangwu" "Chaowu" "Kangji" "Chengqing" "Suiqing" "Jiansheng" "Fusheng" "Longxiang" "Huwei" "Cedian" 
+			"Feiting" "Haijingqing" "Haidongxiong" "Huantai" "Jingqing" "Kaiji" "Nanchen" "Nanrui" "Tongji" "Fu'an" "Baomin" "Feiying" "Jianwei" "Jian'an" "Xishan" "Bufang" "Shicai" "Zongren" "Longyun" 
+		}
+	}
+	battle_cruiser = {
+		prefix = "CNN"
+		generic = { "CB -" }
+		unique = {
+			"Zhenyuan" "Dingyuan" "Qiongqi" "Taotie" "Hundun" "Taowu" "Qinglong" "Baihu" "Zhuque" "Tengshe" "Xuanwu" "Fuxi" "Nüwa" "Houyi" "Chang'e" "Huangdi" "Kongzi" "Nezha" "Wukong" "Wujing" "Wuneng" "Xuanyuan" "Chiyou" 
+			"Daji" "Fahua" "Bogang" "Dikui" "Zhoulan" "Xiaofeng" "Basha" "Shengzhu" "Zhongsu" "Ximu" "Zhongzheng" "Jingwei" "Zedong" 
+		}
+	}
+	battleship = {
+		prefix = "CNN"
+		generic = { "BB -" }
+		unique = {
+			"Liaoning" "Shandong" "Hebei" "Jiangsu" "Zhejiang" "Henan" "Shanxi" "Anhui" "Fujian" "Jiangxi" "Jilin" "Guangdong" "Guangxi" "Hunan" "Hubei" "Guizhou" "Yunnan" "Sichuan" "Shan'xi" "Gansu" "Ningxia" "Qinghai" 
+			"Taiwan" "Ryukyu" "Hainan" "Tibet" "Sinkiang" "Jehol" "Chahar" "Heilongjiang" "Mongolia" "Tannu" "Choseon" "Kuye" "Vietnam" "Laos" "Cambodia" "Sikkim" "Hokkaido" "Sanindo" "Sanyodo" "Kinai" "Tokaido" "Tosando" 
+			"Nankaido" "Saikaido" "Hokurikudo" 
+		}
+	}
+	carrier = {
+		prefix = "CNN"
+		generic = { "CV -" }
+		unique = {
+			"Owari" "Mino" "Shinano" "Satsuma" "Kaga" "Hyuga" "Nagato" "Suou" "Mutsu" "Musashi" "Dewa" "Yamato" "Yamashiro" "Izumo" "Awaji" "Harima" "Iwami" "Tajima" "Settsu" "Izumi" "Ise" "Sagami" "Suruga" "Izu" "Wakasa" 
+			"Omi" "Mikawa" "Noto" "Osumi" "Kawachi" "Hida" "Totomi" "Kai" "Tosa" "Tsushima" "Tanba" "Kii" "Hitachi" 
+		}
+	}
+	light_carrier = {
+		prefix = "CNN"
+		generic = { "CVL -" }
+		unique = {
+			"Iga" "Mimasaka" "Iyo" "Inaba" "Awa" "Sanuki" "Iki" "Aki" "Shima" "Hoki" "Tango" "Oki" "Teshio" "Shiribeshi" "Iburi" "Teshio" "Hidaka" "Ishikari" "Tokachi" "Kitami" "Kushiro" "Nemuro" "Chishima" "Shimotsuke" "Kozuke" 
+			"Echigo" "Echizen" "Ecchu" "Sado" "Buzen" "Bungo" "Chikuzen" "Chikugo" "Hizen" "Higo" "Bingo" "Bicchu" "Bizen" "Iwaki" "Iwashiro" "Iwase" "Uzen" "Ugo" "Rikuou" "Rikuzen" "Rikuchu" "Karafuto" 
+		}
+	}
+}

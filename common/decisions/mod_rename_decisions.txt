@@ -1,0 +1,1586 @@
+Generic_rename_city = {
+
+	rename_beijing = {
+		visible = {
+			608 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			NOT = { has_global_flag = beijing_renamed }
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 9843 name = "Beiping" }
+			set_global_flag = beijing_renamed
+		}
+	}
+	
+	rename_beiping = {
+		visible = {
+			608 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			has_global_flag = beijing_renamed
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 9843 name = "Beijing" }
+			clr_global_flag = beijing_renamed
+		}
+	}
+
+	rename_xian = {
+		visible = {
+			744 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			NOT = { has_global_flag = xian_renamed }
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 1976 name = "Chang'an" }
+			set_victory_points = { province = 1976 value = 20 }
+			set_global_flag = xian_renamed
+		}
+	}
+	
+	rename_changan = {
+		visible = {
+			744 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			has_global_flag = xian_renamed
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 1976 name = "Xi'an" }
+			set_victory_points = { province = 1976 value = 10 }
+			clr_global_flag = xian_renamed
+		}
+	}
+
+	rename_guangzhou = {
+		visible = {
+			592 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			NOT = { has_global_flag = guangzhou_renamed }
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 1047 name = "Zhongshan" }
+			set_global_flag = guangzhou_renamed
+		}
+	}
+	
+	rename_zhongshan = {
+		visible = {
+			592 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			has_global_flag = guangzhou_renamed
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 1047 name = "Guangzhou" }
+			clr_global_flag = guangzhou_renamed
+		}
+	}
+
+	rename_mukden = {
+		visible = {
+			716 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			NOT = { has_global_flag = mukden_renamed }
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 11771 name = "Shenyang" }
+			set_victory_points = { province = 11771 value = 20 }
+			set_global_flag = mukden_renamed
+		}
+	}
+
+	rename_shenyang = {
+		visible = {
+			716 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			has_global_flag = mukden_renamed
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 11771 name = "Mukden" }
+			set_victory_points = { province = 11771 value = 10 }
+			clr_global_flag = mukden_renamed
+		}
+	}
+	
+	rename_hsinking = {
+		visible = {
+			328 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			NOT = { has_global_flag = hsinking_renamed }
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 4572 name = "Changchun" }
+			set_global_flag = hsinking_renamed
+		}
+	}
+	
+	rename_changchun = {
+		visible = {
+			328 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				} 
+			}
+			has_global_flag = hsinking_renamed
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 4572 name = "Hsinking" }
+			clr_global_flag = hsinking_renamed
+		}
+	}
+
+	rename_vladivostok = {
+		visible = {
+			408 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			NOT = { has_global_flag = vladivostok_renamed }
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 957 name = "Haixenwai" }
+			set_global_flag = vladivostok_renamed
+		}
+	}
+	
+	rename_haixenwai = {
+		visible = {
+			408 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			has_global_flag = vladivostok_renamed 
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 957 name = "Vladivostok" }
+			clr_global_flag = vladivostok_renamed
+		}
+	}
+
+	rename_khabarovsk = {
+		visible = {
+			409 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			NOT = { has_global_flag = khabarovsk_renamed }
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 12189 name = "Bohori" }
+			set_global_flag = khabarovsk_renamed
+		}
+	}
+	
+	rename_bohori = {
+		visible = {
+			409 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			has_global_flag = khabarovsk_renamed 
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 12189 name = "Khabarovsk" }
+			clr_global_flag = khabarovsk_renamed
+		}
+	}
+
+	rename_blagoveshchensk = {
+		visible = {
+			560 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			NOT = { has_global_flag = blagoveshchensk_renamed }
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 7763 name = "Hailan Bou" }
+			set_global_flag = blagoveshchensk_renamed
+		}
+	}
+	
+	rename_hailan_bou = {
+		visible = {
+			560 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			has_global_flag = blagoveshchensk_renamed 
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 7763 name = "Blagoveshchensk" }
+			clr_global_flag = blagoveshchensk_renamed
+		}
+	}
+
+	rename_seoul = {
+		visible = {
+			525 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			NOT = { has_global_flag = seoul_renamed }
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 7125 name = "Hanseong" }
+			set_victory_points = { province = 7125 value = 20 }
+			set_global_flag = seoul_renamed
+		}
+	}
+	
+	rename_hanseong = {
+		visible = {
+			525 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			has_global_flag = seoul_renamed 
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 7125 name = "Seoul" }
+			set_victory_points = { province = 7125 value = 15 }
+			clr_global_flag = seoul_renamed
+		}
+	}
+	
+	rename_naha = {
+		visible = {
+			526 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			NOT = { has_global_flag = naha_renamed }
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 11932 name = "Shuri" }
+			set_global_flag = naha_renamed
+		}
+	}
+	
+	rename_shuri = {
+		visible = {
+			526 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			has_global_flag = naha_renamed 
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 11932 name = "Naha" }
+			clr_global_flag = naha_renamed
+		}
+	}
+
+	rename_saigon = {
+		visible = {
+			286 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			NOT = { has_global_flag = saigon_renamed }
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 4401 name = "Ho Chi Minh City" }
+			set_global_flag = saigon_renamed
+		}
+	}
+	
+	rename_ho_chi_minh_city = {
+		visible = {
+			286 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			has_global_flag = saigon_renamed 
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 4401 name = "Saigon" }
+			clr_global_flag = saigon_renamed
+		}
+	}
+
+	rename_stalingrad = {
+		visible = {
+			217 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			NOT = { has_global_flag = stalingrad_renamed }
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 3529 name = "Volgograd" }
+			set_global_flag = stalingrad_renamed
+		}
+	}
+	
+	rename_volgograd = {
+		visible = {
+			217 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			has_global_flag = stalingrad_renamed 
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 3529 name = "Stalingrad" }
+			clr_global_flag = stalingrad_renamed
+		}
+	}
+	
+	rename_leningrad = {
+		visible = {
+			195 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			NOT = { has_global_flag = leningrad_renamed }
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 3151 name = "St. Petersburg" }
+			set_global_flag = leningrad_renamed
+		}
+	}
+	
+	rename_st_petersburg = {
+		visible = {
+			195 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			has_global_flag = leningrad_renamed 
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 3151 name = "Leningrad" }
+			clr_global_flag = leningrad_renamed
+		}
+	}
+	
+	rename_konigsberg = {
+		visible = {
+			5 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			NOT = { has_global_flag = konigsberg_renamed }
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 6332 name = "Kaliningrad" }
+			set_global_flag = konigsberg_renamed
+		}
+	}
+	
+	rename_kaliningrad = {
+		visible = {
+			5 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			has_global_flag = konigsberg_renamed 
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 6332 name = "Königsberg" }
+			clr_global_flag = konigsberg_renamed
+		}
+	}
+	
+	rename_tokyo = {
+		visible = {
+			282 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			NOT = { has_global_flag = tokyo_renamed }
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 1182 name = "Edo" }
+			set_global_flag = tokyo_renamed
+		}
+	}
+	
+	rename_edo = {
+		visible = {
+			282 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			has_global_flag = tokyo_renamed 
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 1182 name = "Tokyo" }
+			clr_global_flag = tokyo_renamed
+		}
+	}
+	
+	rename_istanbul = {
+		visible = {
+			341 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			NOT = { has_global_flag = istanbul_renamed }
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 9833 name = "Constantinople" }
+			set_global_flag = istanbul_renamed
+		}
+	}
+	
+	rename_constantinople = {
+		visible = {
+			341 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			has_global_flag = istanbul_renamed 
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 9833 name = "Istanbul" }
+			clr_global_flag = istanbul_renamed
+		}
+	}
+	
+	rename_danzig = {
+		visible = {
+			85 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			NOT = { has_global_flag = danzig_renamed }
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 362 name = "Gdansk" }
+			set_global_flag = danzig_renamed
+		}
+	}
+	
+	rename_gdansk = {
+		visible = {
+			85 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			has_global_flag = danzig_renamed 
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 362 name = "Danzig" }
+			clr_global_flag = danzig_renamed
+		}
+	}
+	
+	rename_toyohara = {
+		visible = {
+			537 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			NOT = { has_global_flag = toyohara_renamed }
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 12446 name = "Yuzhno-Sakhalinsk" }
+			set_global_flag = toyohara_renamed
+		}
+	}
+	
+	rename_yuzhno_sakhalinsk = {
+		visible = {
+			537 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			has_global_flag = toyohara_renamed 
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 12446 name = "Toyohara" }
+			clr_global_flag = toyohara_renamed
+		}
+	}
+
+	rename_baghdad = {
+		visible = {
+			291 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			NOT = { has_global_flag = baghdad_renamed }
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 2097 name = "Babylon" }
+			set_victory_points = { province = 2097 value = 20 }
+			set_global_flag = baghdad_renamed
+		}
+	}
+	
+	rename_babylon = {
+		visible = {
+			291 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			has_global_flag = baghdad_renamed 
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 2097 name = "Baghdad" }
+			set_victory_points = { province = 2097 value = 15 }
+			clr_global_flag = baghdad_renamed
+		}
+	}
+
+	rename_heraklion = {
+		visible = {
+			182 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			NOT = { has_global_flag = heraklion_renamed }
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 9940 name = "Knossos" }
+			set_victory_points = { province = 9940 value = 20 }
+			set_global_flag = heraklion_renamed
+		}
+	}
+	
+	rename_knossos = {
+		visible = {
+			182 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			has_global_flag = heraklion_renamed 
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 9940 name = "Heraklion" }
+			set_victory_points = { province = 9940 value = 10 }
+			clr_global_flag = heraklion_renamed 
+		}
+	}
+
+	rename_sevastopol = {
+		visible = {
+			137 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			NOT = { has_global_flag = sevastopol_renamed }
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 3686 name = "Tauris" }
+			set_global_flag = sevastopol_renamed 
+		}
+	}
+	
+	rename_tauris = {
+		visible = {
+			137 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			has_global_flag = sevastopol_renamed 
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 3686 name = "Sevastopol" }
+			clr_global_flag = sevastopol_renamed 
+		}
+	}
+
+	rename_beirut = {
+		visible = {
+			553 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			NOT = { has_global_flag = beirut_renamed }
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 792 name = "Phoenicia" }
+			set_victory_points = { province = 792 value = 20 }
+			set_global_flag = beirut_renamed 
+		}
+	}
+	
+	rename_phoenicia = {
+		visible = {
+			553 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			has_global_flag = beirut_renamed 
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 792 name = "Beirut" }
+			set_victory_points = { province = 792 value = 10 }
+			clr_global_flag = beirut_renamed 
+		}
+	}
+
+	rename_tunis = {
+		visible = {
+			458 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			NOT = { has_global_flag = tunis_renamed }
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 11969 name = "Carthage" }
+			set_victory_points = { province = 11969 value = 25 }
+			set_global_flag = tunis_renamed 
+		}
+	}
+	
+	rename_carthage = {
+		visible = {
+			458 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			has_global_flag = tunis_renamed 
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 11969 name = "Tunis" }
+			set_victory_points = { province = 11969 value = 15 }
+			clr_global_flag = tunis_renamed 
+		}
+	}
+
+	rename_djibouti = {
+		visible = {
+			268 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			NOT = { has_global_flag = djibouti_renamed }
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 8124 name = "Andromedon" }
+			set_victory_points = { province = 8124 value = 20 }
+			set_global_flag = djibouti_renamed 
+		}
+	}
+	
+	rename_andromedon = {
+		visible = {
+			268 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			has_global_flag = djibouti_renamed 
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 8124 name = "Djibouti" }
+			set_victory_points = { province = 8124 value = 10 }
+			clr_global_flag = djibouti_renamed 
+		}
+	}
+
+	rename_cadiz = {
+		visible = {
+			169 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			NOT = { has_global_flag = cadiz_renamed }
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 1048 name = "Erythia" }
+			set_global_flag = cadiz_renamed 
+		}
+	}
+	
+	rename_erythia = {
+		visible = {
+			169 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			has_global_flag = cadiz_renamed 
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 1048 name = "Cádiz" }
+			clr_global_flag = cadiz_renamed 
+		}
+	}
+	
+	rename_rostov = {
+		visible = {
+			218 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			NOT = { has_global_flag = rostov_renamed }
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 9417 name = "Tanais" }
+			set_victory_points = { province = 9417 value = 20 }
+			set_global_flag = rostov_renamed 
+		}
+	}
+	
+	rename_tanais = {
+		visible = {
+			218 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			has_global_flag = rostov_renamed 
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 9417 name = "Rostov" }
+			set_victory_points = { province = 9417 value = 10 }
+			clr_global_flag = rostov_renamed 
+		}
+	}
+	
+	rename_varna = {
+		visible = {
+			211 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			NOT = { has_global_flag = varna_renamed }
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 9783 name = "Odessos" }
+			set_global_flag = varna_renamed 
+		}
+	}
+	
+	rename_odessos = {
+		visible = {
+			211 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			has_global_flag = varna_renamed 
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 9783 name = "Varna" }
+			clr_global_flag = varna_renamed 
+		}
+	}
+	
+	rename_bandar_abbas = {
+		visible = {
+			412 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			NOT = { has_global_flag = bandar_abbas_renamed }
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 7982 name = "Hormirzad" }
+			set_global_flag = bandar_abbas_renamed 
+		}
+	}
+	
+	rename_hormirzad = {
+		visible = {
+			412 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			has_global_flag = bandar_abbas_renamed 
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 7982 name = "Bandar Abbas" }
+			clr_global_flag = bandar_abbas_renamed 
+		}
+	}
+	
+	rename_addis_ababa = {
+		visible = {
+			271 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			NOT = { has_global_flag = addis_ababa_renamed }
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 5010 name = "Abyssinia" }
+			set_victory_points = { province = 5010 value = 20 }
+			set_global_flag = addis_ababa_renamed 
+		}
+	}
+	
+	rename_abyssinia = {
+		visible = {
+			271 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			has_global_flag = addis_ababa_renamed 
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 5010 name = "Addis Ababa" }
+			set_victory_points = { province = 5010 value = 10 }
+			clr_global_flag = addis_ababa_renamed 
+		}
+	}
+	
+	rename_catania = {
+		visible = {
+			115 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			NOT = { has_global_flag = catania_renamed }
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 4014 name = "Syracuse" }
+			set_victory_points = { province = 4014 value = 20 }
+			set_global_flag = catania_renamed 
+		}
+	}
+	
+	rename_syracuse = {
+		visible = {
+			115 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			has_global_flag = catania_renamed 
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 4014 name = "Catania" }
+			set_victory_points = { province = 4014 value = 10 }
+			clr_global_flag = catania_renamed 
+		}
+	}
+	
+	rename_canakkale = {
+		visible = {
+			340 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			NOT = { has_global_flag = canakkale_renamed }
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 6864 name = "Troy" }
+			set_victory_points = { province = 6864 value = 20 }
+			set_global_flag = canakkale_renamed 
+		}
+	}
+	
+	rename_troy = {
+		visible = {
+			340 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			has_global_flag = canakkale_renamed 
+		}
+		available = {
+			ROOT = { is_subject = no }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_province_name = { id = 6864 name = "Çanakkale" }
+			set_victory_points = { province = 6864 value = 10 }
+			clr_global_flag = canakkale_renamed 
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
+

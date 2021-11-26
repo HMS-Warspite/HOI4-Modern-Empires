@@ -1,0 +1,33 @@
+state={
+	id=837
+	name="STATE_837"
+	provinces={
+		1395 6999 7240 12705 
+	}
+	resources={
+		steel=14
+	}
+	history={
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		victory_points = {
+			6999 20 
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 2
+			industrial_complex = 1
+			air_base = 3
+		}
+		1939.1.1 = {
+			buildings = {
+				infrastructure = 7
+				air_base = 5
+			}
+		}
+	}
+	manpower=18421000
+	state_category=city
+	buildings_max_level_factor=1.000
+}

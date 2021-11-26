@@ -1,0 +1,27 @@
+state=
+{
+	id=326
+	name="STATE_326"
+	manpower = 2043516
+	state_category = metropolis
+	history=
+	{
+		owner = ENG
+		add_core_of = CHI
+		add_core_of = PRC
+		victory_points = {
+			10062 20 
+		}
+		buildings = {
+			infrastructure = 7
+			air_base = 2
+			10062 = {
+				naval_base = 7
+				coastal_bunker = 2
+			}
+		}
+	}
+	provinces={
+		10062
+	}
+}

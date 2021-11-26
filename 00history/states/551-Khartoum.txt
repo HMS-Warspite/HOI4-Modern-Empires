@@ -1,0 +1,35 @@
+state={
+	id=551
+	name="STATE_551"
+	manpower = 6793507
+	
+	state_category = metropolis
+
+	resources={
+		oil = 12
+		steel = 14 
+	}
+
+	history = {
+		owner = ENG
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			air_base = 3
+			12725 = {
+				naval_base = 4
+			}
+		}
+		victory_points = {
+			12806 20
+		}
+		victory_points = {
+			12725 10
+		}
+
+		add_core_of = SUD
+	}
+	provinces={
+		1977 2003 2046 2088 4963 7925 7989 8105 10743 10745 10784 10902 12725 12796 12806 12826 12862 12881 4138 12836 4961
+	}
+}

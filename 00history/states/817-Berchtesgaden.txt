@@ -1,0 +1,27 @@
+
+state={
+	id=817
+	name="STATE_817"
+	manpower = 251210
+	resources={
+		aluminium=11 
+	}
+	
+	state_category = rural
+
+	history={
+		owner = GER
+		victory_points = {
+			707 1 
+		}
+		buildings = {
+			infrastructure = 6
+		}
+		add_core_of = GER
+
+	}
+
+	provinces={
+		707 3688 
+	}
+}

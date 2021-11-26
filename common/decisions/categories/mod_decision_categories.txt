@@ -1,0 +1,118 @@
+
+CHI_relocate_capital = {
+
+	allowed = {
+		OR = {
+			is_literally_china = yes
+			original_tag = MAN
+			original_tag = MEN
+			original_tag = MON
+			original_tag = TAN
+			original_tag = TIB
+			original_tag = KOR
+			original_tag = JAP
+			original_tag = SIA
+			original_tag = VIN
+		}
+		has_dlc = "Waking the Tiger"
+	}
+	icon = generic_political_actions
+}
+
+
+form_greater_chinese_empire = {
+
+	icon = generic_formable_nations
+
+	allowed = {
+		has_dlc = "Waking the Tiger"
+		OR = {
+			is_literally_china = yes
+			original_tag = MAN
+			original_tag = MEN
+			original_tag = MON
+			original_tag = TAN
+			original_tag = TIB
+			original_tag = KOR
+			original_tag = JAP
+			original_tag = SIA
+			original_tag = VIN
+		}
+	}
+}
+
+
+form_united_hellenic_empire = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_byzantine_empire
+
+	allowed = {
+		has_dlc = "Waking the Tiger"
+		original_tag = GRE
+	}
+}
+
+
+elect_hellenic_leader = {
+
+	allowed = {
+		has_dlc = "Waking the Tiger"
+	}
+	icon = generic_political_actions
+}
+
+hellenic_military_commanders = {
+
+	allowed = {
+		OR = {
+			original_tag = GRE
+			original_tag = ITA
+			original_tag = TUR
+			original_tag = EGY
+			original_tag = YUG
+			original_tag = GAL
+			original_tag = SPR
+			original_tag = TUN
+			original_tag = UKR
+			original_tag = ROM
+			original_tag = PER
+			original_tag = IRQ
+		}
+	}
+	icon = generic_political_actions
+}
+
+legacy_of_napoleon = {
+
+	allowed = {
+		OR = {
+			original_tag = FRA
+			original_tag = COR
+			original_tag = GAL
+		}
+	}
+	icon = generic_political_actions
+}
+
+
+Generic_rename_city = {
+
+	allowed = {
+		has_dlc = "Waking the Tiger"
+	}
+	icon = generic_political_actions
+}
+
+
+modern_national_leaders = {
+
+	allowed = {
+	}
+	icon = generic_political_actions
+	visible = {
+		# has_government = democratic
+	}
+}
+

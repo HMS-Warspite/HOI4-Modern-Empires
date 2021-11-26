@@ -1,0 +1,2737 @@
+SpriteTypes = {
+
+    #国军步兵武器_KMT infantry weapon#
+        SpriteType = {
+            name = "GFX_CHI_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/chi_basic_equipment.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_CHI_infantry_weapons1_medium"
+            texturefile = "gfx/interface/technologies/chi_infantry_weapons1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_CHI_improved_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/chi_improved_infantry_weapons.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_CHI_advanced_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/chi_advanced_infantry_weapons.dds"
+        }
+		
+	#国军步兵载具_KMT mobile infantry vehicle#
+        SpriteType = {
+            name = "GFX_CHI_motorised_infantry_medium"
+            texturefile = "gfx/interface/technologies/chi_motorised_infantry.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_CHI_motorized_equipment_1_medium"
+            texturefile = "gfx/interface/technologies/chi_motorised_infantry.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_CHI_mechanised_infantry_medium"
+            texturefile = "gfx/interface/technologies/chi_mechanised_infantry.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_CHI_mechanised_infantry2_medium"
+            texturefile = "gfx/interface/technologies/chi_mechanised_infantry2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_CHI_mechanised_infantry3_medium"
+            texturefile = "gfx/interface/technologies/chi_mechanised_infantry3.dds"
+        }
+	
+	
+    #共军步兵武器_PRC infantry weapon#
+        SpriteType = {
+            name = "GFX_PRC_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/chi_basic_equipment.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_PRC_infantry_weapons1_medium"
+            texturefile = "gfx/interface/technologies/prc_infantry_weapons1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_PRC_improved_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/prc_improved_infantry_weapons.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_PRC_advanced_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/prc_advanced_infantry_weapons.dds"
+        }
+		
+    #共军步兵载具_PRC mobile infantry vehicle#
+        SpriteType = {
+            name = "GFX_PRC_motorised_infantry_medium"
+            texturefile = "gfx/interface/technologies/prc_motorised_infantry.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_PRC_motorized_equipment_1_medium"
+            texturefile = "gfx/interface/technologies/prc_motorised_infantry.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_PRC_mechanised_infantry_medium"
+            texturefile = "gfx/interface/technologies/prc_mechanised_infantry.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_PRC_mechanised_infantry2_medium"
+            texturefile = "gfx/interface/technologies/prc_mechanised_infantry2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_PRC_mechanised_infantry3_medium"
+            texturefile = "gfx/interface/technologies/prc_mechanised_infantry3.dds"
+        }
+		
+		
+    #晋军步兵武器_Jin clique infantry weapon#
+        SpriteType = {
+            name = "GFX_SHX_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/shx_basic_equipment.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SHX_infantry_weapons1_medium"
+            texturefile = "gfx/interface/technologies/shx_infantry_weapons1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SHX_improved_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/shx_improved_infantry_weapons.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SHX_advanced_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/chi_advanced_infantry_weapons.dds"
+        }
+		
+	#晋军步兵载具_Jin clique mobile infantry vehicle#
+        SpriteType = {
+            name = "GFX_SHX_motorised_infantry_medium"
+            texturefile = "gfx/interface/technologies/chi_motorised_infantry.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SHX_motorized_equipment_1_medium"
+            texturefile = "gfx/interface/technologies/chi_motorised_infantry.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SHX_mechanised_infantry_medium"
+            texturefile = "gfx/interface/technologies/chi_mechanised_infantry.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SHX_mechanised_infantry2_medium"
+            texturefile = "gfx/interface/technologies/chi_mechanised_infantry2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SHX_mechanised_infantry3_medium"
+            texturefile = "gfx/interface/technologies/chi_mechanised_infantry3.dds"
+        }
+		
+		
+	#桂军步兵武器_Gui clique infantry weapon#
+        SpriteType = {
+            name = "GFX_GXC_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/chi_basic_equipment.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_GXC_infantry_weapons1_medium"
+            texturefile = "gfx/interface/technologies/gxc_infantry_weapons1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_GXC_improved_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/gxc_improved_infantry_weapons.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_GXC_advanced_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/chi_advanced_infantry_weapons.dds"
+        }
+		
+	#桂军步兵载具_Gui clique mobile infantry vehicle#
+        SpriteType = {
+            name = "GFX_GXC_motorised_infantry_medium"
+            texturefile = "gfx/interface/technologies/chi_motorised_infantry.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_GXC_motorized_equipment_1_medium"
+            texturefile = "gfx/interface/technologies/chi_motorised_infantry.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_GXC_mechanised_infantry_medium"
+            texturefile = "gfx/interface/technologies/chi_mechanised_infantry.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_GXC_mechanised_infantry2_medium"
+            texturefile = "gfx/interface/technologies/chi_mechanised_infantry2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_GXC_mechanised_infantry3_medium"
+            texturefile = "gfx/interface/technologies/chi_mechanised_infantry3.dds"
+        }
+		
+		
+    #滇军步兵武器_Dian clique infantry weapon#
+        SpriteType = {
+            name = "GFX_YUN_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/chi_basic_equipment.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_YUN_infantry_weapons1_medium"
+            texturefile = "gfx/interface/technologies/chi_infantry_weapons1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_YUN_improved_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/sik_improved_infantry_weapons.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_YUN_advanced_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/chi_advanced_infantry_weapons.dds"
+        }
+		
+	#滇军步兵载具_Dian clique mobile infantry vehicle#
+        SpriteType = {
+            name = "GFX_YUN_motorised_infantry_medium"
+            texturefile = "gfx/interface/technologies/chi_motorised_infantry.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_YUN_motorized_equipment_1_medium"
+            texturefile = "gfx/interface/technologies/chi_motorised_infantry.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_YUN_mechanised_infantry_medium"
+            texturefile = "gfx/interface/technologies/chi_mechanised_infantry.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_YUN_mechanised_infantry2_medium"
+            texturefile = "gfx/interface/technologies/chi_mechanised_infantry2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_YUN_mechanised_infantry3_medium"
+            texturefile = "gfx/interface/technologies/chi_mechanised_infantry3.dds"
+        }
+		
+		
+    #马家军步兵武器_Xi Bei San Ma infantry weapon#
+        SpriteType = {
+            name = "GFX_XSM_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/chi_basic_equipment.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_XSM_infantry_weapons1_medium"
+            texturefile = "gfx/interface/technologies/chi_infantry_weapons1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_XSM_improved_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/sik_improved_infantry_weapons.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_XSM_advanced_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/chi_advanced_infantry_weapons.dds"
+        }
+		
+	#马家军步兵载具_Xi Bei San Ma mobile infantry vehicle#
+        SpriteType = {
+            name = "GFX_XSM_motorised_infantry_medium"
+            texturefile = "gfx/interface/technologies/chi_motorised_infantry.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_XSM_motorized_equipment_1_medium"
+            texturefile = "gfx/interface/technologies/chi_motorised_infantry.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_XSM_mechanised_infantry_medium"
+            texturefile = "gfx/interface/technologies/chi_mechanised_infantry.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_XSM_mechanised_infantry2_medium"
+            texturefile = "gfx/interface/technologies/chi_mechanised_infantry2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_XSM_mechanised_infantry3_medium"
+            texturefile = "gfx/interface/technologies/chi_mechanised_infantry3.dds"
+        }
+		
+		
+	#新疆步兵武器_Sinkiang infantry weapon#
+        SpriteType = {
+            name = "GFX_SIK_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/sik_basic_equipment.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SIK_infantry_weapons1_medium"
+            texturefile = "gfx/interface/technologies/sik_infantry_weapons1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SIK_improved_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/sik_improved_infantry_weapons.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SIK_advanced_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/prc_advanced_infantry_weapons.dds"
+        }
+		
+    #新疆步兵载具_Sinkiang mobile infantry vehicle#
+        SpriteType = {
+            name = "GFX_SIK_motorised_infantry_medium"
+            texturefile = "gfx/interface/technologies/prc_motorised_infantry.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SIK_motorized_equipment_1_medium"
+            texturefile = "gfx/interface/technologies/prc_motorised_infantry.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SIK_mechanised_infantry_medium"
+            texturefile = "gfx/interface/technologies/prc_mechanised_infantry.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SIK_mechanised_infantry2_medium"
+            texturefile = "gfx/interface/technologies/prc_mechanised_infantry2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SIK_mechanised_infantry3_medium"
+            texturefile = "gfx/interface/technologies/prc_mechanised_infantry3.dds"
+        }
+		
+		
+	#伪满步兵武器_Manchu infantry weapon#
+        SpriteType = {
+            name = "GFX_MAN_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/MAN_infantry_equipment_0.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_MAN_infantry_weapons1_medium"
+            texturefile = "gfx/interface/technologies/MAN_infantry_equipment_1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_MAN_improved_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/MAN_infantry_equipment_2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_MAN_advanced_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/MAN_infantry_equipment_3.dds"
+        }
+		
+    #伪满步兵载具_Manchu mobile infantry vehicle#
+        SpriteType = {
+            name = "GFX_MAN_motorised_infantry_medium"
+            texturefile = "gfx/interface/technologies/JAP_motorized_equipment_1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_MAN_motorized_equipment_1_medium"
+            texturefile = "gfx/interface/technologies/JAP_motorized_equipment_1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_MAN_mechanised_infantry_medium"
+            texturefile = "gfx/interface/technologies/MAN_mechanized_equipment_1.dds"
+        }
+		
+		SpriteType = {
+            name = "GFX_MAN_mechanised_infantry2_medium"
+            texturefile = "gfx/interface/technologies/MAN_mechanized_equipment_2.dds"
+        }
+
+	#伪满两栖载具_Manchu amphibious vehicle#
+		SpriteType = {
+		    name = "GFX_MAN_amphibious_mechanized_infantry_medium"
+		    texturefile = "gfx/interface/technologies/man_amphibious_mech_1.dds"
+	    }
+		
+	    SpriteType = {
+		    name = "GFX_MAN_amphibious_mechanized_infantry_2_medium"
+		    texturefile = "gfx/interface/technologies/man_amphibious_mech_2.dds"
+	    }
+		
+    #国军一战坦克_KMT great war tank#
+        SpriteType = {
+            name = "GFX_CHI_gwtank_medium"
+            texturefile = "gfx/interface/technologies/chi_gwtank.dds"
+        }
+		
+    #国军轻型坦克/坦克变形车_KMT light tank/tank variant#
+        SpriteType = {
+            name = "GFX_CHI_basic_light_tank_medium"
+            texturefile = "gfx/interface/technologies/chi_basic_light_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_CHI_improved_light_tank_medium"
+            texturefile = "gfx/interface/technologies/chi_imp_light_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_CHI_advanced_light_tank_medium"
+            texturefile = "gfx/interface/technologies/chi_adv_light_tank.dds"	
+        }
+		
+		SpriteType = {
+            name = "GFX_CHI_advanced_light_td_medium"
+            texturefile = "gfx/interface/technologies/chi_adv_light_tank_td.dds"	
+        }
+		
+	#国军中型坦克/坦克变形车_KMT medium tank/tank variant#
+        SpriteType = {
+            name = "GFX_CHI_basic_medium_tank_medium"
+            texturefile = "gfx/interface/technologies/chi_basic_medium_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_CHI_basic_medium_art_medium"
+            texturefile = "gfx/interface/technologies/chi_basic_medium_tank_spa.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_CHI_improved_medium_tank_medium"
+            texturefile = "gfx/interface/technologies/chi_imp_medium_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_CHI_advanced_medium_tank_medium"
+            texturefile = "gfx/interface/technologies/chi_adv_medium_tank.dds"
+        }
+		
+	#国军重型坦克_KMT heavy tank#
+        SpriteType = {
+            name = "GFX_CHI_basic_heavy_tank_medium"
+            texturefile = "gfx/interface/technologies/chi_basic_heavy_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_CHI_improved_heavy_tank_medium"
+            texturefile = "gfx/interface/technologies/chi_imp_heavy_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_CHI_advanced_heavy_tank_medium"
+            texturefile = "gfx/interface/technologies/chi_adv_heavy_tank.dds"
+        }
+		
+	#国军主战坦克/坦克变形车_KMT main battle tank/tank variant#
+        SpriteType = {
+            name = "GFX_CHI_main_battle_tank_medium"
+            texturefile = "gfx/interface/technologies/CHI_main_battle_tank.dds"
+        }
+		
+	    SpriteType = {
+            name = "GFX_CHI_modern_art_medium"
+            texturefile = "gfx/interface/technologies/chi_main_battle_tank_spa.dds"
+        }
+
+    #国军超重坦克_KMT super heavy tank#
+        SpriteType = {
+            name = "GFX_CHI_super_heavy_tank_medium"
+            texturefile = "gfx/interface/technologies/chi_superheavy_tank.dds"
+        }
+
+		
+    #共军一战坦克_PRC great war tank#
+        SpriteType = {
+            name = "GFX_PRC_gwtank_medium"
+            texturefile = "gfx/interface/technologies/prc_gwtank.dds"
+        }
+		
+    #共军轻型坦克_PRC light tank#
+        SpriteType = {
+            name = "GFX_PRC_basic_light_tank_medium"
+            texturefile = "gfx/interface/technologies/prc_basic_light_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_PRC_improved_light_tank_medium"
+            texturefile = "gfx/interface/technologies/prc_imp_light_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_PRC_advanced_light_tank_medium"
+            texturefile = "gfx/interface/technologies/prc_adv_light_tank.dds"	
+        }
+		
+	#共军中型坦克/坦克变形车_PRC medium tank/tank variant#
+        SpriteType = {
+            name = "GFX_PRC_basic_medium_tank_medium"
+            texturefile = "gfx/interface/technologies/prc_basic_medium_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_PRC_improved_medium_tank_medium"
+            texturefile = "gfx/interface/technologies/prc_imp_medium_tank.dds"
+        }
+		
+		SpriteType = {
+            name = "GFX_PRC_improved_medium_spaa_medium"
+            texturefile = "gfx/interface/technologies/prc_imp_medium_tank_aa.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_PRC_advanced_medium_tank_medium"
+            texturefile = "gfx/interface/technologies/prc_adv_medium_tank.dds"
+        }
+		
+		SpriteType = {
+            name = "GFX_PRC_advanced_medium_spaa_medium"
+            texturefile = "gfx/interface/technologies/prc_adv_medium_tank_aa.dds"
+        }
+		
+	#共军重型坦克_PRC heavy tank#
+        SpriteType = {
+            name = "GFX_PRC_basic_heavy_tank_medium"
+            texturefile = "gfx/interface/technologies/prc_basic_heavy_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_PRC_improved_heavy_tank_medium"
+            texturefile = "gfx/interface/technologies/prc_imp_heavy_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_PRC_advanced_heavy_tank_medium"
+            texturefile = "gfx/interface/technologies/prc_adv_heavy_tank.dds"
+        }
+		
+	#共军主战坦克/坦克变形车_PRC main battle tank/tank variant#
+        SpriteType = {
+            name = "GFX_PRC_main_battle_tank_medium"
+            texturefile = "gfx/interface/technologies/prc_main_battle_tank.dds"
+        }
+		
+	    SpriteType = {
+            name = "GFX_PRC_modern_art_medium"
+            texturefile = "gfx/interface/technologies/prc_main_battle_tank_spa.dds"
+        }
+		
+	    SpriteType = {
+            name = "GFX_PRC_modern_spaa_medium"
+            texturefile = "gfx/interface/technologies/prc_main_battle_tank_aa.dds"
+        }
+
+    #共军超重坦克_PRC super heavy tank#
+        SpriteType = {
+            name = "GFX_PRC_super_heavy_tank_medium"
+            texturefile = "gfx/interface/technologies/prc_superheavy_tank.dds"
+        }
+		
+		
+    #晋军一战坦克_Jin clique great war tank#
+        SpriteType = {
+            name = "GFX_SHX_gwtank_medium"
+            texturefile = "gfx/interface/technologies/shx_gwtank.dds"
+        }
+		
+    #晋军轻型坦克/坦克变形车_Jin clique light tank/tank variant#
+        SpriteType = {
+            name = "GFX_SHX_basic_light_tank_medium"
+            texturefile = "gfx/interface/technologies/shx_basic_light_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SHX_improved_light_tank_medium"
+            texturefile = "gfx/interface/technologies/shx_imp_light_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SHX_advanced_light_tank_medium"
+            texturefile = "gfx/interface/technologies/shx_adv_light_tank.dds"	
+        }
+		
+		SpriteType = {
+            name = "GFX_SHX_advanced_light_td_medium"
+            texturefile = "gfx/interface/technologies/shx_adv_light_tank_td.dds"	
+        }
+		
+	#晋军中型坦克/坦克变形车_Jin clique medium tank/tank variant#
+        SpriteType = {
+            name = "GFX_SHX_basic_medium_tank_medium"
+            texturefile = "gfx/interface/technologies/shx_basic_medium_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SHX_basic_medium_art_medium"
+            texturefile = "gfx/interface/technologies/shx_basic_medium_tank_spa.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SHX_improved_medium_tank_medium"
+            texturefile = "gfx/interface/technologies/shx_imp_medium_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SHX_advanced_medium_tank_medium"
+            texturefile = "gfx/interface/technologies/shx_adv_medium_tank.dds"
+        }
+		
+	#晋军重型坦克_Jin clique heavy tank#
+        SpriteType = {
+            name = "GFX_SHX_basic_heavy_tank_medium"
+            texturefile = "gfx/interface/technologies/shx_basic_heavy_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SHX_improved_heavy_tank_medium"
+            texturefile = "gfx/interface/technologies/shx_imp_heavy_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SHX_advanced_heavy_tank_medium"
+            texturefile = "gfx/interface/technologies/shx_adv_heavy_tank.dds"
+        }
+		
+	#晋军主战坦克/坦克变形车_Jin clique main battle tank/tank variant#
+        SpriteType = {
+            name = "GFX_SHX_main_battle_tank_medium"
+            texturefile = "gfx/interface/technologies/shx_main_battle_tank.dds"
+        }
+		
+	    SpriteType = {
+            name = "GFX_SHX_modern_art_medium"
+            texturefile = "gfx/interface/technologies/shx_main_battle_tank_spa.dds"
+        }
+
+    #晋军超重坦克_Jin clique super heavy tank#
+        SpriteType = {
+            name = "GFX_SHX_super_heavy_tank_medium"
+            texturefile = "gfx/interface/technologies/shx_superheavy_tank.dds"
+        }
+		
+		
+	#桂军一战坦克_Gui clique great war tank#
+        SpriteType = {
+            name = "GFX_GXC_gwtank_medium"
+            texturefile = "gfx/interface/technologies/gxc_gwtank.dds"
+        }
+		
+    #桂军轻型坦克/坦克变形车_Gui clique light tank/tank variant#
+        SpriteType = {
+            name = "GFX_GXC_basic_light_tank_medium"
+            texturefile = "gfx/interface/technologies/gxc_basic_light_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_GXC_improved_light_tank_medium"
+            texturefile = "gfx/interface/technologies/gxc_imp_light_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_GXC_advanced_light_tank_medium"
+            texturefile = "gfx/interface/technologies/gxc_adv_light_tank.dds"	
+        }
+		
+		SpriteType = {
+            name = "GFX_GXC_advanced_light_td_medium"
+            texturefile = "gfx/interface/technologies/gxc_adv_light_tank_td.dds"	
+        }
+		
+	#桂军中型坦克/坦克变形车_Gui clique medium tank/tank variant#
+        SpriteType = {
+            name = "GFX_GXC_basic_medium_tank_medium"
+            texturefile = "gfx/interface/technologies/gxc_basic_medium_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_GXC_basic_medium_art_medium"
+            texturefile = "gfx/interface/technologies/gxc_basic_medium_tank_spa.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_GXC_improved_medium_tank_medium"
+            texturefile = "gfx/interface/technologies/gxc_imp_medium_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_GXC_advanced_medium_tank_medium"
+            texturefile = "gfx/interface/technologies/gxc_adv_medium_tank.dds"
+        }
+		
+	#桂军重型坦克_Gui clique heavy tank#
+        SpriteType = {
+            name = "GFX_GXC_basic_heavy_tank_medium"
+            texturefile = "gfx/interface/technologies/gxc_basic_heavy_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_GXC_improved_heavy_tank_medium"
+            texturefile = "gfx/interface/technologies/gxc_imp_heavy_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_GXC_advanced_heavy_tank_medium"
+            texturefile = "gfx/interface/technologies/gxc_adv_heavy_tank.dds"
+        }
+		
+	#桂军主战坦克/坦克变形车_Gui clique main battle tank/tank variant#
+        SpriteType = {
+            name = "GFX_GXC_main_battle_tank_medium"
+            texturefile = "gfx/interface/technologies/gxc_main_battle_tank.dds"
+        }
+		
+	    SpriteType = {
+            name = "GFX_GXC_modern_art_medium"
+            texturefile = "gfx/interface/technologies/gxc_main_battle_tank_spa.dds"
+        }
+
+    #桂军超重坦克_Gui clique super heavy tank#
+        SpriteType = {
+            name = "GFX_GXC_super_heavy_tank_medium"
+            texturefile = "gfx/interface/technologies/gxc_superheavy_tank.dds"
+        }
+		
+		
+	#滇军一战坦克_Dian clique great war tank#
+        SpriteType = {
+            name = "GFX_YUN_gwtank_medium"
+            texturefile = "gfx/interface/technologies/yun_gwtank.dds"
+        }
+		
+    #滇军轻型坦克/坦克变形车_Dian clique light tank/tank variant#
+        SpriteType = {
+            name = "GFX_YUN_basic_light_tank_medium"
+            texturefile = "gfx/interface/technologies/yun_basic_light_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_YUN_improved_light_tank_medium"
+            texturefile = "gfx/interface/technologies/yun_imp_light_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_YUN_advanced_light_tank_medium"
+            texturefile = "gfx/interface/technologies/yun_adv_light_tank.dds"	
+        }
+		
+		SpriteType = {
+            name = "GFX_YUN_advanced_light_td_medium"
+            texturefile = "gfx/interface/technologies/yun_adv_light_tank_td.dds"	
+        }
+		
+	#滇军中型坦克/坦克变形车_Dian clique medium tank/tank variant#
+        SpriteType = {
+            name = "GFX_YUN_basic_medium_tank_medium"
+            texturefile = "gfx/interface/technologies/yun_basic_medium_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_YUN_basic_medium_art_medium"
+            texturefile = "gfx/interface/technologies/yun_basic_medium_tank_spa.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_YUN_improved_medium_tank_medium"
+            texturefile = "gfx/interface/technologies/yun_imp_medium_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_YUN_advanced_medium_tank_medium"
+            texturefile = "gfx/interface/technologies/yun_adv_medium_tank.dds"
+        }
+		
+	#滇军重型坦克_Dian clique heavy tank#
+        SpriteType = {
+            name = "GFX_YUN_basic_heavy_tank_medium"
+            texturefile = "gfx/interface/technologies/yun_basic_heavy_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_YUN_improved_heavy_tank_medium"
+            texturefile = "gfx/interface/technologies/yun_imp_heavy_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_YUN_advanced_heavy_tank_medium"
+            texturefile = "gfx/interface/technologies/yun_adv_heavy_tank.dds"
+        }
+		
+	#滇军主战坦克/坦克变形车_Dian clique main battle tank/tank variant#
+        SpriteType = {
+            name = "GFX_YUN_main_battle_tank_medium"
+            texturefile = "gfx/interface/technologies/yun_main_battle_tank.dds"
+        }
+		
+	    SpriteType = {
+            name = "GFX_YUN_modern_art_medium"
+            texturefile = "gfx/interface/technologies/yun_main_battle_tank_spa.dds"
+        }
+
+    #滇军超重坦克_Dian clique super heavy tank#
+        SpriteType = {
+            name = "GFX_YUN_super_heavy_tank_medium"
+            texturefile = "gfx/interface/technologies/yun_superheavy_tank.dds"
+        }
+		
+		
+	#马家军一战坦克_Xi Bei San Ma great war tank#
+        SpriteType = {
+            name = "GFX_XSM_gwtank_medium"
+            texturefile = "gfx/interface/technologies/xsm_gwtank.dds"
+        }
+		
+    #马家军轻型坦克/坦克变形车_Xi Bei San Ma light tank/tank variant#
+        SpriteType = {
+            name = "GFX_XSM_basic_light_tank_medium"
+            texturefile = "gfx/interface/technologies/xsm_basic_light_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_XSM_improved_light_tank_medium"
+            texturefile = "gfx/interface/technologies/xsm_imp_light_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_XSM_advanced_light_tank_medium"
+            texturefile = "gfx/interface/technologies/xsm_adv_light_tank.dds"	
+        }
+		
+		SpriteType = {
+            name = "GFX_XSM_advanced_light_td_medium"
+            texturefile = "gfx/interface/technologies/xsm_adv_light_tank_td.dds"	
+        }
+		
+	#马家军中型坦克/坦克变形车_Xi Bei San Ma medium tank/tank variant#
+        SpriteType = {
+            name = "GFX_XSM_basic_medium_tank_medium"
+            texturefile = "gfx/interface/technologies/xsm_basic_medium_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_XSM_basic_medium_art_medium"
+            texturefile = "gfx/interface/technologies/xsm_basic_medium_tank_spa.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_XSM_improved_medium_tank_medium"
+            texturefile = "gfx/interface/technologies/xsm_imp_medium_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_XSM_advanced_medium_tank_medium"
+            texturefile = "gfx/interface/technologies/xsm_adv_medium_tank.dds"
+        }
+		
+	#马家军重型坦克_Xi Bei San Ma heavy tank#
+        SpriteType = {
+            name = "GFX_XSM_basic_heavy_tank_medium"
+            texturefile = "gfx/interface/technologies/xsm_basic_heavy_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_XSM_improved_heavy_tank_medium"
+            texturefile = "gfx/interface/technologies/xsm_imp_heavy_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_XSM_advanced_heavy_tank_medium"
+            texturefile = "gfx/interface/technologies/xsm_adv_heavy_tank.dds"
+        }
+		
+	#马家军主战坦克/坦克变形车_Xi Bei San Ma main battle tank/tank variant#
+        SpriteType = {
+            name = "GFX_XSM_main_battle_tank_medium"
+            texturefile = "gfx/interface/technologies/xsm_main_battle_tank.dds"
+        }
+		
+	    SpriteType = {
+            name = "GFX_XSM_modern_art_medium"
+            texturefile = "gfx/interface/technologies/xsm_main_battle_tank_spa.dds"
+        }
+
+    #马家军超重坦克_Xi Bei San Ma super heavy tank#
+        SpriteType = {
+            name = "GFX_XSM_super_heavy_tank_medium"
+            texturefile = "gfx/interface/technologies/xsm_superheavy_tank.dds"
+        }
+		
+	#新疆一战坦克_SIK great war tank#
+        SpriteType = {
+            name = "GFX_SIK_gwtank_medium"
+            texturefile = "gfx/interface/technologies/sik_gwtank.dds"
+        }
+		
+    #新疆轻型坦克_SIK light tank#
+        SpriteType = {
+            name = "GFX_SIK_basic_light_tank_medium"
+            texturefile = "gfx/interface/technologies/sik_basic_light_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SIK_improved_light_tank_medium"
+            texturefile = "gfx/interface/technologies/sik_imp_light_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SIK_advanced_light_tank_medium"
+            texturefile = "gfx/interface/technologies/sik_adv_light_tank.dds"	
+        }
+		
+	#新疆中型坦克/坦克变形车_SIK medium tank/tank variant#
+        SpriteType = {
+            name = "GFX_SIK_basic_medium_tank_medium"
+            texturefile = "gfx/interface/technologies/sik_basic_medium_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SIK_improved_medium_tank_medium"
+            texturefile = "gfx/interface/technologies/sik_imp_medium_tank.dds"
+        }
+		
+		SpriteType = {
+            name = "GFX_SIK_improved_medium_spaa_medium"
+            texturefile = "gfx/interface/technologies/sik_imp_medium_tank_aa.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SIK_advanced_medium_tank_medium"
+            texturefile = "gfx/interface/technologies/sik_adv_medium_tank.dds"
+        }
+		
+		SpriteType = {
+            name = "GFX_SIK_advanced_medium_spaa_medium"
+            texturefile = "gfx/interface/technologies/sik_adv_medium_tank_aa.dds"
+        }
+		
+	#新疆重型坦克_SIK heavy tank#
+        SpriteType = {
+            name = "GFX_SIK_basic_heavy_tank_medium"
+            texturefile = "gfx/interface/technologies/sik_basic_heavy_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SIK_improved_heavy_tank_medium"
+            texturefile = "gfx/interface/technologies/sik_imp_heavy_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SIK_advanced_heavy_tank_medium"
+            texturefile = "gfx/interface/technologies/sik_adv_heavy_tank.dds"
+        }
+		
+	#新疆主战坦克/坦克变形车_SIK main battle tank/tank variant#
+        SpriteType = {
+            name = "GFX_SIK_main_battle_tank_medium"
+            texturefile = "gfx/interface/technologies/sik_main_battle_tank.dds"
+        }
+		
+	    SpriteType = {
+            name = "GFX_SIK_modern_art_medium"
+            texturefile = "gfx/interface/technologies/sik_main_battle_tank_spa.dds"
+        }
+		
+	    SpriteType = {
+            name = "GFX_SIK_modern_spaa_medium"
+            texturefile = "gfx/interface/technologies/sik_main_battle_tank_aa.dds"
+        }
+
+    #新疆超重坦克_SIK super heavy tank#
+        SpriteType = {
+            name = "GFX_SIK_super_heavy_tank_medium"
+            texturefile = "gfx/interface/technologies/sik_superheavy_tank.dds"
+        }
+
+
+	#伪满一战坦克_Manchu great war tank#
+        SpriteType = {
+            name = "GFX_MAN_gwtank_medium"
+            texturefile = "gfx/interface/technologies/MAN_gwtank.dds"
+        }		
+
+	#伪满轻型坦克/坦克变形车_Manchu light tank/tank variant#
+        SpriteType = {
+            name = "GFX_MAN_basic_light_tank_medium"
+            texturefile = "gfx/interface/technologies/MAN_basic_light_tank.dds"
+        }
+		
+	    SpriteType = {
+            name = "GFX_MAN_basic_light_spaa_medium"
+            texturefile = "gfx/interface/technologies/MAN_basic_light_tank_aa.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_MAN_improved_light_tank_medium"
+            texturefile = "gfx/interface/technologies/MAN_imp_light_tank.dds"
+        }
+		
+		SpriteType = {
+            name = "GFX_MAN_improved_light_art_medium"
+            texturefile = "gfx/interface/technologies/MAN_imp_light_tank_spa.dds"
+        }
+		
+		SpriteType = {
+            name = "GFX_MAN_improved_light_spaa_medium"
+            texturefile = "gfx/interface/technologies/MAN_imp_light_tank_aa.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_MAN_advanced_light_tank_medium"
+            texturefile = "gfx/interface/technologies/MAN_adv_light_tank.dds"	
+        }
+		
+		SpriteType = {
+            name = "GFX_MAN_advanced_light_td_medium"
+            texturefile = "gfx/interface/technologies/MAN_adv_light_tank_td.dds"	
+        }
+		
+		SpriteType = {
+            name = "GFX_MAN_advanced_light_art_medium"
+            texturefile = "gfx/interface/technologies/MAN_adv_light_tank_spa.dds"	
+        }
+		
+		SpriteType = {
+            name = "GFX_MAN_advanced_light_spaa_medium"
+            texturefile = "gfx/interface/technologies/MAN_adv_light_tank_aa.dds"	
+        }
+		
+	#伪满中型坦克/坦克变形车_Manchu medium tank/tank variant#
+        SpriteType = {
+            name = "GFX_MAN_basic_medium_tank_medium"
+            texturefile = "gfx/interface/technologies/MAN_basic_main_tank.dds"
+        }
+		
+	    SpriteType = {
+            name = "GFX_MAN_basic_medium_td_medium"
+            texturefile = "gfx/interface/technologies/MAN_basic_main_tank_td.dds"
+        }
+		
+		SpriteType = {
+            name = "GFX_MAN_basic_medium_art_medium"
+            texturefile = "gfx/interface/technologies/MAN_basic_main_tank_spa.dds"
+        }
+		
+		SpriteType = {
+            name = "GFX_MAN_basic_medium_spaa_medium"
+            texturefile = "gfx/interface/technologies/MAN_basic_main_tank_aa.dds"
+        }
+		
+        SpriteType = {
+            name = "GFX_MAN_improved_medium_tank_medium"
+            texturefile = "gfx/interface/technologies/MAN_imp_main_tank.dds"
+        }
+		
+		SpriteType = {
+            name = "GFX_MAN_improved_medium_td_medium"
+            texturefile = "gfx/interface/technologies/MAN_imp_main_tank_td.dds"
+        }
+		
+		SpriteType = {
+            name = "GFX_MAN_improved_medium_art_medium"
+            texturefile = "gfx/interface/technologies/MAN_imp_main_tank_spa.dds"
+        }
+		
+        SpriteType = {
+            name = "GFX_MAN_advanced_medium_tank_medium"
+            texturefile = "gfx/interface/technologies/MAN_adv_main_tank.dds"
+        }
+		
+		SpriteType = {
+            name = "GFX_MAN_advanced_medium_td_medium"
+            texturefile = "gfx/interface/technologies/MAN_adv_main_tank_td.dds"
+        }
+		
+		SpriteType = {
+            name = "GFX_MAN_advanced_medium_art_medium"
+            texturefile = "gfx/interface/technologies/MAN_adv_main_tank_spa.dds"
+        }
+		
+		
+	#伪满重型坦克/坦克变形车_Manchu heavy tank/tank variant#
+        SpriteType = {
+            name = "GFX_MAN_basic_heavy_tank_medium"
+            texturefile = "gfx/interface/technologies/MAN_basic_heavy_tank.dds"
+        }
+		
+		SpriteType = {
+            name = "GFX_MAN_basic_heavy_td_medium"
+            texturefile = "gfx/interface/technologies/MAN_basic_heavy_tank_td.dds"
+        }
+		
+		SpriteType = {
+            name = "GFX_MAN_basic_heavy_art_medium"
+            texturefile = "gfx/interface/technologies/MAN_basic_heavy_tank_spa.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_MAN_improved_heavy_tank_medium"
+            texturefile = "gfx/interface/technologies/MAN_imp_heavy_tank.dds"
+        }
+		
+		SpriteType = {
+            name = "GFX_MAN_improved_heavy_td_medium"
+            texturefile = "gfx/interface/technologies/MAN_imp_heavy_tank_td.dds"
+        }
+		
+		SpriteType = {
+            name = "GFX_MAN_improved_heavy_art_medium"
+            texturefile = "gfx/interface/technologies/MAN_imp_heavy_tank_spa.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_MAN_advanced_heavy_tank_medium"
+            texturefile = "gfx/interface/technologies/MAN_adv_heavy_tank.dds"
+        }
+		
+	#伪满主战坦克_Manchu main battle tank#
+        SpriteType = {
+            name = "GFX_MAN_main_battle_tank_medium"
+            texturefile = "gfx/interface/technologies/MAN_main_battle_tank.dds"
+        }
+		
+        SpriteType = {
+            name = "GFX_MAN_modern_td_medium"
+            texturefile = "gfx/interface/technologies/MAN_main_battle_tank_td.dds"
+        }
+		
+    #伪满超重坦克_Manchu super heavy tank#
+        SpriteType = {
+            name = "GFX_MAN_super_heavy_tank_medium"
+            texturefile = "gfx/interface/technologies/MAN_superheavy_tank.dds"
+        }
+		
+    #伪满两栖坦克_Manchu amphibious tank#		
+		SpriteType = {
+		    name = "GFX_MAN_amphibious_tank_medium"
+		    texturefile = "gfx/interface/technologies/man_amphibious_tank_1.dds"
+	    }
+	
+	    SpriteType = {
+		    name = "GFX_MAN_amphibious_tank_2_medium"
+		    texturefile = "gfx/interface/technologies/man_amphibious_tank_2.dds"
+	    }
+	
+
+    #国军战斗机_KMT fighter#
+        SpriteType = {
+            name = "GFX_CHI_early_fighter_medium"
+            texturefile = "gfx/interface/technologies/chi_early_fighter.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_CHI_fighter1_medium"
+            texturefile = "gfx/interface/technologies/chi_fighter1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_CHI_fighter2_medium"
+            texturefile = "gfx/interface/technologies/chi_fighter2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_CHI_fighter3_medium"
+            texturefile = "gfx/interface/technologies/chi_fighter3.dds"
+        }
+		
+    #国军俯冲轰炸机_KMT CAS#
+        SpriteType = {
+            name = "GFX_CHI_CAS1_medium"
+            texturefile = "gfx/interface/technologies/chi_cas1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_CHI_CAS2_medium"
+            texturefile = "gfx/interface/technologies/chi_cas2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_CHI_CAS3_medium"
+            texturefile = "gfx/interface/technologies/chi_cas3.dds"
+        }
+		
+    #国军海军轰炸机_KMT naval bomber#
+        SpriteType = {
+            name = "GFX_CHI_naval_bomber1_medium"
+            texturefile = "gfx/interface/technologies/chi_naval_bomber1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_CHI_naval_bomber2_medium"
+            texturefile = "gfx/interface/technologies/chi_naval_bomber2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_CHI_naval_bomber3_medium"
+            texturefile = "gfx/interface/technologies/chi_naval_bomber3.dds"
+        }
+		
+    #国军重型战斗机_KMT heavy fighter#		
+	    SpriteType = {
+	    	name = "GFX_CHI_heavy_fighter1_medium"
+		    texturefile = "gfx/interface/technologies/chi_heavy_fighter1.dds"
+	    }
+	
+	    SpriteType = {
+		    name = "GFX_CHI_heavy_fighter2_medium"
+		    texturefile = "gfx/interface/technologies/chi_heavy_fighter2.dds"
+	    }
+	
+	    SpriteType = {
+		    name = "GFX_CHI_heavy_fighter3_medium"
+		    texturefile = "gfx/interface/technologies/chi_heavy_fighter3.dds"
+	    }
+		
+	#国军战术轰炸机_KMT tactical bomber#	
+	    SpriteType = {
+		    name = "GFX_CHI_early_bomber_medium"
+		    texturefile = "gfx/interface/technologies/chi_early_bomber.dds"
+	    }
+	
+	    SpriteType = {
+			name = "GFX_CHI_tactical_bomber1_medium"
+			texturefile = "gfx/interface/technologies/chi_tactical_bomber1.dds"
+		}
+	
+		SpriteType = {
+			name = "GFX_CHI_tactical_bomber2_medium"
+			texturefile = "gfx/interface/technologies/chi_tactical_bomber2.dds"
+		}
+	
+		SpriteType = {
+			name = "GFX_CHI_tactical_bomber3_medium"
+			texturefile = "gfx/interface/technologies/chi_tactical_bomber3.dds"
+		}
+		
+	#国军战略轰炸机_KMT strategic bomber#
+		SpriteType = {
+			name = "GFX_CHI_strategic_bomber1_medium"
+			texturefile = "gfx/interface/technologies/chi_strategic_bomber1.dds"
+		}
+	
+		SpriteType = {
+			name = "GFX_CHI_strategic_bomber2_medium"
+			texturefile = "gfx/interface/technologies/chi_strategic_bomber2.dds"
+		}	
+	
+		SpriteType = {
+			name = "GFX_CHI_strategic_bomber3_medium"
+			texturefile = "gfx/interface/technologies/chi_strategic_bomber3.dds"
+		}
+		
+    #国军喷气战斗机_KMT jet fighter#
+        SpriteType = {
+            name = "GFX_CHI_jet_fighter1_medium"
+            texturefile = "gfx/interface/technologies/chi_jet_fighter1.dds"
+        }	
+
+        SpriteType = {
+            name = "GFX_CHI_jet_fighter2_medium"
+            texturefile = "gfx/interface/technologies/chi_jet_fighter2.dds"
+        }
+
+    #国军喷气战略轰炸机_KMT jet strategic bomber#
+        SpriteType = {
+            name = "GFX_CHI_jet_strategic_bomber1_medium"
+            texturefile = "gfx/interface/technologies/chi_jet_strategic_bomber1.dds"
+        }
+
+    #国军喷气战术轰炸机_KMT jet tactical bomber#
+        SpriteType = {
+            name = "GFX_CHI_jet_tactical_bomber1_medium"
+            texturefile = "gfx/interface/technologies/chi_jet_tactical_bomber1.dds"
+        }
+	
+        SpriteType = {
+            name = "GFX_CHI_jet_tactical_bomber2_medium"
+            texturefile = "gfx/interface/technologies/chi_jet_tactical_bomber2.dds"
+        }
+		
+	#国军运输机_KMT transport plane#	
+	    SpriteType = {
+		    name = "GFX_CHI_transport_plane_equipment_medium"
+		    texturefile = "gfx/interface/technologies/chi_transport_plane_equipment.dds"
+	    }		
+		
+		
+    #共军战斗机_PRC fighter#
+        SpriteType = {
+            name = "GFX_PRC_early_fighter_medium"
+            texturefile = "gfx/interface/technologies/prc_early_fighter.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_PRC_fighter1_medium"
+            texturefile = "gfx/interface/technologies/prc_fighter1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_PRC_fighter2_medium"
+            texturefile = "gfx/interface/technologies/prc_fighter2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_PRC_fighter3_medium"
+            texturefile = "gfx/interface/technologies/prc_fighter3.dds"
+        }
+		
+    #共军俯冲轰炸机_PRC CAS#
+        SpriteType = {
+            name = "GFX_PRC_CAS1_medium"
+            texturefile = "gfx/interface/technologies/prc_cas1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_PRC_CAS2_medium"
+            texturefile = "gfx/interface/technologies/prc_cas2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_PRC_CAS3_medium"
+            texturefile = "gfx/interface/technologies/prc_cas3.dds"
+        }
+		
+    #共军海军轰炸机_PRC naval bomber#
+        SpriteType = {
+            name = "GFX_PRC_naval_bomber1_medium"
+            texturefile = "gfx/interface/technologies/prc_naval_bomber1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_PRC_naval_bomber2_medium"
+            texturefile = "gfx/interface/technologies/prc_naval_bomber2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_PRC_naval_bomber3_medium"
+            texturefile = "gfx/interface/technologies/prc_naval_bomber3.dds"
+        }
+		
+    #共军重型战斗机_PRC heavy fighter#		
+	    SpriteType = {
+	    	name = "GFX_PRC_heavy_fighter1_medium"
+		    texturefile = "gfx/interface/technologies/prc_heavy_fighter1.dds"
+	    }
+	
+	    SpriteType = {
+		    name = "GFX_PRC_heavy_fighter2_medium"
+		    texturefile = "gfx/interface/technologies/prc_heavy_fighter2.dds"
+	    }
+	
+	    SpriteType = {
+		    name = "GFX_PRC_heavy_fighter3_medium"
+		    texturefile = "gfx/interface/technologies/prc_heavy_fighter3.dds"
+	    }
+		
+	#共军战术轰炸机_PRC tactical bomber#	
+	    SpriteType = {
+		    name = "GFX_PRC_early_bomber_medium"
+		    texturefile = "gfx/interface/technologies/prc_early_bomber.dds"
+	    }
+	
+	    SpriteType = {
+			name = "GFX_PRC_tactical_bomber1_medium"
+			texturefile = "gfx/interface/technologies/prc_tactical_bomber1.dds"
+		}
+	
+		SpriteType = {
+			name = "GFX_PRC_tactical_bomber2_medium"
+			texturefile = "gfx/interface/technologies/prc_tactical_bomber2.dds"
+		}
+	
+		SpriteType = {
+			name = "GFX_PRC_tactical_bomber3_medium"
+			texturefile = "gfx/interface/technologies/prc_tactical_bomber3.dds"
+		}
+		
+	#共军战略轰炸机_PRC strategic bomber#
+		SpriteType = {
+			name = "GFX_PRC_strategic_bomber1_medium"
+			texturefile = "gfx/interface/technologies/prc_strategic_bomber1.dds"
+		}
+	
+		SpriteType = {
+			name = "GFX_PRC_strategic_bomber2_medium"
+			texturefile = "gfx/interface/technologies/prc_strategic_bomber2.dds"
+		}	
+	
+		SpriteType = {
+			name = "GFX_PRC_strategic_bomber3_medium"
+			texturefile = "gfx/interface/technologies/prc_strategic_bomber3.dds"
+		}
+		
+    #共军喷气战斗机_PRC jet fighter#
+        SpriteType = {
+            name = "GFX_PRC_jet_fighter1_medium"
+            texturefile = "gfx/interface/technologies/prc_jet_fighter1.dds"
+        }	
+
+        SpriteType = {
+            name = "GFX_PRC_jet_fighter2_medium"
+            texturefile = "gfx/interface/technologies/prc_jet_fighter2.dds"
+        }
+
+    #共军喷气战略轰炸机_PRC jet strategic bomber#
+        SpriteType = {
+            name = "GFX_PRC_jet_strategic_bomber1_medium"
+            texturefile = "gfx/interface/technologies/prc_jet_strategic_bomber1.dds"
+        }
+
+    #共军喷气战术轰炸机_PRC jet tactical bomber#
+        SpriteType = {
+            name = "GFX_PRC_jet_tactical_bomber1_medium"
+            texturefile = "gfx/interface/technologies/prc_jet_tactical_bomber1.dds"
+        }
+	
+        SpriteType = {
+            name = "GFX_PRC_jet_tactical_bomber2_medium"
+            texturefile = "gfx/interface/technologies/prc_jet_tactical_bomber2.dds"
+        }
+
+	#共军运输机_PRC transport plane#	
+	    SpriteType = {
+		    name = "GFX_PRC_transport_plane_equipment_medium"
+		    texturefile = "gfx/interface/technologies/prc_transport_plane_equipment.dds"
+	    }
+		
+		
+	#晋军战斗机_Jin clique fighter#
+        SpriteType = {
+            name = "GFX_SHX_early_fighter_medium"
+            texturefile = "gfx/interface/technologies/chi_early_fighter.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SHX_fighter1_medium"
+            texturefile = "gfx/interface/technologies/chi_fighter1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SHX_fighter2_medium"
+            texturefile = "gfx/interface/technologies/chi_fighter2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SHX_fighter3_medium"
+            texturefile = "gfx/interface/technologies/chi_fighter3.dds"
+        }
+		
+    #晋军俯冲轰炸机_Jin clique CAS#
+        SpriteType = {
+            name = "GFX_SHX_CAS1_medium"
+            texturefile = "gfx/interface/technologies/chi_cas1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SHX_CAS2_medium"
+            texturefile = "gfx/interface/technologies/chi_cas2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SHX_CAS3_medium"
+            texturefile = "gfx/interface/technologies/chi_cas3.dds"
+        }
+		
+    #晋军海军轰炸机_Jin clique naval bomber#
+        SpriteType = {
+            name = "GFX_SHX_naval_bomber1_medium"
+            texturefile = "gfx/interface/technologies/chi_naval_bomber1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SHX_naval_bomber2_medium"
+            texturefile = "gfx/interface/technologies/chi_naval_bomber2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SHX_naval_bomber3_medium"
+            texturefile = "gfx/interface/technologies/chi_naval_bomber3.dds"
+        }
+		
+    #晋军重型战斗机_Jin clique heavy fighter#		
+	    SpriteType = {
+	    	name = "GFX_SHX_heavy_fighter1_medium"
+		    texturefile = "gfx/interface/technologies/chi_heavy_fighter1.dds"
+	    }
+	
+	    SpriteType = {
+		    name = "GFX_SHX_heavy_fighter2_medium"
+		    texturefile = "gfx/interface/technologies/chi_heavy_fighter2.dds"
+	    }
+	
+	    SpriteType = {
+		    name = "GFX_SHX_heavy_fighter3_medium"
+		    texturefile = "gfx/interface/technologies/chi_heavy_fighter3.dds"
+	    }
+		
+	#晋军战术轰炸机_Jin clique tactical bomber#	
+	    SpriteType = {
+		    name = "GFX_SHX_early_bomber_medium"
+		    texturefile = "gfx/interface/technologies/chi_early_bomber.dds"
+	    }
+	
+	    SpriteType = {
+			name = "GFX_SHX_tactical_bomber1_medium"
+			texturefile = "gfx/interface/technologies/chi_tactical_bomber1.dds"
+		}
+	
+		SpriteType = {
+			name = "GFX_SHX_tactical_bomber2_medium"
+			texturefile = "gfx/interface/technologies/chi_tactical_bomber2.dds"
+		}
+	
+		SpriteType = {
+			name = "GFX_SHX_tactical_bomber3_medium"
+			texturefile = "gfx/interface/technologies/chi_tactical_bomber3.dds"
+		}
+		
+	#晋军战略轰炸机_Jin clique strategic bomber#
+		SpriteType = {
+			name = "GFX_SHX_strategic_bomber1_medium"
+			texturefile = "gfx/interface/technologies/chi_strategic_bomber1.dds"
+		}
+	
+		SpriteType = {
+			name = "GFX_SHX_strategic_bomber2_medium"
+			texturefile = "gfx/interface/technologies/chi_strategic_bomber2.dds"
+		}	
+	
+		SpriteType = {
+			name = "GFX_SHX_strategic_bomber3_medium"
+			texturefile = "gfx/interface/technologies/chi_strategic_bomber3.dds"
+		}
+		
+    #晋军喷气战斗机_Jin clique jet fighter#
+        SpriteType = {
+            name = "GFX_SHX_jet_fighter1_medium"
+            texturefile = "gfx/interface/technologies/chi_jet_fighter1.dds"
+        }	
+
+        SpriteType = {
+            name = "GFX_SHX_jet_fighter2_medium"
+            texturefile = "gfx/interface/technologies/chi_jet_fighter2.dds"
+        }
+
+    #晋军喷气战略轰炸机_Jin clique jet strategic bomber#
+        SpriteType = {
+            name = "GFX_SHX_jet_strategic_bomber1_medium"
+            texturefile = "gfx/interface/technologies/chi_jet_strategic_bomber1.dds"
+        }
+
+    #晋军喷气战术轰炸机_Jin clique jet tactical bomber#
+        SpriteType = {
+            name = "GFX_SHX_jet_tactical_bomber1_medium"
+            texturefile = "gfx/interface/technologies/chi_jet_tactical_bomber1.dds"
+        }
+	
+        SpriteType = {
+            name = "GFX_SHX_jet_tactical_bomber2_medium"
+            texturefile = "gfx/interface/technologies/chi_jet_tactical_bomber2.dds"
+        }
+
+	#晋军运输机_Jin clique transport plane#	
+	    SpriteType = {
+		    name = "GFX_SHX_transport_plane_equipment_medium"
+		    texturefile = "gfx/interface/technologies/chi_transport_plane_equipment.dds"
+	    }
+		
+		
+    #桂军战斗机_Gui clique fighter#
+        SpriteType = {
+            name = "GFX_GXC_early_fighter_medium"
+            texturefile = "gfx/interface/technologies/chi_early_fighter.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_GXC_fighter1_medium"
+            texturefile = "gfx/interface/technologies/chi_fighter1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_GXC_fighter2_medium"
+            texturefile = "gfx/interface/technologies/chi_fighter2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_GXC_fighter3_medium"
+            texturefile = "gfx/interface/technologies/chi_fighter3.dds"
+        }
+		
+    #桂军俯冲轰炸机_Gui clique CAS#
+        SpriteType = {
+            name = "GFX_GXC_CAS1_medium"
+            texturefile = "gfx/interface/technologies/chi_cas1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_GXC_CAS2_medium"
+            texturefile = "gfx/interface/technologies/chi_cas2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_GXC_CAS3_medium"
+            texturefile = "gfx/interface/technologies/chi_cas3.dds"
+        }
+		
+    #桂军海军轰炸机_Gui clique naval bomber#
+        SpriteType = {
+            name = "GFX_GXC_naval_bomber1_medium"
+            texturefile = "gfx/interface/technologies/chi_naval_bomber1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_GXC_naval_bomber2_medium"
+            texturefile = "gfx/interface/technologies/chi_naval_bomber2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_GXC_naval_bomber3_medium"
+            texturefile = "gfx/interface/technologies/chi_naval_bomber3.dds"
+        }
+		
+    #桂军重型战斗机_Gui clique heavy fighter#		
+	    SpriteType = {
+	    	name = "GFX_GXC_heavy_fighter1_medium"
+		    texturefile = "gfx/interface/technologies/chi_heavy_fighter1.dds"
+	    }
+	
+	    SpriteType = {
+		    name = "GFX_GXC_heavy_fighter2_medium"
+		    texturefile = "gfx/interface/technologies/chi_heavy_fighter2.dds"
+	    }
+	
+	    SpriteType = {
+		    name = "GFX_GXC_heavy_fighter3_medium"
+		    texturefile = "gfx/interface/technologies/chi_heavy_fighter3.dds"
+	    }
+		
+	#桂军战术轰炸机_Gui clique tactical bomber#	
+	    SpriteType = {
+		    name = "GFX_GXC_early_bomber_medium"
+		    texturefile = "gfx/interface/technologies/chi_early_bomber.dds"
+	    }
+	
+	    SpriteType = {
+			name = "GFX_GXC_tactical_bomber1_medium"
+			texturefile = "gfx/interface/technologies/chi_tactical_bomber1.dds"
+		}
+	
+		SpriteType = {
+			name = "GFX_GXC_tactical_bomber2_medium"
+			texturefile = "gfx/interface/technologies/chi_tactical_bomber2.dds"
+		}
+	
+		SpriteType = {
+			name = "GFX_GXC_tactical_bomber3_medium"
+			texturefile = "gfx/interface/technologies/chi_tactical_bomber3.dds"
+		}
+		
+	#桂军战略轰炸机_Gui clique strategic bomber#
+		SpriteType = {
+			name = "GFX_GXC_strategic_bomber1_medium"
+			texturefile = "gfx/interface/technologies/chi_strategic_bomber1.dds"
+		}
+	
+		SpriteType = {
+			name = "GFX_GXC_strategic_bomber2_medium"
+			texturefile = "gfx/interface/technologies/chi_strategic_bomber2.dds"
+		}	
+	
+		SpriteType = {
+			name = "GFX_GXC_strategic_bomber3_medium"
+			texturefile = "gfx/interface/technologies/chi_strategic_bomber3.dds"
+		}
+		
+    #桂军喷气战斗机_Gui clique jet fighter#
+        SpriteType = {
+            name = "GFX_GXC_jet_fighter1_medium"
+            texturefile = "gfx/interface/technologies/chi_jet_fighter1.dds"
+        }	
+
+        SpriteType = {
+            name = "GFX_GXC_jet_fighter2_medium"
+            texturefile = "gfx/interface/technologies/chi_jet_fighter2.dds"
+        }
+
+    #桂军喷气战略轰炸机_Gui clique jet strategic bomber#
+        SpriteType = {
+            name = "GFX_GXC_jet_strategic_bomber1_medium"
+            texturefile = "gfx/interface/technologies/chi_jet_strategic_bomber1.dds"
+        }
+
+    #桂军喷气战术轰炸机_Gui clique jet tactical bomber#
+        SpriteType = {
+            name = "GFX_GXC_jet_tactical_bomber1_medium"
+            texturefile = "gfx/interface/technologies/chi_jet_tactical_bomber1.dds"
+        }
+	
+        SpriteType = {
+            name = "GFX_GXC_jet_tactical_bomber2_medium"
+            texturefile = "gfx/interface/technologies/chi_jet_tactical_bomber2.dds"
+        }	
+
+	#桂军运输机_Gui clique transport plane#	
+	    SpriteType = {
+		    name = "GFX_GXC_transport_plane_equipment_medium"
+		    texturefile = "gfx/interface/technologies/chi_transport_plane_equipment.dds"
+	    }
+		
+		
+    #滇军战斗机_Dian clique fighter#
+        SpriteType = {
+            name = "GFX_YUN_early_fighter_medium"
+            texturefile = "gfx/interface/technologies/chi_early_fighter.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_YUN_fighter1_medium"
+            texturefile = "gfx/interface/technologies/chi_fighter1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_YUN_fighter2_medium"
+            texturefile = "gfx/interface/technologies/chi_fighter2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_YUN_fighter3_medium"
+            texturefile = "gfx/interface/technologies/chi_fighter3.dds"
+        }
+		
+    #滇军俯冲轰炸机_Dian clique CAS#
+        SpriteType = {
+            name = "GFX_YUN_CAS1_medium"
+            texturefile = "gfx/interface/technologies/chi_cas1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_YUN_CAS2_medium"
+            texturefile = "gfx/interface/technologies/chi_cas2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_YUN_CAS3_medium"
+            texturefile = "gfx/interface/technologies/chi_cas3.dds"
+        }
+		
+    #滇军海军轰炸机_Dian clique naval bomber#
+        SpriteType = {
+            name = "GFX_YUN_naval_bomber1_medium"
+            texturefile = "gfx/interface/technologies/chi_naval_bomber1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_YUN_naval_bomber2_medium"
+            texturefile = "gfx/interface/technologies/chi_naval_bomber2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_YUN_naval_bomber3_medium"
+            texturefile = "gfx/interface/technologies/chi_naval_bomber3.dds"
+        }
+		
+    #滇军重型战斗机_Dian clique heavy fighter#		
+	    SpriteType = {
+	    	name = "GFX_YUN_heavy_fighter1_medium"
+		    texturefile = "gfx/interface/technologies/chi_heavy_fighter1.dds"
+	    }
+	
+	    SpriteType = {
+		    name = "GFX_YUN_heavy_fighter2_medium"
+		    texturefile = "gfx/interface/technologies/chi_heavy_fighter2.dds"
+	    }
+	
+	    SpriteType = {
+		    name = "GFX_YUN_heavy_fighter3_medium"
+		    texturefile = "gfx/interface/technologies/chi_heavy_fighter3.dds"
+	    }
+		
+	#滇军战术轰炸机_Dian clique tactical bomber#	
+	    SpriteType = {
+		    name = "GFX_YUN_early_bomber_medium"
+		    texturefile = "gfx/interface/technologies/chi_early_bomber.dds"
+	    }
+	
+	    SpriteType = {
+			name = "GFX_YUN_tactical_bomber1_medium"
+			texturefile = "gfx/interface/technologies/chi_tactical_bomber1.dds"
+		}
+	
+		SpriteType = {
+			name = "GFX_YUN_tactical_bomber2_medium"
+			texturefile = "gfx/interface/technologies/chi_tactical_bomber2.dds"
+		}
+	
+		SpriteType = {
+			name = "GFX_YUN_tactical_bomber3_medium"
+			texturefile = "gfx/interface/technologies/chi_tactical_bomber3.dds"
+		}
+		
+	#滇军战略轰炸机_Dian clique strategic bomber#
+		SpriteType = {
+			name = "GFX_YUN_strategic_bomber1_medium"
+			texturefile = "gfx/interface/technologies/chi_strategic_bomber1.dds"
+		}
+	
+		SpriteType = {
+			name = "GFX_YUN_strategic_bomber2_medium"
+			texturefile = "gfx/interface/technologies/chi_strategic_bomber2.dds"
+		}	
+	
+		SpriteType = {
+			name = "GFX_YUN_strategic_bomber3_medium"
+			texturefile = "gfx/interface/technologies/chi_strategic_bomber3.dds"
+		}
+		
+    #滇军喷气战斗机_Dian clique jet fighter#
+        SpriteType = {
+            name = "GFX_YUN_jet_fighter1_medium"
+            texturefile = "gfx/interface/technologies/chi_jet_fighter1.dds"
+        }	
+
+        SpriteType = {
+            name = "GFX_YUN_jet_fighter2_medium"
+            texturefile = "gfx/interface/technologies/chi_jet_fighter2.dds"
+        }
+
+    #滇军喷气战略轰炸机_Dian clique jet strategic bomber#
+        SpriteType = {
+            name = "GFX_YUN_jet_strategic_bomber1_medium"
+            texturefile = "gfx/interface/technologies/chi_jet_strategic_bomber1.dds"
+        }
+
+    #滇军喷气战术轰炸机_Dian clique jet tactical bomber#
+        SpriteType = {
+            name = "GFX_YUN_jet_tactical_bomber1_medium"
+            texturefile = "gfx/interface/technologies/chi_jet_tactical_bomber1.dds"
+        }
+	
+        SpriteType = {
+            name = "GFX_YUN_jet_tactical_bomber2_medium"
+            texturefile = "gfx/interface/technologies/chi_jet_tactical_bomber2.dds"
+        }
+
+	#滇军运输机_Dian clique transport plane#	
+	    SpriteType = {
+		    name = "GFX_YUN_transport_plane_equipment_medium"
+		    texturefile = "gfx/interface/technologies/chi_transport_plane_equipment.dds"
+	    }
+		
+		
+    #马家军战斗机_Xibei San Ma fighter#
+        SpriteType = {
+            name = "GFX_XSM_early_fighter_medium"
+            texturefile = "gfx/interface/technologies/chi_early_fighter.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_XSM_fighter1_medium"
+            texturefile = "gfx/interface/technologies/chi_fighter1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_XSM_fighter2_medium"
+            texturefile = "gfx/interface/technologies/chi_fighter2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_XSM_fighter3_medium"
+            texturefile = "gfx/interface/technologies/chi_fighter3.dds"
+        }
+		
+    #马家军俯冲轰炸机_Xibei San Ma CAS#
+        SpriteType = {
+            name = "GFX_XSM_CAS1_medium"
+            texturefile = "gfx/interface/technologies/chi_cas1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_XSM_CAS2_medium"
+            texturefile = "gfx/interface/technologies/chi_cas2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_XSM_CAS3_medium"
+            texturefile = "gfx/interface/technologies/chi_cas3.dds"
+        }
+		
+    #马家军海军轰炸机_Xibei San Ma naval bomber#
+        SpriteType = {
+            name = "GFX_XSM_naval_bomber1_medium"
+            texturefile = "gfx/interface/technologies/chi_naval_bomber1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_XSM_naval_bomber2_medium"
+            texturefile = "gfx/interface/technologies/chi_naval_bomber2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_XSM_naval_bomber3_medium"
+            texturefile = "gfx/interface/technologies/chi_naval_bomber3.dds"
+        }
+		
+    #马家军重型战斗机_Xibei San Ma heavy fighter#		
+	    SpriteType = {
+	    	name = "GFX_XSM_heavy_fighter1_medium"
+		    texturefile = "gfx/interface/technologies/chi_heavy_fighter1.dds"
+	    }
+	
+	    SpriteType = {
+		    name = "GFX_XSM_heavy_fighter2_medium"
+		    texturefile = "gfx/interface/technologies/chi_heavy_fighter2.dds"
+	    }
+	
+	    SpriteType = {
+		    name = "GFX_XSM_heavy_fighter3_medium"
+		    texturefile = "gfx/interface/technologies/chi_heavy_fighter3.dds"
+	    }
+		
+	#马家军战术轰炸机_Xibei San Ma tactical bomber#	
+	    SpriteType = {
+		    name = "GFX_XSM_early_bomber_medium"
+		    texturefile = "gfx/interface/technologies/chi_early_bomber.dds"
+	    }
+	
+	    SpriteType = {
+			name = "GFX_XSM_tactical_bomber1_medium"
+			texturefile = "gfx/interface/technologies/chi_tactical_bomber1.dds"
+		}
+	
+		SpriteType = {
+			name = "GFX_XSM_tactical_bomber2_medium"
+			texturefile = "gfx/interface/technologies/chi_tactical_bomber2.dds"
+		}
+	
+		SpriteType = {
+			name = "GFX_XSM_tactical_bomber3_medium"
+			texturefile = "gfx/interface/technologies/chi_tactical_bomber3.dds"
+		}
+		
+	#马家军战略轰炸机_Xibei San Ma strategic bomber#
+		SpriteType = {
+			name = "GFX_XSM_strategic_bomber1_medium"
+			texturefile = "gfx/interface/technologies/chi_strategic_bomber1.dds"
+		}
+	
+		SpriteType = {
+			name = "GFX_XSM_strategic_bomber2_medium"
+			texturefile = "gfx/interface/technologies/chi_strategic_bomber2.dds"
+		}	
+	
+		SpriteType = {
+			name = "GFX_XSM_strategic_bomber3_medium"
+			texturefile = "gfx/interface/technologies/chi_strategic_bomber3.dds"
+		}
+		
+    #马家军喷气战斗机_Xibei San Ma jet fighter#
+        SpriteType = {
+            name = "GFX_XSM_jet_fighter1_medium"
+            texturefile = "gfx/interface/technologies/chi_jet_fighter1.dds"
+        }	
+
+        SpriteType = {
+            name = "GFX_XSM_jet_fighter2_medium"
+            texturefile = "gfx/interface/technologies/chi_jet_fighter2.dds"
+        }
+
+    #马家军喷气战略轰炸机_Xibei San Ma jet strategic bomber#
+        SpriteType = {
+            name = "GFX_XSM_jet_strategic_bomber1_medium"
+            texturefile = "gfx/interface/technologies/chi_jet_strategic_bomber1.dds"
+        }
+
+    #马家军喷气战术轰炸机_Xibei San Ma jet tactical bomber#
+        SpriteType = {
+            name = "GFX_XSM_jet_tactical_bomber1_medium"
+            texturefile = "gfx/interface/technologies/chi_jet_tactical_bomber1.dds"
+        }
+	
+        SpriteType = {
+            name = "GFX_XSM_jet_tactical_bomber2_medium"
+            texturefile = "gfx/interface/technologies/chi_jet_tactical_bomber2.dds"
+        }
+
+	#马家军运输机_Xibei San Ma transport plane#	
+	    SpriteType = {
+		    name = "GFX_XSM_transport_plane_equipment_medium"
+		    texturefile = "gfx/interface/technologies/chi_transport_plane_equipment.dds"
+	    }		
+		
+		
+	#新疆战斗机_Sinkiang fighter#    
+        SpriteType = {
+            name = "GFX_SIK_early_fighter_medium"
+            texturefile = "gfx/interface/technologies/prc_early_fighter.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SIK_fighter1_medium"
+            texturefile = "gfx/interface/technologies/prc_fighter1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SIK_fighter2_medium"
+            texturefile = "gfx/interface/technologies/prc_fighter2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SIK_fighter3_medium"
+            texturefile = "gfx/interface/technologies/prc_fighter3.dds"
+        }
+		
+    #新疆俯冲轰炸机_Sinkiang CAS#
+        SpriteType = {
+            name = "GFX_SIK_CAS1_medium"
+            texturefile = "gfx/interface/technologies/prc_cas1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SIK_CAS2_medium"
+            texturefile = "gfx/interface/technologies/prc_cas2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SIK_CAS3_medium"
+            texturefile = "gfx/interface/technologies/prc_cas3.dds"
+        }
+		
+    #新疆海军轰炸机_Sinkiang naval bomber#
+        SpriteType = {
+            name = "GFX_SIK_naval_bomber1_medium"
+            texturefile = "gfx/interface/technologies/prc_naval_bomber1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SIK_naval_bomber2_medium"
+            texturefile = "gfx/interface/technologies/prc_naval_bomber2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SIK_naval_bomber3_medium"
+            texturefile = "gfx/interface/technologies/prc_naval_bomber3.dds"
+        }
+		
+    #新疆重型战斗机_Sinkiang heavy fighter#		
+	    SpriteType = {
+	    	name = "GFX_SIK_heavy_fighter1_medium"
+		    texturefile = "gfx/interface/technologies/prc_heavy_fighter1.dds"
+	    }
+	
+	    SpriteType = {
+		    name = "GFX_SIK_heavy_fighter2_medium"
+		    texturefile = "gfx/interface/technologies/prc_heavy_fighter2.dds"
+	    }
+	
+	    SpriteType = {
+		    name = "GFX_SIK_heavy_fighter3_medium"
+		    texturefile = "gfx/interface/technologies/prc_heavy_fighter3.dds"
+	    }
+		
+	#新疆战术轰炸机_Sinkiang tactical bomber#	
+	    SpriteType = {
+		    name = "GFX_SIK_early_bomber_medium"
+		    texturefile = "gfx/interface/technologies/prc_early_bomber.dds"
+	    }
+	
+	    SpriteType = {
+			name = "GFX_SIK_tactical_bomber1_medium"
+			texturefile = "gfx/interface/technologies/prc_tactical_bomber1.dds"
+		}
+	
+		SpriteType = {
+			name = "GFX_SIK_tactical_bomber2_medium"
+			texturefile = "gfx/interface/technologies/prc_tactical_bomber2.dds"
+		}
+	
+		SpriteType = {
+			name = "GFX_SIK_tactical_bomber3_medium"
+			texturefile = "gfx/interface/technologies/prc_tactical_bomber3.dds"
+		}
+		
+	#新疆战略轰炸机_Sinkiang strategic bomber#
+		SpriteType = {
+			name = "GFX_SIK_strategic_bomber1_medium"
+			texturefile = "gfx/interface/technologies/prc_strategic_bomber1.dds"
+		}
+	
+		SpriteType = {
+			name = "GFX_SIK_strategic_bomber2_medium"
+			texturefile = "gfx/interface/technologies/prc_strategic_bomber2.dds"
+		}
+	
+		SpriteType = {
+			name = "GFX_SIK_strategic_bomber3_medium"
+			texturefile = "gfx/interface/technologies/prc_strategic_bomber3.dds"
+		}
+		
+    #新疆喷气战斗机_Sinkiang jet fighter#
+        SpriteType = {
+            name = "GFX_SIK_jet_fighter1_medium"
+            texturefile = "gfx/interface/technologies/prc_jet_fighter1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SIK_jet_fighter2_medium"
+            texturefile = "gfx/interface/technologies/prc_jet_fighter2.dds"
+        }
+
+    #新疆喷气战略轰炸机_Sinkiang jet strategic bomber#
+        SpriteType = {
+            name = "GFX_SIK_jet_strategic_bomber1_medium"
+            texturefile = "gfx/interface/technologies/prc_jet_strategic_bomber1.dds"
+        }
+
+    #新疆喷气战术轰炸机_Sinkiang jet tactical bomber#
+        SpriteType = {
+            name = "GFX_SIK_jet_tactical_bomber1_medium"
+            texturefile = "gfx/interface/technologies/prc_jet_tactical_bomber1.dds"
+        }
+	
+        SpriteType = {
+            name = "GFX_SIK_jet_tactical_bomber2_medium"
+            texturefile = "gfx/interface/technologies/prc_jet_tactical_bomber2.dds"
+        }
+
+	#新疆运输机_Sinkiang transport plane#	
+	    SpriteType = {
+		    name = "GFX_SIK_transport_plane_equipment_medium"
+		    texturefile = "gfx/interface/technologies/prc_transport_plane_equipment.dds"
+	    }
+		
+		
+	#伪满战斗机_Manchu fighter#    
+        SpriteType = {
+            name = "GFX_MAN_early_fighter_medium"
+            texturefile = "gfx/interface/technologies/JAP_early_fighter.dds"
+        }
+		
+		SpriteType = {
+            name = "GFX_MAN_cv_early_fighter_medium"
+            texturefile = "gfx/interface/technologies/MAN_early_fighter_cv.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_MAN_fighter1_medium"
+            texturefile = "gfx/interface/technologies/JAP_fighter1.dds"
+        }
+		
+		SpriteType = {
+		    name = "GFX_MAN_cv_fighter1_medium"
+		    texturefile = "gfx/interface/technologies/MAN_fighter1_cv.dds"
+	    }
+
+        SpriteType = {
+            name = "GFX_MAN_fighter2_medium"
+            texturefile = "gfx/interface/technologies/JAP_fighter2.dds"
+        }
+		
+	    SpriteType = {
+		    name = "GFX_MAN_cv_fighter2_medium"
+		    texturefile = "gfx/interface/technologies/MAN_fighter2_cv.dds"
+	    }
+
+        SpriteType = {
+            name = "GFX_MAN_fighter3_medium"
+            texturefile = "gfx/interface/technologies/MAN_fighter3.dds"
+        }
+		
+	    SpriteType = {
+		    name = "GFX_MAN_cv_fighter3_medium"
+		    texturefile = "gfx/interface/technologies/MAN_fighter3_cv.dds"
+	    }
+		
+    #伪满俯冲轰炸机_Manchu CAS#
+        SpriteType = {
+            name = "GFX_MAN_CAS1_medium"
+            texturefile = "gfx/interface/technologies/JAP_CAS1.dds"
+        }
+		
+	    SpriteType = {
+		    name = "GFX_MAN_cv_CAS1_medium"
+		    texturefile = "gfx/interface/technologies/MAN_CAS1_cv.dds"
+	    }
+		
+        SpriteType = {
+            name = "GFX_MAN_CAS2_medium"
+            texturefile = "gfx/interface/technologies/MAN_CAS2.dds"
+        }
+		
+	    SpriteType = {
+		    name = "GFX_MAN_cv_CAS2_medium"
+		    texturefile = "gfx/interface/technologies/JAP_CAS2_cv.dds"
+	    }
+
+        SpriteType = {
+            name = "GFX_MAN_CAS3_medium"
+            texturefile = "gfx/interface/technologies/MAN_CAS3.dds"
+        }
+		
+	    SpriteType = {
+		    name = "GFX_MAN_cv_CAS3_medium"
+		    texturefile = "gfx/interface/technologies/MAN_CAS3_cv.dds"
+	    }
+		
+    #伪满海军轰炸机_Manchu naval bomber#
+        SpriteType = {
+            name = "GFX_MAN_naval_bomber1_medium"
+            texturefile = "gfx/interface/technologies/MAN_naval_bomber1.dds"
+        }
+		
+	    SpriteType = {
+		    name = "GFX_MAN_cv_naval_bomber1_medium"
+		    texturefile = "gfx/interface/technologies/JAP_naval_bomber1_cv.dds"
+	    }
+		
+        SpriteType = {
+            name = "GFX_MAN_naval_bomber2_medium"
+            texturefile = "gfx/interface/technologies/JAP_naval_bomber2.dds"
+        }
+		
+	    SpriteType = {
+		    name = "GFX_MAN_cv_naval_bomber2_medium"
+		    texturefile = "gfx/interface/technologies/MAN_naval_bomber2_cv.dds"
+	    }
+
+        SpriteType = {
+            name = "GFX_MAN_naval_bomber3_medium"
+            texturefile = "gfx/interface/technologies/JAP_naval_bomber3.dds"
+        }
+		
+	    SpriteType = {
+		    name = "GFX_MAN_cv_naval_bomber3_medium"
+		    texturefile = "gfx/interface/technologies/JAP_naval_bomber3_cv.dds"
+	    }
+		
+    #伪满重型战斗机_Manchu heavy fighter#		
+	    SpriteType = {
+	    	name = "GFX_MAN_heavy_fighter1_medium"
+		    texturefile = "gfx/interface/technologies/JAP_heavy_fighter1.dds"
+	    }
+	
+	    SpriteType = {
+		    name = "GFX_MAN_heavy_fighter2_medium"
+		    texturefile = "gfx/interface/technologies/JAP_heavy_fighter2.dds"
+	    }
+	
+	    SpriteType = {
+		    name = "GFX_MAN_heavy_fighter3_medium"
+		    texturefile = "gfx/interface/technologies/JAP_heavy_fighter3.dds"
+	    }
+		
+	#伪满战术轰炸机_Manchu tactical bomber#	
+	    SpriteType = {
+		    name = "GFX_MAN_early_bomber_medium"
+		    texturefile = "gfx/interface/technologies/JAP_early_bomber.dds"
+	    }
+	
+	    SpriteType = {
+			name = "GFX_MAN_tactical_bomber1_medium"
+			texturefile = "gfx/interface/technologies/JAP_tactical_bomber1.dds"
+		}
+	
+		SpriteType = {
+			name = "GFX_MAN_tactical_bomber2_medium"
+			texturefile = "gfx/interface/technologies/MAN_tactical_bomber2.dds"
+		}
+	
+		SpriteType = {
+			name = "GFX_MAN_tactical_bomber3_medium"
+			texturefile = "gfx/interface/technologies/MAN_tactical_bomber3.dds"
+		}
+		
+	#伪满战略轰炸机_Manchu strategic bomber#
+		SpriteType = {
+			name = "GFX_MAN_strategic_bomber1_medium"
+			texturefile = "gfx/interface/technologies/JAP_strategic_bomber1.dds"
+		}
+	
+		SpriteType = {
+			name = "GFX_MAN_strategic_bomber2_medium"
+			texturefile = "gfx/interface/technologies/JAP_strategic_bomber2.dds"
+		}
+	
+		SpriteType = {
+			name = "GFX_MAN_strategic_bomber3_medium"
+			texturefile = "gfx/interface/technologies/JAP_strategic_bomber3.dds"
+		}
+		
+    #伪满喷气战斗机_Manchu jet fighter#
+        SpriteType = {
+            name = "GFX_MAN_jet_fighter1_medium"
+            texturefile = "gfx/interface/technologies/man_jet_fighter1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_MAN_jet_fighter2_medium"
+            texturefile = "gfx/interface/technologies/man_jet_fighter2.dds"
+        }
+		
+    #伪满喷气战术轰炸机_Manchu jet tactical bomber#
+        SpriteType = {
+            name = "GFX_MAN_jet_tactical_bomber1_medium"
+            texturefile = "gfx/interface/technologies/MAN_jet_tactical_bomber1.dds"
+        }
+		
+		SpriteType = {
+            name = "GFX_MAN_jet_tactical_bomber2_medium"
+            texturefile = "gfx/interface/technologies/MAN_jet_tactical_bomber2.dds"
+        }
+		
+	#伪满火箭截击机_Manchu rocket interceptor#
+        SpriteType = {
+            name = "GFX_MAN_rocket_interceptor_equipment_1_medium"
+            texturefile = "gfx/interface/technologies/man_rocket_interceptor_1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_MAN_rocket_interceptor_equipment_2_medium"
+            texturefile = "gfx/interface/technologies/man_rocket_interceptor_2.dds"
+        }
+		
+	    SpriteType = {
+            name = "GFX_MAN_rocket_interceptor_equipment_3_medium"
+            texturefile = "gfx/interface/technologies/man_rocket_interceptor_3.dds"
+        }
+		
+	#伪满运输机_Manchu transport plane#	
+	    SpriteType = {
+		    name = "GFX_MAN_transport_plane_equipment_medium"
+		    texturefile = "gfx/interface/technologies/man_transport_plane_equipment.dds"
+	    }
+		
+		
+    #国军榴弹炮_KMT howitzer#
+        SpriteType = {
+            name = "GFX_CHI_gw_artillery_medium"
+            texturefile = "gfx/interface/technologies/chi_artillery_1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_CHI_artillery1_medium"
+            texturefile = "gfx/interface/technologies/chi_artillery_2.dds"
+        }
+	
+        SpriteType = {
+            name = "GFX_CHI_artillery4_medium"
+            texturefile = "gfx/interface/technologies/chi_artillery_3.dds"
+        }
+
+    #国军高射炮_KMT AA#
+        SpriteType = {
+            name = "GFX_CHI_interwar_antiair_medium"
+            texturefile = "gfx/interface/technologies/CHI_AA_1.dds"
+        }
+
+    #国军反坦克炮_KMT AT#
+        SpriteType = {
+            name = "GFX_CHI_interwar_antitank_medium"
+            texturefile = "gfx/interface/technologies/CHI_AT_1.dds"
+        }
+
+    #国军火箭炮_KMT rocket artillery#
+        SpriteType = {
+            name = "GFX_CHI_rocket_artillery4_medium"
+            texturefile = "gfx/interface/technologies/CHI_Rocket_Art_2.dds"
+        }
+		
+        SpriteType = {
+            name = "GFX_CHI_motorized_rocket_unit_medium"
+            texturefile = "gfx/interface/technologies/chi_motorized_rocket_unit.dds"
+        }
+		
+		
+    #共军榴弹炮_PRC howitzer#
+        SpriteType = {
+            name = "GFX_PRC_gw_artillery_medium"
+            texturefile = "gfx/interface/technologies/prc_artillery_1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_PRC_artillery1_medium"
+            texturefile = "gfx/interface/technologies/prc_artillery_2.dds"
+        }
+	
+        SpriteType = {
+            name = "GFX_PRC_artillery4_medium"
+            texturefile = "gfx/interface/technologies/prc_artillery_3.dds"
+        }
+
+    #共军高射炮_PRC AA#
+        SpriteType = {
+            name = "GFX_PRC_interwar_antiair_medium"
+            texturefile = "gfx/interface/technologies/PRC_AA_1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_PRC_antiair2_medium"
+            texturefile = "gfx/interface/technologies/PRC_AA_2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_PRC_antiair5_medium"
+            texturefile = "gfx/interface/technologies/PRC_AA_3.dds"
+        }
+
+    #共军反坦克炮_PRC AT#
+        SpriteType = {
+            name = "GFX_PRC_interwar_antitank_medium"
+            texturefile = "gfx/interface/technologies/AT_1_comintern.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_PRC_antitank2_medium"
+            texturefile = "gfx/interface/technologies/PRC_AT_2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_PRC_antitank5_medium"
+            texturefile = "gfx/interface/technologies/PRC_AT_3.dds"
+        }
+
+    #共军火箭炮_PRC rocket artillery#
+        SpriteType = {
+            name = "GFX_PRC_rocket_artillery_medium"
+            texturefile = "gfx/interface/technologies/PRC_Rocket_Art_1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_PRC_rocket_artillery4_medium"
+            texturefile = "gfx/interface/technologies/PRC_Rocket_Art_2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_PRC_motorized_rocket_unit_medium"
+            texturefile = "gfx/interface/technologies/prc_motorized_rocket_unit.dds"
+        }		
+
+		
+    #晋军榴弹炮_Jin clique howitzer#
+        SpriteType = {
+            name = "GFX_SHX_gw_artillery_medium"
+            texturefile = "gfx/interface/technologies/SHX_artillery_1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SHX_artillery1_medium"
+            texturefile = "gfx/interface/technologies/SHX_artillery_2.dds"
+        }
+	
+        SpriteType = {
+            name = "GFX_SHX_artillery4_medium"
+            texturefile = "gfx/interface/technologies/SHX_artillery_3.dds"
+        }
+
+    #晋军高射炮_Jin clique AA#
+        SpriteType = {
+            name = "GFX_SHX_interwar_antiair_medium"
+            texturefile = "gfx/interface/technologies/CHI_AA_1.dds"
+        }
+
+    #晋军反坦克炮_Jin clique AT#
+        SpriteType = {
+            name = "GFX_SHX_interwar_antitank_medium"
+            texturefile = "gfx/interface/technologies/CHI_AT_1.dds"
+        }
+
+    #晋军火箭炮_Jin clique rocket artillery#
+        SpriteType = {
+            name = "GFX_SHX_rocket_artillery4_medium"
+            texturefile = "gfx/interface/technologies/CHI_Rocket_Art_2.dds"
+        }
+		
+        SpriteType = {
+            name = "GFX_SHX_motorized_rocket_unit_medium"
+            texturefile = "gfx/interface/technologies/chi_motorized_rocket_unit.dds"
+        }
+		
+		
+    #桂军榴弹炮_Gui clique howitzer#
+        SpriteType = {
+            name = "GFX_GXC_gw_artillery_medium"
+            texturefile = "gfx/interface/technologies/chi_artillery_1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_GXC_artillery1_medium"
+            texturefile = "gfx/interface/technologies/chi_artillery_2.dds"
+        }
+	
+        SpriteType = {
+            name = "GFX_GXC_artillery4_medium"
+            texturefile = "gfx/interface/technologies/chi_artillery_3.dds"
+        }
+
+    #桂军高射炮_Gui clique AA#
+        SpriteType = {
+            name = "GFX_GXC_interwar_antiair_medium"
+            texturefile = "gfx/interface/technologies/CHI_AA_1.dds"
+        }
+
+    #桂军反坦克炮_Gui clique AT#
+        SpriteType = {
+            name = "GFX_GXC_interwar_antitank_medium"
+            texturefile = "gfx/interface/technologies/CHI_AT_1.dds"
+        }
+
+    #桂军火箭炮_Gui clique rocket artillery#
+        SpriteType = {
+            name = "GFX_GXC_rocket_artillery4_medium"
+            texturefile = "gfx/interface/technologies/CHI_Rocket_Art_2.dds"
+        }
+		
+        SpriteType = {
+            name = "GFX_GXC_motorized_rocket_unit_medium"
+            texturefile = "gfx/interface/technologies/chi_motorized_rocket_unit.dds"
+        }
+
+		
+    #滇军榴弹炮_Dian clique howitzer#
+        SpriteType = {
+            name = "GFX_YUN_gw_artillery_medium"
+            texturefile = "gfx/interface/technologies/chi_artillery_1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_YUN_artillery1_medium"
+            texturefile = "gfx/interface/technologies/chi_artillery_2.dds"
+        }
+	
+        SpriteType = {
+            name = "GFX_YUN_artillery4_medium"
+            texturefile = "gfx/interface/technologies/chi_artillery_3.dds"
+        }
+
+    #滇军高射炮_Dian clique AA#
+        SpriteType = {
+            name = "GFX_YUN_interwar_antiair_medium"
+            texturefile = "gfx/interface/technologies/CHI_AA_1.dds"
+        }
+
+    #滇军反坦克炮_Dian clique AT#
+        SpriteType = {
+            name = "GFX_YUN_interwar_antitank_medium"
+            texturefile = "gfx/interface/technologies/CHI_AT_1.dds"
+        }
+
+    #滇军火箭炮_Dian clique rocket artillery#
+        SpriteType = {
+            name = "GFX_YUN_rocket_artillery4_medium"
+            texturefile = "gfx/interface/technologies/CHI_Rocket_Art_2.dds"
+        }
+		
+        SpriteType = {
+            name = "GFX_YUN_motorized_rocket_unit_medium"
+            texturefile = "gfx/interface/technologies/chi_motorized_rocket_unit.dds"
+        }
+
+		
+    #马家军榴弹炮_Xibei San Ma howitzer#
+        SpriteType = {
+            name = "GFX_XSM_gw_artillery_medium"
+            texturefile = "gfx/interface/technologies/chi_artillery_1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_XSM_artillery1_medium"
+            texturefile = "gfx/interface/technologies/chi_artillery_2.dds"
+        }
+	
+        SpriteType = {
+            name = "GFX_XSM_artillery4_medium"
+            texturefile = "gfx/interface/technologies/chi_artillery_3.dds"
+        }
+
+    #马家军高射炮_Xibei San Ma AA#
+        SpriteType = {
+            name = "GFX_XSM_interwar_antiair_medium"
+            texturefile = "gfx/interface/technologies/CHI_AA_1.dds"
+        }
+
+    #马家军反坦克炮_Xibei San Ma AT#
+        SpriteType = {
+            name = "GFX_XSM_interwar_antitank_medium"
+            texturefile = "gfx/interface/technologies/CHI_AT_1.dds"
+        }
+
+    #马家军火箭炮_Xibei San Ma rocket artillery#
+        SpriteType = {
+            name = "GFX_XSM_rocket_artillery4_medium"
+            texturefile = "gfx/interface/technologies/CHI_Rocket_Art_2.dds"
+        }
+		
+        SpriteType = {
+            name = "GFX_XSM_motorized_rocket_unit_medium"
+            texturefile = "gfx/interface/technologies/chi_motorized_rocket_unit.dds"
+        }
+
+		
+    #新疆榴弹炮_Sinkiang howitzer#
+        SpriteType = {
+            name = "GFX_SIK_gw_artillery_medium"
+            texturefile = "gfx/interface/technologies/prc_artillery_1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SIK_artillery1_medium"
+            texturefile = "gfx/interface/technologies/prc_artillery_2.dds"
+        }
+	
+        SpriteType = {
+            name = "GFX_SIK_artillery4_medium"
+            texturefile = "gfx/interface/technologies/prc_artillery_3.dds"
+        }
+
+    #新疆高射炮_Sinkiang AA#
+        SpriteType = {
+            name = "GFX_SIK_interwar_antiair_medium"
+            texturefile = "gfx/interface/technologies/PRC_AA_1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SIK_antiair2_medium"
+            texturefile = "gfx/interface/technologies/PRC_AA_2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SIK_antiair5_medium"
+            texturefile = "gfx/interface/technologies/PRC_AA_3.dds"
+        }
+
+    #新疆反坦克炮_Sinkiang AT#
+        SpriteType = {
+            name = "GFX_SIK_interwar_antitank_medium"
+            texturefile = "gfx/interface/technologies/AT_1_comintern.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SIK_antitank2_medium"
+            texturefile = "gfx/interface/technologies/PRC_AT_2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SIK_antitank5_medium"
+            texturefile = "gfx/interface/technologies/PRC_AT_3.dds"
+        }
+
+    #新疆火箭炮_Sinkiang rocket artillery#
+        SpriteType = {
+            name = "GFX_SIK_rocket_artillery_medium"
+            texturefile = "gfx/interface/technologies/PRC_Rocket_Art_1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SIK_rocket_artillery4_medium"
+            texturefile = "gfx/interface/technologies/PRC_Rocket_Art_2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_SIK_motorized_rocket_unit_medium"
+            texturefile = "gfx/interface/technologies/prc_motorized_rocket_unit.dds"
+        }			
+
+		
+    #伪满榴弹炮_Manchu howitzer#
+        SpriteType = {
+            name = "GFX_MAN_gw_artillery_medium"
+            texturefile = "gfx/interface/technologies/MAN_Art_1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_MAN_artillery1_medium"
+            texturefile = "gfx/interface/technologies/MAN_Art_2.dds"
+        }	
+	
+        SpriteType = {
+            name = "GFX_MAN_artillery4_medium"
+            texturefile = "gfx/interface/technologies/MAN_Art_3.dds"
+        }	
+
+    #伪满高射炮_Manchu AA#
+        SpriteType = {
+            name = "GFX_MAN_interwar_antiair_medium"
+            texturefile = "gfx/interface/technologies/MAN_AA_1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_MAN_antiair2_medium"
+            texturefile = "gfx/interface/technologies/MAN_AA_2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_MAN_antiair5_medium"
+            texturefile = "gfx/interface/technologies/MAN_AA_3.dds"
+        }	
+
+    #伪满反坦克炮_Manchu AT#
+        SpriteType = {
+            name = "GFX_MAN_interwar_antitank_medium"
+            texturefile = "gfx/interface/technologies/MAN_AT_1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_MAN_antitank2_medium"
+            texturefile = "gfx/interface/technologies/MAN_AT_2.dds"
+        }	
+
+        SpriteType = {
+            name = "GFX_MAN_antitank5_medium"
+            texturefile = "gfx/interface/technologies/MAN_AT_3.dds"
+        }	
+
+    #伪满火箭炮_Manchu rocket artillery#
+        SpriteType = {
+            name = "GFX_MAN_rocket_artillery_medium"
+            texturefile = "gfx/interface/technologies/MAN_Rocket_Art_1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_MAN_rocket_artillery4_medium"
+            texturefile = "gfx/interface/technologies/MAN_Rocket_Art_2.dds"
+        }
+		
+        SpriteType = {
+            name = "GFX_MAN_motorized_rocket_unit_medium"
+            texturefile = "gfx/interface/technologies/MAN_motorized_rocket_unit.dds"
+        }	
+
+		
+    #共军导弹_PRC missile#	
+	SpriteType = {
+		name = "GFX_PRC_guided_missile_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/prc_guided_missile_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PRC_guided_missile_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/prc_guided_missile_3.dds"
+	}			
+}

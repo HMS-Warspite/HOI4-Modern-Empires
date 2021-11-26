@@ -1,0 +1,31 @@
+
+state={
+	id=821 #Casablanca
+	name="STATE_821"
+	manpower = 5997719
+	
+	state_category = large_city
+	
+	history={
+		owner = FRA
+		add_core_of = MOR
+		victory_points = {
+			7069 20 
+		}
+		victory_points = {
+			10070 10 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 3
+			air_base = 5
+			7069 = {
+				naval_base = 5
+			}
+		}
+	}
+
+	provinces={
+		1079 4139 7069 10023 10070 11943 
+	}
+}

@@ -1,0 +1,3216 @@
+
+
+
+form_united_hellenic_empire = {
+	
+	GRE_unite_hellenic_sphere = {
+		allowed = {
+			original_tag = GRE
+		}
+		visible = {
+			NOT = { has_cosmetic_tag = GRE_hellenic }
+		}
+		available = {
+			is_subject = no
+			OR = { 
+				num_of_controlled_states > 10
+				TUR = { is_subject_of = ROOT }
+				is_major = yes
+				num_subjects > 1
+			}
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_cosmetic_tag = GRE_hellenic
+			set_party_name = { 
+				ideology = democratic 
+				long_name = GRE_hellenic_democratic_party_long 
+				name = GRE_hellenic_democratic_party 
+			}
+			set_party_name = { 
+				ideology = communism 
+				long_name = GRE_hellenic_communism_party_long 
+				name = GRE_hellenic_communism_party 
+			}
+			set_party_name = { 
+				ideology = fascism 
+				long_name = GRE_hellenic_fascism_party_long 
+				name = GRE_hellenic_fascism_party 
+			}
+			set_party_name = { 
+				ideology = neutrality 
+				long_name = GRE_hellenic_neutrality_party_long 
+				name = GRE_hellenic_neutrality_party 
+			}
+			set_global_flag = hellenic_empire_formed
+		}
+	}
+	
+	
+	GRE_colonize_eastern_mediterranean = {
+		allowed = {
+			original_tag = GRE
+		}
+		visible = {
+			NOT = { has_country_flag = GRE_colonize_eastern_mediterranean }
+		}
+		available = {
+			is_subject = no
+			controls_state = 164
+			controls_state = 183
+			controls_state = 116
+		}
+		cost = 20
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			164 = { add_core_of = ROOT }
+			183 = { add_core_of = ROOT }
+			116 = { add_core_of = ROOT }
+			set_country_flag = GRE_colonize_eastern_mediterranean
+		}
+	}
+	
+	GRE_integrate_turkish_territory = {
+		allowed = {
+			original_tag = GRE
+		}
+		visible = {
+			NOT = { has_country_flag = GRE_integrate_turkish_territory }
+		}
+		available = {
+			is_subject = no
+			custom_trigger_tooltip = {
+				tooltip = hellenic_empire_turkey_required_states_tt
+				controls_state = 49
+				controls_state = 339
+				controls_state = 340
+				controls_state = 341
+				controls_state = 342
+				controls_state = 343
+				controls_state = 344
+				controls_state = 345
+				controls_state = 346
+				controls_state = 347
+				controls_state = 348
+				controls_state = 349
+				controls_state = 350
+				controls_state = 352
+				controls_state = 353
+				controls_state = 354
+				controls_state = 355
+				controls_state = 356
+				controls_state = 797
+				controls_state = 798
+				controls_state = 799
+				controls_state = 800
+			}
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			custom_effect_tooltip = hellenic_empire_turkey_coring_states_tt
+			hidden_effect = {
+				49 = { add_core_of = ROOT }
+				339 = { add_core_of = ROOT }
+				340 = { add_core_of = ROOT }
+				341 = { add_core_of = ROOT }
+				342 = { add_core_of = ROOT }
+				343 = { add_core_of = ROOT }
+				344 = { add_core_of = ROOT }
+				345 = { add_core_of = ROOT }
+				346 = { add_core_of = ROOT }
+				347 = { add_core_of = ROOT }
+				348 = { add_core_of = ROOT }
+				349 = { add_core_of = ROOT }
+				350 = { add_core_of = ROOT }
+				352 = { add_core_of = ROOT }
+				353 = { add_core_of = ROOT }
+				354 = { add_core_of = ROOT }
+				355 = { add_core_of = ROOT }
+				356 = { add_core_of = ROOT }
+				797 = { add_core_of = ROOT }
+				798 = { add_core_of = ROOT }
+				799 = { add_core_of = ROOT }
+				800 = { add_core_of = ROOT }
+			}
+			set_country_flag = GRE_integrate_turkish_territory
+		}
+	}
+	
+	GRE_integrate_assyrian_territory = {
+		allowed = {
+			original_tag = GRE
+		}
+		visible = {
+			NOT = { has_country_flag = GRE_integrate_assyrian_territory }
+		}
+		available = {
+			is_subject = no
+			controls_state = 553
+			controls_state = 554
+			controls_state = 677
+			controls_state = 680
+			controls_state = 799
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			553 = { add_core_of = ROOT }
+			554 = { add_core_of = ROOT }
+			677 = { add_core_of = ROOT }
+			680 = { add_core_of = ROOT }
+			799 = { add_core_of = ROOT }
+			set_country_flag = GRE_integrate_assyrian_territory
+		}
+	}
+	
+	GRE_integrate_israeli_territory = {
+		allowed = {
+			original_tag = GRE
+		}
+		visible = {
+			NOT = { has_country_flag = GRE_integrate_israeli_territory }
+			OR = {
+				has_country_flag = GRE_integrate_assyrian_territory
+				has_country_flag = GRE_integrate_egyptian_territory
+				has_country_flag = GRE_integrate_arab_states
+			}
+		}
+		available = {
+			is_subject = no
+			controls_state = 453
+			controls_state = 454
+			controls_state = 455
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			453 = { add_core_of = ROOT }
+			454 = { add_core_of = ROOT }
+			455 = { add_core_of = ROOT }
+			set_country_flag = GRE_integrate_israeli_territory
+		}
+	}
+	
+	GRE_integrate_egyptian_territory = {
+		allowed = {
+			original_tag = GRE
+		}
+		visible = {
+			NOT = { has_country_flag = GRE_integrate_egyptian_territory }
+		}
+		available = {
+			is_subject = no
+			custom_trigger_tooltip = {
+				tooltip = hellenic_empire_egypt_required_states_tt
+				controls_state = 446
+				controls_state = 447
+				controls_state = 452
+				controls_state = 456
+				controls_state = 457
+				controls_state = 552
+				controls_state = 810
+			}
+		}
+		cost = 80
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			custom_effect_tooltip = hellenic_empire_egypt_coring_states_tt
+			hidden_effect = {
+				446 = { add_core_of = ROOT }
+				447 = { add_core_of = ROOT }
+				452 = { add_core_of = ROOT }
+				453 = { add_core_of = ROOT }
+				456 = { add_core_of = ROOT }
+				457 = { add_core_of = ROOT }
+				552 = { add_core_of = ROOT }
+				810 = { add_core_of = ROOT }
+			}
+			set_country_flag = GRE_integrate_egyptian_territory
+		}
+	}
+
+	GRE_integrate_sudanese_territory = {
+		allowed = {
+			original_tag = GRE
+		}
+		visible = {
+			NOT = { has_country_flag = GRE_integrate_sudanese_territory }
+			OR = {
+				has_country_flag = GRE_integrate_egyptian_territory
+				has_country_flag = GRE_integrate_aethiopian_territory
+			}
+		}
+		available = {
+			is_subject = no
+			controls_state = 549
+			controls_state = 551
+			controls_state = 767
+			controls_state = 809
+		}
+		cost = 40
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			549 = { add_core_of = ROOT }
+			551 = { add_core_of = ROOT }
+			767 = { add_core_of = ROOT }
+			809 = { add_core_of = ROOT }
+			set_country_flag = GRE_integrate_sudanese_territory
+		}
+	}
+	
+	GRE_integrate_libyan_territory = {
+		allowed = {
+			original_tag = GRE
+		}
+		visible = {
+			NOT = { has_country_flag = GRE_integrate_libyan_territory }
+		}
+		available = {
+			is_subject = no
+			custom_trigger_tooltip = {
+				tooltip = hellenic_empire_libya_required_states_tt
+				controls_state = 448
+				controls_state = 449
+				controls_state = 450
+				controls_state = 451
+				controls_state = 661
+				controls_state = 662
+				controls_state = 663
+				controls_state = 273
+			}
+		}
+		cost = 80
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			custom_effect_tooltip = hellenic_empire_libya_coring_states_tt
+			hidden_effect = {
+				448 = { add_core_of = ROOT }
+				449 = { add_core_of = ROOT }
+				450 = { add_core_of = ROOT }
+				451 = { add_core_of = ROOT }
+				661 = { add_core_of = ROOT }
+				662 = { add_core_of = ROOT }
+				663 = { add_core_of = ROOT }
+				273 = { add_core_of = ROOT }
+			}
+			set_country_flag = GRE_integrate_libyan_territory
+		}
+	}
+	
+	GRE_integrate_caucasus_states = {
+		allowed = {
+			original_tag = GRE
+		}
+		visible = {
+			NOT = { has_country_flag = GRE_integrate_caucasus_states }
+		}
+		available = {
+			is_subject = no
+			controls_state = 229
+			controls_state = 230
+			controls_state = 231
+			controls_state = 808
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			229 = { add_core_of = ROOT }
+			230 = { add_core_of = ROOT }
+			231 = { add_core_of = ROOT }
+			808 = { add_core_of = ROOT }
+			set_country_flag = GRE_integrate_caucasus_states
+		}
+	}
+	
+	GRE_integrate_carthaginian_territory = {
+		allowed = {
+			original_tag = GRE
+		}
+		visible = {
+			NOT = { has_country_flag = GRE_integrate_carthaginian_territory }
+		}
+		available = {
+			is_subject = no
+			controls_state = 458
+			controls_state = 665
+		}
+		cost = 40
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			458 = { add_core_of = ROOT }
+			665 = { add_core_of = ROOT }
+			set_country_flag = GRE_integrate_carthaginian_territory
+		}
+	}
+	
+	GRE_first_northern_expansion = {
+		allowed = {
+			original_tag = GRE
+		}
+		visible = {
+			NOT = { has_country_flag = GRE_first_northern_expansion }
+		}
+		available = {
+			is_subject = no
+			controls_state = 44
+			controls_state = 48
+			controls_state = 106
+			controls_state = 211
+			controls_state = 212
+			controls_state = 801
+			controls_state = 803
+			controls_state = 805
+
+		}
+		cost = 80
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			44 = { add_core_of = ROOT }
+			48 = { add_core_of = ROOT }
+			106 = { add_core_of = ROOT }
+			211 = { add_core_of = ROOT }
+			212 = { add_core_of = ROOT }
+			801 = { add_core_of = ROOT }
+			803 = { add_core_of = ROOT }
+			805 = { add_core_of = ROOT }
+			set_country_flag = GRE_first_northern_expansion
+		}
+	}
+	
+	GRE_integrate_yugoslav_territory = {
+		allowed = {
+			original_tag = GRE
+		}
+		visible = {
+			NOT = { has_country_flag = GRE_integrate_yugoslav_territory }
+			has_country_flag = GRE_first_northern_expansion
+		}
+		available = {
+			is_subject = no
+			custom_trigger_tooltip = {
+				tooltip = hellenic_empire_yugoslavia_required_states_tt
+				controls_state = 45
+				controls_state = 102
+				controls_state = 103
+				controls_state = 104
+				controls_state = 105
+				controls_state = 106
+				controls_state = 107
+				controls_state = 108
+				controls_state = 109
+				controls_state = 764
+				controls_state = 802
+				controls_state = 803
+				controls_state = 804
+			}
+		}
+		cost = 80
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			custom_effect_tooltip = hellenic_empire_yugoslavia_coring_states_tt
+			hidden_effect = {
+				44 = { add_core_of = ROOT }
+				45 = { add_core_of = ROOT }
+				102 = { add_core_of = ROOT }
+				103 = { add_core_of = ROOT }
+				104 = { add_core_of = ROOT }
+				105 = { add_core_of = ROOT }
+				106 = { add_core_of = ROOT }
+				107 = { add_core_of = ROOT }
+				108 = { add_core_of = ROOT }
+				109 = { add_core_of = ROOT }
+				163 = { add_core_of = ROOT }
+				764 = { add_core_of = ROOT }
+				802 = { add_core_of = ROOT }
+				803 = { add_core_of = ROOT }
+				804 = { add_core_of = ROOT }
+			}
+			set_country_flag = GRE_integrate_yugoslav_territory
+		}
+	}
+	
+	GRE_integrate_romanian_territory = {
+		allowed = {
+			original_tag = GRE
+		}
+		visible = {
+			NOT = { has_country_flag = GRE_integrate_romanian_territory }
+			has_country_flag = GRE_first_northern_expansion
+		}
+		available = {
+			is_subject = no
+			custom_trigger_tooltip = {
+				tooltip = hellenic_empire_romania_required_states_tt
+				controls_state = 46
+				controls_state = 76
+				controls_state = 77
+				controls_state = 78
+				controls_state = 79
+				controls_state = 80
+				controls_state = 81
+				controls_state = 82
+				controls_state = 83
+				controls_state = 84
+				controls_state = 766
+			}
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			custom_effect_tooltip = hellenic_empire_romania_coring_states_tt
+			hidden_effect = {
+				46 = { add_core_of = ROOT }
+				76 = { add_core_of = ROOT }
+				77 = { add_core_of = ROOT }
+				78 = { add_core_of = ROOT }
+				79 = { add_core_of = ROOT }
+				80 = { add_core_of = ROOT }
+				81 = { add_core_of = ROOT }
+				82 = { add_core_of = ROOT }
+				83 = { add_core_of = ROOT }
+				84 = { add_core_of = ROOT }
+				766 = { add_core_of = ROOT }
+			}
+			set_country_flag = GRE_integrate_romanian_territory
+		}
+	}
+	
+	GRE_second_northern_expansion = {
+		allowed = {
+			original_tag = GRE
+		}
+		visible = {
+			NOT = { has_country_flag = GRE_second_northern_expansion }
+			has_country_flag = GRE_integrate_yugoslav_territory
+			has_country_flag = GRE_integrate_romanian_territory
+		}
+		available = {
+			is_subject = no
+			custom_trigger_tooltip = {
+				tooltip = hellenic_empire_central_europe_required_states_tt
+				controls_state = 4
+				controls_state = 9
+				controls_state = 43
+				controls_state = 69
+				controls_state = 70
+				controls_state = 71
+				controls_state = 72
+				controls_state = 73
+				controls_state = 74
+				controls_state = 75
+				controls_state = 152
+				controls_state = 153
+				controls_state = 154
+				controls_state = 155
+				controls_state = 664
+				controls_state = 807 
+				controls_state = 822 
+			}
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			custom_effect_tooltip = hellenic_empire_central_europe_coring_states_tt
+			hidden_effect = {
+				4 = { add_core_of = ROOT }
+				9 = { add_core_of = ROOT }
+				43 = { add_core_of = ROOT }
+				69 = { add_core_of = ROOT }
+				70 = { add_core_of = ROOT }
+				71 = { add_core_of = ROOT }
+				72 = { add_core_of = ROOT }
+				73 = { add_core_of = ROOT }
+				74 = { add_core_of = ROOT }
+				75 = { add_core_of = ROOT }
+				152 = { add_core_of = ROOT }
+				153 = { add_core_of = ROOT }
+				154 = { add_core_of = ROOT }
+				155 = { add_core_of = ROOT }
+				664 = { add_core_of = ROOT }
+				807 = { add_core_of = ROOT } 
+				822 = { add_core_of = ROOT } 
+			}
+			set_country_flag = GRE_second_northern_expansion
+		}
+	}
+	
+	GRE_integrate_southern_italy = {
+		allowed = {
+			original_tag = GRE
+		}
+		visible = {
+			NOT = { has_country_flag = GRE_integrate_southern_italy }
+		}
+		available = {
+			is_subject = no
+			controls_state = 114
+			controls_state = 115
+			controls_state = 117
+			controls_state = 156
+		}
+		cost = 80
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			114 = { add_core_of = ROOT }
+			115 = { add_core_of = ROOT }
+			117 = { add_core_of = ROOT }
+			156 = { add_core_of = ROOT }
+			set_country_flag = GRE_integrate_southern_italy
+		}
+	}
+	
+	GRE_integrate_northern_italy = {
+		allowed = {
+			original_tag = GRE
+		}
+		visible = {
+			NOT = { has_country_flag = GRE_integrate_northern_italy }
+			has_country_flag = GRE_integrate_southern_italy
+		}
+		available = {
+			is_subject = no
+			custom_trigger_tooltip = {
+				tooltip = hellenic_empire_italy_required_states_tt
+				controls_state = 2
+				controls_state = 39
+				controls_state = 115
+				controls_state = 157
+				controls_state = 158
+				controls_state = 159
+				controls_state = 160
+				controls_state = 161
+				controls_state = 162
+				controls_state = 736
+			}
+		}
+		cost = 80
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			custom_effect_tooltip = hellenic_empire_italy_coring_states_tt
+			hidden_effect = {
+				2 = { add_core_of = ROOT }
+				39 = { add_core_of = ROOT }
+				115 = { add_core_of = ROOT }
+				157 = { add_core_of = ROOT }
+				158 = { add_core_of = ROOT }
+				159 = { add_core_of = ROOT }
+				160 = { add_core_of = ROOT }
+				161 = { add_core_of = ROOT }
+				162 = { add_core_of = ROOT }
+				736 = { add_core_of = ROOT }
+			}
+			set_country_flag = GRE_integrate_northern_italy
+		}
+	}
+	
+	GRE_integrate_algerian_territory = {
+		allowed = {
+			original_tag = GRE
+		}
+		visible = {
+			NOT = { has_country_flag = GRE_integrate_algerian_territory }
+			OR = {
+				has_country_flag = GRE_integrate_carthaginian_territory
+				has_country_flag = GRE_integrate_southern_france
+				has_country_flag = GRE_integrate_spanish_territory
+				has_country_flag = GRE_integrate_southern_italy
+			}
+		}
+		available = {
+			is_subject = no
+			custom_trigger_tooltip = {
+				tooltip = hellenic_empire_algeria_required_states_tt
+				controls_state = 459
+				controls_state = 460
+				controls_state = 513
+				controls_state = 514
+			}
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			custom_effect_tooltip = hellenic_empire_algeria_coring_states_tt
+			hidden_effect = {
+				459 = { add_core_of = ROOT }
+				460 = { add_core_of = ROOT }
+				513 = { add_core_of = ROOT }
+				514 = { add_core_of = ROOT }
+			}
+			set_country_flag = GRE_integrate_algerian_territory
+		}
+	}
+	
+	GRE_integrate_moroccan_territory = {
+		allowed = {
+			original_tag = GRE
+		}
+		visible = {
+			NOT = { has_country_flag = GRE_integrate_moroccan_territory }
+			OR = {
+				has_country_flag = GRE_integrate_algerian_territory
+				has_country_flag = GRE_integrate_spanish_territory
+			}
+		}
+		available = {
+			is_subject = no
+			custom_trigger_tooltip = {
+				tooltip = hellenic_empire_morocco_required_states_tt
+				controls_state = 290
+				controls_state = 461
+				controls_state = 462
+				controls_state = 783
+				controls_state = 811
+				controls_state = 812
+			}
+		}
+		cost = 60
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			custom_effect_tooltip = hellenic_empire_morocco_coring_states_tt
+			hidden_effect = {
+				290 = { add_core_of = ROOT }
+				461 = { add_core_of = ROOT }
+				462 = { add_core_of = ROOT }
+				699 = { add_core_of = ROOT }
+				783 = { add_core_of = ROOT }
+				811 = { add_core_of = ROOT }
+				812 = { add_core_of = ROOT }
+			}
+			set_country_flag = GRE_integrate_moroccan_territory
+		}
+	}
+	
+	GRE_integrate_aethiopian_territory = {
+		allowed = {
+			original_tag = GRE
+		}
+		visible = {
+			NOT = { has_country_flag = GRE_integrate_aethiopian_territory }
+		}
+		available = {
+			is_subject = no
+			controls_state = 268
+			controls_state = 269
+			controls_state = 271
+			controls_state = 550
+			controls_state = 559
+			controls_state = 818
+			controls_state = 819
+			controls_state = 820
+			controls_state = 821
+		}
+		cost = 80
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			268 = { add_core_of = ROOT }
+			269 = { add_core_of = ROOT }
+			271 = { add_core_of = ROOT }
+			550 = { add_core_of = ROOT }
+			559 = { add_core_of = ROOT }
+			818 = { add_core_of = ROOT }
+			819 = { add_core_of = ROOT }
+			820 = { add_core_of = ROOT }
+			821 = { add_core_of = ROOT }
+			547 = { add_core_of = ROOT }
+			set_country_flag = GRE_integrate_aethiopian_territory
+		}
+	}
+	
+	GRE_integrate_southern_france = {
+		allowed = {
+			original_tag = GRE
+		}
+		visible = {
+			NOT = { has_country_flag = GRE_integrate_southern_france }
+		}
+		available = {
+			is_subject = no
+			controls_state = 1
+			controls_state = 19
+			controls_state = 20
+			controls_state = 21
+			controls_state = 22
+			controls_state = 23
+			controls_state = 25
+			controls_state = 26
+			controls_state = 31
+			controls_state = 32
+			controls_state = 33
+			controls_state = 735
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			1 = { add_core_of = ROOT }
+			19 = { add_core_of = ROOT }
+			20 = { add_core_of = ROOT }
+			21 = { add_core_of = ROOT }
+			22 = { add_core_of = ROOT }
+			23 = { add_core_of = ROOT }
+			25 = { add_core_of = ROOT }
+			26 = { add_core_of = ROOT }
+			31 = { add_core_of = ROOT }
+			32 = { add_core_of = ROOT }
+			33 = { add_core_of = ROOT }
+			735 = { add_core_of = ROOT }
+			804 = { add_core_of = ROOT }
+			set_country_flag = GRE_integrate_southern_france
+		}
+	}
+	
+	GRE_integrate_spanish_territory = {
+		allowed = {
+			original_tag = GRE
+		}
+		visible = {
+			NOT = { has_country_flag = GRE_integrate_spanish_territory }
+		}
+		available = {
+			is_subject = no
+			custom_trigger_tooltip = {
+				tooltip = hellenic_empire_spain_required_states_tt
+				controls_state = 41
+				controls_state = 165
+				controls_state = 166
+				controls_state = 167
+				controls_state = 168
+				controls_state = 169
+				controls_state = 170
+				controls_state = 171
+				controls_state = 172
+				controls_state = 173
+				controls_state = 174
+				controls_state = 175
+				controls_state = 176
+				controls_state = 177
+				controls_state = 788
+				controls_state = 789
+				controls_state = 790
+				controls_state = 791
+				controls_state = 792
+				controls_state = 793
+				controls_state = 794
+			}
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			custom_effect_tooltip = hellenic_empire_spain_coring_states_tt
+			hidden_effect = {
+				41 = { add_core_of = ROOT }
+				165 = { add_core_of = ROOT }
+				166 = { add_core_of = ROOT }
+				167 = { add_core_of = ROOT }
+				168 = { add_core_of = ROOT }
+				169 = { add_core_of = ROOT }
+				170 = { add_core_of = ROOT }
+				171 = { add_core_of = ROOT }
+				172 = { add_core_of = ROOT }
+				173 = { add_core_of = ROOT }
+				174 = { add_core_of = ROOT }
+				175 = { add_core_of = ROOT }
+				176 = { add_core_of = ROOT }
+				177 = { add_core_of = ROOT }
+				788 = { add_core_of = ROOT }
+				789 = { add_core_of = ROOT }
+				790 = { add_core_of = ROOT }
+				791 = { add_core_of = ROOT }
+				792 = { add_core_of = ROOT }
+				793 = { add_core_of = ROOT }
+				794 = { add_core_of = ROOT }
+			}
+			set_country_flag = GRE_integrate_spanish_territory
+		}
+	}
+	
+	GRE_integrate_babylonian_territory = {
+		allowed = {
+			original_tag = GRE
+		}
+		visible = {
+			NOT = { has_country_flag = GRE_integrate_babylonian_territory }
+		}
+		available = {
+			is_subject = no
+			controls_state = 291
+			controls_state = 656
+			controls_state = 675
+			controls_state = 676
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			291 = { add_core_of = ROOT }
+			656 = { add_core_of = ROOT }
+			675 = { add_core_of = ROOT }
+			676 = { add_core_of = ROOT }
+			set_country_flag = GRE_integrate_babylonian_territory
+		}
+	}
+	
+	GRE_integrate_persian_territory = {
+		allowed = {
+			original_tag = GRE
+		}
+		visible = {
+			NOT = { has_country_flag = GRE_integrate_persian_territory }
+			OR = {
+				has_country_flag = GRE_integrate_caucasus_states
+				has_country_flag = GRE_integrate_turkish_territory
+				has_country_flag = GRE_integrate_arab_states
+			}
+		}
+		available = {
+			is_subject = no
+			custom_trigger_tooltip = {
+				tooltip = hellenic_empire_persia_required_states_tt
+				controls_state = 266
+				controls_state = 410
+				controls_state = 411
+				controls_state = 412
+				controls_state = 413
+				controls_state = 414
+				controls_state = 416
+				controls_state = 417
+				controls_state = 418
+				controls_state = 419
+				controls_state = 420
+				controls_state = 421
+			}
+		}
+		cost = 80
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			custom_effect_tooltip = hellenic_empire_persia_coring_states_tt
+			hidden_effect = {
+				266 = { add_core_of = ROOT }
+				410 = { add_core_of = ROOT }
+				411 = { add_core_of = ROOT }
+				412 = { add_core_of = ROOT }
+				413 = { add_core_of = ROOT }
+				414 = { add_core_of = ROOT }
+				416 = { add_core_of = ROOT }
+				417 = { add_core_of = ROOT }
+				418 = { add_core_of = ROOT }
+				419 = { add_core_of = ROOT }
+				420 = { add_core_of = ROOT }
+				421 = { add_core_of = ROOT }
+			}
+			set_country_flag = GRE_integrate_persian_territory
+		}
+	}
+	
+	GRE_integrate_arab_states = {
+		allowed = {
+			original_tag = GRE
+		}
+		visible = {
+			NOT = { has_country_flag = GRE_integrate_arab_states }
+			OR = {
+				has_country_flag = GRE_integrate_persian_territory
+				has_country_flag = GRE_integrate_turkish_territory
+				has_country_flag = GRE_integrate_assyrian_territory
+			}
+		}
+		available = {
+			is_subject = no
+			custom_trigger_tooltip = {
+				tooltip = hellenic_empire_arab_required_states_tt
+				controls_state = 292
+				controls_state = 293
+				controls_state = 294
+				controls_state = 658
+				controls_state = 659
+				controls_state = 678
+				controls_state = 679
+				controls_state = 765
+				controls_state = 813
+			}
+		}
+		cost = 80
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			custom_effect_tooltip = hellenic_empire_arab_coring_states_tt
+			hidden_effect = {
+				292 = { add_core_of = ROOT }
+				293 = { add_core_of = ROOT }
+				294 = { add_core_of = ROOT }
+				658 = { add_core_of = ROOT }
+				659 = { add_core_of = ROOT }
+				678 = { add_core_of = ROOT }
+				679 = { add_core_of = ROOT }
+				765 = { add_core_of = ROOT }
+				813 = { add_core_of = ROOT }
+			}
+			set_country_flag = GRE_integrate_arab_states
+		}
+	}
+	
+	GRE_integrate_tauri_territory = {
+		allowed = {
+			original_tag = GRE
+		}
+		visible = {
+			NOT = { has_country_flag = GRE_integrate_tauri_territory }
+		}
+		available = {
+			is_subject = no
+			controls_state = 137
+		}
+		cost = 20
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			137 = { add_core_of = ROOT }
+			set_country_flag = GRE_integrate_tauri_territory
+		}
+	}
+	
+	GRE_integrate_portuguese_territory = {
+		allowed = {
+			original_tag = GRE
+		}
+		visible = {
+			NOT = { has_country_flag = GRE_integrate_portuguese_territory }
+			has_country_flag = GRE_integrate_spanish_territory
+		}
+		available = {
+			is_subject = no
+			custom_trigger_tooltip = {
+				tooltip = hellenic_empire_portugal_required_states_tt
+				controls_state = 112
+				controls_state = 118
+				controls_state = 178
+				controls_state = 179
+				controls_state = 180
+				controls_state = 181
+				controls_state = 697
+				controls_state = 698
+				controls_state = 795
+			}
+		}
+		cost = 60
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			custom_effect_tooltip = hellenic_empire_portugal_coring_states_tt
+			hidden_effect = {
+				112 = { add_core_of = ROOT }
+				118 = { add_core_of = ROOT }
+				178 = { add_core_of = ROOT }
+				179 = { add_core_of = ROOT }
+				180 = { add_core_of = ROOT }
+				181 = { add_core_of = ROOT }
+				697 = { add_core_of = ROOT }
+				698 = { add_core_of = ROOT }
+				795 = { add_core_of = ROOT }
+			}
+			set_country_flag = GRE_integrate_portuguese_territory
+		}
+	}
+	
+	GRE_integrate_scythian_territory = {
+		allowed = {
+			original_tag = GRE
+		}
+		visible = {
+			NOT = { has_country_flag = GRE_integrate_scythian_territory }
+			OR = { 
+				has_country_flag = GRE_integrate_tauri_territory
+				has_country_flag = GRE_integrate_romanian_territory
+			}
+		}
+		available = {
+			is_subject = no
+			custom_trigger_tooltip = {
+				tooltip = hellenic_empire_scythia_required_states_tt
+				controls_state = 89
+				controls_state = 91
+				controls_state = 93
+				controls_state = 192
+				controls_state = 193
+				controls_state = 196
+				controls_state = 197
+				controls_state = 198
+				controls_state = 199
+				controls_state = 200
+				controls_state = 201
+				controls_state = 202
+				controls_state = 203
+				controls_state = 218
+				controls_state = 221
+				controls_state = 225
+				controls_state = 226
+				controls_state = 227
+				controls_state = 228
+				controls_state = 259
+			}
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			custom_effect_tooltip = hellenic_empire_scythia_coring_states_tt
+			hidden_effect = {
+				89 = { add_core_of = ROOT }
+				91 = { add_core_of = ROOT }
+				93 = { add_core_of = ROOT }
+				192 = { add_core_of = ROOT }
+				193 = { add_core_of = ROOT }
+				196 = { add_core_of = ROOT }
+				197 = { add_core_of = ROOT }
+				198 = { add_core_of = ROOT }
+				199 = { add_core_of = ROOT }
+				200 = { add_core_of = ROOT }
+				201 = { add_core_of = ROOT }
+				202 = { add_core_of = ROOT }
+				203 = { add_core_of = ROOT }
+				218 = { add_core_of = ROOT }
+				221 = { add_core_of = ROOT }
+				225 = { add_core_of = ROOT }
+				226 = { add_core_of = ROOT }
+				227 = { add_core_of = ROOT }
+				228 = { add_core_of = ROOT }
+				259 = { add_core_of = ROOT }
+			}
+			set_country_flag = GRE_integrate_scythian_territory
+		}
+	}
+	
+	GRE_palace_of_helios = {
+		allowed = {
+			original_tag = GRE
+		}
+		visible = {
+			NOT = { has_country_flag = GRE_palace_of_helios }
+			has_country_flag = GRE_integrate_persian_territory
+		}
+		available = {
+			is_subject = no
+			controls_state = 444
+			controls_state = 445
+			controls_state = 797
+			controls_state = 798
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			444 = { add_core_of = ROOT }
+			445 = { add_core_of = ROOT }
+			797 = { add_core_of = ROOT }
+			798 = { add_core_of = ROOT }
+			set_country_flag = GRE_palace_of_helios
+		}
+	}
+	
+}
+
+
+
+elect_hellenic_leader = {
+	
+	elect_the_emperor = {
+		visible = {
+			original_tag = GRE
+			NOT = { 
+				has_country_leader = { 
+					name = "William Olympios"
+					ruling_only = yes
+				}
+			} 
+		}
+		available = {
+			has_government = neutrality 
+			has_cosmetic_tag = GRE_hellenic 
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			kill_country_leader = yes 
+			create_country_leader = {
+				name = "William Olympios"
+				desc = ""
+				picture = "Portrait_Greece_Nikos_Belogiannis.dds"
+				expire = "1985.1.1"
+				ideology = despotism
+				traits = {
+					divine_creator blessing_of_the_gods greatest_war_hero founder_of_civilizations the_first_emperor heavenly_judgment 
+				}
+			}
+		}
+	}
+	
+	elect_abdulmecid_ii = {
+		visible = {
+			original_tag = GRE
+			NOT = { 
+				has_country_leader = { 
+					name = "Abdülmecid II"
+					ruling_only = yes
+				}
+			} 
+		}
+		available = {
+			has_government = neutrality 
+			has_cosmetic_tag = GRE_hellenic 
+			has_country_flag = GRE_integrate_turkish_territory
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			kill_country_leader = yes 
+			create_country_leader = {
+				name = "Abdülmecid II"
+				desc = "POLITICS_ABDULMEJID_II_DESC"
+				picture = GFX_portrait_tur_abdulmejid_ii
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					gentle_scholar
+				}
+			}
+		}
+	}
+	
+	elect_george_ii = {
+		visible = {
+			original_tag = GRE
+			NOT = { 
+				has_country_leader = { 
+					name = "George II"
+					ruling_only = yes
+				}
+			} 
+		}
+		available = {
+			has_government = neutrality 
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			kill_country_leader = yes 
+			create_country_leader = {
+				name = "George II"
+				desc = ""
+				picture = "Portrait_Greece_George_II.dds"
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+				}
+			}
+		}
+	}
+	
+	elect_paul_i = {
+		visible = {
+			original_tag = GRE
+			NOT = { 
+				has_country_leader = { 
+					name = "Emperor Paul I"
+					ruling_only = yes
+				}
+			} 
+		}
+		available = {
+			has_government = neutrality 
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			kill_country_leader = yes 
+			create_country_leader = {
+				name = "Emperor Paul I"
+				desc = ""
+				picture = "Portrait_Greece_Paul_I.dds"
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					divine_creator blessing_of_the_gods founder_of_civilizations heavenly_judgment master_of_war 
+				}
+			}
+		}
+	}
+	
+	elect_michael_i = {
+		visible = {
+			original_tag = GRE
+			NOT = { 
+				has_country_leader = { 
+					name = "Michael I"
+					ruling_only = yes
+				}
+			} 
+		}
+		available = {
+			has_government = neutrality 
+			has_cosmetic_tag = GRE_hellenic 
+			has_country_flag = GRE_integrate_romanian_territory 
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			kill_country_leader = yes 
+			create_country_leader = {
+				name = "Michael I"
+				desc = "POLITICS_MICHAEL_I_DESC"
+				picture = GFX_Portrait_romania_michael_i				
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+				}
+			}
+		}
+	}
+	
+	elect_peter_ii = {
+		visible = {
+			original_tag = GRE
+			NOT = { 
+				has_country_leader = { 
+					name = "Peter II"
+					ruling_only = yes
+				}
+			} 
+		}
+		available = {
+			has_government = neutrality 
+			has_cosmetic_tag = GRE_hellenic 
+			has_country_flag = GRE_integrate_yugoslav_territory 
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			kill_country_leader = yes 
+			create_country_leader = {
+				name = "Peter II"
+				desc = "POLITICS_PETER_II_DESC"
+				picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Peter_II.dds"
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					legitimate_heir
+				}
+			}
+		}
+	}
+	
+	elect_ferdinand_i = {
+		visible = {
+			original_tag = GRE
+			NOT = { 
+				has_country_leader = { 
+					name = "Ferdinand I"
+					ruling_only = yes
+				}
+			} 
+		}
+		available = {
+			has_government = neutrality 
+			has_cosmetic_tag = GRE_hellenic 
+			has_country_flag = GRE_first_northern_expansion 
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			kill_country_leader = yes 
+			create_country_leader = {
+				name = "Ferdinand I"
+				desc = "POLITICS_FERDINAND_I_DESC"
+				picture = GFX_portrait_bul_ferdinand_i
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					dreams_of_a_new_byzantium
+				}
+			}
+		}
+	}
+	
+	elect_victor_emmanuel = {
+		visible = {
+			original_tag = GRE
+			NOT = { 
+				has_country_leader = { 
+					name = "Victor Emmanuel III"
+					ruling_only = yes
+				}
+			} 
+		}
+		available = {
+			has_government = neutrality 
+			has_cosmetic_tag = GRE_hellenic 
+			has_country_flag = GRE_integrate_northern_italy 
+			has_country_flag = GRE_integrate_southern_italy 
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			kill_country_leader = yes 
+			create_country_leader = {
+				name = "Victor Emmanuel III"
+				desc = "POLITICS_VICTOR_EMMANUEL_III_DESC"
+				picture = GFX_portrait_italy_victor_emmanuel_iii
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+
+				}
+			}
+		}
+	}
+	
+	elect_augustus_mussolini = {
+		visible = {
+			original_tag = GRE
+			NOT = { 
+				has_country_leader = { 
+					name = "Augustus Mussolini"
+					ruling_only = yes
+				}
+			} 
+		}
+		available = {
+			has_government = neutrality 
+			has_cosmetic_tag = GRE_hellenic 
+			has_country_flag = GRE_integrate_northern_italy 
+			has_country_flag = GRE_integrate_southern_italy 
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			kill_country_leader = yes 
+			create_country_leader = {
+				name = "Augustus Mussolini"
+				desc = "POLITICS_BENITO_MUSSOLINI_DESC"
+				picture = "GFX_portrait_italy_emperor_mussolini"
+				expire = "1965.1.1"
+				ideology = despotism 
+				traits = {
+					dictator 
+				}
+			}
+		}
+	}
+	
+}
+
+
+hellenic_military_commanders = {
+	
+	GRE_appoint_paul_as_general = {
+		allowed = {
+			original_tag = GRE
+		}
+		visible = {
+			NOT = { has_country_flag = GRE_paul_as_general }
+		}
+		available = {
+			is_subject = no
+			NOT = { has_country_flag = GRE_paul_as_general }
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			create_corps_commander = {
+				name = "Paul I"
+				portrait_path = "gfx/leaders/GRE/Portrait_Greece_Paul_I.dds"
+				traits = { military_genius inspirational_leader politically_connected skilled_staffer expert_delegator brilliant_strategist }
+				skill = 7
+				attack_skill = 7
+				defense_skill = 7
+				planning_skill = 7
+				logistics_skill = 7
+			}
+			set_country_flag = GRE_paul_as_general
+		}
+	}
+	
+	expand_greek_commanders = {
+		visible = { 
+			original_tag = GRE 
+			NOT = { has_global_flag = greek_military_leadership_expanded } 
+		}
+		available = {
+			GRE = { has_capitulated = no } 
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_global_flag = greek_military_leadership_expanded
+			if = {
+				limit = { has_unit_leader = 301 }
+				remove_unit_leader = 301 
+			}
+			if = {
+				limit = { has_unit_leader = 302 }
+				remove_unit_leader = 302 
+			}
+			if = {
+				limit = { has_unit_leader = 303 }
+				remove_unit_leader = 303 
+			}
+			if = {
+				limit = { has_unit_leader = 305 }
+				remove_unit_leader = 305 
+			}
+			if = {
+				limit = { has_unit_leader = 307 }
+				remove_unit_leader = 307 
+			}
+			if = {
+				limit = { has_unit_leader = 308 }
+				remove_unit_leader = 308 
+			}
+			if = {
+				limit = { has_unit_leader = 309 }
+				remove_unit_leader = 309 
+			}
+			create_corps_commander = {
+				name = "Nikolaos Plastiras"
+				gfx = "GFX_portrait_gre_nikolaos_plastiras"
+				traits = { trait_GRE_venezelist_loyalist war_hero brilliant_strategist cavalry_officer cavalry_leader trickster } 
+				skill = 4 
+				attack_skill = 4
+				defense_skill = 4
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			create_field_marshal = {
+				name = "Theodoros Pangalos"
+				gfx = "GFX_portrait_gre_theodoros_pangalos"
+				traits = { trait_GRE_venezelist_loyalist trait_cautious media_personality } 
+				skill = 3 
+				attack_skill = 4
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 3
+			} 
+			create_corps_commander = {
+				name = "Dimitrios Psarros"
+				gfx = "GFX_portrait_gre_dimitrios_psarros"
+				traits = { trait_GRE_venezelist_loyalist war_hero trait_reckless trickster } 
+				skill = 2 
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Napoleon Zervas"
+				gfx = "GFX_portrait_gre_napoleon_zervas" 
+				traits = { trait_GRE_venezelist_loyalist harsh_leader guerilla_fighter trait_reckless commando }
+				skill = 5 
+				attack_skill = 5
+				defense_skill = 5
+				planning_skill = 4
+				logistics_skill = 4
+			}
+			create_corps_commander = {
+				name = "Aris Velouchiotis"
+				gfx = "GFX_portrait_gre_aris_velouchiotis"
+				traits = { trait_GRE_marxist_acolyte brilliant_strategist trickster commando }
+				skill = 4 
+				attack_skill = 5
+				defense_skill = 3
+				planning_skill = 4
+				logistics_skill = 4
+			}
+			create_corps_commander = {
+				name = "Panagiotis Demestichas"
+				gfx = "GFX_portrait_gre_panagiotis_demestichas"
+				traits = { trait_GRE_fascist_sympathizer trait_reckless infantry_officer hill_fighter } 
+				skill = 3 
+				attack_skill = 4
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 1
+			}
+		}
+	}
+	
+	expand_spanish_commanders = {
+		visible = { 
+			original_tag = SPR 
+			NOT = { has_global_flag = spanish_military_leadership_expanded } 
+		}
+		available = {
+			has_capitulated = no 
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_global_flag = spanish_military_leadership_expanded
+			every_unit_leader = { retire = yes }
+			create_field_marshal = {
+				name = "Francisco Franco"
+				gfx = "GFX_portrait_spain_francisco_franco"
+				traits = { organisational_leader logistics_wizard expert_delegator }
+				skill = 4
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 4
+				logistics_skill = 3
+			}
+			create_field_marshal = {
+				name = "Emilio Mola"
+				gfx = "GFX_portrait_SPA_emilio_mola"
+				traits = { organisational_leader trait_cautious thorough_planner }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 4
+				logistics_skill = 2
+			}
+			create_field_marshal = {
+				name = "Manuel Fal Conde"
+				gfx = "GFX_portrait_SPA_manuel_fal_conde"
+				traits = { cavalry_officer unyielding_defender }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 3
+			}
+			create_field_marshal = {
+				name = "José Asensio Torrado" 
+				gfx = "GFX_portrait_SPR_jose_asensio_torrado"
+				traits = { organisational_leader defensive_doctrine }
+				skill = 2
+				attack_skill = 1
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 1
+			}
+			create_field_marshal = {
+				name = "Buenaventura Durruti"
+				gfx = "GFX_portrait_SPR_buenaventura_durruti"
+				traits = { infantry_officer offensive_doctrine aggressive_assaulter }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_field_marshal = {
+				name = "Máté Zalka"
+				gfx = "GFX_portrait_SPR_mate_zalka"
+				traits = {  }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Vicente Rojo Lluch"
+				gfx = "GFX_portrait_SPR_vicente_rojo_lluch"
+				traits = { brilliant_strategist }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "José Miaja"
+				gfx = "GFX_portrait_SPR_jose_miaja"
+				traits = { infantry_leader }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 1
+			}
+			create_corps_commander = { 
+				name = "Valentín González"
+				gfx = "GFX_portrait_SPR_valentin_gonzalez"
+				traits = { harsh_leader }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "Juan Modesto"
+				gfx = "GFX_portrait_SPR_juan_modesto"
+				traits = { trait_mountaineer }
+				skill = 2
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "Antonio Cordón García"
+				gfx = "GFX_portrait_SPR_antonio_cordon_garcia"
+				traits = { infantry_leader }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 3
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "János Gálicz"
+				gfx = "GFX_portrait_SPR_janos_galicz"
+				traits = { trait_reckless }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "Mohamed Meziane"
+				gfx = "GFX_portrait_SPA_mohamed_meziane"
+				traits = { harsh_leader career_officer }
+				skill = 4
+				attack_skill = 5
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			create_corps_commander = { # Could fit for all 3 factions
+				name = "Gonzalo Queipo de Llano"
+				gfx = "GFX_portrait_SPA_gonzalo_queipo_de_llano"
+				traits = { infantry_officer }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Juan Yagüe"
+				gfx = "GFX_portrait_SPA_juan_yague"
+				traits = { brilliant_strategist trait_reckless }
+				skill = 3
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Agustín Muñoz Grandes"
+				gfx = "GFX_portrait_SPA_augustin_muynoz_grandes"
+				traits = { infantry_officer }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "José Enrique Varela"
+				gfx = "GFX_portrait_SPA_jose_enrique_varela"
+				traits = { organizer infantry_leader }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Miguel Cabanellas"
+				gfx = "GFX_portrait_SPA_miguel_cabanellas"
+				traits = { cavalry_officer old_guard }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "José Millán Astray"
+				gfx = "GFX_portrait_SPA_jose_millan_astray"
+				traits = { war_hero trait_reckless }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Eduardo Medrano Rivas"
+				gfx = "GFX_portrait_SPR_eduardo_medrano_rivas"
+				traits = { infantry_leader }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "Lina Odena"
+				gfx = "GFX_portrait_SPR_lina_odena"
+				traits = { adaptable }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "Cipriano Mera"
+				gfx = "GFX_portrait_SPR_cipriano_mera"
+				traits = { trait_cautious }
+				skill = 2
+				attack_skill = 1
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_navy_leader = {
+				name = "Miguel Buiza Fernández-Palacios"
+				gfx = "GFX_portrait_SPR_miguel_buiza_fernandez_palacios"
+				traits = { craven }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				maneuvering_skill = 1
+				coordination_skill = 1
+			}
+			create_navy_leader = {
+				name = "Luis Carrero Blanco"
+				gfx = "GFX_portrait_SPA_luis_carrero_blanco"
+				traits = { seawolf }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				maneuvering_skill = 2
+				coordination_skill = 1
+			}
+		}
+	}
+	
+	incorporate_greek_commanders = {
+		visible = { 
+			NOT = { original_tag = GRE } 
+			NOT = { has_global_flag = greek_unit_commanders_hired } 
+		}
+		available = {
+			NOT = { country_exists = GRE } 
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_global_flag = greek_unit_commanders_hired
+			create_field_marshal = {
+				name = "Alexandros Papagos"
+				gfx = "GFX_portrait_gre_alexandros_papagos"
+				traits = { trait_GRE_stauch_monarchist old_guard war_hero career_officer inflexible_strategist trait_mountaineer }
+				skill = 4 
+				attack_skill = 3
+				defense_skill = 4
+				planning_skill = 4
+				logistics_skill = 3
+			}
+			create_field_marshal = {
+				name = "Theodoros Pangalos"
+				gfx = "GFX_portrait_gre_theodoros_pangalos"
+				traits = { trait_GRE_venezelist_loyalist trait_cautious media_personality } 
+				skill = 3 
+				attack_skill = 4
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 3
+			} 
+			create_corps_commander = {
+				name = "Nikolaos Plastiras"
+				gfx = "GFX_portrait_gre_nikolaos_plastiras"
+				traits = { trait_GRE_venezelist_loyalist war_hero brilliant_strategist cavalry_officer cavalry_leader trickster } 
+				skill = 4 
+				attack_skill = 4
+				defense_skill = 4
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "Dimitrios Psarros"
+				gfx = "GFX_portrait_gre_dimitrios_psarros"
+				traits = { trait_GRE_venezelist_loyalist war_hero trait_reckless trickster } 
+				skill = 2 
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Napoleon Zervas"
+				gfx = "GFX_portrait_gre_napoleon_zervas" 
+				traits = { trait_GRE_venezelist_loyalist harsh_leader guerilla_fighter trait_reckless commando }
+				skill = 5 
+				attack_skill = 5
+				defense_skill = 5
+				planning_skill = 4
+				logistics_skill = 4
+			}
+			create_corps_commander = {
+				name = "Aris Velouchiotis"
+				gfx = "GFX_portrait_gre_aris_velouchiotis"
+				traits = { trait_GRE_marxist_acolyte brilliant_strategist trickster commando }
+				skill = 4 
+				attack_skill = 5
+				defense_skill = 3
+				planning_skill = 4
+				logistics_skill = 4
+			}
+			create_corps_commander = {
+				name = "Panagiotis Demestichas"
+				gfx = "GFX_portrait_gre_panagiotis_demestichas"
+				traits = { trait_GRE_fascist_sympathizer trait_reckless infantry_officer hill_fighter } 
+				skill = 3 
+				attack_skill = 4
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "Charalambos Katsimitros"
+				gfx = "GFX_portrait_gre_charalambos_katsimitros"
+				traits = { trait_GRE_stauch_monarchist inflexible_strategist war_hero trait_cautious trickster trait_mountaineer }
+				skill = 3 
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 2 
+			}
+			create_corps_commander = {
+				name = "Markos Drakos"
+				gfx = "GFX_portrait_gre_markos_drakos"
+				traits = { career_officer infantry_officer trickster trait_mountaineer }
+				skill = 3
+				attack_skill = 1
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "Stefanos Sarafis"
+				picture = "Portrait_Greece_Stefanos_Sarafis.dds"
+				traits = { career_officer infantry_officer organizer }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "Konstantinos Davakis"
+				picture = "Portrait_Greece_Konstantinos_Davakis.dds"
+				traits = { trait_mountaineer infantry_leader }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 3
+			}
+			create_navy_leader = {
+				name = "Ioannis Toumbas"
+				portrait_path = "gfx/leaders/GRE/Portrait_Greece_Ioannis_Toumbas.dds"
+				traits = { navy_career_officer superior_tactician inshore_fighter naval_lineage }
+				skill = 4
+				attack_skill = 3
+				defense_skill = 4
+				maneuvering_skill = 4
+				coordination_skill = 3
+			}
+			create_navy_leader = {
+				name = "Alexandros Sakellariou"
+				portrait_path = "gfx/leaders/Europe/portrait_europe_generic_navy_4.dds"
+				traits = { fleet_protector media_personality bold caustic_personality }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 2
+				maneuvering_skill = 3
+				coordination_skill = 2
+			}
+		}
+	}
+	
+	incorporate_italian_commanders = {
+		visible = { 
+			NOT = { original_tag = ITA } 
+			NOT = { has_global_flag = italian_unit_commanders_hired } 
+		}
+		available = {
+			NOT = { country_exists = ITA } 
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_global_flag = italian_unit_commanders_hired
+			create_field_marshal = {
+				name = "Rodolfo Graziani"
+				portrait_path = "gfx/leaders/ITA/portrait_italy_radolfo_graziani.dds"
+				traits = { offensive_doctrine politically_connected trait_cautious }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 1
+			}
+			create_field_marshal = {
+				name = "Pietro Badoglio"
+				portrait_path = "gfx/leaders/ITA/Portrait_Italy_Pietro_Badoglio.dds"
+				traits = { defensive_doctrine old_guard politically_connected inflexible_strategist }
+				skill = 2
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+			create_field_marshal = {
+				name = "Emilio De Bono"
+				portrait_path = "gfx/leaders/ITA/portrait_italy_emilio_de_bono.dds"
+				traits = { defensive_doctrine old_guard politically_connected trait_cautious }
+				skill = 2
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "Ugo Cavallero"
+				portrait_path = "gfx/leaders/ITA/Portrait_Italy_Ugo_Cavallero.dds"
+				traits = { old_guard trait_cautious career_officer }
+				skill = 2
+				rank = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "Giovanni Messe"
+				portrait_path = "gfx/leaders/ITA/Portrait_Italy_Giovanni_Messe.dds"
+				traits = {  armor_officer war_hero }
+				skill = 4
+				rank = 1
+				attack_skill = 4
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 4
+			}
+			create_corps_commander = {
+				name = "Sebastiano Visconti Prasca"
+				portrait_path = "gfx/leaders/ITA/Portrait_Italy_Sebastiano_Visconti_Prasca.dds"
+				traits = { career_officer inflexible_strategist }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "Ubaldo Soddu"
+				portrait_path = "gfx/leaders/ITA/Portrait_Italy_Ubaldo_Soddu.dds"
+				traits = { career_officer trait_cautious }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "Italo Balbo"
+				portrait_path = "gfx/leaders/ITA/portrait_italy_italo_balbo.dds"
+				traits = { career_officer politically_connected }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+			create_navy_leader = {
+				name = "Inigo Campioni"
+				portrait_path = "gfx/leaders/ITA/Portrait_Italy_Inigo_Campioni.dds"
+				traits = { battleship_adherent superior_tactician spotter }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 2
+				maneuvering_skill = 3
+				coordination_skill = 3
+			}
+			create_navy_leader = {
+				name = "Alberto Da Zara"
+				portrait_path = "gfx/leaders/ITA/Portrait_Italy_Alberto_Da_Zara.dds"
+				traits = { gentlemanly superior_tactician }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 2
+				maneuvering_skill = 3
+				coordination_skill = 2
+			}
+			create_navy_leader = {
+				name = "Giuseppe Fioravanzo"
+				portrait_path = "gfx/leaders/ITA/Portrait_Italy_Giuseppe_Fioravanzo.dds"
+				traits = { aviation_enthusiast blockade_runner }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 2
+				maneuvering_skill = 4
+				coordination_skill = 2
+			}
+			create_navy_leader = {
+				name = "Carlo Bergamini"
+				portrait_path = "gfx/leaders/ITA/Portrait_Italy_Carlo_Bergamini.dds"
+				traits = { battleship_adherent gunnery_expert ironside }
+				skill = 2
+				attack_skill = 3
+				defense_skill = 1
+				maneuvering_skill = 2
+				coordination_skill = 1
+			}
+			create_navy_leader = {
+				name = "Angelo Iachino"
+				portrait_path = "gfx/leaders/ITA/Portrait_Italy_Angelo_Iachino.dds"
+				traits = { bold navy_career_officer superior_tactician spotter }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 1
+				maneuvering_skill = 3
+				coordination_skill = 1
+			}
+		}
+	}
+	
+	incorporate_bulgarian_commanders = {
+		visible = { 
+			NOT = { original_tag = BUL } 
+			NOT = { has_global_flag = bulgarian_unit_commanders_hired } 
+		}
+		available = {
+			NOT = { country_exists = BUL } 
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_global_flag = bulgarian_unit_commanders_hired
+			create_field_marshal = { 
+				name = "Nikola Mihailov Mihov"
+				gfx = GFX_portrait_bul_nikola_mihov
+				traits = { fortress_buster career_officer politically_connected trait_BUL_tsar_loyalist }
+				skill = 4
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			create_corps_commander = { 
+				name = "Georgi Popov"
+				gfx = GFX_portrait_bul_georgi_popov
+				traits = { war_hero skilled_staffer infantry_officer }
+				skill = 4
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 4
+			}
+			create_corps_commander = { 
+				name = "Nikola Hadzipetkov"
+				gfx = GFX_portrait_bul_nikola_hadzipetkov
+				traits = { brilliant_strategist infantry_officer organizer }
+				skill = 4
+				attack_skill = 2
+				defense_skill = 4
+				planning_skill = 4
+				logistics_skill = 3
+			}
+			create_corps_commander = { 
+				name = "Vasil Tenev Boydev"
+				gfx = GFX_portrait_bul_vasil_boydev
+				traits = { cavalry_officer trait_BUL_tsar_loyalist }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = { 
+				name = "Ivan Markov"
+				gfx = GFX_portrait_bul_ivan_markov
+				traits = { cavalry_leader trait_reckless }
+				skill = 3
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			create_corps_commander = { 
+				name = "Georgi Markov"
+				gfx = GFX_portrait_bul_georgi_markov
+				traits = { old_guard infantry_leader }
+				skill = 3
+				attack_skill = 4
+				defense_skill = 4
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = { 
+				name = "Asen Nikolov"
+				gfx = GFX_portrait_bul_asen_nikolov
+				traits = { career_officer infantry_officer }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 3
+			}
+			create_corps_commander = { 
+				name = "Konstantin Lukash"
+				gfx = GFX_portrait_bul_konstantin_lukash
+				traits = { infantry_officer }
+				skill = 2
+				attack_skill = 1
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 1
+			}
+			create_corps_commander = { 
+				name = "Nikola Stoychev"
+				gfx = GFX_portrait_bul_nikola_stoychev
+				traits = { trait_cautious trait_BUL_tsar_loyalist }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Damian Velchev"
+				gfx = GFX_portrait_bul_damyan_velchev
+				traits = { harsh_leader trait_reckless trait_BUL_zveno_member }
+				skill = 2
+				attack_skill = 3
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Angel Dotsev"
+				gfx = GFX_portrait_bul_angel_dotsev
+				traits = { organizer }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 3
+			}
+			create_navy_leader = { 
+				name = "Atanas Shalapatov"
+				gfx = GFX_portrait_bul_atanas_shalapatov
+				traits = { gentlemanly old_guard_navy }
+				skill = 2
+				attack_skill = 1
+				defense_skill = 2
+				maneuvering_skill = 2
+				coordination_skill = 2
+			}
+		}
+	}
+	
+	incorporate_turkish_commanders = {
+		visible = { 
+			NOT = { original_tag = TUR } 
+			NOT = { has_global_flag = turkish_unit_commanders_hired } 
+		}
+		available = {
+			NOT = { country_exists = TUR } 
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_global_flag = turkish_unit_commanders_hired
+			create_field_marshal = {
+				name = "Mustafa Kemal Atatürk"
+				portrait_path = "gfx/leaders/TUR/Portrait_Turkey_Mustafa_Kemal_Ataturk_Military.dds"
+				traits = { trait_TUR_kemalist_champion defensive_doctrine brilliant_strategist war_hero }
+				skill = 5 
+				attack_skill = 4
+				defense_skill = 5
+				planning_skill = 5
+				logistics_skill = 4
+			}
+			create_field_marshal = {
+				name = "Fevzi Çakmak"
+				gfx = "GFX_portrait_tur_fevzi_cakmak"
+				traits = { old_guard war_hero media_personality defensive_doctrine desert_fox logistics_wizard }
+				skill = 3 
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "Fahrettin Altay"
+				gfx = "GFX_portrait_tur_fahrettin_altay"
+				traits = { trait_TUR_kemalist_champion war_hero brilliant_strategist cavalry_officer hill_fighter }
+				skill = 4 
+				attack_skill = 4
+				defense_skill = 3
+				planning_skill = 4
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Kazim Orbay"
+				gfx = "GFX_portrait_tur_kazim_orbay"
+				traits = { trait_TUR_kemalist_champion war_hero media_personality infantry_leader }
+				skill = 4 
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 5
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "Cemil Cahit Toydemir"
+				gfx = "GFX_portrait_tur_cemil_cahit_toydemir"
+				traits = { trait_TUR_kemalist_champion career_officer infantry_officer hill_fighter }
+				skill = 3 
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Abdurrahman Nafiz Gürman"
+				gfx = "GFX_portrait_tur_abdurrahman_nafiz_gurman"
+				traits = { infantry_officer infantry_leader }
+				skill = 3 
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 2 
+			}
+			create_corps_commander = { 
+				name = "Kâzım Karabekir"
+				gfx = "GFX_portrait_tur_kazim_karabekir"
+				traits = { trait_cautious politically_connected desert_fox }
+				skill = 2 
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "Mustafa Muğlalı"
+				gfx = "GFX_portrait_tur_mustafa_mugali"
+				traits = { harsh_leader }
+				skill = 2 
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "Mehmet Salih Omurtak"
+				gfx = "GFX_portrait_tur_salih_omurtak"
+				traits = { trait_TUR_kemalist_champion politically_connected infantry_officer harsh_leader }
+				skill = 2 
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Hayrullah Fisek"
+				gfx = "GFX_portrait_tur_hayrullah_fisek"
+				traits = { career_officer trickster }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "Mehmet Nuri Yamut"
+				gfx = "GFX_portrait_tur_mehmet_nuri_yamut"
+				traits = { career_officer trait_reckless }
+				skill = 2 
+				attack_skill = 3
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Fakhri Pasha"
+				gfx = "GFX_portrait_tur_fakhri_pasha"
+				traits = { war_hero inflexible_strategist trickster desert_fox }
+				skill = 4 
+				attack_skill = 2
+				defense_skill = 4
+				planning_skill = 3
+				logistics_skill = 4
+			}
+			create_corps_commander = {
+				name = "Ahmet Fevzi Pasha"
+				gfx = "GFX_portrait_tur_ahmet_fevzi_pasha"
+				traits = { war_hero trait_cautious trait_mountaineer }
+				skill = 3 
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 2
+			}
+			create_field_marshal = {
+				name = "Refet Pasha"
+				gfx = "GFX_portrait_tur_refe_pasha"
+				traits = { war_hero brilliant_strategist }
+				skill = 3 
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "Mehmet Esat Pasha"
+				gfx = "GFX_portrait_tur_mehmed_esad_pasha"
+				traits = { war_hero inflexible_strategist media_personality trickster hill_fighter }
+				skill = 4 
+				attack_skill = 2
+				defense_skill = 5
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			create_navy_leader = {
+				name = "Sadik Altincan"
+				gfx = "GFX_portrait_tur_sadik_altincan"
+				traits = { media_personality bold }
+				skill = 2 
+				attack_skill = 3
+				defense_skill = 1
+				maneuvering_skill = 1
+				coordination_skill = 2
+			}
+			create_navy_leader = {
+				name = "Sukru Okan"
+				gfx = "GFX_portrait_tur_sukru_okan"
+				traits = { trait_TUR_kemalist_champion gentlemanly media_personality }
+				skill = 2 
+				attack_skill = 2
+				defense_skill = 1
+				maneuvering_skill = 2
+				coordination_skill = 2
+			}
+			create_navy_leader = {
+				name = "Mehmet Ali Ulgen"
+				gfx = "GFX_portrait_tur_mehmet_ali_ulgen"
+				traits = { career_officer gunnery_expert }
+				skill = 3 
+				attack_skill = 3
+				defense_skill = 2
+				maneuvering_skill = 2
+				coordination_skill = 3
+			}
+		}
+	}
+	
+	incorporate_yugoslav_commanders = {
+		visible = { 
+			NOT = { original_tag = YUG } 
+			NOT = { has_global_flag = yugoslav_unit_commanders_hired } 
+		}
+		available = {
+			NOT = { country_exists = YUG } 
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_global_flag = yugoslav_unit_commanders_hired
+			create_corps_commander = {
+				name = "Vladimir Čukavac"
+				gfx = GFX_Portrait_yugoslavia_vladimir_cukavac
+				traits = { trickster  }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Ivan Gošnjak"
+				gfx = GFX_Portrait_yugoslavia_ivan_gosnjak
+				traits = { urban_assault_specialist }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 3
+			}
+			create_field_marshal = {
+				name = "Danilo Kalafatović"
+				gfx = GFX_Portrait_yugoslavia_danilo_kalafatovic
+				traits = {  }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 1
+			}
+			create_field_marshal = {
+				name = "Milutin Nedić"
+				gfx = GFX_Portrait_yugoslavia_milutin_nedic
+				traits = { thorough_planner }
+				skill = 3	
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "Petar Kosić"
+				gfx = GFX_Portrait_yugoslavia_petar_kosic
+				traits = {  }
+				skill = 2
+				attack_skill = 1
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_navy_leader = {
+				name = "Marijan Polić"
+				gfx = GFX_Portrait_yugoslavia_marijan_polic
+				traits = { old_guard_navy navy_career_officer }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				maneuvering_skill = 1
+				coordination_skill = 2
+			}
+		}
+	}
+	
+	incorporate_egyptian_commanders = {
+		visible = { 
+			NOT = { original_tag = EGY } 
+			NOT = { has_global_flag = egyptian_unit_commanders_hired } 
+		}
+		available = {
+			NOT = { country_exists = EGY } 
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_global_flag = egyptian_unit_commanders_hired
+			create_field_marshal = {
+				name = "Muhammad Naguib"
+				portrait_path = "gfx/leaders/EGY/Portrait_EGY_Muhammad_Naguib.dds"
+				traits = { politically_connected infantry_officer organisational_leader}
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Gamal Abdel Nasser"
+				portrait_path = "gfx/leaders/EGY/Portrait_EGY_Gamal_Abdel_Nasser.dds"
+				traits = { organizer career_officer brilliant_strategist }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 4
+				logistics_skill = 4
+			}
+			create_corps_commander = {
+				name = "Muhammad Anwar Sadat"
+				portrait_path = "gfx/leaders/EGY/Portrait_EGY_Muhammad_Anwar_Sadat.dds"
+				traits = { desert_fox urban_assault_specialist }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 2
+			}
+			create_corps_commander = { 
+				name = "Abdel Hakim Amer"
+				portrait_path = "gfx/leaders/EGY/Portrait_EGY_Abdel_Hakim_Amer.dds"
+				traits = { desert_fox trickster }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "Abdul Munim Riad"
+				portrait_path = "gfx/leaders/EGY/Portrait_EGY_Abdul_Munim_Riad.dds"
+				traits = { urban_assault_specialist }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "Mohamed Ahmed Sadek"
+				portrait_path = "gfx/leaders/EGY/Portrait_EGY_Mohamed_Ahmed_Sadek.dds"
+				traits = { trait_engineer trait_cautious }
+				skill = 2
+				attack_skill = 1
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 1
+			}
+		}
+	}
+	
+	incorporate_gallic_commanders = {
+		visible = { 
+			NOT = { original_tag = GAL } 
+			NOT = { has_global_flag = gallic_unit_commanders_hired } 
+		}
+		available = {
+			NOT = { country_exists = GAL } 
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_global_flag = gallic_unit_commanders_hired
+			create_field_marshal = {
+				name = "Aime Doumenc"
+				portrait_path = "gfx/leaders/GAL/Portrait_FRA_Aime_Doumenc.dds"
+				traits = { defensive_doctrine trickster urban_assault_specialist }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 4
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "Georges Blanchard"
+				portrait_path = "gfx/leaders/GAL/Portrait_FRA_Georges_Blanchard.dds"
+				traits = { brilliant_strategist career_officer infantry_officer }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 4
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "Louis Franchet d'Esperey"
+				portrait_path = "gfx/leaders/GAL/Portrait_FRA_Louis_Franchet_d_Esperey.dds"
+				traits = { naval_invader trait_engineer winter_specialist }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "Gaston Billotte"
+				portrait_path = "gfx/leaders/GAL/Portrait_FRA_Gaston_Billotte.dds"
+				traits = { old_guard inflexible_strategist }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Adolphe Guillaumat"
+				portrait_path = "gfx/leaders/GAL/Portrait_FRA_Adolphe_Guillaumat.dds"
+				traits = { organizer trait_cautious }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Paul Legentilhomme"
+				portrait_path = "gfx/leaders/GAL/Portrait_FRA_Paul_Legentilhomme.dds"
+				traits = { ranger cavalry_officer hill_fighter }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_navy_leader = {
+				name = "Emile Muselier"
+				portrait_path = "gfx/leaders/GAL/Portrait_FRA_Emile_Muselier.dds"
+				traits = { naval_lineage superior_tactician }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 2
+				maneuvering_skill = 3
+				coordination_skill = 3
+			}
+			create_navy_leader = {
+				name = "Jean-Marie Charles Abrial"
+				portrait_path = "gfx/leaders/FRA/Portrait_France_Jean-Marie_Charles_Abrial.dds"
+				traits = { chief_engineer superior_tactician }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 3
+				maneuvering_skill = 3
+				coordination_skill = 2
+			}
+			create_navy_leader = {
+				name = "Jean-Pierre Esteva"
+				portrait_path = "gfx/leaders/FRA/Portrait_France_Jean-Pierre_Esteva.dds"
+				traits = { aviation_enthusiast }
+				skill = 2
+				attack_skill = 1
+				defense_skill = 2
+				maneuvering_skill = 2
+				coordination_skill = 2
+			}
+			create_navy_leader = {
+				name = "René-Émile Godfroy"
+				portrait_path = "gfx/leaders/FRA/Portrait_France_Rene-Emile_Godfroy.dds"
+				traits = { gentlemanly battleship_adherent old_guard_navy spotter }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 1
+				maneuvering_skill = 2
+				coordination_skill = 2
+			}
+			create_navy_leader = {
+				name = "Jean de Laborde"
+				portrait_path = "gfx/leaders/FRA/Portrait_France_Jean_de_Laborde.dds"
+				traits = { naval_lineage aviation_enthusiast }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				maneuvering_skill = 1
+				coordination_skill = 1
+			}
+		}
+	}
+	
+	incorporate_hungarian_commanders = {
+		visible = { 
+			NOT = { original_tag = HUN } 
+			NOT = { has_global_flag = hungarian_unit_commanders_hired } 
+		}
+		available = {
+			NOT = { country_exists = HUN } 
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_global_flag = hungarian_unit_commanders_hired
+			create_corps_commander = {
+				name = "Géza Lakatos"
+				gfx = GFX_Portrait_hungary_geza_lakatos
+				traits = {  }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Iván Hindy"
+				gfx = GFX_Portrait_hungary_ivan_hindy
+				traits = {  trickster }
+				skill = 4
+				attack_skill = 3
+				defense_skill = 4
+				planning_skill = 2
+				logistics_skill = 4
+			}
+			create_corps_commander = {
+				name = "Károly Beregfy"
+				gfx = GFX_Portrait_hungary_karoly_beregfy
+				traits = { }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "Lajos Veress"
+				gfx = GFX_Portrait_hungary_lajos_veress
+				traits = { armor_officer }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_field_marshal = {
+				name = "Ferenc Feketehalmy-Czeydner"
+				gfx = GFX_Portrait_hungary_ferenc_feketehalmy_czeydner
+				traits = { }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_navy_leader = {
+				name = "Miklós Horthy"
+				gfx = GFX_Portrait_hungary_miklos_horthy_admiral
+				traits = { gunnery_expert navy_media_personality superior_tactician }
+				skill = 3
+				id = 556 #Navy Miklos
+				attack_skill = 2
+				defense_skill = 2
+				maneuvering_skill = 2
+				coordination_skill = 4				
+			}
+		}
+	}
+	
+	incorporate_romanian_commanders = {
+		visible = { 
+			NOT = { original_tag = ROM } 
+			NOT = { has_global_flag = romanian_unit_commanders_hired } 
+		}
+		available = {
+			NOT = { country_exists = ROM } 
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_global_flag = romanian_unit_commanders_hired
+			create_field_marshal = {
+				name = "Petre Dumitrescu"
+				gfx = GFX_Portrait_romania_petre_dumitrescu
+				traits = { offensive_doctrine logistics_wizard }
+				skill = 4
+				attack_skill = 4
+				defense_skill = 4
+				planning_skill = 2
+				logistics_skill = 3
+			}
+			create_field_marshal = {
+				name = "Ion Antonescu"
+				portrait_path = "gfx/leaders/ROM/Portrait_Romania_Ion_Antonescu.dds"
+				traits = { offensive_doctrine }
+				skill = 4
+				attack_skill = 4
+				defense_skill = 4
+				planning_skill = 2
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "Ioan Mihail Racovita"
+				gfx = GFX_Portrait_romania_ioan_mihail_racovita
+				traits = { hill_fighter }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Gheorghe Avramescu"
+				gfx = GFX_Portrait_romania_gheorghe_avramescu
+				traits = { }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 3
+			}
+			create_corps_commander = { 
+				name = "Barbu Paraianu"
+				gfx = GFX_Portrait_romania_barbu_paraianu
+				traits = { infantry_officer }
+				skill = 2
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 3
+				logistics_skill = 2
+			}
+			create_navy_leader = {
+				name = "Horia Macellariu"
+				gfx = "GFX_Portrait_romania_horia_macellariu"
+				traits = { gentlemanly spotter }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				maneuvering_skill = 2
+				coordination_skill = 1
+			}
+		}
+	}
+	
+	incorporate_spanish_commanders = {
+		visible = { 
+			NOT = { original_tag = SPR } 
+			NOT = { has_global_flag = spanish_unit_commanders_hired } 
+		}
+		available = {
+			NOT = { country_exists = SPR } 
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_global_flag = spanish_unit_commanders_hired
+			create_field_marshal = {
+				name = "Francisco Franco"
+				gfx = "GFX_portrait_spain_francisco_franco"
+				traits = { organisational_leader logistics_wizard expert_delegator }
+				skill = 4
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 4
+				logistics_skill = 3
+			}
+			create_field_marshal = {
+				name = "Emilio Mola"
+				gfx = "GFX_portrait_SPA_emilio_mola"
+				traits = { organisational_leader trait_cautious thorough_planner }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 4
+				logistics_skill = 2
+			}
+			create_field_marshal = {
+				name = "Manuel Fal Conde"
+				gfx = "GFX_portrait_SPA_manuel_fal_conde"
+				traits = { cavalry_officer unyielding_defender }
+				skill = 3
+			    attack_skill = 2
+			    defense_skill = 3
+			    planning_skill = 2
+			    logistics_skill = 3
+			}
+			create_field_marshal = {
+				name = "José Asensio Torrado" 
+				gfx = "GFX_portrait_SPR_jose_asensio_torrado"
+				traits = { organisational_leader defensive_doctrine }
+				skill = 2
+				attack_skill = 1
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 1
+			}
+			create_field_marshal = {
+				name = "Buenaventura Durruti"
+				gfx = "GFX_portrait_SPR_buenaventura_durruti"
+				traits = { infantry_officer offensive_doctrine aggressive_assaulter }
+				skill = 3
+			    attack_skill = 3
+			    defense_skill = 3
+			    planning_skill = 2
+			    logistics_skill = 2
+			}
+			create_field_marshal = {
+				name = "Máté Zalka"
+				gfx = "GFX_portrait_SPR_mate_zalka"
+				traits = {  }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Vicente Rojo Lluch"
+				gfx = "GFX_portrait_SPR_vicente_rojo_lluch"
+				traits = { brilliant_strategist }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "José Miaja"
+				gfx = "GFX_portrait_SPR_jose_miaja"
+				traits = { infantry_leader }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 1
+			}
+			create_corps_commander = { 
+				name = "Valentín González"
+				gfx = "GFX_portrait_SPR_valentin_gonzalez"
+				traits = { harsh_leader }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "Juan Modesto"
+				gfx = "GFX_portrait_SPR_juan_modesto"
+				traits = { trait_mountaineer }
+				skill = 2
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "Antonio Cordón García"
+				gfx = "GFX_portrait_SPR_antonio_cordon_garcia"
+				traits = { infantry_leader }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 3
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "János Gálicz"
+				gfx = "GFX_portrait_SPR_janos_galicz"
+				traits = { trait_reckless }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "Mohamed Meziane"
+				gfx = "GFX_portrait_SPA_mohamed_meziane"
+				traits = { harsh_leader career_officer }
+				skill = 4
+				attack_skill = 5
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			create_corps_commander = { # Could fit for all 3 factions
+				name = "Gonzalo Queipo de Llano"
+				gfx = "GFX_portrait_SPA_gonzalo_queipo_de_llano"
+				traits = { infantry_officer }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Juan Yagüe"
+				gfx = "GFX_portrait_SPA_juan_yague"
+				traits = { brilliant_strategist trait_reckless }
+				skill = 3
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Agustín Muñoz Grandes"
+				gfx = "GFX_portrait_SPA_augustin_muynoz_grandes"
+				traits = { infantry_officer }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "José Enrique Varela"
+				gfx = "GFX_portrait_SPA_jose_enrique_varela"
+				traits = { organizer infantry_leader }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Miguel Cabanellas"
+				gfx = "GFX_portrait_SPA_miguel_cabanellas"
+				traits = { cavalry_officer old_guard }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "José Millán Astray"
+				gfx = "GFX_portrait_SPA_jose_millan_astray"
+				traits = { war_hero trait_reckless }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Eduardo Medrano Rivas"
+				gfx = "GFX_portrait_SPR_eduardo_medrano_rivas"
+				traits = { infantry_leader }
+				skill = 3
+			    attack_skill = 3
+			    defense_skill = 2
+			    planning_skill = 2
+			    logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "Lina Odena"
+				gfx = "GFX_portrait_SPR_lina_odena"
+				traits = { adaptable }
+				skill = 2
+			    attack_skill = 2
+			    defense_skill = 2
+			    planning_skill = 2
+			    logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "Cipriano Mera"
+				gfx = "GFX_portrait_SPR_cipriano_mera"
+				traits = { trait_cautious }
+				skill = 2
+			    attack_skill = 1
+			    defense_skill = 2
+			    planning_skill = 2
+			    logistics_skill = 2
+			}
+			create_navy_leader = {
+				name = "Miguel Buiza Fernández-Palacios"
+				gfx = "GFX_portrait_SPR_miguel_buiza_fernandez_palacios"
+				traits = { craven }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				maneuvering_skill = 1
+				coordination_skill = 1
+			}
+			create_navy_leader = {
+				name = "Luis Carrero Blanco"
+				gfx = "GFX_portrait_SPA_luis_carrero_blanco"
+				traits = { seawolf }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				maneuvering_skill = 2
+				coordination_skill = 1
+			}
+		}
+	}
+	
+	incorporate_portuguese_commanders = {
+		visible = { 
+			NOT = { original_tag = POR } 
+			NOT = { has_global_flag = portuguese_unit_commanders_hired } 
+		}
+		available = {
+			NOT = { country_exists = POR } 
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_global_flag = portuguese_unit_commanders_hired
+			create_field_marshal = {
+				name = "José Norton de Matos"
+				portrait_path = "gfx/leaders/POR/portrait_por_jose_norton_de_matos.dds"
+				traits = { politically_connected }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+		}
+	}
+	
+}

@@ -1,0 +1,1220 @@
+﻿add_namespace = mod_china 
+
+#Test: Test event index
+country_event = {
+	id = mod_china.000
+	title = mod_china.000.t
+	desc = mod_china.000.desc
+	picture = GFX_report_event_chinese_soldiers
+
+	is_triggered_only = yes
+
+	#Do Nothing
+	option = {
+		name = mod_china.000.a
+	}
+}
+
+#Test: Add core on all claimed states
+country_event = {
+	id = mod_china.999
+	title = mod_china.999.t
+	desc = mod_china.999.desc
+	picture = GFX_report_event_chinese_soldiers
+
+	is_triggered_only = yes
+
+	#Add core on all claimed states
+	option = {
+		name = mod_china.999.a
+		add_state_core = 525 #South Korea
+		add_state_core = 526 #Ryukyu
+		add_state_core = 527 #North Korea
+		add_state_core = 537 #South Sakhalin
+		add_state_core = 655 #North Sakhalin
+		add_state_core = 408 #Vladivostok
+		add_state_core = 409 #Khabarovsk
+		add_state_core = 657 #Birobidzhan
+		add_state_core = 560 #Nikolayevsk
+		add_state_core = 563 #Chita
+		add_state_core = 564 #Ulan Ude
+		add_state_core = 763 #Sikkim 
+		add_state_core = 671 #Northern Vietnam
+		add_state_core = 286 #Southern Vietnam
+		add_state_core = 670 #Laos
+		add_state_core = 741 #Cambodia
+		add_state_core = 324 #Bhutan
+		add_state_core = 289 #Siam
+		add_state_core = 724 #Northern Malay
+		add_state_core = 336 #Southern Malay
+		add_state_core = 771 #Singapore
+		add_state_core = 733 #Andaman
+		add_state_core = 775 #Southern Burma
+		add_state_core = 776 #Rangoon
+		add_state_core = 640 #Mandalay
+		add_state_core = 561 #Amur
+		add_state_core = 772 #Jeju
+	}
+
+	#Add core on some claimed states
+	option = {
+		name = mod_china.999.b
+		add_state_core = 525 #South Korea
+		add_state_core = 527 #North Korea
+		add_state_core = 537 #South Sakhalin
+		add_state_core = 655 #North Sakhalin
+		add_state_core = 408 #Vladivostok
+		add_state_core = 409 #Khabarovsk
+		add_state_core = 657 #Birobidzhan
+		add_state_core = 560 #Nikolayevsk
+		add_state_core = 763 #Sikkim 
+		add_state_core = 671 #Northern Vietnam
+		add_state_core = 286 #Southern Vietnam
+		add_state_core = 670 #Laos
+		add_state_core = 741 #Cambodia
+	}
+
+	#Do Nothing
+	option = {
+		name = mod_china.999.c
+	}
+}
+
+#Test: Transfer all claimed states
+country_event = {
+	id = mod_china.998
+	title = mod_china.998.t
+	desc = mod_china.998.desc
+	picture = GFX_report_event_chinese_soldiers
+
+	is_triggered_only = yes
+
+	#Add core on all claimed states
+	option = {
+		name = mod_china.998.a
+		every_state = { 
+			limit = { AND = { is_core_of = ROOT NOT = { is_owned_by = ROOT } } 
+			}
+			ROOT = { transfer_state = PREV }
+		}
+	}
+
+	#Do Nothing
+	option = {
+		name = mod_china.998.b
+	}
+}
+
+#Test: Add core on the Philipines
+country_event = {
+	id = mod_china.997
+	title = mod_china.997.t
+	desc = mod_china.997.desc
+	picture = GFX_report_event_chinese_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = mod_china.997.a
+		add_state_core = 623 #Luzon
+		add_state_core = 327 #Manila
+		add_state_core = 624 #Central
+		add_state_core = 625 #Samar
+		add_state_core = 628 #Cebu
+		add_state_core = 627 #Mindanao
+		add_state_core = 626 #Palawan
+	}
+
+	option = {
+		name = mod_china.997.b
+	}
+}
+
+#Test: Annex all Chinese Territories
+country_event = {
+	id = mod_china.996
+	title = mod_china.996.t
+	desc = mod_china.996.desc
+	picture = GFX_report_event_chinese_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = mod_china.996.a
+		if = {
+			limit = { tag = CHI } 
+			annex_country = { target = PRC }
+		}
+		if = {
+			limit = { tag = PRC } 
+			annex_country = { target = CHI }
+		}
+		annex_country = { target = YUN }
+		annex_country = { target = GXC }
+		annex_country = { target = XSM }
+		annex_country = { target = SHX }
+		annex_country = { target = SIK }
+		annex_country = { target = MAN }
+		annex_country = { target = MEN }
+		annex_country = { target = TIB }
+		annex_country = { target = MON }
+		annex_country = { target = TAN }
+		transfer_state = 609 #East Hebei
+		transfer_state = 745 #Dalian
+		transfer_state = 524 #Taiwan
+		transfer_state = 774 #Penghu
+		transfer_state = 326 #Hong Kong
+		transfer_state = 729 #Macau
+		transfer_state = 728 #Zhanjiang
+	}
+
+	option = {
+		name = mod_china.996.b
+	}
+}
+
+#Test: Transfer all military commanders
+country_event = {
+	id = mod_china.995
+	title = mod_china.995.t
+	desc = mod_china.995.desc
+	picture = GFX_report_event_chinese_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = mod_china.995.a
+		if = {
+			limit = { NOT = { tag = CHI } } 
+			create_field_marshal = {
+				name = "Chiang Kai-shek"
+				picture = "Portrait_CHI_Chiang_Kai-sheck.dds"
+				traits = { defensive_doctrine inspirational_leader infantry_officer politically_connected media_personality }
+				skill = 5
+				attack_skill = 4
+				defense_skill = 4
+				planning_skill = 5
+				logistics_skill = 5
+			}
+			create_field_marshal = {
+				name = "Tu Yu-ming"
+				gfx = "GFX_portrait_chi_du_yuming"
+				traits = { defensive_doctrine trait_cautious armor_officer harsh_leader }
+				skill = 4
+				attack_skill = 4
+				defense_skill = 4
+				planning_skill = 2
+				logistics_skill = 3
+			}
+			create_field_marshal = {
+				name = "He Ying-qin"
+				portrait_path = "gfx/leaders/CHI/Portrait_China_He_Yingqin.dds"
+				traits = { offensive_doctrine politically_connected brilliant_strategist organizer }
+				skill = 5
+				attack_skill = 6
+				defense_skill = 5
+				planning_skill = 5
+				logistics_skill = 3
+			}
+			create_field_marshal = {
+				name = "Tai An-lan"
+				gfx = "GFX_portrait_chi_tai_an_lan"
+				traits = { offensive_doctrine trait_reckless career_officer }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "Wang Yao-wu"
+				gfx = "GFX_portrait_chi_wang_yaowu"
+				traits = { trait_cautious infantry_officer }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Sun Li Jen"
+				# gfx = "GFX_portrait_chi_sun_li_jen"
+				portrait_path = "gfx/leaders/CHI/Portrait_CHI_sun_li_ren.dds"
+				traits = { brilliant_strategist }
+				skill = 4
+				attack_skill = 5
+				defense_skill = 4
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Hsueh Yueh"
+				gfx = "GFX_portrait_chi_xue_yue"
+				traits = { trait_reckless brilliant_strategist war_hero }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 1
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "Hu Zongnan"
+				gfx = "GFX_portrait_chi_hu_zongnan"
+				traits = { politically_connected }
+				skill = 4
+				attack_skill = 4
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "Gu Zhutong"
+				gfx = "GFX_portrait_chi_gu_zhutong"
+				traits = { career_officer }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Wei Lihuang"
+				gfx = "GFX_portrait_chi_wei_lihuang"
+				traits = { infantry_officer }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "Fu Zuoyi"
+				gfx = "GFX_portrait_chi_fu_zuoyi"
+				traits = { }
+				skill = 2
+				attack_skill = 1
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Zhang Xueliang"
+				gfx = "GFX_portrait_chi_zhang_xueliang"
+				traits = { winter_specialist infantry_officer }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 2
+			}
+			
+			
+			create_field_marshal = {
+				name = "Zhang Zuolin"
+				portrait_path = "gfx/leaders/Asia/portrait_asia_generic_land_8.dds"
+				traits = { organisational_leader career_officer harsh_leader }
+				skill = 4
+				attack_skill = 3
+				defense_skill = 4
+				planning_skill = 3
+				logistics_skill = 4
+			}
+			create_field_marshal = {
+				name = "Chen Cheng"
+				portrait_path = "gfx/leaders/CHI/Portrait_CHI_chencheng.dds"
+				traits = { thorough_planner politically_connected }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Zhang Lingfu"
+				portrait_path = "gfx/leaders/CHI/Portrait_China_Zhang_Ling_Fu.dds"
+				traits = { armor_officer career_officer }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Bai Chongxi"
+				portrait_path = "gfx/leaders/CHI/Portrait_China_Bai_Chong_Xi.dds"
+				traits = { infantry_officer fast_planner }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 4
+				planning_skill = 2
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "Song Xilian"
+				portrait_path = "gfx/leaders/CHI/portrait_chi_song_xilian.dds"
+				traits = { armor_officer career_officer }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Zhang Zizhong"
+				portrait_path = "gfx/leaders/CHI/Portrait_China_Zhang_Zi_Zhong.dds"
+				traits = { infantry_officer Commando Trickster }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Sun Lianzhong"
+				portrait_path = "gfx/leaders/CHI/Portrait_CHI_Sun_lianzhong.dds"
+				traits = {  }
+				skill = 2
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Liu Zhi"
+				portrait_path = "gfx/leaders/CHI/Portrait_CHI_Liuzhi.dds"
+				traits = { }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			
+			
+			create_navy_leader = {
+				name = "Chen Shaokuan"
+				portrait_path = "gfx/leaders/CHI/Portrait_China_Chen_Shaokuan.dds"
+				traits = { air_controller fly_swatter spotter }
+				skill = 4
+			}
+
+			create_navy_leader = {
+				name = "Gui Yongqing"
+				portrait_path = "gfx/leaders/CHI/Portrait_CHI_Gui_Yongqing.dds"
+				traits = { superior_tactician }
+				skill = 2
+			}
+
+			create_navy_leader = {
+				name = "Shen Honglie"
+				portrait_path = "gfx/leaders/CHI/Portrait_CHI_Shen_honglie.dds"
+				traits = { blockade_runner }
+				skill = 2
+			}
+		}
+		if = {
+			limit = { NOT = { tag = PRC } }
+			create_field_marshal = {
+				name = "Mao Zedong"
+				gfx = "GFX_portrait_prc_mao_zedong"
+				traits = { defensive_doctrine trait_cautious politically_connected }
+				skill = 4
+				attack_skill = 2
+				defense_skill = 4
+				planning_skill = 3
+				logistics_skill = 4
+			}
+			create_corps_commander = {
+				name = "Mao Anying"
+				portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
+				traits = { trait_reckless politically_connected }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 1
+			} 
+			create_corps_commander = {
+				name = "Zhu De"
+				gfx = "GFX_portrait_prc_zhu_de"
+				traits = { infantry_officer organizer career_officer }
+				skill = 4
+				attack_skill = 4
+				defense_skill = 3
+				planning_skill = 4
+				logistics_skill = 4
+			}
+			create_corps_commander = {
+				name = "Peng Dehuai"
+				gfx = "GFX_portrait_prc_peng_dehuai"
+				traits = { infantry_officer trait_mountaineer }
+				skill = 4
+				attack_skill = 4
+				defense_skill = 5
+				planning_skill = 4
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "Chen Yi"
+				gfx = "GFX_portrait_prc_chen_yi"
+				traits = { infantry_officer }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 4
+			}
+		}
+		if = {
+			limit = { NOT = { tag = MAN } } 
+			create_corps_commander = {
+				name = "Zhang Haipeng"
+				GFX = "GFX_portrait_man_zhang_haipeng"
+				traits = {  }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 2
+			}
+
+			create_corps_commander = {
+				name = "Zhang Jinghui"
+				GFX = "GFX_portrait_man_zhang_jinghui"
+				traits = { infantry_officer }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 2
+			}
+
+			create_corps_commander = {
+				name = "Aisin Gioro Xiqia"
+				GFX = "GFX_portrait_man_aisin_gioro_xiqia"
+				traits = { career_officer cavalry_leader cavalry_expert }
+				skill = 4
+				attack_skill = 3
+				defense_skill = 4
+				planning_skill = 4
+				logistics_skill = 3
+			}
+		}
+		if = {
+			limit = { NOT = { tag = GXC } } 
+			create_corps_commander = {
+				name = "Li Zongren"
+				gfx = GFX_portrait_li_zongren
+				traits = { career_officer inflexible_strategist }
+				skill = 3
+				attack_skill = 1
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 3
+			}
+		}
+		if = {
+			limit = { NOT = { tag = YUN } } 
+			create_corps_commander = {
+				name = "Long Yun"
+				gfx = GFX_portrait_yun_long_yun	
+				traits = { guerilla_fighter hill_fighter }			
+				skill = 3
+				attack_skill = 4
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 2
+			}
+		}
+		if = {
+			limit = { NOT = { tag = SHX } } 
+			create_corps_commander = {
+				name = "Yan Xishan"
+				gfx = GFX_portrait_yan_xishan
+				traits = { infantry_officer trait_engineer scavenger }
+				skill = 4
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 2
+			}
+		}
+		if = {
+			limit = { NOT = { tag = XSM } } 
+			create_corps_commander = {
+				name = "Ma Bufang"
+				gfx = GFX_portrait_xsm_ma_bufang
+				traits = { cavalry_leader trait_mountaineer harsh_leader }
+				skill = 3
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+		}
+		if = {
+			limit = { NOT = { tag = SIK } } 
+			create_corps_commander = {
+				name = "Sheng Shicai"
+				gfx = GFX_portrait_sheng_shicai
+				traits = { desert_fox trait_mountaineer }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 4
+				planning_skill = 2
+				logistics_skill = 1
+			}
+		}
+		create_corps_commander = {
+			name = "Prince Demchugdongrub"
+			gfx = GFX_portrait_men_demchugdongrub
+			traits = { cavalry_officer skirmisher }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+
+	option = {
+		name = mod_china.995.b
+	}
+}
+
+#Test: Set Cosmetic Tag
+country_event = {
+	id = mod_china.994
+	title = mod_china.994.t
+	desc = mod_china.994.desc
+	picture = GFX_report_event_chinese_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = mod_china.994.a
+
+		if = {
+			limit = { has_global_flag = CHI_empire_restored }
+			drop_cosmetic_tag = yes
+			clr_global_flag = CHI_empire_restored
+			
+			else = {
+				set_cosmetic_tag = CHI_DREAM
+				set_global_flag = CHI_empire_restored
+				set_party_name = { 
+					ideology = democratic 
+					long_name = CHI_DREAM_democratic_party_long 
+					name = CHI_DREAM_democratic_party 
+				}
+				set_party_name = { 
+					ideology = communism 
+					long_name = CHI_DREAM_communism_party_long 
+					name = CHI_DREAM_communism_party 
+				}
+				set_party_name = { 
+					ideology = fascism 
+					long_name = CHI_DREAM_fascism_party_long 
+					name = CHI_DREAM_fascism_party 
+				}
+				set_party_name = { 
+					ideology = neutrality 
+					long_name = CHI_DREAM_neutrality_party_long 
+					name = CHI_DREAM_neutrality_party 
+				}
+			}
+		}
+	}
+
+	option = {
+		name = mod_china.994.b
+		if = {
+			limit = { has_global_flag = CHI_republic_proclaimed }
+			drop_cosmetic_tag = yes
+			clr_global_flag = CHI_republic_proclaimed
+			
+			else = {
+				set_cosmetic_tag = CHI_ROC
+				set_global_flag = CHI_republic_proclaimed
+				if = { 
+					limit = {
+						has_country_leader = {
+							name = "Chiang Kai-Shek"
+							ruling_only = yes
+						}
+					}
+					add_country_leader_trait = nationalist_symbol
+					add_country_leader_trait = the_gentleman_president
+				}
+			}
+		}
+	}
+
+	option = {
+		name = mod_china.994.c
+	}
+}
+
+#Test: Move Capital of Japan
+country_event = {
+	id = mod_china.993
+	title = mod_china.993.t
+	desc = mod_china.993.desc
+	picture = GFX_report_event_chinese_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = mod_china.993.a
+		JAP = { set_capital = 531 }
+	}
+
+	option = {
+		name = mod_china.993.b
+		JAP = { set_capital = 282 }
+	}
+
+	option = {
+		name = mod_china.993.c
+	}
+}
+
+#Test: Toggle American Politics
+country_event = {
+	id = mod_china.992
+	title = mod_china.992.t
+	desc = mod_china.992.desc
+	picture = GFX_report_event_chinese_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = mod_china.992.a
+		USA = { 
+			if = {
+				limit = { NOT = { has_government = democratic } } 
+				set_politics = {
+					ruling_party = democratic
+				}
+			}
+		}
+	}
+
+	option = {
+		name = mod_china.992.b
+		USA = { 
+			if = {
+				limit = { NOT = { has_government = communism } } 
+				set_politics = {
+					ruling_party = communism
+				}
+			}
+		}
+	}
+
+	option = {
+		name = mod_china.992.c
+		USA = { 
+			if = {
+				limit = { NOT = { has_government = fascism } } 
+				set_politics = {
+					ruling_party = fascism
+				}
+			}
+		}
+	}
+}
+
+#Test: Max Infrastructure
+country_event = {
+	id = mod_china.991
+	title = mod_china.991.t
+	desc = mod_china.991.desc
+	picture = GFX_report_event_chinese_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = mod_china.991.a
+		every_owned_state = { 
+			set_building_level = {
+				type = infrastructure
+				level = 10			
+				instant_build = yes
+			}
+		}
+	}
+
+	option = {
+		name = mod_china.991.b
+	}
+}
+
+#Test: Toggle Japanese Leadership
+country_event = {
+	id = mod_china.990
+	title = mod_china.990.t
+	desc = mod_china.990.desc
+	picture = GFX_report_event_chinese_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = mod_china.990.a
+		JAP = {
+			if = {
+				limit = { has_country_leader = { name = "Hirohito" ruling_only = yes } }
+				create_country_leader = {
+					name = "Hideki Tojo"
+					picture = "Portrait_Japan_Generic_land_2.dds"
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = {
+						military_imperialist
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = mod_china.990.b
+		JAP = {
+			if = {
+				limit = { has_country_leader = { name = "Hideki Tojo" ruling_only = yes } }
+				retire_country_leader = yes
+			}
+		}
+	}
+
+	option = {
+		name = mod_china.990.c
+	}
+}
+
+#Test: Incorporate/Terminate Multi-party Leadership
+country_event = {
+	id = mod_china.989
+	title = mod_china.989.t
+	desc = mod_china.989.desc
+	picture = GFX_report_event_chinese_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = mod_china.989.a
+		trigger = { NOT = { has_country_flag = mod_cosmetic_leaders } }
+		create_country_leader = {
+			name = "Chiang Kai-Shek"
+			desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
+			picture = "gfx/leaders/CHI/Portrait_CHI_Chiang_Kai-sheck.dds"
+			expire = "1965.1.1"
+			ideology = socialism
+			traits = {
+				generallissimo
+				nationalist_symbol
+			}
+		}
+		if = {
+			limit = { NOT = { tag = CHI } }
+			create_country_leader = {
+				name = "Wang Jingwei"
+				desc = "POLITICS_WANG_JINGWEI_DESC"
+				picture = "GFX_portrait_chi_wang_jingwei"
+				expire = "1965.1.1"
+				ideology = fascism_ideology
+				traits = {
+					popular_figurehead2
+					political_dancer
+				}
+			}
+		}
+		if = {
+			limit = { NOT = { tag = PRC } }
+			create_country_leader = {
+				name = "Mao Zedong"
+				desc = "POLITICS_MAO_ZEDONG_DESC"
+				picture = "GFX_portrait_prc_mao_zedong"
+				expire = "1965.1.1"
+				ideology = marxism
+				traits = {
+					dictator
+					great_helmsman
+					red_army_organizer 
+				}
+			} 
+		} 
+		create_country_leader = {
+			name = "Emperor Xuantong"
+			picture = "gfx/leaders/CHI/Portrait_MAN_Emperor_Xuantong.dds"
+			expire = "1960.1.1"
+			ideology = despotism
+			traits = {
+				son_of_heaven
+				restorer_of_qing_dynasty
+				enlightened_monarch
+			}
+		}
+		set_country_flag = mod_cosmetic_leaders
+	}
+
+	option = {
+		name = mod_china.989.b
+		trigger = { has_country_flag = mod_cosmetic_leaders }
+		if = {
+			limit = { has_government = democratic }
+			set_politics = { ruling_party = communism }
+			kill_country_leader = yes
+			set_politics = { ruling_party = fascism }
+			kill_country_leader = yes
+			set_politics = { ruling_party = neutrality }
+			kill_country_leader = yes
+			set_politics = { ruling_party = democratic }
+			kill_country_leader = yes
+		}
+		if = {
+			limit = { has_government = communism }
+			set_politics = { ruling_party = fascism }
+			kill_country_leader = yes
+			set_politics = { ruling_party = neutrality }
+			kill_country_leader = yes
+			set_politics = { ruling_party = democratic }
+			kill_country_leader = yes
+			set_politics = { ruling_party = communism }
+			kill_country_leader = yes
+		}
+		if = {
+			limit = { has_government = fascism }
+			set_politics = { ruling_party = communism }
+			kill_country_leader = yes
+			set_politics = { ruling_party = neutrality }
+			kill_country_leader = yes
+			set_politics = { ruling_party = democratic }
+			kill_country_leader = yes
+			set_politics = { ruling_party = fascism }
+			kill_country_leader = yes
+		}
+		if = {
+			limit = { has_government = neutrality }
+			set_politics = { ruling_party = communism }
+			kill_country_leader = yes
+			set_politics = { ruling_party = fascism }
+			kill_country_leader = yes
+			set_politics = { ruling_party = democratic }
+			kill_country_leader = yes
+			set_politics = { ruling_party = neutrality }
+			kill_country_leader = yes
+		}
+		clr_country_flag = mod_cosmetic_leaders
+	}
+
+	option = {
+		name = mod_china.989.c
+	}
+}
+
+#Test: Enthronement of the Great Emperor 
+country_event = {
+	id = mod_china.988
+	title = mod_china.988.t
+	desc = mod_china.988.desc
+	picture = GFX_report_event_chinese_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = mod_china.988.a
+		trigger = { NOT = { has_country_flag = CHI_great_emperor } }
+		create_country_leader = {
+			name = "Emperor Zhewen Xu"
+			desc = ""
+			picture = "Portrait_CHI_Great_Emperor.dds"
+			expire = "1965.1.1"
+			ideology = socialism
+			traits = {
+				glory_of_the_emperor
+				son_of_heaven
+				master_of_war
+			}
+		}
+		create_country_leader = {
+			name = "Emperor Zhewen Xu"
+			desc = ""
+			picture = "Portrait_CHI_Great_Emperor.dds"
+			expire = "1965.1.1"
+			ideology = anarchist_communism 
+			traits = {
+				glory_of_the_emperor
+				son_of_heaven
+				master_of_war
+			}
+		}
+		create_country_leader = {
+			name = "Emperor Zhewen Xu"
+			desc = ""
+			picture = "Portrait_CHI_Great_Emperor.dds"
+			expire = "1965.1.1"
+			ideology = falangism
+			traits = {
+				glory_of_the_emperor
+				son_of_heaven
+				master_of_war
+			}
+		}
+		create_country_leader = {
+			name = "Emperor Zhewen Xu"
+			desc = ""
+			picture = "Portrait_CHI_Great_Emperor.dds"
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+				glory_of_the_emperor
+				son_of_heaven
+				master_of_war
+			}
+		}
+		set_country_flag = CHI_great_emperor
+	}
+
+	option = {
+		name = mod_china.988.b
+		trigger = { has_country_flag = CHI_great_emperor }
+		if = {
+			limit = { has_government = democratic }
+			set_politics = { ruling_party = communism }
+			kill_country_leader = yes
+			set_politics = { ruling_party = fascism }
+			kill_country_leader = yes
+			set_politics = { ruling_party = neutrality }
+			kill_country_leader = yes
+			set_politics = { ruling_party = democratic }
+			kill_country_leader = yes
+		}
+		if = {
+			limit = { has_government = communism }
+			set_politics = { ruling_party = fascism }
+			kill_country_leader = yes
+			set_politics = { ruling_party = neutrality }
+			kill_country_leader = yes
+			set_politics = { ruling_party = democratic }
+			kill_country_leader = yes
+			set_politics = { ruling_party = communism }
+			kill_country_leader = yes
+		}
+		if = {
+			limit = { has_government = fascism }
+			set_politics = { ruling_party = communism }
+			kill_country_leader = yes
+			set_politics = { ruling_party = neutrality }
+			kill_country_leader = yes
+			set_politics = { ruling_party = democratic }
+			kill_country_leader = yes
+			set_politics = { ruling_party = fascism }
+			kill_country_leader = yes
+		}
+		if = {
+			limit = { has_government = neutrality }
+			set_politics = { ruling_party = communism }
+			kill_country_leader = yes
+			set_politics = { ruling_party = fascism }
+			kill_country_leader = yes
+			set_politics = { ruling_party = democratic }
+			kill_country_leader = yes
+			set_politics = { ruling_party = neutrality }
+			kill_country_leader = yes
+		}
+		clr_country_flag = CHI_great_emperor 
+	}
+
+	option = {
+		name = mod_china.988.c
+	}
+}
+
+
+#Test: Create additional warlords
+country_event = {
+	id = mod_china.987
+	title = mod_china.987.t
+	desc = mod_china.987.desc
+	picture = GFX_report_event_chinese_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = mod_china.987.a
+		trigger = {  }
+		BEY = {
+			add_state_core = 597
+			add_state_core = 608
+			add_state_core = 609
+			add_state_core = 614
+			add_state_core = 743
+		}
+		ECS = {
+			add_state_core = 598
+			add_state_core = 606
+			add_state_core = 607
+		}
+		GAN = {
+			add_state_core = 593
+			add_state_core = 595
+			add_state_core = 600
+			add_state_core = 838
+		}
+		JNG = {
+			add_state_core = 602
+			add_state_core = 620
+			add_state_core = 750
+		}
+		GUI = {
+			add_state_core = 603
+			add_state_core = 748
+		}
+		SIC = {
+			add_state_core = 605
+			add_state_core = 751
+			add_state_core = 752
+			add_state_core = 753
+			add_state_core = 837
+		}
+		QIN = {
+			add_state_core = 622
+			add_state_core = 744
+		}
+		set_global_flag = CHI_extra_warlords_cores
+	}
+
+	option = {
+		name = mod_china.987.b
+		trigger = { 
+			has_war = no 
+			has_global_flag = CHI_extra_warlords_cores
+		}
+		every_state = {
+			limit = { is_core_of = BEY }
+			BEY = { transfer_state = PREV }
+		}
+		every_state = {
+			limit = { is_core_of = ECS }
+			ECS = { transfer_state = PREV }
+		}
+		every_state = {
+			limit = { is_core_of = GAN }
+			GAN = { transfer_state = PREV }
+		}
+		every_state = {
+			limit = { is_core_of = JNG }
+			JNG = { transfer_state = PREV }
+		}
+		every_state = {
+			limit = { is_core_of = GUI }
+			GUI = { transfer_state = PREV }
+		}
+		every_state = {
+			limit = { is_core_of = SIC }
+			SIC = { transfer_state = PREV }
+		}
+		every_state = {
+			limit = { is_core_of = QIN }
+			QIN = { transfer_state = PREV }
+		}
+		TIB = { transfer_state = 601 }
+		
+		BEY = { load_oob = "BEY_1936"}
+		ECS = { load_oob = "ECS_1936"}
+		GAN = { load_oob = "GAN_1936"}
+		JNG = { load_oob = "JNG_1936"}
+		GUI = { load_oob = "GUI_1936"}
+		SIC = { load_oob = "SIC_1936"}
+		QIN = { load_oob = "QIN_1936"}
+	}
+
+	option = {
+		name = mod_china.987.c
+	}
+}
+
+
+########################################################################
+
+#Move capital if PRC wins civil war
+country_event = {
+	id = mod_china.204
+	title = mod_china.204.t
+	desc = mod_china.204.desc
+	picture = GFX_report_event_chinese_soldiers
+
+	is_triggered_only = yes
+
+	#Move to Beijing
+	option = {
+		name = mod_china.204.a
+		ai_chance = {
+			base = 35
+			modifier = {
+				factor = 70
+				608 = { is_capital = yes }
+			}
+		}
+		trigger = {
+			owns_state = 608
+		}
+		set_capital = 608
+	}
+
+	#Move to Nanjing
+	option = {
+		name = mod_china.204.b
+		ai_chance = {
+			base = 35
+			modifier = {
+				factor = 70
+				613 = { is_capital = yes }
+			}
+		}
+		trigger = {
+			owns_state = 613
+		}
+		custom_effect_tooltip = CHI_nanjing_tt
+		hidden_effect = {
+			set_capital = 613
+		}
+	}
+
+	#Move to Luoyang
+	option = {
+		name = mod_china.204.c
+		ai_chance = {
+			base = 15
+			modifier = {
+				factor = 70
+				607 = { is_capital = yes }
+			}
+		}
+		trigger = {
+			owns_state = 607
+		}
+		set_capital = 607
+		set_province_name = { id = 9958 name = "Luoyang" }
+		607 = { add_extra_state_shared_building_slots = 3 }
+	}
+
+	#Move to Xi'an
+	option = {
+		name = mod_china.204.d
+		ai_chance = {
+			base = 15
+			modifier = {
+				factor = 70
+				744 = { is_capital = yes }
+			}
+		}
+		trigger = {
+			owns_state = 744
+		}
+		set_capital = 744
+		set_province_name = { id = 7418 name = "Chang'an" }
+		744 = { add_extra_state_shared_building_slots = 2 }
+	}
+}

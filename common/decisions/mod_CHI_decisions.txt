@@ -1,0 +1,1192 @@
+CHI_relocate_capital = {
+
+	CHI_move_capital_to_beijing = {
+		visible = {
+			owns_state = 608 
+		}
+		available = {
+			owns_state = 608 
+			capital_scope = { 
+				NOT = { state = 608 }
+			} 
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_capital = 608
+		}
+	}
+
+	CHI_move_capital_to_nanjing = {
+		visible = {
+			owns_state = 613 
+		}
+		available = {
+			owns_state = 613 
+			capital_scope = { 
+				NOT = { state = 613 }
+			} 
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_capital = 613
+			613 = { add_extra_state_shared_building_slots = 1 } 
+		}
+	}
+
+	CHI_move_capital_to_shanghai = {
+		visible = {
+			owns_state = 777 
+		}
+		available = {
+			owns_state = 777 
+			capital_scope = { 
+				NOT = { state = 777 }
+			} 
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_capital = 777
+			777 = { add_extra_state_shared_building_slots = 1 } 
+		}
+	}
+
+	CHI_move_capital_to_luoyang = {
+		visible = {
+			owns_state = 607 
+		}
+		available = {
+			owns_state = 607 
+			capital_scope = { 
+				NOT = { state = 607 }
+			} 
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_capital = 607
+			607 = { add_extra_state_shared_building_slots = 3 } 
+		}
+	}
+
+	CHI_move_capital_to_changan = {
+		visible = {
+			owns_state = 744 
+		}
+		available = {
+			owns_state = 744 
+			capital_scope = { 
+				NOT = { state = 744 }
+			} 
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_capital = 744
+			744 = { add_extra_state_shared_building_slots = 3 } 
+		}
+	}
+
+	CHI_move_capital_to_guangzhou = {
+		visible = {
+			owns_state = 592 
+		}
+		available = {
+			owns_state = 592 
+			capital_scope = { 
+				NOT = { state = 592 }
+			} 
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_capital = 592 
+			592 = { add_extra_state_shared_building_slots = 2 }
+		}
+	}
+
+	CHI_move_capital_to_chengdu = {
+		visible = {
+			owns_state = 605 
+		}
+		available = {
+			owns_state = 605 
+			capital_scope = { 
+				NOT = { state = 605 }
+			} 
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_capital = 605 
+			605 = { add_extra_state_shared_building_slots = 2 }
+		}
+	}
+
+	CHI_move_capital_to_chongqing = {
+		visible = {
+			owns_state = 748 
+		}
+		available = {
+			owns_state = 748 
+			capital_scope = { 
+				NOT = { state = 748 }
+			} 
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_capital = 748
+			748 = { add_extra_state_shared_building_slots = 2 }
+		}
+	}
+
+	CHI_move_capital_to_wuhan = {
+		visible = {
+			owns_state = 620 
+		}
+		available = {
+			owns_state = 620 
+			capital_scope = { 
+				NOT = { state = 620 }
+			} 
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_capital = 620 
+			620 = { add_extra_state_shared_building_slots = 2 } 
+		}
+	}
+
+	CHI_move_capital_to_shenyang = {
+		visible = {
+			owns_state = 716 
+		}
+		available = {
+			owns_state = 716 
+			capital_scope = { 
+				NOT = { state = 716 }
+			} 
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_capital = 716 
+			716 = { add_extra_state_shared_building_slots = 2 } 
+		}
+	}
+
+	CHI_move_capital_to_taipei = {
+		visible = {
+			owns_state = 524 
+		}
+		available = {
+			owns_state = 524 
+			capital_scope = { 
+				NOT = { state = 524 }
+			} 
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_capital = 524 
+			524 = { add_extra_state_shared_building_slots = 2 } 
+		}
+	}
+
+	CHI_move_capital_to_haishenwai = {
+		visible = {
+			owns_state = 408 
+		}
+		available = {
+			owns_state = 408 
+			capital_scope = { 
+				NOT = { state = 408 }
+			} 
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_capital = 408 
+			408 = { add_extra_state_shared_building_slots = 2 } 
+		}
+	}
+
+	CHI_move_capital_to_urumqi = {
+		visible = {
+			owns_state = 617 
+		}
+		available = {
+			owns_state = 617 
+			capital_scope = { 
+				NOT = { state = 617 }
+			} 
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_capital = 617 
+			617 = { add_extra_state_shared_building_slots = 1 } 
+		}
+	}
+
+	CHI_move_capital_to_lhasa = {
+		visible = {
+			owns_state = 757 
+		}
+		available = {
+			owns_state = 757 
+			capital_scope = { 
+				NOT = { state = 757 }
+			} 
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_capital = 757 
+			757 = { add_extra_state_shared_building_slots = 1 } 
+		}
+	}
+
+	CHI_move_capital_to_ulaanbaatar = {
+		visible = {
+			owns_state = 330 
+		}
+		available = {
+			owns_state = 330 
+			capital_scope = { 
+				NOT = { state = 330 }
+			} 
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_capital = 330 
+			330 = { add_extra_state_shared_building_slots = 1 } 
+		}
+	}
+
+	CHI_move_capital_to_singapore = {
+		visible = {
+			owns_state = 771 
+		}
+		available = {
+			owns_state = 771 
+			capital_scope = { 
+				NOT = { state = 771 }
+			} 
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_capital = 771 
+			771 = { add_extra_state_shared_building_slots = 1 } 
+		}
+	}
+
+	CHI_move_capital_to_bangkok = {
+		visible = {
+			owns_state = 289 
+		}
+		available = {
+			owns_state = 289 
+			capital_scope = { 
+				NOT = { state = 289 }
+			} 
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_capital = 289 
+			289 = { add_extra_state_shared_building_slots = 1 } 
+		}
+	}
+
+	CHI_move_capital_to_hancheng = {
+		visible = {
+			owns_state = 525 
+		}
+		available = {
+			owns_state = 525 
+			capital_scope = { 
+				NOT = { state = 525 }
+			} 
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_capital = 525 
+			525 = { add_extra_state_shared_building_slots = 1 } 
+		}
+	}
+}
+
+
+form_greater_chinese_empire = {
+
+	CHI_restore_the_han_monarchy = {
+		allowed = {
+			OR = {
+				is_literally_china = yes
+				original_tag = MAN
+				original_tag = MEN
+				original_tag = MON
+				original_tag = TAN
+				original_tag = TIB
+				original_tag = KOR
+				original_tag = VIN
+			}
+		}
+		visible = {
+			NOT = { has_country_flag = CHI_great_emperor }
+		}
+		available = {
+			is_subject = no
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			create_country_leader = {
+				name = "Emperor Zhewen"
+				picture = "Portrait_CHI_Great_Emperor.dds"
+				expire = "1965.1.1"
+				ideology = socialism
+				traits = {
+					glory_of_the_emperor
+					son_of_heaven
+					master_of_war
+					true_dragon
+				}
+			}
+			create_country_leader = {
+				name = "Emperor Zhewen"
+				picture = "Portrait_CHI_Great_Emperor.dds"
+				expire = "1965.1.1"
+				ideology = anarchist_communism 
+				traits = {
+					glory_of_the_emperor
+					son_of_heaven
+					master_of_war
+					true_dragon
+				}
+			}
+			create_country_leader = {
+				name = "Emperor Zhewen"
+				picture = "Portrait_CHI_Great_Emperor.dds"
+				expire = "1965.1.1"
+				ideology = falangism
+				traits = {
+					glory_of_the_emperor
+					son_of_heaven
+					master_of_war
+					true_dragon
+				}
+			}
+			create_country_leader = {
+				name = "Emperor Zhewen"
+				picture = "Portrait_CHI_Great_Emperor.dds"
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					glory_of_the_emperor
+					son_of_heaven
+					master_of_war
+					true_dragon
+				}
+			}
+			set_country_flag = CHI_great_emperor
+		}
+	}
+
+	CHI_reintegrate_qing_territory = {
+		allowed = {
+			OR = {
+				is_literally_china = yes
+				original_tag = MAN
+				original_tag = MEN
+				original_tag = MON
+				original_tag = TAN
+				original_tag = TIB
+				original_tag = KOR
+				original_tag = VIN
+			}
+		}
+		visible = {
+			NOT = { has_country_flag = CHI_reintegrate_qing_territory }
+		}
+		available = {
+			is_subject = no
+			controls_state = 329
+			controls_state = 330
+			controls_state = 326
+			controls_state = 729
+			controls_state = 728
+			custom_trigger_tooltip = {
+				tooltip = form_country_chinese_required_states_tt
+				controls_state = 607
+				controls_state = 608
+				controls_state = 744
+				controls_state = 743
+				controls_state = 602
+				controls_state = 596
+				controls_state = 777
+				controls_state = 593
+				controls_state = 614
+				controls_state = 598
+				controls_state = 595
+				controls_state = 613
+				controls_state = 606
+				controls_state = 597
+				controls_state = 773
+				controls_state = 770
+				controls_state = 605
+				controls_state = 748
+				controls_state = 749
+				controls_state = 600
+				controls_state = 620
+				controls_state = 752
+				controls_state = 751
+				controls_state = 750
+				controls_state = 601
+				controls_state = 603
+				controls_state = 622
+				controls_state = 615
+				controls_state = 621
+				controls_state = 746
+				controls_state = 756
+				controls_state = 754
+				controls_state = 755
+				controls_state = 753
+				controls_state = 616
+				controls_state = 604
+				controls_state = 592
+				controls_state = 591
+				controls_state = 593
+				controls_state = 594
+				controls_state = 599
+				controls_state = 611
+				controls_state = 612
+				controls_state = 747
+				controls_state = 325
+				controls_state = 757
+				controls_state = 322
+				controls_state = 758
+				controls_state = 617
+				controls_state = 618
+				controls_state = 619
+				controls_state = 287
+				controls_state = 759
+				controls_state = 760
+				controls_state = 328
+				controls_state = 714
+				controls_state = 715
+				controls_state = 716
+				controls_state = 717
+				controls_state = 761
+				controls_state = 610
+				controls_state = 524
+				controls_state = 745
+				controls_state = 609
+				controls_state = 774
+			}
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			custom_effect_tooltip = form_country_china_coring_states_tt
+			hidden_effect = {
+				607 = { add_core_of = ROOT }
+				608 = { add_core_of = ROOT }
+				744 = { add_core_of = ROOT }
+				743 = { add_core_of = ROOT }
+				602 = { add_core_of = ROOT }
+				596 = { add_core_of = ROOT }
+				777 = { add_core_of = ROOT }
+				593 = { add_core_of = ROOT }
+				614 = { add_core_of = ROOT }
+				598 = { add_core_of = ROOT }
+				595 = { add_core_of = ROOT }
+				613 = { add_core_of = ROOT }
+				606 = { add_core_of = ROOT }
+				597 = { add_core_of = ROOT }
+				773 = { add_core_of = ROOT }
+				770 = { add_core_of = ROOT }
+				605 = { add_core_of = ROOT }
+				748 = { add_core_of = ROOT }
+				749 = { add_core_of = ROOT }
+				600 = { add_core_of = ROOT }
+				620 = { add_core_of = ROOT }
+				752 = { add_core_of = ROOT }
+				751 = { add_core_of = ROOT }
+				750 = { add_core_of = ROOT }
+				601 = { add_core_of = ROOT }
+				603 = { add_core_of = ROOT }
+				622 = { add_core_of = ROOT }
+				615 = { add_core_of = ROOT }
+				621 = { add_core_of = ROOT }
+				746 = { add_core_of = ROOT }
+				756 = { add_core_of = ROOT }
+				754 = { add_core_of = ROOT }
+				755 = { add_core_of = ROOT }
+				753 = { add_core_of = ROOT }
+				616 = { add_core_of = ROOT }
+				604 = { add_core_of = ROOT }
+				592 = { add_core_of = ROOT }
+				591 = { add_core_of = ROOT }
+				593 = { add_core_of = ROOT }
+				594 = { add_core_of = ROOT }
+				599 = { add_core_of = ROOT }
+				611 = { add_core_of = ROOT }
+				612 = { add_core_of = ROOT }
+				747 = { add_core_of = ROOT }
+				325 = { add_core_of = ROOT }
+				757 = { add_core_of = ROOT }
+				322 = { add_core_of = ROOT }
+				758 = { add_core_of = ROOT }
+				617 = { add_core_of = ROOT }
+				618 = { add_core_of = ROOT }
+				619 = { add_core_of = ROOT }
+				287 = { add_core_of = ROOT }
+				759 = { add_core_of = ROOT }
+				760 = { add_core_of = ROOT }
+				328 = { add_core_of = ROOT }
+				714 = { add_core_of = ROOT }
+				715 = { add_core_of = ROOT }
+				716 = { add_core_of = ROOT }
+				717 = { add_core_of = ROOT }
+				761 = { add_core_of = ROOT }
+				610 = { add_core_of = ROOT }
+				524 = { add_core_of = ROOT }
+				745 = { add_core_of = ROOT }
+				609 = { add_core_of = ROOT }
+				774 = { add_core_of = ROOT }
+				769 = { add_core_of = ROOT }
+			}
+			329 = { add_core_of = ROOT }
+			330 = { add_core_of = ROOT }
+			326 = { add_core_of = ROOT }
+			729 = { add_core_of = ROOT }
+			728 = { add_core_of = ROOT }
+			set_country_flag = CHI_reintegrate_qing_territory
+		}
+	}
+	
+	CHI_proclaim_cosmetic_tag = {
+		allowed = {
+			OR = {
+				is_literally_china = yes
+				original_tag = MAN
+				original_tag = MEN
+				original_tag = MON
+				original_tag = TAN
+				original_tag = TIB
+				original_tag = KOR
+				original_tag = VIN
+			}
+		}
+		visible = {
+			NOT = { has_global_flag = chinese_empire_formed }
+		}
+		available = {
+			is_subject = no
+			has_country_flag = CHI_reintegrate_qing_territory
+		}
+		cost = 150
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_capital = 608
+			set_cosmetic_tag = CHI_DREAM
+			set_party_name = { 
+				ideology = democratic 
+				long_name = CHI_DREAM_democratic_party_long 
+				name = CHI_DREAM_democratic_party 
+			}
+			set_party_name = { 
+				ideology = communism 
+				long_name = CHI_DREAM_communism_party_long 
+				name = CHI_DREAM_communism_party 
+			}
+			set_party_name = { 
+				ideology = fascism 
+				long_name = CHI_DREAM_fascism_party_long 
+				name = CHI_DREAM_fascism_party 
+			}
+			set_party_name = { 
+				ideology = neutrality 
+				long_name = CHI_DREAM_neutrality_party_long 
+				name = CHI_DREAM_neutrality_party 
+			}
+			set_global_flag = chinese_empire_formed
+		}
+	}
+	
+	CHI_absorb_military_staff = {
+		allowed = {
+			OR = {
+				is_literally_china = yes
+				original_tag = MAN
+				original_tag = MEN
+				original_tag = MON
+				original_tag = TAN
+				original_tag = TIB
+				original_tag = KOR
+				original_tag = VIN
+			}
+		}
+		visible = {
+			NOT = { has_country_flag = CHI_absorb_military_staff }
+			has_global_flag = chinese_empire_formed
+		}
+		available = {
+			is_subject = no
+			has_army_manpower = { size > 2000000 }
+		}
+		cost = 200
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			if = {
+				limit = { NOT = { tag = CHI } } 
+				create_field_marshal = {
+					name = "Chiang Kai-shek"
+					picture = "Portrait_China_Chiang_Kai_Shek.dds"
+					traits = { defensive_doctrine inspirational_leader infantry_officer politically_connected media_personality }
+					skill = 5
+					attack_skill = 4
+					defense_skill = 4
+					planning_skill = 5
+					logistics_skill = 5
+				}
+				create_field_marshal = {
+					name = "Tu Yu-ming"
+					gfx = "GFX_portrait_chi_du_yuming"
+					traits = { defensive_doctrine trait_cautious armor_officer harsh_leader }
+					skill = 4
+					attack_skill = 4
+					defense_skill = 4
+					planning_skill = 2
+					logistics_skill = 3
+				}
+				create_field_marshal = {
+					name = "He Ying-qin"
+					picture = Portrait_China_He_Yingqin.dds
+					traits = { offensive_doctrine politically_connected brilliant_strategist organizer }
+					skill = 5
+					attack_skill = 6
+					defense_skill = 5
+					planning_skill = 5
+					logistics_skill = 3
+				}				
+				create_corps_commander = {
+					name = "Zhang Xueliang"
+					gfx = "GFX_portrait_chi_zhang_xueliang"
+					traits = { winter_specialist infantry_officer }
+					skill = 3
+					attack_skill = 3
+					defense_skill = 3
+					planning_skill = 3
+					logistics_skill = 2
+				}
+				create_corps_commander = {
+					name = "Sun Li Jen"
+					gfx = "GFX_portrait_chi_sun_li_jen"
+					traits = { brilliant_strategist }
+					skill = 4
+					attack_skill = 5
+					defense_skill = 4
+					planning_skill = 2
+					logistics_skill = 2
+				}
+				create_corps_commander = {
+					name = "Hsueh Yueh"
+					gfx = "GFX_portrait_chi_xue_yue"
+					traits = { trait_reckless brilliant_strategist war_hero }
+					skill = 3
+					attack_skill = 3
+					defense_skill = 3
+					planning_skill = 1
+					logistics_skill = 3
+				}
+				create_corps_commander = {
+					name = "Gu Zhutong"
+					gfx = "GFX_portrait_chi_gu_zhutong"
+					traits = { career_officer }
+					skill = 3
+					attack_skill = 3
+					defense_skill = 3
+					planning_skill = 2
+					logistics_skill = 2
+				}
+				create_corps_commander = {
+					name = "Wei Lihuang"
+					gfx = "GFX_portrait_chi_wei_lihuang"
+					traits = { infantry_officer }
+					skill = 3
+					attack_skill = 2
+					defense_skill = 2
+					planning_skill = 2
+					logistics_skill = 3
+				}
+			}
+			if = {
+				limit = { NOT = { tag = PRC } }
+				create_field_marshal = {
+					name = "Mao Zedong"
+					gfx = "GFX_portrait_prc_mao_zedong"
+					traits = { defensive_doctrine trait_cautious politically_connected }
+					skill = 4
+					attack_skill = 2
+					defense_skill = 4
+					planning_skill = 3
+					logistics_skill = 4
+				}
+				create_corps_commander = {
+					name = "Mao Anying"
+					portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
+					traits = { trait_reckless politically_connected }
+					skill = 2
+					attack_skill = 2
+					defense_skill = 2
+					planning_skill = 1
+					logistics_skill = 1
+				} 
+				create_corps_commander = {
+					name = "Zhu De"
+					gfx = "GFX_portrait_prc_zhu_de"
+					traits = { infantry_officer organizer career_officer }
+					skill = 4
+					attack_skill = 4
+					defense_skill = 3
+					planning_skill = 4
+					logistics_skill = 4
+				}
+				create_corps_commander = {
+					name = "Peng Dehuai"
+					gfx = "GFX_portrait_prc_peng_dehuai"
+					traits = { infantry_officer trait_mountaineer }
+					skill = 4
+					attack_skill = 4
+					defense_skill = 5
+					planning_skill = 4
+					logistics_skill = 3
+				}
+				create_corps_commander = {
+					name = "Chen Yi"
+					gfx = "GFX_portrait_prc_chen_yi"
+					traits = { infantry_officer }
+					skill = 3
+					attack_skill = 2
+					defense_skill = 3
+					planning_skill = 2
+					logistics_skill = 4
+				}
+			}
+			if = {
+				limit = { NOT = { tag = MAN } } 
+				create_corps_commander = {
+					name = "Zhang Haipeng"
+					GFX = "GFX_portrait_man_zhang_haipeng"
+					traits = {  }
+					skill = 2
+					attack_skill = 2
+					defense_skill = 2
+					planning_skill = 1
+					logistics_skill = 2
+				}
+				create_corps_commander = {
+					name = "Zhang Jinghui"
+					GFX = "GFX_portrait_man_zhang_jinghui"
+					traits = { infantry_officer }
+					skill = 2
+					attack_skill = 2
+					defense_skill = 1
+					planning_skill = 2
+					logistics_skill = 2
+				}
+				create_corps_commander = {
+					name = "Aisin Gioro Xiqia"
+					GFX = "GFX_portrait_man_aisin_gioro_xiqia"
+					traits = { career_officer cavalry_leader cavalry_expert }
+					skill = 4
+					attack_skill = 3
+					defense_skill = 4
+					planning_skill = 4
+					logistics_skill = 3
+				}
+			}
+			create_corps_commander = {
+				name = "Li Zongren"
+				gfx = GFX_portrait_li_zongren
+				traits = { career_officer inflexible_strategist }
+				skill = 3
+				attack_skill = 1
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "Long Yun"
+				gfx = GFX_portrait_yun_long_yun	
+				traits = { guerilla_fighter hill_fighter }			
+				skill = 3
+				attack_skill = 4
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Yan Xishan"
+				gfx = GFX_portrait_yan_xishan
+				traits = { infantry_officer trait_engineer scavenger }
+				skill = 4
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Ma Bufang"
+				gfx = GFX_portrait_xsm_ma_bufang
+				traits = { cavalry_leader trait_mountaineer harsh_leader }
+				skill = 3
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Sheng Shicai"
+				gfx = GFX_portrait_sheng_shicai
+				traits = { desert_fox trait_mountaineer }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 4
+				planning_skill = 2
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "Prince Demchugdongrub"
+				gfx = GFX_portrait_men_demchugdongrub
+				traits = { cavalry_officer skirmisher }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "Anandyn Amar"
+				gfx = GFX_portrait_mon_anandyn_amar
+				traits = { cavalry_officer }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "Yi Hui"
+				portrait_path = "gfx/leaders/Asia/portrait_asia_generic_land_9.dds"
+				traits = { career_officer }
+				skill = 2
+				attack_skill = 1
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			set_country_flag = CHI_absorb_military_staff
+		}
+	}
+
+	CHI_strengthen_admin_structure = {
+		allowed = {
+			OR = {
+				is_literally_china = yes
+				original_tag = MAN
+				original_tag = MEN
+				original_tag = MON
+				original_tag = TAN
+				original_tag = TIB
+				original_tag = KOR
+				original_tag = VIN
+			}
+		}
+		visible = {
+			NOT = { has_country_flag = CHI_strengthen_admin_structure }
+			has_global_flag = chinese_empire_formed
+		}
+		available = {
+			is_subject = no
+			has_country_flag = CHI_absorb_military_staff
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			create_country_leader = {
+				name = "Chiang Kai-Shek"
+				desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
+				picture = "Portrait_China_Chiang_Kai_Shek.dds"
+				expire = "1965.1.1"
+				ideology = socialism
+				traits = {
+					generallissimo
+				}
+			}
+			if = {
+				limit = { NOT = { tag = CHI } }
+				create_country_leader = {
+					name = "Wang Jingwei"
+					desc = "POLITICS_WANG_JINGWEI_DESC"
+					picture = "GFX_portrait_chi_wang_jingwei"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						popular_figurehead2
+						political_dancer
+						nationalist_symbol
+						compassionate_gentleman
+					}
+				}
+			}
+			if = {
+				limit = { NOT = { tag = PRC } }
+				create_country_leader = {
+					name = "Mao Zedong"
+					desc = "POLITICS_MAO_ZEDONG_DESC"
+					picture = "GFX_portrait_prc_mao_zedong"
+					expire = "1965.1.1"
+					ideology = marxism
+					traits = {
+						dictator
+					}
+				} 
+			}
+			if = {
+				limit = { NOT = { tag = MAN } } 
+				create_country_leader = {
+					name = "Aisin Gioro Puyi"
+					picture = "Portrait_MAN_Emperor_Xuantong.dds"
+					expire = "1960.1.1"
+					ideology = despotism
+					traits = {
+						warrior_code
+						nationalist_symbol
+					}
+				}
+			}
+			set_country_flag = CHI_strengthen_admin_structure
+		}
+	}
+	
+	CHI_retake_north_east_territory = {
+		allowed = {
+			OR = {
+				is_literally_china = yes
+				original_tag = MAN
+				original_tag = MEN
+				original_tag = MON
+				original_tag = TAN
+				original_tag = TIB
+				original_tag = KOR
+				original_tag = VIN
+			}
+		}
+		visible = {
+			NOT = { has_country_flag = CHI_retake_north_east_territory }
+			has_global_flag = chinese_empire_formed
+		}
+		available = {
+			is_subject = no
+			controls_state = 408
+			controls_state = 409
+			controls_state = 657
+			controls_state = 560
+			controls_state = 655
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			408 = { add_core_of = ROOT }
+			409 = { add_core_of = ROOT }
+			657 = { add_core_of = ROOT }
+			560 = { add_core_of = ROOT }
+			655 = { add_core_of = ROOT }
+			537 = { add_core_of = ROOT }
+			561 = { add_core_of = ROOT }
+			563 = { add_core_of = ROOT }
+			564 = { add_core_of = ROOT }
+			set_country_flag = CHI_retake_north_east_territory
+		}
+	}
+	
+	CHI_integrate_korean_peninsula = {
+		allowed = {
+			OR = {
+				is_literally_china = yes
+				original_tag = MAN
+				original_tag = MEN
+				original_tag = MON
+				original_tag = TAN
+				original_tag = TIB
+				original_tag = KOR
+				original_tag = VIN
+			}
+		}
+		visible = {
+			NOT = { has_country_flag = CHI_integrate_korean_peninsula }
+			has_global_flag = chinese_empire_formed
+		}
+		available = {
+			is_subject = no
+			controls_state = 527
+			controls_state = 525
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			527 = { add_core_of = ROOT }
+			525 = { add_core_of = ROOT }
+			772 = { add_core_of = ROOT }
+			set_country_flag = CHI_integrate_korean_peninsula
+		}
+	}
+	
+	CHI_redefine_western_border = {
+		allowed = {
+			OR = {
+				is_literally_china = yes
+				original_tag = MAN
+				original_tag = MEN
+				original_tag = MON
+				original_tag = TAN
+				original_tag = TIB
+				original_tag = KOR
+				original_tag = VIN
+			}
+		}
+		visible = {
+			NOT = { has_country_flag = CHI_redefine_western_border }
+			has_global_flag = chinese_empire_formed
+		}
+		available = {
+			is_subject = no
+			controls_state = 764
+			controls_state = 763
+			controls_state = 434
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			763 = { add_core_of = ROOT }
+			764 = { add_core_of = ROOT }
+			434 = { add_core_of = ROOT }
+			324 = { add_core_of = ROOT }
+			set_country_flag = CHI_redefine_western_border
+		}
+	}
+	
+	CHI_dominate_se_asia = {
+		allowed = {
+			OR = {
+				is_literally_china = yes
+				original_tag = MAN
+				original_tag = MEN
+				original_tag = MON
+				original_tag = TAN
+				original_tag = TIB
+				original_tag = KOR
+				original_tag = VIN
+			}
+		}
+		visible = {
+			NOT = { has_country_flag = CHI_dominate_se_asia }
+			has_global_flag = chinese_empire_formed
+		}
+		available = {
+			is_subject = no
+			controls_state = 671
+			controls_state = 286
+			controls_state = 670
+			controls_state = 741
+			controls_state = 289
+			controls_state = 724
+			controls_state = 775
+			controls_state = 776
+			controls_state = 640
+			controls_state = 336
+			controls_state = 771
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			671 = { add_core_of = ROOT }
+			286 = { add_core_of = ROOT }
+			670 = { add_core_of = ROOT }
+			741 = { add_core_of = ROOT }
+			289 = { add_core_of = ROOT }
+			724 = { add_core_of = ROOT }
+			775 = { add_core_of = ROOT }
+			776 = { add_core_of = ROOT }
+			640 = { add_core_of = ROOT }
+			336 = { add_core_of = ROOT }
+			771 = { add_core_of = ROOT }
+			set_country_flag = CHI_dominate_se_asia
+		}
+	}
+}

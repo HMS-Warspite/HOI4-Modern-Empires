@@ -1,0 +1,33 @@
+state=
+{
+	id=820
+	name="STATE_820" #Memphis
+	manpower = 3880951
+	
+	state_category = large_city
+
+	history=
+	{
+		owner = ENG
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3 
+		}
+		victory_points = {
+			3996 5
+		}
+		victory_points = {
+			4055 15
+		}
+		victory_points = {
+			1068 3
+		}
+
+		add_core_of = EGY
+
+	}
+
+	provinces={
+		992 1068 3996 4055 7117 10031 
+	}
+}

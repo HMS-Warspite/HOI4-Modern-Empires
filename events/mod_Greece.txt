@@ -1,0 +1,3188 @@
+﻿add_namespace = mod_greece
+
+#Test: Test Event Index
+country_event = {
+	id = mod_greece.000
+	title = mod_greece.000.t
+	desc = mod_greece.000.desc
+	picture = GFX_report_event_chinese_soldiers
+
+	is_triggered_only = yes
+	
+	#Okay
+	option = {
+		name = mod_greece.000.a
+	}
+}
+
+#Test: Annex all claimed territories
+country_event = {
+	id = mod_greece.999
+	title = mod_greece.999.t
+	desc = mod_greece.999.desc
+	picture = GFX_report_event_chinese_soldiers
+
+	is_triggered_only = yes
+
+	#Annex and transfer troops from large nations
+	option = {
+		name = mod_greece.999.a
+		ITA = { every_unit_leader = { set_nationality = ROOT } }
+		annex_country = {
+			target = ITA 
+			transfer_troops = yes
+		}
+		TUR = { every_unit_leader = { set_nationality = ROOT } }
+		annex_country = {
+			target = TUR
+			transfer_troops = yes
+		}
+		YUG = { every_unit_leader = { set_nationality = ROOT } }
+		annex_country = {
+			target = YUG
+			transfer_troops = yes
+		}
+		ROM = { every_unit_leader = { set_nationality = ROOT } }
+		annex_country = {
+			target = ROM 
+			transfer_troops = yes
+		}
+		BUL = { every_unit_leader = { set_nationality = ROOT } }
+		annex_country = {
+			target = BUL 
+			transfer_troops = yes
+		}
+		HUN = { every_unit_leader = { set_nationality = ROOT } }
+		annex_country = {
+			target = HUN 
+			transfer_troops = yes
+		}
+		CZE = { every_unit_leader = { set_nationality = ROOT } }
+		annex_country = {
+			target = CZE 
+			transfer_troops = yes
+		}
+		IRQ = { every_unit_leader = { set_nationality = ROOT } }
+		annex_country = {
+			target = IRQ 
+			transfer_troops = yes
+		}
+		PER = { every_unit_leader = { set_nationality = ROOT } }
+		annex_country = {
+			target = PER 
+			transfer_troops = yes
+		}
+		SAU = { every_unit_leader = { set_nationality = ROOT } }
+		annex_country = {
+			target = SAU 
+			transfer_troops = yes
+		}
+		ENG = { transfer_state = 297 }
+		SPR = { every_unit_leader = { set_nationality = ROOT } }
+		annex_country = {
+			target = SPR 
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = AUS 
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = SWI 
+			transfer_troops = yes
+		}
+		every_state = { 
+			limit = { AND = { is_core_of = UKR NOT = { is_owned_by = ROOT } } 
+			}
+			ROOT = { transfer_state = PREV }
+		}
+		every_state = { 
+			limit = { AND = { is_core_of = SYR NOT = { is_owned_by = ROOT } } 
+			}
+			ROOT = { transfer_state = PREV }
+		}
+		every_state = { 
+			limit = { AND = { is_core_of = EGY NOT = { is_owned_by = ROOT } } 
+			}
+			ROOT = { transfer_state = PREV }
+		}
+		every_state = { 
+			limit = { AND = { is_core_of = SUD NOT = { is_owned_by = ROOT } } 
+			}
+			ROOT = { transfer_state = PREV }
+		}
+		every_state = { 
+			limit = { AND = { is_core_of = TUN NOT = { is_owned_by = ROOT } } 
+			}
+			ROOT = { transfer_state = PREV }
+		}
+		every_state = { 
+			limit = { AND = { is_core_of = ALG NOT = { is_owned_by = ROOT } } 
+			}
+			ROOT = { transfer_state = PREV }
+		}
+		every_state = { 
+			limit = { AND = { is_core_of = MOR NOT = { is_owned_by = ROOT } } 
+			}
+			ROOT = { transfer_state = PREV }
+		}
+		every_state = { 
+			limit = { AND = { is_core_of = POR NOT = { is_owned_by = ROOT } } 
+			}
+			ROOT = { transfer_state = PREV }
+		}
+		every_state = { 
+			limit = { AND = { is_core_of = GAL NOT = { is_owned_by = ROOT } } 
+			}
+			ROOT = { transfer_state = PREV }
+		}
+		GAL = { every_unit_leader = { set_nationality = ROOT } }
+		transfer_state = 44 	
+		transfer_state = 116
+		transfer_state = 118
+		transfer_state = 137 
+		transfer_state = 183
+		transfer_state = 218 
+		transfer_state = 229
+		transfer_state = 230
+		transfer_state = 231
+		transfer_state = 268
+		transfer_state = 269
+		transfer_state = 271
+		transfer_state = 293
+		transfer_state = 294
+		transfer_state = 444
+		transfer_state = 445
+		transfer_state = 454
+		transfer_state = 455 
+		transfer_state = 547
+		transfer_state = 548
+		transfer_state = 553 
+		transfer_state = 557
+		transfer_state = 656
+		transfer_state = 658
+		transfer_state = 659
+		transfer_state = 699
+		transfer_state = 735
+		transfer_state = 765 
+		transfer_state = 786
+		transfer_state = 788
+		transfer_state = 789
+		transfer_state = 795
+		transfer_state = 798
+		transfer_state = 799
+	}
+
+	#Only annex the states
+	option = {
+		name = mod_greece.999.b
+		annex_country = {
+			target = ITA 
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = TUR
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = YUG
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = ROM 
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = BUL 
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = HUN 
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = IRQ 
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = PER 
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = SAU 
+			transfer_troops = yes
+		}
+		ENG = { transfer_state = 297 }
+		annex_country = {
+			target = SPR 
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = AUS 
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = SWI 
+			transfer_troops = yes
+		}
+		every_state = { 
+			limit = { AND = { is_core_of = UKR NOT = { is_owned_by = ROOT } } 
+			}
+			ROOT = { transfer_state = PREV }
+		}
+		every_state = { 
+			limit = { AND = { is_core_of = SYR NOT = { is_owned_by = ROOT } } 
+			}
+			ROOT = { transfer_state = PREV }
+		}
+		every_state = { 
+			limit = { AND = { is_core_of = EGY NOT = { is_owned_by = ROOT } } 
+			}
+			ROOT = { transfer_state = PREV }
+		}
+		every_state = { 
+			limit = { AND = { is_core_of = SUD NOT = { is_owned_by = ROOT } } 
+			}
+			ROOT = { transfer_state = PREV }
+		}
+		every_state = { 
+			limit = { AND = { is_core_of = TUN NOT = { is_owned_by = ROOT } } 
+			}
+			ROOT = { transfer_state = PREV }
+		}
+		every_state = { 
+			limit = { AND = { is_core_of = ALG NOT = { is_owned_by = ROOT } } 
+			}
+			ROOT = { transfer_state = PREV }
+		}
+		every_state = { 
+			limit = { AND = { is_core_of = MOR NOT = { is_owned_by = ROOT } } 
+			}
+			ROOT = { transfer_state = PREV }
+		}
+		every_state = { 
+			limit = { AND = { is_core_of = POR NOT = { is_owned_by = ROOT } } 
+			}
+			ROOT = { transfer_state = PREV }
+		}
+		every_state = { 
+			limit = { AND = { is_core_of = GAL NOT = { is_owned_by = ROOT } } 
+			}
+			ROOT = { transfer_state = PREV }
+		}
+		transfer_state = 44 	
+		transfer_state = 70 
+		transfer_state = 71 
+		transfer_state = 73 
+		transfer_state = 116
+		transfer_state = 118
+		transfer_state = 137 
+		transfer_state = 183
+		transfer_state = 218 
+		transfer_state = 229
+		transfer_state = 230
+		transfer_state = 231
+		transfer_state = 268
+		transfer_state = 269
+		transfer_state = 271
+		transfer_state = 293
+		transfer_state = 294
+		transfer_state = 444
+		transfer_state = 445
+		transfer_state = 454
+		transfer_state = 455 
+		transfer_state = 547
+		transfer_state = 548
+		transfer_state = 553 
+		transfer_state = 557
+		transfer_state = 656
+		transfer_state = 658
+		transfer_state = 659
+		transfer_state = 664 
+		transfer_state = 699
+		transfer_state = 735
+		transfer_state = 765 
+		transfer_state = 786
+		transfer_state = 788
+		transfer_state = 789
+		transfer_state = 795
+		transfer_state = 798
+		transfer_state = 799
+	}
+
+	#Do Nothing
+	option = {
+		name = mod_greece.999.c
+	}
+}
+
+#Test: Build Naval and Air Bases
+country_event = {
+	id = mod_greece.998
+	title = mod_greece.998.t
+	desc = mod_greece.998.desc
+	picture = GFX_report_event_chinese_soldiers
+
+	is_triggered_only = yes
+
+	#Build Naval Bases
+	option = {
+		name = mod_greece.998.a
+		9 = {
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		75 = {
+			set_building_level = {
+				type = air_base
+				level = 7
+				instant_build = yes
+			}
+		}
+		47 = {
+			set_building_level = {
+				type = naval_base
+				level = 10
+				province = 4109
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		186 = {
+			set_building_level = {
+				type = naval_base
+				level = 6
+				province = 7211
+				instant_build = yes
+			}
+			set_building_level = {
+				type = naval_base
+				level = 6
+				province = 11965
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		185 = {
+			set_building_level = {
+				type = naval_base
+				level = 4
+				province = 9805
+				instant_build = yes
+			}
+		}
+		731 = {
+			set_building_level = {
+				type = naval_base
+				level = 10
+				province = 11818
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		182 = {
+			set_building_level = {
+				type = naval_base
+				level = 10
+				province = 9940
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		184 = {
+			set_building_level = {
+				type = naval_base
+				level = 7
+				province = 11905
+				instant_build = yes
+			}
+		}
+		187 = {
+			set_building_level = {
+				type = naval_base
+				level = 3
+				province = 8435
+				instant_build = yes
+			}
+		}
+		341 = {
+			set_building_level = {
+				type = naval_base
+				level = 10
+				province = 9833
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		340 = {
+			set_building_level = {
+				type = naval_base
+				level = 10
+				province = 6864
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		339 = {
+			set_building_level = {
+				type = naval_base
+				level = 7
+				province = 4112
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 7
+				instant_build = yes
+			}
+		}
+		347 = {
+			set_building_level = {
+				type = naval_base
+				level = 4
+				province = 904
+				instant_build = yes
+			}
+		}
+		164 = {
+			set_building_level = {
+				type = naval_base
+				level = 6
+				province = 10007
+				instant_build = yes
+			}
+			set_building_level = {
+				type = naval_base
+				level = 3
+				province = 7003
+				instant_build = yes
+			}
+		}
+		342 = {
+			set_building_level = {
+				type = naval_base
+				level = 6
+				province = 1005
+				instant_build = yes
+			}
+		}
+		49 = {
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		356 = {
+			set_building_level = {
+				type = naval_base
+				level = 6
+				province = 6995
+				instant_build = yes
+			}
+		}
+		355 = {
+			set_building_level = {
+				type = naval_base
+				level = 5
+				province = 11881
+				instant_build = yes
+			}
+		}
+		344 = {
+			set_building_level = {
+				type = naval_base
+				level = 5
+				province = 11746
+				instant_build = yes
+			}
+		}
+		346 = {
+			set_building_level = {
+				type = air_base
+				level = 7
+				instant_build = yes
+			}
+		}
+		350 = {
+			set_building_level = {
+				type = air_base
+				level = 7
+				instant_build = yes
+			}
+		}
+		354 = {
+			set_building_level = {
+				type = naval_base
+				level = 5
+				province = 9932
+				instant_build = yes
+			}
+		}
+		183 = {
+			set_building_level = {
+				type = naval_base
+				level = 7
+				province = 11984
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 7
+				instant_build = yes
+			}
+		}
+		553 = {
+			set_building_level = {
+				type = naval_base
+				level = 10
+				province = 792
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		554 = {
+			set_building_level = {
+				type = air_base
+				level = 7
+				instant_build = yes
+			}
+		}
+		454 = {
+			set_building_level = {
+				type = naval_base
+				level = 8
+				province = 4206
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		229 = {
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		230 = {
+			set_building_level = {
+				type = air_base
+				level = 7
+				instant_build = yes
+			}
+		}
+		799 = {
+			set_building_level = {
+				type = naval_base
+				level = 10
+				province = 772
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		419 = {
+			set_building_level = {
+				type = air_base
+				level = 7
+				instant_build = yes
+			}
+		}
+		446 = {
+			set_building_level = {
+				type = naval_base
+				level = 5
+				province = 12049
+				instant_build = yes
+			}
+			set_building_level = {
+				type = naval_base
+				level = 4
+				province = 4073
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		447 = {
+			set_building_level = {
+				type = naval_base
+				level = 10
+				province = 4076
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		456 = {
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		457 = {
+			set_building_level = {
+				type = naval_base
+				level = 4
+				province = 9957
+				instant_build = yes
+			}
+		}
+		
+		551 = {
+			set_building_level = {
+				type = naval_base
+				level = 6
+				province = 12725
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		450 = {
+			set_building_level = {
+				type = naval_base
+				level = 10
+				province = 11954
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		451 = {
+			set_building_level = {
+				type = naval_base
+				level = 8
+				province = 1130
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 7
+				instant_build = yes
+			}
+		}
+		448 = {
+			set_building_level = {
+				type = naval_base
+				level = 10
+				province = 1149
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		458 = {
+			set_building_level = {
+				type = naval_base
+				level = 10
+				province = 11969
+				instant_build = yes
+			}
+			set_building_level = {
+				type = naval_base
+				level = 6
+				province = 9994
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		44 = {
+			set_building_level = {
+				type = naval_base
+				level = 6
+				province = 11767
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 6
+				instant_build = yes
+			}
+		}
+		106 = {
+			set_building_level = {
+				type = air_base
+				level = 6
+				instant_build = yes
+			}
+		}
+		48 = {
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		211 = {
+			set_building_level = {
+				type = naval_base
+				level = 8
+				province = 9783
+				instant_build = yes
+			}
+			set_building_level = {
+				type = naval_base
+				level = 5
+				province = 9902
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 7
+				instant_build = yes
+			}
+		}
+		105 = {
+			set_building_level = {
+				type = naval_base
+				level = 4
+				province = 9809
+				instant_build = yes
+			}
+		}
+		107 = {
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		104 = {
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		109 = {
+			set_building_level = {
+				type = air_base
+				level = 7
+				instant_build = yes
+			}
+		}
+		103 = {
+			set_building_level = {
+				type = naval_base
+				level = 4
+				province = 6889
+				instant_build = yes
+			}
+			set_building_level = {
+				type = naval_base
+				level = 6
+				province = 3924
+				instant_build = yes
+			}
+		}
+		163 = {
+			set_building_level = {
+				type = naval_base
+				level = 5
+				province = 3943
+				instant_build = yes
+			}
+		}
+		46 = {
+			set_building_level = {
+				type = naval_base
+				level = 7
+				province = 657
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		79 = {
+			set_building_level = {
+				type = air_base
+				level = 6
+				instant_build = yes
+			}
+		}
+		78 = {
+			set_building_level = {
+				type = air_base
+				level = 6
+				instant_build = yes
+			}
+		}
+		766 = {
+			set_building_level = {
+				type = naval_base
+				level = 5
+				province = 6727
+				instant_build = yes
+			}
+		}
+		154 = {
+			set_building_level = {
+				type = air_base
+				level = 7
+				instant_build = yes
+			}
+		}
+		43 = {
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		70 = {
+			set_building_level = {
+				type = air_base
+				level = 7
+				instant_build = yes
+			}
+		}
+		736 = {
+			set_building_level = {
+				type = naval_base
+				level = 7
+				province = 6626
+				instant_build = yes
+			}
+		}
+		4 = {
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		3 = {
+			set_building_level = {
+				type = air_base
+				level = 7
+				instant_build = yes
+			}
+		}
+		153 = {
+			set_building_level = {
+				type = air_base
+				level = 7
+				instant_build = yes
+			}
+		}
+		291 = {
+			set_building_level = {
+				type = naval_base
+				level = 6
+				province = 2089
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		292 = {
+			set_building_level = {
+				type = naval_base
+				level = 7
+				province = 12702
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 8
+				instant_build = yes
+			}
+		}
+		656 = {
+			set_building_level = {
+				type = naval_base
+				level = 10
+				province = 8085
+				instant_build = yes
+			}
+		}
+		679 = {
+			set_building_level = {
+				type = naval_base
+				level = 5
+				province = 12883
+				instant_build = yes
+			}
+		}
+		804 = {
+			set_building_level = {
+				type = naval_base
+				level = 8
+				province = 12883
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		765 = {
+			set_building_level = {
+				type = naval_base
+				level = 6
+				province = 8051
+				instant_build = yes
+			}
+		}
+		658 = {
+			set_building_level = {
+				type = naval_base
+				level = 10
+				province = 7960
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		293 = {
+			set_building_level = {
+				type = naval_base
+				level = 5
+				province = 10840
+				instant_build = yes
+			}
+		}
+		659 = {
+			set_building_level = {
+				type = naval_base
+				level = 7
+				province = 5074
+				instant_build = yes
+			}
+			set_building_level = {
+				type = naval_base
+				level = 3
+				province = 8000
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 7
+				instant_build = yes
+			}
+		}
+		294 = {
+			set_building_level = {
+				type = naval_base
+				level = 5
+				province = 10760
+				instant_build = yes
+			}
+		}
+		266 = {
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		412 = {
+			set_building_level = {
+				type = naval_base
+				level = 10
+				province = 7982
+				instant_build = yes
+			}
+			set_building_level = {
+				type = naval_base
+				level = 5
+				province = 12832
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		413 = {
+			set_building_level = {
+				type = naval_base
+				level = 4
+				province = 5005
+				instant_build = yes
+			}
+		}
+		460 = {
+			set_building_level = {
+				type = naval_base
+				level = 4
+				province = 7081
+				instant_build = yes
+			}
+		}
+		459 = {
+			set_building_level = {
+				type = naval_base
+				level = 10
+				province = 1145
+				instant_build = yes
+			}
+			set_building_level = {
+				type = naval_base
+				level = 5
+				province = 7132
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		290 = {
+			set_building_level = {
+				type = naval_base
+				level = 10
+				province = 9945
+				instant_build = yes
+			}
+			set_building_level = {
+				type = naval_base
+				level = 5
+				province = 12100
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		802 = {
+			set_building_level = {
+				type = naval_base
+				level = 10
+				province = 7069
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		803 = {
+			set_building_level = {
+				type = air_base
+				level = 7
+				instant_build = yes
+			}
+		}
+		783 = {
+			set_building_level = {
+				type = naval_base
+				level = 4
+				province = 12857
+				instant_build = yes
+			}
+		}
+		699 = {
+			set_building_level = {
+				type = naval_base
+				level = 6
+				province = 8038
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 7
+				instant_build = yes
+			}
+		}
+		557 = {
+			set_building_level = {
+				type = naval_base
+				level = 6
+				province = 5034
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 7
+				instant_build = yes
+			}
+		}
+		178 = {
+			set_building_level = {
+				type = naval_base
+				level = 5
+				province = 13071
+				instant_build = yes
+			}
+		}
+		697 = {
+			set_building_level = {
+				type = naval_base
+				level = 3
+				province = 3118
+				instant_build = yes
+			}
+		}
+		698 = {
+			set_building_level = {
+				type = naval_base
+				level = 6
+				province = 1751
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 7
+				instant_build = yes
+			}
+		}
+		444 = {
+			set_building_level = {
+				type = naval_base
+				level = 6
+				province = 12774
+				instant_build = yes
+			}
+		}
+		445 = {
+			set_building_level = {
+				type = air_base
+				level = 6
+				instant_build = yes
+			}
+		}
+		788 = {
+			set_building_level = {
+				type = naval_base
+				level = 8
+				province = 3456
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		137 = {
+			set_building_level = {
+				type = naval_base
+				level = 10
+				province = 3686
+				instant_build = yes
+			}
+			set_building_level = {
+				type = naval_base
+				level = 5
+				province = 9680
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		218 = {
+			set_building_level = {
+				type = naval_base
+				level = 10
+				province = 9417
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		192 = {
+			set_building_level = {
+				type = naval_base
+				level = 7
+				province = 11670
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 6
+				instant_build = yes
+			}
+		}
+		226 = {
+			set_building_level = {
+				type = air_base
+				level = 7
+				instant_build = yes
+			}
+		}
+		221 = {
+			set_building_level = {
+				type = air_base
+				level = 7
+				instant_build = yes
+			}
+		}
+		202 = {
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		91 = {
+			set_building_level = {
+				type = air_base
+				level = 7
+				instant_build = yes
+			}
+		}
+		549 = {
+			set_building_level = {
+				type = air_base
+				level = 7
+				instant_build = yes
+			}
+		}
+		548 = {
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		271 = {
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		550 = {
+			set_building_level = {
+				type = naval_base
+				level = 5
+				province = 12766
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 6
+				instant_build = yes
+			}
+		}
+		268 = {
+			set_building_level = {
+				type = naval_base
+				level = 10
+				province = 8124
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		269 = {
+			set_building_level = {
+				type = naval_base
+				level = 4
+				province = 10833
+				instant_build = yes
+			}
+		}
+		559 = {
+			set_building_level = {
+				type = naval_base
+				level = 10
+				province = 10928
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		547 = {
+			set_building_level = {
+				type = naval_base
+				level = 7
+				province = 5210
+				instant_build = yes
+			}
+		}
+		116 = {
+			set_building_level = {
+				type = naval_base
+				level = 7
+				province = 12003
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 6
+				instant_build = yes
+			}
+		}
+		177 = {
+			set_building_level = {
+				type = naval_base
+				level = 5
+				province = 9793
+				instant_build = yes
+			}
+			set_building_level = {
+				type = naval_base
+				level = 3
+				province = 7114
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 5
+				instant_build = yes
+			}
+		}
+		1 = {
+			set_building_level = {
+				type = naval_base
+				level = 6
+				province = 3838
+				instant_build = yes
+			}
+		}
+		114 = {
+			set_building_level = {
+				type = naval_base
+				level = 7
+				province = 11773
+				instant_build = yes
+			}
+			set_building_level = {
+				type = naval_base
+				level = 5
+				province = 6891
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 7
+				instant_build = yes
+			}
+		}
+		156 = {
+			set_building_level = {
+				type = naval_base
+				level = 10
+				province = 11837
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 7
+				instant_build = yes
+			}
+		}
+		157 = {
+			set_building_level = {
+				type = naval_base
+				level = 6
+				province = 925
+				instant_build = yes
+			}
+			set_building_level = {
+				type = naval_base
+				level = 3
+				province = 6831
+				instant_build = yes
+			}
+		}
+		158 = {
+			set_building_level = {
+				type = naval_base
+				level = 10
+				province = 6788
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		159 = {
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		160 = {
+			set_building_level = {
+				type = naval_base
+				level = 8
+				province = 11584
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 7
+				instant_build = yes
+			}
+		}
+		161 = {
+			set_building_level = {
+				type = naval_base
+				level = 4
+				province = 782
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 6
+				instant_build = yes
+			}
+		}
+		162 = {
+			set_building_level = {
+				type = naval_base
+				level = 6
+				province = 11833
+				instant_build = yes
+			}
+			set_building_level = {
+				type = naval_base
+				level = 6
+				province = 6973
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 7
+				instant_build = yes
+			}
+		}
+		2 = {
+			set_building_level = {
+				type = naval_base
+				level = 10
+				province = 9904
+				instant_build = yes
+			}
+			set_building_level = {
+				type = naval_base
+				level = 6
+				province = 11846
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		115 = {
+			set_building_level = {
+				type = naval_base
+				level = 10
+				province = 4014
+				instant_build = yes
+			}
+			set_building_level = {
+				type = naval_base
+				level = 8
+				province = 10074
+				instant_build = yes
+			}
+			set_building_level = {
+				type = naval_base
+				level = 6
+				province = 4159
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		117 = {
+			set_building_level = {
+				type = naval_base
+				level = 8
+				province = 819
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 8
+				instant_build = yes
+			}
+		}
+		179 = {
+			set_building_level = {
+				type = naval_base
+				level = 6
+				province = 3790
+				instant_build = yes
+			}
+		}
+		180 = {
+			set_building_level = {
+				type = naval_base
+				level = 8
+				province = 9817
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 7
+				instant_build = yes
+			}
+		}
+		112 = {
+			set_building_level = {
+				type = naval_base
+				level = 10
+				province = 11805
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		118 = {
+			set_building_level = {
+				type = naval_base
+				level = 8
+				province = 4135
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 7
+				instant_build = yes
+			}
+		}
+		169 = {
+			set_building_level = {
+				type = naval_base
+				level = 7
+				province = 1048
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 7
+				instant_build = yes
+			}
+		}
+		173 = {
+			set_building_level = {
+				type = naval_base
+				level = 6
+				province = 9979
+				instant_build = yes
+			}
+			set_building_level = {
+				type = naval_base
+				level = 4
+				province = 747
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 7
+				instant_build = yes
+			}
+		}
+		41 = {
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		168 = {
+			set_building_level = {
+				type = naval_base
+				level = 5
+				province = 10024
+				instant_build = yes
+			}
+		}
+		167 = {
+			set_building_level = {
+				type = naval_base
+				level = 7
+				province = 6906
+				instant_build = yes
+			}
+			set_building_level = {
+				type = naval_base
+				level = 4
+				province = 4098
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 7
+				instant_build = yes
+			}
+		}
+		166 = {
+			set_building_level = {
+				type = air_base
+				level = 7
+				instant_build = yes
+			}
+		}
+		165 = {
+			set_building_level = {
+				type = naval_base
+				level = 10
+				province = 9764
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		171 = {
+			set_building_level = {
+				type = naval_base
+				level = 6
+				province = 758
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 7
+				instant_build = yes
+			}
+		}
+		172 = {
+			set_building_level = {
+				type = naval_base
+				level = 7
+				province = 740
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 7
+				instant_build = yes
+			}
+		}
+		174 = {
+			set_building_level = {
+				type = naval_base
+				level = 4
+				province = 11707
+				instant_build = yes
+			}
+		}
+		31 = {
+			set_building_level = {
+				type = air_base
+				level = 8
+				instant_build = yes
+			}
+		}
+		19 = {
+			set_building_level = {
+				type = naval_base
+				level = 10
+				province = 9737
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		20 = {
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		21 = {
+			set_building_level = {
+				type = naval_base
+				level = 8
+				province = 911
+				instant_build = yes
+			}
+			set_building_level = {
+				type = naval_base
+				level = 10
+				province = 11834
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		22 = {
+			set_building_level = {
+				type = naval_base
+				level = 6
+				province = 9898
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 7
+				instant_build = yes
+			}
+		}
+		23 = {
+			set_building_level = {
+				type = naval_base
+				level = 6
+				province = 6657
+				instant_build = yes
+			}
+		}
+		735 = {
+			set_building_level = {
+				type = naval_base
+				level = 7
+				province = 9909
+				instant_build = yes
+			}
+		}
+	}
+
+	#Build factories
+	option = {
+		name = mod_greece.998.b
+		every_owned_state = {
+			limit = { 
+				is_core_of = ROOT
+				has_state_category = megalopolis
+				is_coastal = yes
+			}
+			set_building_level = {
+				type = industrial_complex
+				level = 12
+				instant_build = yes
+			}
+			set_building_level = {
+				type = arms_factory 
+				level = 8
+				instant_build = yes
+			}
+			set_building_level = {
+				type = dockyard 
+				level = 3
+				instant_build = yes
+			}
+		}
+		every_owned_state = {
+			limit = { 
+				is_core_of = ROOT
+				has_state_category = megalopolis
+				is_coastal = no
+			}
+			set_building_level = {
+				type = industrial_complex
+				level = 12
+				instant_build = yes
+			}
+			set_building_level = {
+				type = arms_factory 
+				level = 10
+				instant_build = yes
+			}
+		}
+		every_owned_state = {
+			limit = { 
+				is_core_of = ROOT
+				has_state_category = metropolis
+				is_coastal = yes
+			}
+			set_building_level = {
+				type = industrial_complex
+				level = 12
+				instant_build = yes
+			}
+			set_building_level = {
+				type = arms_factory 
+				level = 9
+				instant_build = yes
+			}
+			set_building_level = {
+				type = dockyard 
+				level = 2
+				instant_build = yes
+			}
+		}
+		every_owned_state = {
+			limit = { 
+				is_core_of = ROOT
+				has_state_category = metropolis
+				is_coastal = no
+			}
+			set_building_level = {
+				type = industrial_complex
+				level = 13
+				instant_build = yes
+			}
+			set_building_level = {
+				type = arms_factory 
+				level = 10
+				instant_build = yes
+			}
+		}
+		every_owned_state = {
+			limit = { 
+				is_core_of = ROOT
+				has_state_category = large_city
+				is_coastal = yes
+			}
+			set_building_level = {
+				type = industrial_complex
+				level = 11
+				instant_build = yes
+			}
+			set_building_level = {
+				type = arms_factory 
+				level = 8
+				instant_build = yes
+			}
+			set_building_level = {
+				type = dockyard 
+				level = 2
+				instant_build = yes
+			}
+		}
+		every_owned_state = {
+			limit = { 
+				is_core_of = ROOT
+				has_state_category = large_city
+				is_coastal = no
+			}
+			set_building_level = {
+				type = industrial_complex
+				level = 12
+				instant_build = yes
+			}
+			set_building_level = {
+				type = arms_factory 
+				level = 8
+				instant_build = yes
+			}
+		}
+		every_owned_state = {
+			limit = { 
+				is_core_of = ROOT
+				has_state_category = city
+				is_coastal = yes
+			}
+			set_building_level = {
+				type = industrial_complex
+				level = 8
+				instant_build = yes
+			}
+			set_building_level = {
+				type = arms_factory 
+				level = 6
+				instant_build = yes
+			}
+			set_building_level = {
+				type = dockyard 
+				level = 1
+				instant_build = yes
+			}
+		}
+		every_owned_state = {
+			limit = { 
+				is_core_of = ROOT
+				has_state_category = city
+				is_coastal = no
+			}
+			set_building_level = {
+				type = industrial_complex
+				level = 9
+				instant_build = yes
+			}
+			set_building_level = {
+				type = arms_factory 
+				level = 6
+				instant_build = yes
+			}
+		}
+		every_owned_state = {
+			limit = { 
+				is_core_of = ROOT
+				has_state_category = large_town
+				is_coastal = yes
+			}
+			set_building_level = {
+				type = industrial_complex
+				level = 6
+				instant_build = yes
+			}
+			set_building_level = {
+				type = arms_factory 
+				level = 5
+				instant_build = yes
+			}
+			set_building_level = {
+				type = dockyard 
+				level = 1
+				instant_build = yes
+			}
+		}
+		every_owned_state = {
+			limit = { 
+				is_core_of = ROOT
+				has_state_category = large_town
+				is_coastal = no
+			}
+			set_building_level = {
+				type = industrial_complex
+				level = 7
+				instant_build = yes
+			}
+			set_building_level = {
+				type = arms_factory 
+				level = 5
+				instant_build = yes
+			}
+		}
+		every_owned_state = {
+			limit = { 
+				is_core_of = ROOT
+				has_state_category = town 
+			}
+			set_building_level = {
+				type = industrial_complex
+				level = 5
+				instant_build = yes
+			}
+			set_building_level = {
+				type = arms_factory 
+				level = 4
+				instant_build = yes
+			} 
+		}
+		every_owned_state = {
+			limit = { 
+				is_core_of = ROOT
+				has_state_category = rural
+			}
+			set_building_level = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			set_building_level = {
+				type = arms_factory 
+				level = 2
+				instant_build = yes
+			}
+		}
+		every_owned_state = {
+			limit = { 
+				is_core_of = ROOT
+				has_state_category = pastoral
+				is_coastal = yes
+			}
+			set_building_level = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		every_owned_state = {
+			limit = { 
+				is_core_of = ROOT
+				has_state_category = pastoral
+				is_coastal = no
+			}
+			set_building_level = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			set_building_level = {
+				type = arms_factory 
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	
+	#Do Nothing
+	option = {
+		name = mod_greece.998.c
+	}
+}
+
+#Test: Build other buildings
+country_event = {
+	id = mod_greece.997
+	title = mod_greece.997.t
+	desc = mod_greece.997.desc
+	picture = GFX_report_event_chinese_soldiers
+
+	is_triggered_only = yes
+
+	#Build rocket sites and nuclear plants
+	option = {
+		name = mod_greece.997.a
+		20 = {
+			set_building_level = {
+				type = rocket_site
+				level = 2
+				instant_build = yes
+			}
+		}
+		43 = {
+			set_building_level = {
+				type = rocket_site
+				level = 2
+				instant_build = yes
+			}
+		}
+		137 = {
+			set_building_level = {
+				type = rocket_site
+				level = 2
+				instant_build = yes
+			}
+		}
+		185 = {
+			set_building_level = {
+				type = rocket_site
+				level = 2
+				instant_build = yes
+			}
+		}
+		266 = {
+			set_building_level = {
+				type = rocket_site
+				level = 2
+				instant_build = yes
+			}
+		}
+		271 = {
+			set_building_level = {
+				type = rocket_site
+				level = 2
+				instant_build = yes
+			}
+		}
+		445 = {
+			set_building_level = {
+				type = rocket_site
+				level = 2
+				instant_build = yes
+			}
+		}
+		454 = {
+			set_building_level = {
+				type = rocket_site
+				level = 2
+				instant_build = yes
+			}
+		}
+		462 = {
+			set_building_level = {
+				type = rocket_site
+				level = 2
+				instant_build = yes
+			}
+		}
+		698 = {
+			set_building_level = {
+				type = rocket_site
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+
+	#Build radar stations and anti air
+	option = {
+		name = mod_greece.997.b
+		every_owned_state = {
+			limit = { is_core_of = ROOT }
+			set_building_level = {
+				type = anti_air_building
+				level = 5
+				instant_build = yes
+			}
+		}
+		2 = {
+			set_building_level = {
+				type = radar_station
+				level = 6
+				instant_build = yes
+			}
+		}
+		4 = {
+			set_building_level = {
+				type = radar_station
+				level = 6
+				instant_build = yes
+			}
+		}
+		19 = {
+			set_building_level = {
+				type = radar_station
+				level = 6
+				instant_build = yes
+			}
+		}
+		47 = {
+			set_building_level = {
+				type = radar_station
+				level = 6
+				instant_build = yes
+			}
+		}
+		112 = {
+			set_building_level = {
+				type = radar_station
+				level = 6
+				instant_build = yes
+			}
+		}
+		202 = {
+			set_building_level = {
+				type = radar_station
+				level = 6
+				instant_build = yes
+			}
+		}
+		218 = {
+			set_building_level = {
+				type = radar_station
+				level = 6
+				instant_build = yes
+			}
+		}
+		266 = {
+			set_building_level = {
+				type = radar_station
+				level = 6
+				instant_build = yes
+			}
+		}
+		268 = {
+			set_building_level = {
+				type = radar_station
+				level = 6
+				instant_build = yes
+			}
+		}
+		448 = {
+			set_building_level = {
+				type = radar_station
+				level = 6
+				instant_build = yes
+			}
+		}
+		802 = {
+			set_building_level = {
+				type = radar_station
+				level = 6
+				instant_build = yes
+			}
+		}
+		548 = {
+			set_building_level = {
+				type = radar_station
+				level = 6
+				instant_build = yes
+			}
+		}
+		551 = {
+			set_building_level = {
+				type = radar_station
+				level = 6
+				instant_build = yes
+			}
+		}
+		553 = {
+			set_building_level = {
+				type = radar_station
+				level = 6
+				instant_build = yes
+			}
+		}
+		557 = {
+			set_building_level = {
+				type = radar_station
+				level = 6
+				instant_build = yes
+			}
+		}
+		658 = {
+			set_building_level = {
+				type = radar_station
+				level = 6
+				instant_build = yes
+			}
+		}
+		698 = {
+			set_building_level = {
+				type = radar_station
+				level = 6
+				instant_build = yes
+			}
+		}
+		788 = {
+			set_building_level = {
+				type = radar_station
+				level = 6
+				instant_build = yes
+			}
+		}
+	}
+
+	#Do Nothing
+	option = {
+		name = mod_greece.997.c
+	}
+}
+
+#Test: Transfer military leaders
+country_event = {
+	id = mod_greece.996
+	title = mod_greece.996.t
+	desc = mod_greece.996.desc
+	picture = GFX_report_event_chinese_soldiers
+
+	is_triggered_only = yes
+
+	#Transfer leaders
+	option = {
+		name = mod_greece.996.a
+		GRE = { every_unit_leader = { set_nationality = ROOT } }
+		ITA = { every_unit_leader = { set_nationality = ROOT } }
+		YUG = { every_unit_leader = { set_nationality = ROOT } }
+		ROM = { every_unit_leader = { set_nationality = ROOT } }
+		HUN = { every_unit_leader = { set_nationality = ROOT } }
+		CZE = { every_unit_leader = { set_nationality = ROOT } }
+		SPR = { every_unit_leader = { set_nationality = ROOT } }
+		TUR = { every_unit_leader = { set_nationality = ROOT } }
+		PER = { every_unit_leader = { set_nationality = ROOT } }
+		SAU = { every_unit_leader = { set_nationality = ROOT } }
+		FRA = { every_unit_leader = { set_nationality = ROOT } }
+	}
+
+	#Do Nothing
+	option = {
+		name = mod_greece.996.b
+	}
+}
+
+#Test: Support Rightful Ruler
+country_event = {
+	id = mod_greece.995
+	title = mod_greece.995.t
+	desc = mod_greece.995.desc
+	picture = GFX_report_event_chinese_soldiers
+
+	is_triggered_only = yes
+
+	#Divine Emperor takes power
+	option = {
+		name = mod_greece.995.a
+		trigger = { NOT = { has_country_flag = GRE_divine_emperor } }
+		create_country_leader = {
+			name = "William Olympios"
+			desc = ""
+			picture = "Portrait_Greece_Nikos_Belogiannis.dds"
+			expire = "1985.1.1"
+			ideology = despotism
+			traits = {
+				divine_creator blessing_of_the_gods greatest_war_hero founder_of_civilizations the_first_emperor heavenly_judgment 
+			}
+		}
+		create_country_leader = {
+			name = "William Olympios"
+			desc = ""
+			picture = "Portrait_Greece_Nikos_Belogiannis.dds"
+			expire = "1985.1.1"
+			ideology = conservatism
+			traits = {
+				divine_creator blessing_of_the_gods greatest_war_hero founder_of_civilizations the_first_emperor heavenly_judgment 
+			}
+		}
+		create_country_leader = {
+			name = "William Olympios"
+			desc = ""
+			picture = "Portrait_Greece_Nikos_Belogiannis.dds"
+			expire = "1985.1.1"
+			ideology = falangism
+			traits = {
+				divine_creator blessing_of_the_gods greatest_war_hero founder_of_civilizations the_first_emperor heavenly_judgment 
+			}
+		}
+		create_country_leader = {
+			name = "William Olympios"
+			desc = ""
+			picture = "Portrait_Greece_Nikos_Belogiannis.dds"
+			expire = "1985.1.1"
+			ideology = anarchist_communism 
+			traits = {
+				divine_creator blessing_of_the_gods greatest_war_hero founder_of_civilizations the_first_emperor heavenly_judgment 
+			}
+		}
+		set_country_flag = GRE_divine_emperor
+	}
+	
+	#Return to the status quo
+	option = {
+		name = mod_greece.995.b
+		trigger = { has_country_flag = GRE_divine_emperor }
+		if = {
+			limit = { has_government = democratic }
+			set_politics = { ruling_party = communism }
+			kill_country_leader = yes
+			set_politics = { ruling_party = fascism }
+			kill_country_leader = yes
+			set_politics = { ruling_party = neutrality }
+			kill_country_leader = yes
+			set_politics = { ruling_party = democratic }
+			kill_country_leader = yes
+		}
+		if = {
+			limit = { has_government = communism }
+			set_politics = { ruling_party = fascism }
+			kill_country_leader = yes
+			set_politics = { ruling_party = neutrality }
+			kill_country_leader = yes
+			set_politics = { ruling_party = democratic }
+			kill_country_leader = yes
+			set_politics = { ruling_party = communism }
+			kill_country_leader = yes
+		}
+		if = {
+			limit = { has_government = fascism }
+			set_politics = { ruling_party = communism }
+			kill_country_leader = yes
+			set_politics = { ruling_party = neutrality }
+			kill_country_leader = yes
+			set_politics = { ruling_party = democratic }
+			kill_country_leader = yes
+			set_politics = { ruling_party = fascism }
+			kill_country_leader = yes
+		}
+		if = {
+			limit = { has_government = neutrality }
+			set_politics = { ruling_party = communism }
+			kill_country_leader = yes
+			set_politics = { ruling_party = fascism }
+			kill_country_leader = yes
+			set_politics = { ruling_party = democratic }
+			kill_country_leader = yes
+			set_politics = { ruling_party = neutrality }
+			kill_country_leader = yes
+		}
+		clr_country_flag = support_divine_hellenic_emperor
+	}
+
+	#Do Nothing
+	option = {
+		name = mod_greece.995.c
+	}
+}
+
+#Test: Set up Hellenic Dominions
+country_event = {
+	id = mod_greece.994
+	title = mod_greece.994.t
+	desc = mod_greece.994.desc
+	picture = GFX_report_event_chinese_soldiers
+
+	is_triggered_only = yes
+	
+	#Release all hellenic states as dominions
+	option = {
+		name = mod_greece.994.a
+		every_state = { 
+			limit = { OR = { state = 47 state = 164 state = 182 state = 187 state = 186 state = 731 state = 184 state = 185 state = 183 state = 116 } 
+			}
+			GRE = { transfer_state = PREV }
+			add_core_of = GRE
+		}
+		every_state = { 
+			limit = { 
+				OR = { 
+					is_core_of = ITA 
+					state = 822
+				}
+				NOT = { OR = { state = 735 state = 736 } }
+			}
+			ITA = { transfer_state = PREV }
+		}
+		every_state = { 
+			limit = { OR = { is_core_of = TUR state = 808 } 
+			}
+			add_core_of = TUR
+			TUR = { transfer_state = PREV }
+		}
+		every_state = { 
+			limit = { OR = { is_core_of = YUG is_core_of = ALB state = 163 } 
+			}
+			add_core_of = YUG
+			YUG = { transfer_state = PREV }
+		}
+		every_state = { 
+			limit = { 
+				OR = { is_core_of = EGY is_core_of = SUD }
+			}
+			add_core_of = EGY
+			EGY = { transfer_state = PREV }
+		}
+		every_state = { 
+			limit = { OR = { is_core_of = LEB is_core_of = JOR is_core_of = PAL is_core_of = IRQ is_core_of = SYR is_core_of = KUW} 
+			}
+			add_core_of = IRQ
+			IRQ = { transfer_state = PREV }
+		}
+		every_state = { 
+			limit = { OR = { is_core_of = LBA is_core_of = TUN is_core_of = ALG state = 823 } 
+			}
+			add_core_of = TUN
+			TUN = { transfer_state = PREV }
+		}
+		every_state = { 
+			limit = { OR = { is_core_of = ROM is_core_of = BUL } 
+			}
+			add_core_of = ROM
+			ROM = { transfer_state = PREV }
+		}
+		every_state = { 
+			limit = { is_core_of = GAL }
+			GAL = { transfer_state = PREV }
+		}
+		every_state = { 
+			limit = { 
+				OR = { 
+					state = 41 state = 118 state = 165 state = 166 state = 167 state = 168 state = 169 state = 170 
+					state = 171 state = 172 state = 173 state = 174 state = 175 state = 176 state = 177 state = 788 
+					state = 789 state = 790 state = 791 state = 792 state = 793 state = 794 
+				} 
+			}
+			add_core_of = SPR
+			SPR = { transfer_state = PREV }
+		}
+		every_state = { 
+			limit = { OR = { is_core_of = PER state = 229 state = 230 state = 231 state = 444 state = 445 state = 797 state = 798 } 
+			}
+			add_core_of = PER
+			PER = { transfer_state = PREV }
+		}
+		every_state = { 
+			limit = { OR = { is_core_of = SAU is_core_of = YEM is_core_of = OMA is_core_of = UAE is_core_of = QAT } 
+			}
+			add_core_of = SAU
+			SAU = { transfer_state = PREV }
+		}
+		every_state = { 
+			limit = { OR = { is_core_of = ETH is_core_of = SOM state = 547 state = 268 state = 550 } 
+			}
+			add_core_of = ETH
+			ETH = { transfer_state = PREV }
+		}
+		every_state = { 
+			limit = { OR = { is_core_of = POR is_core_of = MOR state = 178 } 
+			}
+			add_core_of = POR
+			POR = { transfer_state = PREV }
+		}
+		every_state = { 
+			limit = { 
+				OR = { is_core_of = UKR state = 137 state = 218 } 
+				NOT = { state = 766 }
+			}
+			add_core_of = UKR
+			UKR = { transfer_state = PREV }
+		}
+		every_state = { 
+			limit = { 
+				OR = { is_core_of = HUN is_core_of = AUS is_core_of = CZE state = 807 } 
+				NOT = { state = 39 }
+			}
+			add_core_of = HUN
+			HUN = { transfer_state = PREV }
+		}
+	}
+	
+	#Set as dominions
+	option = {
+		name = mod_greece.994.b
+		if = {
+			limit = { AND = { country_exists = ITA NOT = { TAG = ITA } } }
+			set_autonomy = {
+				target = ITA
+				autonomy_state = autonomy_dominion
+			}
+		}
+		if = {
+			limit = { AND = { country_exists = GRE NOT = { TAG = GRE } } }
+			set_autonomy = {
+				target = GRE
+				autonomy_state = autonomy_dominion
+			}
+		}
+		if = {
+			limit = { AND = { country_exists = TUR NOT = { TAG = TUR } } }
+			set_autonomy = {
+				target = TUR
+				autonomy_state = autonomy_dominion
+			}
+		}
+		if = {
+			limit = { AND = { country_exists = YUG NOT = { TAG = YUG } } }
+			set_autonomy = {
+				target = YUG
+				autonomy_state = autonomy_dominion
+			}
+		}
+		if = {
+			limit = { AND = { country_exists = UKR NOT = { TAG = UKR } } }
+			set_autonomy = {
+				target = UKR
+				autonomy_state = autonomy_dominion
+			}
+		}
+		if = {
+			limit = { AND = { country_exists = HUN NOT = { TAG = HUN } } }
+			set_autonomy = {
+				target = HUN
+				autonomy_state = autonomy_dominion
+			}
+		}
+		if = {
+			limit = { AND = { country_exists = ROM NOT = { TAG = ROM } } }
+			set_autonomy = {
+				target = ROM
+				autonomy_state = autonomy_dominion
+			}
+		}
+		if = {
+			limit = { AND = { country_exists = GAL NOT = { TAG = GAL } } }
+			set_autonomy = {
+				target = GAL
+				autonomy_state = autonomy_dominion
+			}
+		}
+		if = {
+			limit = { AND = { country_exists = SPR NOT = { TAG = SPR } } }
+			set_autonomy = {
+				target = SPR
+				autonomy_state = autonomy_dominion
+			}
+		}
+		if = {
+			limit = { AND = { country_exists = IRQ NOT = { TAG = IRQ } } }
+			set_autonomy = {
+				target = IRQ
+				autonomy_state = autonomy_dominion
+			}
+		}
+		if = {
+			limit = { AND = { country_exists = PER NOT = { TAG = PER } } }
+			set_autonomy = {
+				target = PER
+				autonomy_state = autonomy_dominion
+			}
+		}
+		if = {
+			limit = { AND = { country_exists = SAU NOT = { TAG = SAU } } }
+			set_autonomy = {
+				target = SAU
+				autonomy_state = autonomy_dominion
+			}
+		}
+		if = {
+			limit = { AND = { country_exists = EGY NOT = { TAG = EGY } } }
+			set_autonomy = {
+				target = EGY
+				autonomy_state = autonomy_dominion
+			}
+		}
+		if = {
+			limit = { AND = { country_exists = ETH NOT = { TAG = ETH } } }
+			set_autonomy = {
+				target = ETH
+				autonomy_state = autonomy_dominion
+			}
+		}
+		if = {
+			limit = { AND = { country_exists = TUN NOT = { TAG = TUN } } }
+			set_autonomy = {
+				target = TUN
+				autonomy_state = autonomy_dominion
+			}
+		}
+		if = {
+			limit = { AND = { country_exists = POR NOT = { TAG = POR } } }
+			set_autonomy = {
+				target = POR
+				autonomy_state = autonomy_dominion
+			}
+		}
+	}
+	
+	#Do Nothing
+	option = {
+		name = mod_greece.994.c
+	}
+}
+
+#Test: New Hellenic leadership and new capital
+country_event = {
+	id = mod_greece.993
+	title = mod_greece.993.t
+	desc = mod_greece.993.desc
+	picture = GFX_report_event_chinese_soldiers
+
+	is_triggered_only = yes
+	
+	#Install Hellenic Leadership
+	option = {
+		name = mod_greece.993.a
+		HUN = {
+			create_country_leader = {
+				name = "Otto von Habsburg"
+				desc = "POLITICS_OTTO_VON_HABSBURG_DESC"
+				picture = GFX_Portrait_hungary_otto_von_hapsburg
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+				}
+			}
+			create_country_leader = {
+				name = "Miklós Horthy"
+				desc = "POLITICS_MIKLOS_HORTHY_DESC"
+				picture = "Portrait_Hungary_Miklos_Horthy.dds"
+				expire = "1965.1.1"
+				ideology = fascism_ideology
+			}
+		}
+		ROM = {
+			create_country_leader = {
+				name = "Michael I"
+				desc = "POLITICS_MICHAEL_I_DESC"
+				picture = GFX_Portrait_romania_michael_i				
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+				}
+			}
+		}
+		YUG = {
+			create_country_leader = {
+				name = "Peter II"
+				desc = "POLITICS_PETER_II_DESC"
+				picture = "Portrait_Yugoslavia_Peter_II.dds"
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+				}
+			}
+		}
+		SPR = {
+			create_country_leader = {
+				name = "Xavier I"
+				desc = "POLITICS_JAVIER_I_DESC"
+				picture = "GFX_portrait_SPA_xavier_of_bourbon_parma"
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					the_sacred_king
+				}
+			}
+		}
+		POR = {
+			create_country_leader = {
+				name = "Duarte I"
+				desc = "POLITICS_DOM_DUARTE_NUNO_DESC"
+				picture = "gfx/leaders/POR/portrait_por_duarte_nuno.dds"
+				expire = "1976.12.24"
+				ideology = despotism
+				traits = { 
+					constitutional_monarch_minor
+				}
+			}
+		}
+		UKR = {
+			create_country_leader = {
+				name = "Kirill Vladimirovich Romanov"
+				desc = ""
+				picture = "Portrait_UKR_Kirill_Vladimirovich_Romanov.dds"
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+				}
+			}
+			create_country_leader = {
+				name = "Nikita Khrushchev"
+				desc = ""
+				picture = "Portrait_UKR_Nikita_Khrushchev.dds"
+				expire = "1965.1.1"
+				ideology = leninism
+				traits = {
+				}
+			}
+		}
+		if = {
+			limit = { NOT = { TAG = GRE } }
+			GRE = {
+				create_country_leader = {
+					name = "George II"
+					desc = ""
+					picture = "Portrait_Greece_George_II.dds"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+					}
+				}
+			}
+		}
+	}
+	
+	#New Capitals for the New States
+	option = {
+		name = mod_greece.993.b
+		HUN = { 
+			set_cosmetic_tag = HUN_hellenic 
+			set_capital = 4
+		}
+		TUN = { set_cosmetic_tag = TUN_hellenic }
+		IRQ = { 
+			set_cosmetic_tag = IRQ_hellenic 
+		}
+		PER = { 
+			set_cosmetic_tag = PER_hellenic
+			set_capital = 412
+		}
+		SAU = { 
+			set_cosmetic_tag = SAU_hellenic 
+			set_capital = 813
+		}
+		SPR = { set_cosmetic_tag = SPR_hellenic }
+		POR = { 
+			set_cosmetic_tag = POR_hellenic 
+			set_capital = 811
+		}
+		ROM = { set_cosmetic_tag = ROM_hellenic }
+		EGY = { set_cosmetic_tag = EGY_hellenic }
+		ETH = { 
+			set_cosmetic_tag = ETH_hellenic 
+		}
+		UKR = { set_cosmetic_tag = UKR_hellenic }
+		TUR = { 
+			set_cosmetic_tag = TUR_hellenic
+			set_capital = 341
+		}
+		ITA = { 
+			set_cosmetic_tag = ITA_hellenic 
+		}
+	}
+	
+	#Do Nothing
+	option = {
+		name = mod_greece.993.c
+	}
+}
+
+#Test: Create faction United Hellenic Empire
+country_event = {
+	id = mod_greece.992
+	title = mod_greece.992.t
+	desc = mod_greece.992.desc
+	picture = GFX_report_event_chinese_soldiers
+
+	is_triggered_only = yes
+	
+	#Create Hellenic League
+	option = {
+		name = mod_greece.992.a
+		set_rule = { can_create_factions = yes }
+		create_faction = GRE_united_hellenic_empire
+	}
+	
+	#Do Nothing
+	option = {
+		name = mod_greece.992.b
+	}
+}
+
+#Test: Remove all military leaders and hire all Spanish leaders
+### Will transfer military leaders to another tag GUM, mariana federation
+country_event = {
+	id = mod_greece.991
+	title = mod_greece.991.t
+	desc = mod_greece.991.desc
+	picture = GFX_report_event_chinese_soldiers
+
+	is_triggered_only = yes
+	
+	#Remove them, banish them to Mariana
+	option = {
+		name = mod_greece.991.a
+		every_unit_leader = {
+			set_nationality = GUM
+		}
+		
+	}
+	
+	#Instill Spanish military staff
+	option = {
+		name = mod_greece.991.b
+		create_field_marshal = {
+			name = "Francisco Franco"
+			gfx = "GFX_portrait_spain_francisco_franco"
+			traits = { organisational_leader logistics_wizard expert_delegator }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+		create_field_marshal = {
+			name = "Emilio Mola"
+			gfx = "GFX_portrait_SPA_emilio_mola"
+			traits = { organisational_leader trait_cautious thorough_planner }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 2
+		}
+		create_field_marshal = {
+			name = "Manuel Fal Conde"
+			gfx = "GFX_portrait_SPA_manuel_fal_conde"
+			traits = { cavalry_officer unyielding_defender }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+		create_field_marshal = {
+			name = "José Asensio Torrado" 
+			gfx = "GFX_portrait_SPR_jose_asensio_torrado"
+			traits = { organisational_leader defensive_doctrine }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+		}
+		create_field_marshal = {
+			name = "Buenaventura Durruti"
+			gfx = "GFX_portrait_SPR_buenaventura_durruti"
+			traits = { infantry_officer offensive_doctrine aggressive_assaulter }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		create_field_marshal = {
+			name = "Máté Zalka"
+			gfx = "GFX_portrait_SPR_mate_zalka"
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		create_corps_commander = {
+			name = "Vicente Rojo Lluch"
+			gfx = "GFX_portrait_SPR_vicente_rojo_lluch"
+			traits = { brilliant_strategist }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+		create_corps_commander = {
+			name = "José Miaja"
+			gfx = "GFX_portrait_SPR_jose_miaja"
+			traits = { infantry_leader }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+		create_corps_commander = { 
+			name = "Valentín González"
+			gfx = "GFX_portrait_SPR_valentin_gonzalez"
+			traits = { harsh_leader }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+		create_corps_commander = {
+			name = "Juan Modesto"
+			gfx = "GFX_portrait_SPR_juan_modesto"
+			traits = { trait_mountaineer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+		}
+		create_corps_commander = {
+			name = "Antonio Cordón García"
+			gfx = "GFX_portrait_SPR_antonio_cordon_garcia"
+			traits = { infantry_leader }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 1
+		}
+		create_corps_commander = {
+			name = "János Gálicz"
+			gfx = "GFX_portrait_SPR_janos_galicz"
+			traits = { trait_reckless }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		create_corps_commander = {
+			name = "Mohamed Meziane"
+			gfx = "GFX_portrait_SPA_mohamed_meziane"
+			traits = { harsh_leader career_officer }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+		create_corps_commander = { # Could fit for all 3 factions
+			name = "Gonzalo Queipo de Llano"
+			gfx = "GFX_portrait_SPA_gonzalo_queipo_de_llano"
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		create_corps_commander = {
+			name = "Juan Yagüe"
+			gfx = "GFX_portrait_SPA_juan_yague"
+			traits = { brilliant_strategist trait_reckless }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		create_corps_commander = {
+			name = "Agustín Muñoz Grandes"
+			gfx = "GFX_portrait_SPA_augustin_muynoz_grandes"
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+		create_corps_commander = {
+			name = "José Enrique Varela"
+			gfx = "GFX_portrait_SPA_jose_enrique_varela"
+			traits = { organizer infantry_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+		create_corps_commander = {
+			name = "Miguel Cabanellas"
+			gfx = "GFX_portrait_SPA_miguel_cabanellas"
+			traits = { cavalry_officer old_guard }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+		create_corps_commander = {
+			name = "José Millán Astray"
+			gfx = "GFX_portrait_SPA_jose_millan_astray"
+			traits = { war_hero trait_reckless }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		create_corps_commander = {
+			name = "Eduardo Medrano Rivas"
+			gfx = "GFX_portrait_SPR_eduardo_medrano_rivas"
+			traits = { infantry_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+		create_corps_commander = {
+			name = "Lina Odena"
+			gfx = "GFX_portrait_SPR_lina_odena"
+			traits = { adaptable }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+		create_corps_commander = {
+			name = "Cipriano Mera"
+			gfx = "GFX_portrait_SPR_cipriano_mera"
+			traits = { trait_cautious }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		create_navy_leader = {
+			name = "Miguel Buiza Fernández-Palacios"
+			gfx = "GFX_portrait_SPR_miguel_buiza_fernandez_palacios"
+			traits = { craven }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+		create_navy_leader = {
+			name = "Luis Carrero Blanco"
+			gfx = "GFX_portrait_SPA_luis_carrero_blanco"
+			traits = { seawolf }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 1
+		}
+	}
+	
+	#Do Nothing
+	option = {
+		name = mod_greece.991.c
+	}
+}
+
+
+#Test: Retire Country Leader
+country_event = {
+	id = mod_greece.990
+	title = mod_greece.990.t
+	desc = mod_greece.990.desc
+	picture = GFX_report_event_chinese_soldiers
+
+	is_triggered_only = yes
+	
+	#Retire Country Leader
+	option = {
+		name = mod_greece.990.a
+		retire_country_leader = yes
+	}
+	
+	#Do Nothing
+	option = {
+		name = mod_greece.990.b
+	}
+}
+
