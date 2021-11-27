@@ -1,0 +1,22 @@
+
+state={
+	id=864
+	name="STATE_864" # Nomonhan
+	manpower = 3000
+	
+	state_category = enclave 
+
+	history={
+		owner = MON
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = MON
+		add_core_of = CHI
+	}
+
+	provinces={
+		1743 
+	}
+	local_supplies=0.0 
+}

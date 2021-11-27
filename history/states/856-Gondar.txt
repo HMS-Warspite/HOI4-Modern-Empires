@@ -1,0 +1,29 @@
+state=
+{
+	id=856
+	name="STATE_856"
+	manpower = 2313000
+	
+	state_category = large_town
+
+	history=
+	{
+		owner = ETH
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+		}
+		victory_points = { 
+			1984 5 
+		}
+		add_core_of = ETH
+
+		1936.6.1 = {
+			owner = ITA
+			controller = ITA
+		}
+	}
+
+	provinces = { 1984 2072 5041 7944 }
+	local_supplies=0.0 
+}

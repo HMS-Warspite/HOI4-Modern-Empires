@@ -1,0 +1,28 @@
+
+state={
+	id=837
+	name="STATE_837" # Sikkim
+	manpower = 385300
+	
+	state_category = rural
+	
+
+	history={
+		owner = RAJ
+		add_core_of = RAJ
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+
+		victory_points = {
+			4435 3 
+		}
+
+	}
+
+	provinces={
+		 4435 
+	}
+	local_supplies=0.0 
+}

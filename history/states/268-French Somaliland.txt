@@ -1,0 +1,28 @@
+state={
+	id=268
+	name="STATE_268"
+	manpower = 2185232
+
+
+	state_category = large_city
+
+	history={
+		owner = FRA
+		add_core_of = DJI
+		victory_points = {
+			8124 10
+		}
+		buildings = {
+			infrastructure = 2
+			air_base = 2
+			8124 = {
+				naval_base = 4
+			}
+		}
+
+	}
+	provinces={
+		4985 8124
+ 	}
+	local_supplies = 0.0 
+}
