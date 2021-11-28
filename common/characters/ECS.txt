@@ -1,0 +1,48 @@
+characters={
+	ECS_xiong_yan={
+		name = "Xiong Yan"
+		portraits={
+			army={
+				large="gfx/leaders/Asia/portrait_asia_generic_land_14.dds"
+			}
+			civilian={
+				large="gfx/leaders/Asia/portrait_asia_generic_land_14.dds"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	ECS_li_kezhi={
+		name="Kong Binheng"
+		portraits={
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_Generic_land_1.dds"
+			}
+		}
+		
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+}

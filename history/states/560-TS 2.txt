@@ -2,7 +2,7 @@
 state={
 	id=560
 	name="STATE_560" # Miyoo Gasan
-	manpower = 2397663
+	manpower = 1897663
 	
 	state_category = large_town
 	resources={
@@ -15,9 +15,13 @@ state={
 			infrastructure = 2
 		}
 		victory_points = {
-			10577 10 
+			10577 3 
+		}
+		victory_points = {
+			12559 10 
 		}
 		add_core_of = SOV
+		add_core_of = FER
 	}
 
 	provinces={

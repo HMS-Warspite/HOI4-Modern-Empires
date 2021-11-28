@@ -17,6 +17,10 @@ set_technology = {
 
 set_convoys = 20
 
+recruit_character = TUN_muhammad_vii
+recruit_character = TUN_habib_bourguiba
+recruit_character = TUN_sharif_al_gariani
+
 1939.1.1 = {
 	
 	#generic focuses
@@ -88,33 +92,4 @@ set_popularities = {
 	neutrality = 50
 }
 
-create_country_leader = {
-	name = "Habib Bourguiba"
-	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_navy_3.dds"
-	ideology = centrism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Muhammad VII al-Munsif"
-	desc = ""
-	picture = "Portrait_Tunisia_Moncef_Bey.dds"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Sharif Al Gariani"
-	desc = ""
-	picture = "Portrait_LBA_Sharif_Al_Gariani.dds"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
 

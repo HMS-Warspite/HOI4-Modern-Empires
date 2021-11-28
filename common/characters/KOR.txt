@@ -1,0 +1,110 @@
+characters={
+	KOR_kim_gu={
+		name = "Kim Gu"
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_Kim_Gu.dds"
+			}
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_Kim_Gu.dds"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	KOR_syngman_rhee={
+		name = "Syngman Rhee"
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_Syngman_Rhee.dds"
+			}
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_Syngman_Rhee.dds"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	KOR_yi_hui={
+		name = "Yi Hui"
+		portraits={
+			army={
+				large="gfx/leaders/Asia/portrait_asia_generic_land_9.dds"
+			}
+			civilian={
+				large="gfx/leaders/Asia/portrait_asia_generic_land_9.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ exiled }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	KOR_yi_kang={
+		name = "Yi Kang"
+		portraits={
+			army={
+				large="gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+			}
+			civilian={
+				large="gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	KOR_kim_il_sung={
+		name = "Kim Il-sung"
+		portraits={
+			army={
+				large="gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+			}
+			civilian={
+				large="gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+			}
+		}
+		country_leader={
+			ideology=stalinism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	KOR_yi_un={
+		name = "Yi Un"
+		portraits={
+			army={
+				large="gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+			}
+			civilian={
+				large="gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

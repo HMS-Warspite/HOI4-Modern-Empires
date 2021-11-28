@@ -1280,15 +1280,16 @@ elect_hellenic_leader = {
 			factor = 0
 		}
 		complete_effect = {
-			kill_country_leader = yes 
-			create_country_leader = {
-				name = "Emperor Paul I"
-				desc = ""
-				picture = "Portrait_Greece_Paul_I.dds"
-				expire = "1965.1.1"
-				ideology = despotism
-				traits = {
-					divine_creator blessing_of_the_gods founder_of_civilizations heavenly_judgment master_of_war 
+			add_country_leader_role = {
+				Character = GRE_paul_i
+				Promote_leader = yes
+				Country_leader = {
+					name = "Emperor Paul I"
+					ideology = despotism
+					expire = "1965.1.1"
+					traits = {
+						divine_creator blessing_of_the_gods founder_of_civilizations heavenly_judgment master_of_war 
+					}
 				}
 			}
 		}
@@ -1486,9 +1487,9 @@ hellenic_military_commanders = {
 			factor = 0
 		}
 		complete_effect = {
-			create_corps_commander = {
-				name = "Paul I"
-				portrait_path = "gfx/leaders/GRE/Portrait_Greece_Paul_I.dds"
+			
+			add_field_marshal_role = {
+				Character = GRE_paul_i
 				traits = { military_genius inspirational_leader politically_connected skilled_staffer expert_delegator brilliant_strategist }
 				skill = 7
 				attack_skill = 7
@@ -1496,6 +1497,7 @@ hellenic_military_commanders = {
 				planning_skill = 7
 				logistics_skill = 7
 			}
+
 			set_country_flag = GRE_paul_as_general
 		}
 	}
@@ -1515,92 +1517,82 @@ hellenic_military_commanders = {
 		complete_effect = {
 			set_global_flag = greek_military_leadership_expanded
 			if = {
-				limit = { has_unit_leader = 301 }
-				remove_unit_leader = 301 
+				limit = { NOT = { has_unit_leader = 301 } }
+				add_corps_commander_role = {
+					character = GRE_nikolaos_plastiras
+					traits = { trait_GRE_venezelist_loyalist war_hero brilliant_strategist cavalry_officer cavalry_leader trickster } 
+					skill = 4
+					legacy_id = 301
+					attack_skill = 4
+					defense_skill = 4
+					planning_skill = 2
+					logistics_skill = 3
+				}
 			}
 			if = {
-				limit = { has_unit_leader = 302 }
-				remove_unit_leader = 302 
+				limit = { NOT = { has_unit_leader = 302 } }
+				add_field_marshal_role = {
+					character = GRE_theodoros_pangalos
+					traits = { trait_GRE_venezelist_loyalist trait_cautious media_personality } 
+					skill = 3
+					legacy_id = 302
+					attack_skill = 4
+					defense_skill = 3					
+					planning_skill = 2
+					logistics_skill = 3
+				} 
 			}
 			if = {
-				limit = { has_unit_leader = 303 }
-				remove_unit_leader = 303 
+				limit = { NOT = { has_unit_leader = 303 } }
+				add_corps_commander_role = {
+					character = GRE_panagiotis_demestichas
+					traits = { trait_GRE_fascist_sympathizer trait_reckless infantry_officer hill_fighter } #F
+					skill = 3 #10
+					legacy_id = 303
+					attack_skill = 4
+					defense_skill = 3
+					planning_skill = 2
+					logistics_skill = 1
+				}
 			}
 			if = {
-				limit = { has_unit_leader = 305 }
-				remove_unit_leader = 305 
+				limit = { NOT = { has_unit_leader = 307 } }
+				add_corps_commander_role = {
+					character = GRE_dimitrios_psarros
+					traits = { trait_GRE_venezelist_loyalist war_hero trait_reckless trickster commando } #V
+					skill = 2 #7
+					legacy_id = 307
+					attack_skill = 2
+					defense_skill = 1
+					planning_skill = 2
+					logistics_skill = 2
+				}
 			}
 			if = {
-				limit = { has_unit_leader = 307 }
-				remove_unit_leader = 307 
+				limit = { NOT = { has_unit_leader = 308 } }
+				add_corps_commander_role = {
+					character = GRE_aris_velouchiotis
+					traits = { trait_GRE_marxist_acolyte brilliant_strategist trickster commando }
+					skill = 4 
+					attack_skill = 5
+					defense_skill = 3
+					planning_skill = 4
+					logistics_skill = 4
+					legacy_id = 308
+				}
 			}
 			if = {
-				limit = { has_unit_leader = 308 }
-				remove_unit_leader = 308 
-			}
-			if = {
-				limit = { has_unit_leader = 309 }
-				remove_unit_leader = 309 
-			}
-			create_corps_commander = {
-				name = "Nikolaos Plastiras"
-				gfx = "GFX_portrait_gre_nikolaos_plastiras"
-				traits = { trait_GRE_venezelist_loyalist war_hero brilliant_strategist cavalry_officer cavalry_leader trickster } 
-				skill = 4 
-				attack_skill = 4
-				defense_skill = 4
-				planning_skill = 3
-				logistics_skill = 3
-			}
-			create_field_marshal = {
-				name = "Theodoros Pangalos"
-				gfx = "GFX_portrait_gre_theodoros_pangalos"
-				traits = { trait_GRE_venezelist_loyalist trait_cautious media_personality } 
-				skill = 3 
-				attack_skill = 4
-				defense_skill = 3
-				planning_skill = 2
-				logistics_skill = 3
-			} 
-			create_corps_commander = {
-				name = "Dimitrios Psarros"
-				gfx = "GFX_portrait_gre_dimitrios_psarros"
-				traits = { trait_GRE_venezelist_loyalist war_hero trait_reckless trickster } 
-				skill = 2 
-				attack_skill = 2
-				defense_skill = 1
-				planning_skill = 2
-				logistics_skill = 2
-			}
-			create_corps_commander = {
-				name = "Napoleon Zervas"
-				gfx = "GFX_portrait_gre_napoleon_zervas" 
-				traits = { trait_GRE_venezelist_loyalist harsh_leader guerilla_fighter trait_reckless commando }
-				skill = 5 
-				attack_skill = 5
-				defense_skill = 5
-				planning_skill = 4
-				logistics_skill = 4
-			}
-			create_corps_commander = {
-				name = "Aris Velouchiotis"
-				gfx = "GFX_portrait_gre_aris_velouchiotis"
-				traits = { trait_GRE_marxist_acolyte brilliant_strategist trickster commando }
-				skill = 4 
-				attack_skill = 5
-				defense_skill = 3
-				planning_skill = 4
-				logistics_skill = 4
-			}
-			create_corps_commander = {
-				name = "Panagiotis Demestichas"
-				gfx = "GFX_portrait_gre_panagiotis_demestichas"
-				traits = { trait_GRE_fascist_sympathizer trait_reckless infantry_officer hill_fighter } 
-				skill = 3 
-				attack_skill = 4
-				defense_skill = 3
-				planning_skill = 2
-				logistics_skill = 1
+				limit = { NOT = { has_unit_leader = 309 } }
+				add_corps_commander_role = {
+					character = GRE_napoleon_zervas
+					traits = { trait_GRE_venezelist_loyalist harsh_leader trait_reckless commando guerilla_fighter }
+					skill = 5
+					legacy_id = 309
+					attack_skill = 5
+					defense_skill = 5
+					planning_skill = 4
+					logistics_skill = 4
+				}
 			}
 		}
 	}

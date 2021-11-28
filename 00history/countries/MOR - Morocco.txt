@@ -17,6 +17,12 @@ set_technology = {
 
 set_convoys = 30
 
+recruit_character = MOR_assou_ou_baslam
+recruit_character = MOR_mohammed_v
+recruit_character = MOR_thami_el_glaoui
+recruit_character = MOR_abdallah_ibrahim
+recruit_character = MOR_ali_yata
+
 1939.1.1 = {
 	
 	#generic focuses
@@ -89,55 +95,6 @@ set_popularities = {
 	neutrality = 50
 }
 
-create_country_leader = {
-	name = "Assou ou-Baslam"
-	desc = ""
-	picture = "Portrait_MOR_Assou_ou_Baslam.dds"
-	ideology = falangism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Thami El Glaoui"
-	desc = ""
-	picture = "Portrait_MOR_Thami_El_Glaoui.dds"
-	ideology = moderatism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Mohammed V"
-	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_1.dds"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Abdallah Ibrahim"
-	desc = ""
-	picture = "Portrait_MOR_Abdallah_Ibrahim.dds"
-	ideology = socialism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Ali Yata"
-	desc = ""
-	picture = "Portrait_MOR_Ali_Yata.dds"
-	ideology = leninism
-	traits = {
-		#
-	}
-}
 
 
 

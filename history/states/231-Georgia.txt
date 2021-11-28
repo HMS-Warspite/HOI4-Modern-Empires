@@ -1,6 +1,6 @@
 state={
 	id=231
-	name="STATE_231"
+	name="STATE_231" #Tbilisi
 
 	history={
 		owner = SOV
@@ -24,7 +24,7 @@ state={
 	}
 
 	provinces={
-		1530 1599 4534 4605 6436 6669 6671 9626 9702 12309 
+		1530 1599 4534 4605 6436 6669 6671 9702 12309 
 	}
 	manpower=2075284
 	buildings_max_level_factor=1.000

@@ -2,7 +2,7 @@
 state={
 	id=864
 	name="STATE_864" # Nomonhan
-	manpower = 3000
+	manpower = 2000
 	
 	state_category = enclave 
 

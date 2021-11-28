@@ -8,7 +8,14 @@ set_technology = {
 	mass_assault = 1
 }
 
-set_convoys = 5
+set_convoys = 12
+
+recruit_character = KOR_kim_gu
+recruit_character = KOR_syngman_rhee
+recruit_character = KOR_yi_hui
+recruit_character = KOR_yi_kang
+recruit_character = KOR_kim_il_sung
+recruit_character = KOR_yi_un
 
 set_politics = {
 	ruling_party = democratic
@@ -23,68 +30,3 @@ set_popularities = {
 	neutrality = 10
 }
 
-create_country_leader = {
-	name = "Syngman Rhee"
-	desc = ""
-	picture = "Portrait_KOR_Syngman_Rhee.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Kim Gu"
-	desc = ""
-	picture = "Portrait_KOR_Kim_Gu.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Yi Kang"
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Yi Hui"
-	desc = ""
-	picture = "gfx/leaders/Asia/portrait_asia_generic_land_9.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		exiled
-	}
-}
-
-create_country_leader = {
-	name = "Kim Il-sung"
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
-	expire = "1965.1.1"
-	ideology = stalinism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Yi Un"
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}

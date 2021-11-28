@@ -1,0 +1,48 @@
+characters={
+	BEY_duan_qirui={
+		name = "Duan Qirui"
+		portraits={
+			army={
+				large="gfx/leaders/Asia/Portrait_Asia_Generic_fascism.dds"
+			}
+			civilian={
+				large="gfx/leaders/Asia/Portrait_Asia_Generic_fascism.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	BEY_kong_binheng={
+		name="Kong Binheng"
+		portraits={
+			army={
+				large="gfx/leaders/Asia/portrait_asia_generic_land_7.dds"
+			}
+		}
+		
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+}

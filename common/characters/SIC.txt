@@ -1,0 +1,48 @@
+characters={
+	SIC_chuan_jianguo={
+		name = "Chuan Jianguo"
+		portraits={
+			army={
+				large="gfx/leaders/Asia/Portrait_Asia_Generic_warlord2.dds"
+			}
+			civilian={
+				large="gfx/leaders/Asia/Portrait_Asia_Generic_warlord2.dds"
+			}
+		}
+		corps_commander={
+			traits={ politically_connected media_personality }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	SIC_yu_shuhan={
+		name = "Yu Shuhan"
+		portraits={
+			army={
+				large="gfx/leaders/Asia/portrait_asia_generic_land_11.dds"
+			}
+		}
+		
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+}

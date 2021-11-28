@@ -2,7 +2,7 @@
 state={
 	id=409
 	name="STATE_409"
-	manpower = 5595605
+	manpower = 3595605
 	resources={
 		chromium=12 # was: 12
 	}
@@ -26,6 +26,8 @@ state={
 			}
 		}
 		add_core_of = SOV
+		add_core_of = FER
+		add_core_of = VLA
 	}
 
 	provinces={
