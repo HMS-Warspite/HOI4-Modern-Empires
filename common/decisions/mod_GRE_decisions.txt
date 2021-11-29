@@ -1280,11 +1280,14 @@ elect_hellenic_leader = {
 			factor = 0
 		}
 		complete_effect = {
+			remove_country_leader_role = {
+				character = GRE_paul_i
+				ideology = despotism
+			}
 			add_country_leader_role = {
 				Character = GRE_paul_i
 				Promote_leader = yes
 				Country_leader = {
-					name = "Emperor Paul I"
 					ideology = despotism
 					expire = "1965.1.1"
 					traits = {
