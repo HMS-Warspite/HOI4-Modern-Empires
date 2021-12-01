@@ -3165,7 +3165,7 @@ country_event = {
 }
 
 
-#Test: Retire Country Leader
+#Test: Retire Egyptian King
 country_event = {
 	id = mod_greece.990
 	title = mod_greece.990.t
@@ -3177,7 +3177,17 @@ country_event = {
 	#Retire Country Leader
 	option = {
 		name = mod_greece.990.a
-		retire_country_leader = yes
+		EGY = {	
+			add_country_leader_role = {
+				Character = EGY_farouk_i
+				Promote_leader = yes
+				Country_leader = {
+					ideology = despotism
+					expire = "1965.1.1.1"
+					traits = {  }
+				}
+			}
+		}
 	}
 	
 	#Do Nothing

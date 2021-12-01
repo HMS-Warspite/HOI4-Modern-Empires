@@ -1,6 +1,4 @@
 
-
-
 form_united_hellenic_empire = {
 	
 	GRE_unite_hellenic_sphere = {
@@ -220,7 +218,7 @@ form_united_hellenic_empire = {
 				controls_state = 456
 				controls_state = 457
 				controls_state = 552
-				controls_state = 810
+				controls_state = 848
 			}
 		}
 		cost = 80
@@ -237,7 +235,7 @@ form_united_hellenic_empire = {
 				456 = { add_core_of = ROOT }
 				457 = { add_core_of = ROOT }
 				552 = { add_core_of = ROOT }
-				810 = { add_core_of = ROOT }
+				848 = { add_core_of = ROOT }
 			}
 			set_country_flag = GRE_integrate_egyptian_territory
 		}
@@ -259,7 +257,7 @@ form_united_hellenic_empire = {
 			controls_state = 549
 			controls_state = 551
 			controls_state = 767
-			controls_state = 809
+			controls_state = 847
 		}
 		cost = 40
 		ai_will_do = {
@@ -269,7 +267,7 @@ form_united_hellenic_empire = {
 			549 = { add_core_of = ROOT }
 			551 = { add_core_of = ROOT }
 			767 = { add_core_of = ROOT }
-			809 = { add_core_of = ROOT }
+			847 = { add_core_of = ROOT }
 			set_country_flag = GRE_integrate_sudanese_territory
 		}
 	}
@@ -327,7 +325,8 @@ form_united_hellenic_empire = {
 			controls_state = 229
 			controls_state = 230
 			controls_state = 231
-			controls_state = 808
+			controls_state = 826
+			controls_state = 846
 		}
 		cost = 50
 		ai_will_do = {
@@ -337,7 +336,8 @@ form_united_hellenic_empire = {
 			229 = { add_core_of = ROOT }
 			230 = { add_core_of = ROOT }
 			231 = { add_core_of = ROOT }
-			808 = { add_core_of = ROOT }
+			826 = { add_core_of = ROOT }
+			846 = { add_core_of = ROOT }
 			set_country_flag = GRE_integrate_caucasus_states
 		}
 	}
@@ -365,7 +365,7 @@ form_united_hellenic_empire = {
 		}
 	}
 	
-	GRE_first_northern_expansion = {
+	GRE_first_northern_expansion = {  # Bulgaria, Albania, Macedonia
 		allowed = {
 			original_tag = GRE
 		}
@@ -503,7 +503,7 @@ form_united_hellenic_empire = {
 		}
 	}
 	
-	GRE_second_northern_expansion = {
+	GRE_second_northern_expansion = {  # 
 		allowed = {
 			original_tag = GRE
 		}
@@ -695,8 +695,8 @@ form_united_hellenic_empire = {
 				controls_state = 461
 				controls_state = 462
 				controls_state = 783
-				controls_state = 811
-				controls_state = 812
+				controls_state = 849
+				controls_state = 850
 			}
 		}
 		cost = 60
@@ -711,8 +711,8 @@ form_united_hellenic_empire = {
 				462 = { add_core_of = ROOT }
 				699 = { add_core_of = ROOT }
 				783 = { add_core_of = ROOT }
-				811 = { add_core_of = ROOT }
-				812 = { add_core_of = ROOT }
+				849 = { add_core_of = ROOT }
+				850 = { add_core_of = ROOT }
 			}
 			set_country_flag = GRE_integrate_moroccan_territory
 		}
@@ -732,10 +732,10 @@ form_united_hellenic_empire = {
 			controls_state = 271
 			controls_state = 550
 			controls_state = 559
-			controls_state = 818
-			controls_state = 819
-			controls_state = 820
-			controls_state = 821
+			controls_state = 856
+			controls_state = 857
+			controls_state = 858
+			controls_state = 859
 		}
 		cost = 80
 		ai_will_do = {
@@ -747,10 +747,10 @@ form_united_hellenic_empire = {
 			271 = { add_core_of = ROOT }
 			550 = { add_core_of = ROOT }
 			559 = { add_core_of = ROOT }
-			818 = { add_core_of = ROOT }
-			819 = { add_core_of = ROOT }
-			820 = { add_core_of = ROOT }
-			821 = { add_core_of = ROOT }
+			856 = { add_core_of = ROOT }
+			857 = { add_core_of = ROOT }
+			858 = { add_core_of = ROOT }
+			859 = { add_core_of = ROOT }
 			547 = { add_core_of = ROOT }
 			set_country_flag = GRE_integrate_aethiopian_territory
 		}
@@ -972,7 +972,7 @@ form_united_hellenic_empire = {
 				controls_state = 678
 				controls_state = 679
 				controls_state = 765
-				controls_state = 813
+				controls_state = 851
 			}
 		}
 		cost = 80
@@ -990,7 +990,7 @@ form_united_hellenic_empire = {
 				678 = { add_core_of = ROOT }
 				679 = { add_core_of = ROOT }
 				765 = { add_core_of = ROOT }
-				813 = { add_core_of = ROOT }
+				851 = { add_core_of = ROOT }
 			}
 			set_country_flag = GRE_integrate_arab_states
 		}
@@ -1152,8 +1152,8 @@ form_united_hellenic_empire = {
 		complete_effect = {
 			444 = { add_core_of = ROOT }
 			445 = { add_core_of = ROOT }
-			797 = { add_core_of = ROOT }
-			798 = { add_core_of = ROOT }
+			835 = { add_core_of = ROOT }
+			836 = { add_core_of = ROOT }
 			set_country_flag = GRE_palace_of_helios
 		}
 	}
@@ -1169,63 +1169,33 @@ elect_hellenic_leader = {
 			original_tag = GRE
 			NOT = { 
 				has_country_leader = { 
-					name = "William Olympios"
+					name = "Nikos Belogiannis"
 					ruling_only = yes
 				}
 			} 
 		}
 		available = {
 			has_government = neutrality 
-			has_cosmetic_tag = GRE_hellenic 
+			# has_cosmetic_tag = GRE_hellenic 
 		}
 		cost = 100
 		ai_will_do = {
 			factor = 0
 		}
 		complete_effect = {
-			kill_country_leader = yes 
-			create_country_leader = {
-				name = "William Olympios"
-				desc = ""
-				picture = "Portrait_Greece_Nikos_Belogiannis.dds"
-				expire = "1985.1.1"
+            remove_country_leader_role = {
+				character = GRE_nikos_belogiannis
 				ideology = despotism
-				traits = {
-					divine_creator blessing_of_the_gods greatest_war_hero founder_of_civilizations the_first_emperor heavenly_judgment 
-				}
 			}
-		}
-	}
-	
-	elect_abdulmecid_ii = {
-		visible = {
-			original_tag = GRE
-			NOT = { 
-				has_country_leader = { 
-					name = "Abdülmecid II"
-					ruling_only = yes
-				}
-			} 
-		}
-		available = {
-			has_government = neutrality 
-			has_cosmetic_tag = GRE_hellenic 
-			has_country_flag = GRE_integrate_turkish_territory
-		}
-		cost = 25
-		ai_will_do = {
-			factor = 0
-		}
-		complete_effect = {
-			kill_country_leader = yes 
-			create_country_leader = {
-				name = "Abdülmecid II"
-				desc = "POLITICS_ABDULMEJID_II_DESC"
-				picture = GFX_portrait_tur_abdulmejid_ii
-				expire = "1965.1.1"
-				ideology = despotism
-				traits = {
-					gentle_scholar
+			add_country_leader_role = {
+				Character = GRE_nikos_belogiannis
+				Promote_leader = yes
+				Country_leader = {
+					ideology = despotism
+					expire = "1965.1.1"
+					traits = {
+                        divine_creator blessing_of_the_gods greatest_war_hero founder_of_civilizations the_first_emperor heavenly_judgment 
+                    }
 				}
 			}
 		}
@@ -1249,14 +1219,19 @@ elect_hellenic_leader = {
 			factor = 0
 		}
 		complete_effect = {
-			kill_country_leader = yes 
-			create_country_leader = {
-				name = "George II"
-				desc = ""
-				picture = "Portrait_Greece_George_II.dds"
-				expire = "1965.1.1"
+            remove_country_leader_role = {
+				character = GRE_george_ii
 				ideology = despotism
-				traits = {
+			}
+			add_country_leader_role = {
+				Character = GRE_george_ii
+				Promote_leader = yes
+				Country_leader = {
+					ideology = despotism
+					expire = "1965.1.1"
+					traits = {
+						
+					}
 				}
 			}
 		}
@@ -1267,7 +1242,7 @@ elect_hellenic_leader = {
 			original_tag = GRE
 			NOT = { 
 				has_country_leader = { 
-					name = "Emperor Paul I"
+					name = "Paul I"
 					ruling_only = yes
 				}
 			} 
@@ -1297,178 +1272,6 @@ elect_hellenic_leader = {
 			}
 		}
 	}
-	
-	elect_michael_i = {
-		visible = {
-			original_tag = GRE
-			NOT = { 
-				has_country_leader = { 
-					name = "Michael I"
-					ruling_only = yes
-				}
-			} 
-		}
-		available = {
-			has_government = neutrality 
-			has_cosmetic_tag = GRE_hellenic 
-			has_country_flag = GRE_integrate_romanian_territory 
-		}
-		cost = 25
-		ai_will_do = {
-			factor = 0
-		}
-		complete_effect = {
-			kill_country_leader = yes 
-			create_country_leader = {
-				name = "Michael I"
-				desc = "POLITICS_MICHAEL_I_DESC"
-				picture = GFX_Portrait_romania_michael_i				
-				expire = "1965.1.1"
-				ideology = despotism
-				traits = {
-				}
-			}
-		}
-	}
-	
-	elect_peter_ii = {
-		visible = {
-			original_tag = GRE
-			NOT = { 
-				has_country_leader = { 
-					name = "Peter II"
-					ruling_only = yes
-				}
-			} 
-		}
-		available = {
-			has_government = neutrality 
-			has_cosmetic_tag = GRE_hellenic 
-			has_country_flag = GRE_integrate_yugoslav_territory 
-		}
-		cost = 25
-		ai_will_do = {
-			factor = 0
-		}
-		complete_effect = {
-			kill_country_leader = yes 
-			create_country_leader = {
-				name = "Peter II"
-				desc = "POLITICS_PETER_II_DESC"
-				picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Peter_II.dds"
-				expire = "1965.1.1"
-				ideology = despotism
-				traits = {
-					legitimate_heir
-				}
-			}
-		}
-	}
-	
-	elect_ferdinand_i = {
-		visible = {
-			original_tag = GRE
-			NOT = { 
-				has_country_leader = { 
-					name = "Ferdinand I"
-					ruling_only = yes
-				}
-			} 
-		}
-		available = {
-			has_government = neutrality 
-			has_cosmetic_tag = GRE_hellenic 
-			has_country_flag = GRE_first_northern_expansion 
-		}
-		cost = 25
-		ai_will_do = {
-			factor = 0
-		}
-		complete_effect = {
-			kill_country_leader = yes 
-			create_country_leader = {
-				name = "Ferdinand I"
-				desc = "POLITICS_FERDINAND_I_DESC"
-				picture = GFX_portrait_bul_ferdinand_i
-				expire = "1965.1.1"
-				ideology = despotism
-				traits = {
-					dreams_of_a_new_byzantium
-				}
-			}
-		}
-	}
-	
-	elect_victor_emmanuel = {
-		visible = {
-			original_tag = GRE
-			NOT = { 
-				has_country_leader = { 
-					name = "Victor Emmanuel III"
-					ruling_only = yes
-				}
-			} 
-		}
-		available = {
-			has_government = neutrality 
-			has_cosmetic_tag = GRE_hellenic 
-			has_country_flag = GRE_integrate_northern_italy 
-			has_country_flag = GRE_integrate_southern_italy 
-		}
-		cost = 25
-		ai_will_do = {
-			factor = 0
-		}
-		complete_effect = {
-			kill_country_leader = yes 
-			create_country_leader = {
-				name = "Victor Emmanuel III"
-				desc = "POLITICS_VICTOR_EMMANUEL_III_DESC"
-				picture = GFX_portrait_italy_victor_emmanuel_iii
-				expire = "1965.1.1"
-				ideology = despotism
-				traits = {
-
-				}
-			}
-		}
-	}
-	
-	elect_augustus_mussolini = {
-		visible = {
-			original_tag = GRE
-			NOT = { 
-				has_country_leader = { 
-					name = "Augustus Mussolini"
-					ruling_only = yes
-				}
-			} 
-		}
-		available = {
-			has_government = neutrality 
-			has_cosmetic_tag = GRE_hellenic 
-			has_country_flag = GRE_integrate_northern_italy 
-			has_country_flag = GRE_integrate_southern_italy 
-		}
-		cost = 25
-		ai_will_do = {
-			factor = 0
-		}
-		complete_effect = {
-			kill_country_leader = yes 
-			create_country_leader = {
-				name = "Augustus Mussolini"
-				desc = "POLITICS_BENITO_MUSSOLINI_DESC"
-				picture = "GFX_portrait_italy_emperor_mussolini"
-				expire = "1965.1.1"
-				ideology = despotism 
-				traits = {
-					dictator 
-				}
-			}
-		}
-	}
-	
 }
 
 

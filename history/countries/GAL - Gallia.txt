@@ -180,184 +180,22 @@ add_ideas = {
 }
 
 
+recruit_character = GAL_camille_chautemps
+recruit_character = GAL_leon_blum
+recruit_character = GAL_charles_maurras
+recruit_character = GAL_napoleon_vi
+recruit_character = GAL_philippe_petain
+recruit_character = GAL_aime_doumenc
+recruit_character = GAL_georges_blanchard
+recruit_character = GAL_louis_franchet_desperey
+recruit_character = GAL_gaston_billotte
+recruit_character = GAL_adolphe_guillaumat
+recruit_character = GAL_paul_legentilhomme
+recruit_character = GAL_emile_muselier
+recruit_character = GAL_jean_pierre_esteva
+recruit_character = GAL_rene_emile_godfroy
 
-create_country_leader = {
-	name = "Camille Chautemps"
-	desc = ""
-	picture = "Portrait_FRA_Camille_Chautemps.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		
-	}
-}
 
-create_country_leader = {
-	name = "Léon Blum"
-	desc = ""
-	picture = "Portrait_FRA_Leon_Blum.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Charles Maurras"
-	desc = ""
-	picture = "Portrait_FRA_Charles_Maurras.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Napoléon VI"
-	desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
-	picture = GFX_portraits_fra_napoleon_vi
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		# military_genius 
-		napoleonic_code 
-		nationalist_symbol 
-	}
-}
-
-create_field_marshal = {
-	name = "Philippe Pétain"
-	portrait_path = "gfx/leaders/FRA/Portrait_France_Philippe_Petain.dds"
-	traits = { trait_cautious war_hero }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 4
-}
-
-create_field_marshal = {
-	name = "Aime Doumenc"
-	picture = "Portrait_FRA_Aime_Doumenc.dds"
-	traits = { defensive_doctrine trickster urban_assault_specialist }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Georges Blanchard"
-	picture = "Portrait_FRA_Georges_Blanchard.dds"
-	traits = { brilliant_strategist career_officer infantry_officer }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 4
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Louis Franchet d'Esperey"
-	picture = "Portrait_FRA_Louis_Franchet_d_Esperey.dds"
-	traits = { naval_invader trait_engineer winter_specialist }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Gaston Billotte"
-	picture = "Portrait_FRA_Gaston_Billotte.dds"
-	traits = { old_guard inflexible_strategist }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Adolphe Guillaumat"
-	picture = "Portrait_FRA_Adolphe_Guillaumat.dds"
-	traits = { organizer trait_cautious }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Paul Legentilhomme"
-	picture = "Portrait_FRA_Paul_Legentilhomme.dds"
-	traits = { ranger cavalry_officer hill_fighter }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_navy_leader = {
-	name = "Emile Muselier"
-	picture = "Portrait_FRA_Emile_Muselier.dds"
-	traits = { naval_lineage superior_tactician }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 2
-	maneuvering_skill = 3
-	coordination_skill = 3
-}
-
-create_navy_leader = {
-	name = "Jean-Marie Charles Abrial"
-	portrait_path = "gfx/leaders/FRA/Portrait_France_Jean-Marie_Charles_Abrial.dds"
-	traits = { chief_engineer superior_tactician }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	maneuvering_skill = 3
-	coordination_skill = 2
-}
-
-create_navy_leader = {
-	name = "Jean-Pierre Esteva"
-	portrait_path = "gfx/leaders/FRA/Portrait_France_Jean-Pierre_Esteva.dds"
-	traits = { aviation_enthusiast }
-	skill = 2
-	attack_skill = 1
-	defense_skill = 2
-	maneuvering_skill = 2
-	coordination_skill = 2
-}
-
-create_navy_leader = {
-	name = "René-Émile Godfroy"
-	portrait_path = "gfx/leaders/FRA/Portrait_France_Rene-Emile_Godfroy.dds"
-	traits = { gentlemanly battleship_adherent old_guard_navy spotter }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 1
-	maneuvering_skill = 2
-	coordination_skill = 2
-}
-
-create_navy_leader = {
-	name = "Jean de Laborde"
-	portrait_path = "gfx/leaders/FRA/Portrait_France_Jean_de_Laborde.dds"
-	traits = { naval_lineage aviation_enthusiast }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	maneuvering_skill = 1
-	coordination_skill = 1
-}
 
 ### VARIANTS ###
 # 1936 Start #

@@ -303,7 +303,19 @@ characters={
 		}
 	}
 	
-	GRE_paul_i={
+    	GRE_nikos_belogiannis={  # mod content
+		name = "Nikos Belogiannis"
+		portraits={
+			army={
+				large="gfx/leaders/GRE/Portrait_Greece_Nikos_Belogiannis.dds"
+			}
+			civilian={
+				large="gfx/leaders/GRE/Portrait_Greece_Nikos_Belogiannis.dds"
+			}
+		}
+	}
+    
+	GRE_paul_i={  # mod content
 		name = "Paul I"
 		portraits={
 			army={
@@ -315,7 +327,7 @@ characters={
 		}
 	}
 	
-	GRE_george_ii={
+	GRE_george_ii={  # mod content
 		name = "George II"
 		portraits={
 			army={
@@ -326,7 +338,7 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ trait_GRE_stauch_monarchist old_guard cavalry_officer politically_connected }
+			traits={ trait_GRE_stauch_monarchist old_guard cavalry_officer }
 			skill=2
 			attack_skill=2
 			defense_skill=2
@@ -336,7 +348,7 @@ characters={
 		}
 	}
 	
-	GRE_stefanos_sarafis={
+	GRE_stefanos_sarafis={  # mod content
 		name = "Stefanos Sarafis"
 		portraits={
 			army={
@@ -357,7 +369,7 @@ characters={
 		}
 	}
 	
-	GRE_konstantinos_davakis={
+	GRE_konstantinos_davakis={  # mod content
 		name = "Konstantinos Davakis"
 		portraits={
 			army={

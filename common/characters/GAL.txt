@@ -1,0 +1,299 @@
+characters={
+    
+     GAL_camille_chautemps={
+		name = "Camille Chautemps"
+		portraits={
+			army={
+				large="gfx/leaders/GAL/Portrait_FRA_Camille_Chautemps.dds"
+			}
+			civilian={
+				large="gfx/leaders/GAL/Portrait_FRA_Camille_Chautemps.dds"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+    
+    GAL_leon_blum={
+		name = "Léon Blum"
+		portraits={
+			army={
+				large="gfx/leaders/GAL/Portrait_FRA_Leon_Blum.dds"
+			}
+			civilian={
+				large="gfx/leaders/GAL/Portrait_FRA_Leon_Blum.dds"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+    
+    GAL_charles_maurras={
+		name = "Charles Maurras"
+		portraits={
+			army={
+				large="gfx/leaders/GAL/Portrait_FRA_Charles_Maurras.dds"
+			}
+			civilian={
+				large="gfx/leaders/GAL/Portrait_FRA_Charles_Maurras.dds"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+    
+	GAL_napoleon_vi={
+		name = "Napoléon VI"
+		portraits={
+			army={
+				large="GFX_portraits_fra_napoleon_vi"
+			}
+			civilian={
+				large="GFX_portraits_fra_napoleon_vi"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits = {
+                napoleonic_code 
+                nationalist_symbol 
+            }
+			expire="1965.1.1.1"
+			id=-1
+		}
+        field_marshal={
+			traits = { 
+                military_genius brilliant_strategist inspirational_leader skilled_staffer expert_delegator 
+            }
+            skill = 5
+            attack_skill = 5
+            defense_skill = 5
+            planning_skill = 5
+            logistics_skill = 5
+			legacy_id=-1
+		}
+	}
+    
+    GAL_philippe_petain={
+		name = "Philippe Pétain"
+		portraits={
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Philippe_Petain.dds"
+			}
+			civilian={
+				large="gfx/leaders/FRA/Portrait_France_Philippe_Petain.dds"
+			}
+		}
+		field_marshal={
+			traits = { trait_cautious war_hero }
+            skill = 3
+            attack_skill = 2
+            defense_skill = 4
+            planning_skill = 2
+            logistics_skill = 4
+			legacy_id=-1
+		}
+	}
+    
+    GAL_aime_doumenc={
+		name = "Aime Doumenc"
+		portraits={
+			army={
+				large="gfx/leaders/GAL/Portrait_FRA_Aime_Doumenc.dds"
+			}
+			civilian={
+				large="gfx/leaders/GAL/Portrait_FRA_Aime_Doumenc.dds"
+			}
+		}
+		field_marshal={
+			traits = { defensive_doctrine trickster urban_assault_specialist }
+            skill = 3
+            attack_skill = 2
+            defense_skill = 3
+            planning_skill = 3
+            logistics_skill = 3
+			legacy_id=-1
+		}
+	}
+    
+    GAL_georges_blanchard={
+		name = "Georges Blanchard"
+		portraits={
+			army={
+				large="gfx/leaders/GAL/Portrait_FRA_Georges_Blanchard.dds"
+			}
+			civilian={
+				large="gfx/leaders/GAL/Portrait_FRA_Georges_Blanchard.dds"
+			}
+		}
+		corps_commander={
+			traits = { brilliant_strategist career_officer infantry_officer }
+            skill = 3
+            attack_skill = 3
+            defense_skill = 2
+            planning_skill = 4
+            logistics_skill = 3
+			legacy_id=-1
+		}
+	}
+    
+    GAL_louis_franchet_desperey={
+		name = "Louis Franchet d'Esperey"
+		portraits={
+			army={
+				large="gfx/leaders/GAL/Portrait_FRA_Louis_Franchet_d_Esperey.dds"
+			}
+			civilian={
+				large="gfx/leaders/GAL/Portrait_FRA_Louis_Franchet_d_Esperey.dds"
+			}
+		}
+		corps_commander={
+			traits = { naval_invader trait_engineer winter_specialist }
+            skill = 3
+            attack_skill = 2
+            defense_skill = 2
+            planning_skill = 3
+            logistics_skill = 3
+			legacy_id=-1
+		}
+	}
+    
+    GAL_gaston_billotte={
+		name = "Gaston Billotte"
+		portraits={
+			army={
+				large="gfx/leaders/GAL/Portrait_FRA_Gaston_Billotte.dds"
+			}
+			civilian={
+				large="gfx/leaders/GAL/Portrait_FRA_Gaston_Billotte.dds"
+			}
+		}
+		corps_commander={
+			traits = { old_guard inflexible_strategist }
+            skill = 2
+            attack_skill = 2
+            defense_skill = 1
+            planning_skill = 1
+            logistics_skill = 2
+			legacy_id=-1
+		}
+	}
+    
+    GAL_adolphe_guillaumat={
+		name = "Adolphe Guillaumat"
+		portraits={
+			army={
+				large="gfx/leaders/GAL/Portrait_FRA_Adolphe_Guillaumat.dds"
+			}
+			civilian={
+				large="gfx/leaders/GAL/Portrait_FRA_Adolphe_Guillaumat.dds"
+			}
+		}
+		corps_commander={
+			traits = { organizer trait_cautious }
+            skill = 2
+            attack_skill = 2
+            defense_skill = 2
+            planning_skill = 2
+            logistics_skill = 2
+			legacy_id=-1
+		}
+	}
+    
+    GAL_paul_legentilhomme={
+		name = "Paul Legentilhomme"
+		portraits={
+			army={
+				large="gfx/leaders/GAL/Portrait_FRA_Paul_Legentilhomme.dds"
+			}
+			civilian={
+				large="gfx/leaders/GAL/Portrait_FRA_Paul_Legentilhomme.dds"
+			}
+		}
+		corps_commander={
+			traits = { ranger cavalry_officer hill_fighter }
+            skill = 2
+            attack_skill = 2
+            defense_skill = 2
+            planning_skill = 2
+            logistics_skill = 2
+			legacy_id=-1
+		}
+	}
+    
+    GAL_emile_muselier={
+		name = "Emile Muselier"
+		portraits={
+			army={
+				large="gfx/leaders/GAL/Portrait_FRA_Emile_Muselier.dds"
+			}
+			civilian={
+				large="gfx/leaders/GAL/Portrait_FRA_Emile_Muselier.dds"
+			}
+		}
+		navy_leader={
+			traits = { naval_lineage superior_tactician }
+            skill = 3
+            attack_skill = 2
+            defense_skill = 2
+            maneuvering_skill = 3
+            coordination_skill = 3
+			legacy_id=-1
+		}
+	}
+    
+    GAL_jean_pierre_esteva={
+		name = "Jean-Pierre Esteva"
+		portraits={
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Jean-Pierre_Esteva.dds"
+			}
+			civilian={
+				large="gfx/leaders/FRA/Portrait_France_Jean-Pierre_Esteva.dds"
+			}
+		}
+		navy_leader={
+			traits = { aviation_enthusiast }
+            skill = 2
+            attack_skill = 1
+            defense_skill = 2
+            maneuvering_skill = 2
+            coordination_skill = 2
+			legacy_id=-1
+		}
+	}
+    
+    GAL_rene_emile_godfroy={
+		name = "René-Émile Godfroy"
+		portraits={
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Rene-Emile_Godfroy.dds"
+			}
+			civilian={
+				large="gfx/leaders/FRA/Portrait_France_Rene-Emile_Godfroy.dds"
+			}
+		}
+		navy_leader={
+			traits = { gentlemanly battleship_adherent old_guard_navy spotter }
+            skill = 2
+            attack_skill = 2
+            defense_skill = 1
+            maneuvering_skill = 2
+            coordination_skill = 2
+			legacy_id=-1
+		}
+	}
+
+}

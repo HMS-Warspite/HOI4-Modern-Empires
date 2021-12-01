@@ -739,7 +739,7 @@ country_event = {
 		every_owned_state = { 
 			set_building_level = {
 				type = infrastructure
-				level = 10			
+				level = 5
 				instant_build = yes
 			}
 		}
@@ -763,16 +763,20 @@ country_event = {
 		name = mod_china.990.a
 		JAP = {
 			if = {
-				limit = { has_country_leader = { name = "Hirohito" ruling_only = yes } }
-				create_country_leader = {
-					name = "Hideki Tojo"
-					picture = "Portrait_Japan_Generic_land_2.dds"
-					expire = "1965.1.1"
-					ideology = nazism
-					traits = {
-						military_imperialist
-					}
-				}
+				limit = { has_country_leader = { character = JAP_emperor_hirohito ruling_only = yes } }
+                remove_country_leader_role = {
+                    character = JAP_emperor_hirohito
+                    ideology = fascism_ideology
+                }
+                add_country_leader_role = {
+                    Character = JAP_hideki_tojo
+					Promote_leader = yes
+                    Country_leader = {
+                        ideology = fascism_ideology
+                        expire = "1965.1.1.1"
+                        traits = { military_imperialist }
+                    }
+                }
 			}
 		}
 	}
@@ -781,8 +785,20 @@ country_event = {
 		name = mod_china.990.b
 		JAP = {
 			if = {
-				limit = { has_country_leader = { name = "Hideki Tojo" ruling_only = yes } }
-				retire_country_leader = yes
+				limit = { has_country_leader = { character = JAP_hideki_tojo ruling_only = yes } }
+				remove_country_leader_role = {
+                    character = JAP_hideki_tojo
+                    ideology = fascism_ideology
+                }
+                add_country_leader_role = {
+                    Character = JAP_emperor_hirohito
+					Promote_leader = yes
+                    Country_leader = {
+                        ideology = fascism_ideology
+                        expire = "1989.1.1.1"
+                        traits = { warrior_code emperor_showa imperial_sanction }
+                    }
+                }
 			}
 		}
 	}
