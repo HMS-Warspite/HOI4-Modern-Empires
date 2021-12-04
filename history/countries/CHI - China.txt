@@ -216,63 +216,6 @@ set_popularities = {
 	neutrality = 93
 }
 
-create_country_leader = {
-	name = "Chiang Kai-Shek"
-	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
-	picture = "Portrait_CHI_Chiang_Kai-sheck.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		generallissimo
-	}
-}
-
-create_country_leader = {
-	name = "Zhang Lan"
-	desc = "POLITICS_ZHANG_LAN_DESC"
-	picture = "GFX_portrait_prc_zhang_lan"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Wang Jingwei"
-	desc = "POLITICS_WANG_JINGWEI_DESC"
-	picture = "GFX_portrait_chi_wang_jingwei"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		popular_figurehead2
-		political_dancer
-		nationalist_symbol
-	}
-}
-
-create_country_leader = {
-	name = "Gu Weijun" 
-	desc = ""
-	picture = "Portrait_China_Gu_Weijun.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		smooth_talking_charmer
-		compassionate_gentleman
-	}
-}
-
-create_country_leader = {
-	name = "Weng Wenhao" 
-	desc = "POLITICS_ZHANG_LAN_DESC"
-	picture = "GFX_portrait_chi_weng_wenhao"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		#
-	}
-}
-
 add_opinion_modifier = { target = PRC modifier = hostile_status }
 
 1939.1.1 = {
@@ -290,252 +233,64 @@ add_opinion_modifier = { target = PRC modifier = hostile_status }
 	}
 }
 
-create_field_marshal = {
-	name = "Chiang Kai-shek"
-	picture = "Portrait_CHI_Chiang_Kai-sheck.dds"
-	traits = { defensive_doctrine inspirational_leader infantry_officer politically_connected media_personality }
-	skill = 5
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 5
-	logistics_skill = 5
-}
 
-create_field_marshal = {
-	name = "Tu Yu-ming"
-	gfx = "GFX_portrait_chi_du_yuming"
-	traits = { defensive_doctrine trait_cautious armor_officer harsh_leader }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 3
-}
+### Characters ###
 
-create_field_marshal = {
-	name = "He Ying-qin"
-	picture = Portrait_China_He_Yingqin.dds
-	traits = { offensive_doctrine politically_connected brilliant_strategist organizer }
-	skill = 5
-	attack_skill = 6
-	defense_skill = 5
-	planning_skill = 5
-	logistics_skill = 3
-}
+# Political
+recruit_character = CHI_chiang_kaishek
+recruit_character = CHI_zhang_lan
+recruit_character = CHI_wang_jingwei
+recruit_character = CHI_weng_wenhao
+recruit_character = CHI_gu_weijun
 
-create_field_marshal = {
-	name = "Tai An-lan"
-	gfx = "GFX_portrait_chi_tai_an_lan"
-	traits = { offensive_doctrine trait_reckless career_officer }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 1
-}
+# Army
+recruit_character = CHI_tu_yuming
+recruit_character = CHI_he_yingqin
+recruit_character = CHI_hsueh_yueh
+recruit_character = CHI_tai_anlan
+recruit_character = CHI_wang_yaowu
+recruit_character = CHI_sun_li_jen
+recruit_character = CHI_hu_zongnan
+recruit_character = CHI_gu_zhutong
+recruit_character = CHI_wei_lihuang
+recruit_character = CHI_fu_zuoyi
+recruit_character = CHI_zhang_xueliang
 
-create_corps_commander = {
-	name = "Wang Yao-wu"
-	gfx = "GFX_portrait_chi_wang_yaowu"
-	traits = { trait_cautious infantry_officer }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
-}
+# Mod Addition
+recruit_character = CHI_zhang_zuolin
+recruit_character = CHI_chen_cheng
+recruit_character = CHI_zhang_lingfu
+recruit_character = CHI_bai_chongxi
+recruit_character = CHI_song_xilian
+recruit_character = CHI_zhang_zizhong
+recruit_character = CHI_sun_lianzhong
+recruit_character = CHI_liu_zhi
 
-create_corps_commander = {
-	name = "Sun Li Jen"
-	# gfx = "GFX_portrait_chi_sun_li_jen"
-	picture = "Portrait_CHI_sun_li_ren.dds"
-	traits = { brilliant_strategist }
-	skill = 4
-	attack_skill = 5
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 2
-}
+# Navy
+recruit_character = CHI_chen_shaokuan
+recruit_character = CHI_gui_yongqing
+recruit_character = CHI_shen_honglie
 
-create_corps_commander = {
-	name = "Hsueh Yueh"
-	gfx = "GFX_portrait_chi_xue_yue"
-	traits = { trait_reckless brilliant_strategist war_hero }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 1
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Hu Zongnan"
-	gfx = "GFX_portrait_chi_hu_zongnan"
-	traits = { politically_connected }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Gu Zhutong"
-	gfx = "GFX_portrait_chi_gu_zhutong"
-	traits = { career_officer }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Wei Lihuang"
-	gfx = "GFX_portrait_chi_wei_lihuang"
-	traits = { infantry_officer }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Fu Zuoyi"
-	gfx = "GFX_portrait_chi_fu_zuoyi"
-	traits = { }
-	skill = 2
-	attack_skill = 1
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Zhang Xueliang"
-	gfx = "GFX_portrait_chi_zhang_xueliang"
-	traits = { winter_specialist infantry_officer }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 2
-}
-
-############################################################################
-create_field_marshal = {
-	name = "Zhang Zuolin"
-	portrait_path = "gfx/leaders/Asia/portrait_asia_generic_land_8.dds"
-	traits = { organisational_leader career_officer harsh_leader }
-	skill = 4
-	attack_skill = 3
-	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 4
-}
-
-create_field_marshal = {
-	name = "Chen Cheng"
-	portrait_path = "gfx/leaders/CHI/Portrait_CHI_chencheng.dds"
-	traits = { thorough_planner politically_connected }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Zhang Lingfu"
-	portrait_path = "gfx/leaders/CHI/Portrait_China_Zhang_Ling_Fu.dds"
-	traits = { armor_officer career_officer }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Bai Chongxi"
-	portrait_path = "gfx/leaders/CHI/Portrait_China_Bai_Chong_Xi.dds"
-	traits = { infantry_officer fast_planner }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Song Xilian"
-	portrait_path = "gfx/leaders/CHI/portrait_chi_song_xilian.dds"
-	traits = { armor_officer career_officer }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Zhang Zizhong"
-	portrait_path = "gfx/leaders/CHI/Portrait_China_Zhang_Zi_Zhong.dds"
-	traits = { infantry_officer Commando Trickster }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Sun Lianzhong"
-	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Sun_lianzhong.dds"
-	traits = {  }
-	skill = 2
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Liu Zhi"
-	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Liuzhi.dds"
-	traits = { }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-
-##################### NAVY LEADERS #############################
-
-create_navy_leader = {
-	name = "Chen Shaokuan"
-	portrait_path = "gfx/leaders/CHI/Portrait_China_Chen_Shaokuan.dds"
-	traits = { air_controller fly_swatter spotter }
-	skill = 4
-}
-
-create_navy_leader = {
-	name = "Gui Yongqing"
-	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Gui_Yongqing.dds"
-	traits = { superior_tactician }
-	skill = 2
-}
-
-create_navy_leader = {
-	name = "Shen Honglie"
-	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Shen_honglie.dds"
-	traits = { blockade_runner }
-	skill = 2
-}
-
+# Advisors & Theorists & High Commands
+recruit_character = CHI_bo_yibo
+recruit_character = CHI_fang_zeyi
+recruit_character = CHI_huang_shen
+recruit_character = CHI_zhu_de
+recruit_character = CHI_chen_jitang
+recruit_character = CHI_li_zongren
+recruit_character = CHI_xiao_jinguang
+recruit_character = CHI_wang_shuming
+recruit_character = CHI_zhou_zhirou
+recruit_character = CHI_gao_zhihang
+recruit_character = CHI_xiao_yisu
+recruit_character = CHI_yu_hanmou
+recruit_character = CHI_chiang_ching_kuo
+recruit_character = CHI_h_h_kung
+recruit_character = CHI_chen_yi
+recruit_character = CHI_random_prince_of_terror
+recruit_character = CHI_lin_sen
+recruit_character = CHI_chen_guofu
+recruit_character = CHI_soong_mei_ling
 
 
 ### VARIANTS ###
