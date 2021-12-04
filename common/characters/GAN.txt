@@ -1,0 +1,48 @@
+characters={
+	GAN_xu_wei={
+		name = "Xu Wei"
+		portraits={
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_Generic_navy_2.dds"
+			}
+			civilian={
+				large="gfx/leaders/JAP/Portrait_Japan_Generic_navy_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ cautious }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	GAN_ye_ting={
+		name = "Ye Ting"
+		portraits={
+			army={
+				large="gfx/leaders/Asia/portrait_asia_generic_land_12.dds"
+			}
+		}
+		
+		corps_commander={
+			traits={ organizer infantry_officer }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+}

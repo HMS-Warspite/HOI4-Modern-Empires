@@ -1,0 +1,32 @@
+
+state={
+	id=658
+	name="STATE_658"
+	manpower = 3770200
+	resources={
+		oil=26 # was: 6
+	}
+	
+	state_category = large_city
+
+
+	history={
+		add_core_of = UAE
+		owner = ENG
+		victory_points = {
+			7960 20 
+		}
+		buildings = {
+			infrastructure = 2
+			7960 = {
+				naval_base = 3
+			}
+		}
+
+	}
+
+	provinces={
+		2048 7960 8108 10904 
+	}
+	local_supplies = 0.0 
+}

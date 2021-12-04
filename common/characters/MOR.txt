@@ -1,0 +1,92 @@
+characters={
+	MOR_assou_ou_baslam={
+		name = "Assou ou-Baslam"
+		portraits={
+			army={
+				large="gfx/leaders/MOR/Portrait_MOR_Assou_ou_Baslam.dds"
+			}
+			civilian={
+				large="gfx/leaders/MOR/Portrait_MOR_Assou_ou_Baslam.dds"
+			}
+		}
+		country_leader={
+			ideology=falangism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	MOR_mohammed_v={
+		name = "Mohammed V"
+		portraits={
+			army={
+				large="gfx/leaders/SAU/Portrait_Arabia_Generic_land_1.dds"
+			}
+			civilian={
+				large="gfx/leaders/SAU/Portrait_Arabia_Generic_land_1.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	MOR_thami_el_glaoui={
+		name = "Thami El Glaoui"
+		portraits={
+			army={
+				large="gfx/leaders/MOR/Portrait_MOR_Thami_El_Glaoui.dds"
+			}
+			civilian={
+				large="gfx/leaders/MOR/Portrait_MOR_Thami_El_Glaoui.dds"
+			}
+		}
+		country_leader={
+			ideology=moderatism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	MOR_abdallah_ibrahim={
+		name = "Abdallah Ibrahim"
+		portraits={
+			army={
+				large="gfx/leaders/MOR/Portrait_MOR_Abdallah_Ibrahim.dds"
+			}
+			civilian={
+				large="gfx/leaders/MOR/Portrait_MOR_Abdallah_Ibrahim.dds"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	MOR_ali_yata={
+		name = "Ali Yata"
+		portraits={
+			army={
+				large="gfx/leaders/MOR/Portrait_MOR_Ali_Yata.dds"
+			}
+			civilian={
+				large="gfx/leaders/MOR/Portrait_MOR_Ali_Yata.dds"
+			}
+		}
+		country_leader={
+			ideology=leninism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

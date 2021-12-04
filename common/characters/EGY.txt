@@ -1,0 +1,274 @@
+characters={
+    
+     EGY_fuad_i={
+		name = "Fuad I"
+		portraits={
+			army={
+				large="GFX_portrait_egy_faud_i"
+			}
+			civilian={
+				large="GFX_portrait_egy_faud_i"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+    
+    EGY_farouk_i={
+		name = "Farouk I"
+		portraits={
+			army={
+				large="gfx/leaders/EGY/Portrait_EGY_King_Farouk.dds"
+			}
+			civilian={
+				large="gfx/leaders/EGY/Portrait_EGY_King_Farouk.dds"
+			}
+		}
+        # will be promoted to country leader through decisions/events
+	}
+    
+    EGY_muhammad_mahmoud_pasha={
+		name = "Muhammad Mahmoud Pasha"
+		portraits={
+			army={
+				large="gfx/leaders/EGY/Portrait_EGY_Muhammad_Mahmoud_Pasha.dds"
+			}
+			civilian={
+				large="gfx/leaders/EGY/Portrait_EGY_Muhammad_Mahmoud_Pasha.dds"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+    
+    EGY_mostafa_el_nahhas={
+		name = "Mostafa El-Nahhas"
+		portraits={
+			army={
+				large="gfx/leaders/EGY/Portait_EGY_Mostafa_el_Nahhas.dds"
+			}
+			civilian={
+				large="gfx/leaders/EGY/Portait_EGY_Mostafa_el_Nahhas.dds"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+    
+	EGY_muhammad_naguib={
+		name = "Muhammad Naguib"
+		portraits={
+			army={
+				large="gfx/leaders/EGY/Portrait_EGY_Muhammad_Naguib.dds"
+			}
+			civilian={
+				large="gfx/leaders/EGY/Portrait_EGY_Muhammad_Naguib.dds"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+        field_marshal={
+			traits={ politically_connected infantry_officer organisational_leader }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+    EGY_hosni_al_arabi={
+		name = "Hosni al-Arabi"
+		portraits={
+			army={
+				large="gfx/leaders/SAU/Portrait_Arabia_Generic_navy_3.dds"
+			}
+			civilian={
+				large="gfx/leaders/SAU/Portrait_Arabia_Generic_navy_3.dds"
+			}
+		}
+		country_leader={
+			ideology=leninism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+    
+    EGY_hassan_al_banna={
+		name = "Hassan Al Banna"
+		portraits={
+			army={
+				large="gfx/leaders/EGY/Portrait_EGY_Hassan_al_Banna.dds"
+			}
+			civilian={
+				large="gfx/leaders/EGY/Portrait_EGY_Hassan_al_Banna.dds"
+			}
+		}
+		country_leader={
+			ideology=falangism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+    
+    EGY_aly_maher_pasha={
+		name = "Aly Maher Pasha"
+		portraits={
+			army={
+				large="gfx/leaders/EGY/Portrait_EGY_Aly_Maher_Pasha.dds"
+			}
+			civilian={
+				large="gfx/leaders/EGY/Portrait_EGY_Aly_Maher_Pasha.dds"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+    
+    EGY_ahmed_husayn={
+		name = "Ahmed Husayn"
+		portraits={
+			army={
+				large="gfx/leaders/SAU/Portrait_Arabia_Generic_1.dds"
+			}
+			civilian={
+				large="gfx/leaders/SAU/Portrait_Arabia_Generic_1.dds"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+    
+    EGY_gamal_abdel_nasser={
+		name = "Gamal Abdel Nasser"
+		portraits={
+			army={
+				large="gfx/leaders/EGY/Portrait_EGY_Gamal_Abdel_Nasser.dds"
+			}
+			civilian={
+				large="gfx/leaders/EGY/Portrait_EGY_Gamal_Abdel_Nasser.dds"
+			}
+		}
+		corps_commander={
+			traits = { organizer career_officer brilliant_strategist }
+            skill = 3
+            attack_skill = 2
+            defense_skill = 2
+            planning_skill = 4
+            logistics_skill = 4
+			legacy_id=-1
+		}
+	}
+    
+    EGY_muhammad_anwar_sadat={
+		name = "Muhammad Anwar Sadat"
+		portraits={
+			army={
+				large="gfx/leaders/EGY/Portrait_EGY_Muhammad_Anwar_Sadat.dds"
+			}
+			civilian={
+				large="gfx/leaders/EGY/Portrait_EGY_Muhammad_Anwar_Sadat.dds"
+			}
+		}
+		corps_commander={
+			traits = { desert_fox urban_assault_specialist }
+            skill = 3
+            attack_skill = 3
+            defense_skill = 3
+            planning_skill = 3
+            logistics_skill = 2
+			legacy_id=-1
+		}
+	}
+    
+    EGY_abdel_hakim_amer={
+		name = "Abdel Hakim Amer"
+		portraits={
+			army={
+				large="gfx/leaders/EGY/Portrait_EGY_Abdel_Hakim_Amer.dds"
+			}
+			civilian={
+				large="gfx/leaders/EGY/Portrait_EGY_Abdel_Hakim_Amer.dds"
+			}
+		}
+		corps_commander={
+			traits = { desert_fox trickster }
+            skill = 3
+            attack_skill = 3
+            defense_skill = 2
+            planning_skill = 2
+            logistics_skill = 3
+			legacy_id=-1
+		}
+	}
+    
+    EGY_abdul_munim_riad={
+		name = "Abdul Munim Riad"
+		portraits={
+			army={
+				large="gfx/leaders/EGY/Portrait_EGY_Abdul_Munim_Riad.dds"
+			}
+			civilian={
+				large="gfx/leaders/EGY/Portrait_EGY_Abdul_Munim_Riad.dds"
+			}
+		}
+		corps_commander={
+			traits = { urban_assault_specialist }
+            skill = 2
+            attack_skill = 2
+            defense_skill = 1
+            planning_skill = 2
+            logistics_skill = 3
+			legacy_id=-1
+		}
+	}
+    
+    EGY_mohamed_ahmed_sadek={
+		name = "Mohamed Ahmed Sadek"
+		portraits={
+			army={
+				large="gfx/leaders/EGY/Portrait_EGY_Mohamed_Ahmed_Sadek.dds"
+			}
+			civilian={
+				large="gfx/leaders/EGY/Portrait_EGY_Mohamed_Ahmed_Sadek.dds"
+			}
+		}
+		corps_commander={
+			traits = { trait_engineer trait_cautious }
+            skill = 2
+            attack_skill = 1
+            defense_skill = 3
+            planning_skill = 2
+            logistics_skill = 1
+			legacy_id=-1
+		}
+	}
+
+}

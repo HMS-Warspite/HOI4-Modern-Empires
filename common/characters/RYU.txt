@@ -1,0 +1,65 @@
+characters={
+	RYU_sho_he={
+		name = "Shō He"
+		portraits={
+			army={
+				large="gfx/leaders/Asia/portrait_asia_generic_4.dds"
+			}
+			civilian={
+				large="gfx/leaders/Asia/portrait_asia_generic_4.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	RYU_shimazu_norimasa={
+		name = "Shimazu Norimasa"
+		portraits={
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_Generic_land_1.dds"
+			}
+			civilian={
+				large="gfx/leaders/JAP/Portrait_Japan_Generic_land_1.dds"
+			}
+		}
+		country_leader={
+			ideology=falangism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	RYU_Sai_Feng={
+		name = "Sai Feng"
+		portraits={
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_Generic_3.dds"
+			}
+			civilian={
+				large="gfx/leaders/JAP/Portrait_Japan_Generic_3.dds"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

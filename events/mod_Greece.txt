@@ -2832,7 +2832,7 @@ country_event = {
 		name = mod_greece.993.b
 		HUN = { 
 			set_cosmetic_tag = HUN_hellenic 
-			set_capital = 4
+			set_capital = { state = 4 }
 		}
 		TUN = { set_cosmetic_tag = TUN_hellenic }
 		IRQ = { 
@@ -2840,16 +2840,16 @@ country_event = {
 		}
 		PER = { 
 			set_cosmetic_tag = PER_hellenic
-			set_capital = 412
+			set_capital = { state = 412 }
 		}
 		SAU = { 
 			set_cosmetic_tag = SAU_hellenic 
-			set_capital = 813
+			set_capital = { state = 813 }
 		}
 		SPR = { set_cosmetic_tag = SPR_hellenic }
 		POR = { 
 			set_cosmetic_tag = POR_hellenic 
-			set_capital = 811
+			set_capital = { state = 811 }
 		}
 		ROM = { set_cosmetic_tag = ROM_hellenic }
 		EGY = { set_cosmetic_tag = EGY_hellenic }
@@ -2859,7 +2859,7 @@ country_event = {
 		UKR = { set_cosmetic_tag = UKR_hellenic }
 		TUR = { 
 			set_cosmetic_tag = TUR_hellenic
-			set_capital = 341
+			set_capital = { state = 341 }
 		}
 		ITA = { 
 			set_cosmetic_tag = ITA_hellenic 
@@ -3165,7 +3165,7 @@ country_event = {
 }
 
 
-#Test: Retire Country Leader
+#Test: Retire Egyptian King
 country_event = {
 	id = mod_greece.990
 	title = mod_greece.990.t
@@ -3177,7 +3177,17 @@ country_event = {
 	#Retire Country Leader
 	option = {
 		name = mod_greece.990.a
-		retire_country_leader = yes
+		EGY = {	
+			add_country_leader_role = {
+				Character = EGY_farouk_i
+				Promote_leader = yes
+				Country_leader = {
+					ideology = despotism
+					expire = "1965.1.1.1"
+					traits = {  }
+				}
+			}
+		}
 	}
 	
 	#Do Nothing

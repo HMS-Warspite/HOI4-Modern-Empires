@@ -1,0 +1,48 @@
+characters={
+	QIN_zhang_lan={
+		name = "Zhang Lan"
+		portraits={
+			army={
+				large="gfx/leaders/PRC/portrait_prc_zhang_lan.dds"
+			}
+			civilian={
+				large="gfx/leaders/PRC/portrait_prc_zhang_lan.dds"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	QIN_zhao_he={
+		name = "Zhao He"
+		portraits={
+			army={
+				large="gfx/leaders/Asia/portrait_asia_generic_land_10.dds"
+			}
+		}
+		
+		corps_commander={
+			traits={ }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+}

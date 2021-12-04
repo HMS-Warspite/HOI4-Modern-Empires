@@ -1,0 +1,29 @@
+
+state={
+	id=841
+	name="STATE_841" # Aksai Chin
+	manpower = 1216000
+	
+	state_category = rural
+	
+	resources={
+		tungsten = 3
+	}
+
+	history={
+		owner = RAJ
+		add_core_of = RAJ
+		add_core_of = PAK
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 1
+		}
+
+	}
+
+	provinces={
+		 5042 7273 10821 
+	}
+	local_supplies=0.0 
+}
